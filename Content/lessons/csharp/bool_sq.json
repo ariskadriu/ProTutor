@@ -1,0 +1,48 @@
+{
+    "id": "cs_bool_sq",
+    "title": "Boolean-ët në C#",
+    "description": "Shumë shpesh, në programim, do t'ju duhet një lloj të dhënash që mund të ketë vetëm një nga dy vlerat, si: PO / JO, AKTIV / JOAKTIV, TRUE / FALSE.",
+    "example": "bool eshteCSFun = true;\nConsole.WriteLine(eshteCSFun);",
+    "challenges": [
+        {
+            "title": "Vlera Boolean",
+            "exercise": "Printoni vlerën boolean true.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(true);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["true"]
+        },
+        {
+            "title": "Krahasimi",
+            "exercise": "Printoni rezultatin e 10 > 9.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 > 9);",
+            "difficulty": "Easy",
+            "requiredKeywords": [">"]
+        },
+        {
+            "title": "Barabartë",
+            "exercise": "Printoni rezultatin e 10 == 10.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 == 10);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["=="]
+        },
+        {
+            "title": "Krahasimi i Variablave",
+            "exercise": "Krijoni int x=10, y=9. Printoni x > y.",
+            "expectedOutput": "True",
+            "solution": "int x = 10; int y = 9;\nConsole.WriteLine(x > y);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["int", ">"]
+        },
+        {
+            "title": "NOT Logjik",
+            "exercise": "Printoni të kundërtën e true duke përdorur operatorin !.",
+            "expectedOutput": "False",
+            "solution": "Console.WriteLine(!true);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["!"]
+        }
+    ]
+}

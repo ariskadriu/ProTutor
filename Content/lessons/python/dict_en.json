@@ -1,0 +1,48 @@
+{
+    "id": "py_dict_en",
+    "title": "Python Dictionaries",
+    "description": "Dictionaries are used to store data values in key:value pairs.",
+    "example": "thisdict = {\"brand\": \"Ford\", \"model\": \"Mustang\"}",
+    "challenges": [
+        {
+            "title": "Create Dict",
+            "exercise": "Create a dictionary named 'car' with brand='Ford'. Print it.",
+            "expectedOutput": "{'brand': 'Ford'}",
+            "solution": "car = {\"brand\": \"Ford\"}\nprint(car)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["{", "}", ":"]
+        },
+        {
+            "title": "Access Value",
+            "exercise": "Print the value of the 'brand' key.",
+            "expectedOutput": "Ford",
+            "solution": "car = {\"brand\": \"Ford\"}\nprint(car['brand'])",
+            "difficulty": "Easy",
+            "requiredKeywords": ["['brand']"]
+        },
+        {
+            "title": "Change Value",
+            "exercise": "Change 'brand' to 'BMW' and print the dict.",
+            "expectedOutput": "{'brand': 'BMW'}",
+            "solution": "car = {\"brand\": \"Ford\"}\ncar['brand'] = \"BMW\"\nprint(car)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["['brand'] ="]
+        },
+        {
+            "title": "Add Item",
+            "exercise": "Add color='red' to the car dict and print it.",
+            "expectedOutput": "{'brand': 'Ford', 'color': 'red'}",
+            "solution": "car = {\"brand\": \"Ford\"}\ncar['color'] = \"red\"\nprint(car)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["['color'] ="]
+        },
+        {
+            "title": "Remove Item",
+            "exercise": "Remove 'brand' using pop() and print it.",
+            "expectedOutput": "{}",
+            "solution": "car = {\"brand\": \"Ford\"}\ncar.pop(\"brand\")\nprint(car)",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".pop("]
+        }
+    ]
+}

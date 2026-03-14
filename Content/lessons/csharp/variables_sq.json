@@ -1,0 +1,48 @@
+{
+    "id": "cs_variables_sq",
+    "title": "Variablat në C#",
+    "description": "Variablat janë mbajtës për ruajtjen e vlerave të të dhënave. Në C#, ka lloje të ndryshme variablash (int, double, char, string, bool).",
+    "example": "int numriIm = 15;\nstring emriIm = \"John\";\nConsole.WriteLine(numriIm);\nConsole.WriteLine(emriIm);",
+    "challenges": [
+        {
+            "title": "Variabël String",
+            "exercise": "Krijoni një variabël string me emrin 'emri' dhe jepni vlerën 'John'. Printojeni.",
+            "expectedOutput": "John",
+            "solution": "string emri = \"John\";\nConsole.WriteLine(emri);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["string", "="]
+        },
+        {
+            "title": "Variabël Integer",
+            "exercise": "Krijoni një variabël int me emrin 'numriIm' dhe jepni 50. Printojeni.",
+            "expectedOutput": "50",
+            "solution": "int numriIm = 50;\nConsole.WriteLine(numriIm);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["int"]
+        },
+        {
+            "title": "Mbledhja e Variablave",
+            "exercise": "Krijoni x=5, y=10. Printoni shumën (x+y).",
+            "expectedOutput": "15",
+            "solution": "int x = 5; int y = 10;\nConsole.WriteLine(x + y);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Disa Variabla",
+            "exercise": "Deklaroni x=5, y=6, z=50 në të njëjtin rresht duke përdorur presje dhe printoni shumën.",
+            "expectedOutput": "61",
+            "solution": "int x = 5, y = 6, z = 50;\nConsole.WriteLine(x + y + z);",
+            "difficulty": "Hard",
+            "requiredKeywords": [","]
+        },
+        {
+            "title": "Variabël Konstante",
+            "exercise": "Përdorni 'const' për një variabël me emrin 'pi' me vlerë 3.14 (përdorni string '3.14'). Printojeni.",
+            "expectedOutput": "3.14",
+            "solution": "const string pi = \"3.14\";\nConsole.WriteLine(pi);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["const"]
+        }
+    ]
+}

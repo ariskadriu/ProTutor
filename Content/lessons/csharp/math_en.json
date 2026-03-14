@@ -1,0 +1,48 @@
+{
+    "id": "cs_math_en",
+    "title": "C# Math",
+    "description": "The C# Math class has many methods that allow you to perform mathematical tasks on numbers.",
+    "example": "Math.Max(5, 10);",
+    "challenges": [
+        {
+            "title": "Max Value",
+            "exercise": "Print the highest value of 5 and 10 using Math.Max().",
+            "expectedOutput": "10",
+            "solution": "Console.WriteLine(Math.Max(5, 10));",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Math.Max"]
+        },
+        {
+            "title": "Min Value",
+            "exercise": "Print the lowest value of 5 and 10 using Math.Min().",
+            "expectedOutput": "5",
+            "solution": "Console.WriteLine(Math.Min(5, 10));",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Math.Min"]
+        },
+        {
+            "title": "Square Root",
+            "exercise": "Print the square root of 64 using Math.Sqrt().",
+            "expectedOutput": "8",
+            "solution": "Console.WriteLine(Math.Sqrt(64));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Math.Sqrt"]
+        },
+        {
+            "title": "Absolute Value",
+            "exercise": "Print the absolute value of -4.7 using Math.Abs().",
+            "expectedOutput": "4.7",
+            "solution": "Console.WriteLine(Math.Abs(-4.7));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Math.Abs"]
+        },
+        {
+            "title": "Rounding",
+            "exercise": "Round 9.99 to the nearest integer using Math.Round().",
+            "expectedOutput": "10",
+            "solution": "Console.WriteLine(Math.Round(9.99));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Math.Round"]
+        }
+    ]
+}

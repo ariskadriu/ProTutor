@@ -1,0 +1,59 @@
+{
+    "Id": "py_tuples_sq",
+    "Title": "Tuples (Vargjet e pandryshueshme)",
+    "Description": "Tuples përdoren për të ruajtur shumë elemente. Ato janë të renditura dhe të pandryshueshme.",
+    "Example": "print(mytuple)",
+    "Challenges": [
+        {
+            "Title": "Krijo një tuple",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një tuple `fruit` me 'apple' dhe 'banana' dhe printoje.",
+            "RequiredKeywords": [
+                "fruit",
+                "(",
+                "apple",
+                "print"
+            ]
+        },
+        {
+            "Title": "Qasja në elemente",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo elementin e dytë në `fruit`.",
+            "RequiredKeywords": [
+                "fruit",
+                "[1]",
+                "print"
+            ]
+        },
+        {
+            "Title": "Përditëso tuple",
+            "Difficulty": "Mesatar",
+            "Exercise": "Ktheje `fruit` në listë `y`, ndrysho elementin e parë në 'kiwi', dhe ktheje prapë në tuple `fruit`.",
+            "RequiredKeywords": [
+                "list",
+                "kiwi",
+                "tuple"
+            ]
+        },
+        {
+            "Title": "Shpaketo tuple",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shpaketo `fruit` në variablat `green` dhe `yellow` dhe printo `green`.",
+            "RequiredKeywords": [
+                "green",
+                "yellow",
+                "print"
+            ]
+        },
+        {
+            "Title": "Bashko tuples",
+            "Difficulty": "Mesatar",
+            "Exercise": "Bashko `tuple1 = (1, 2)` dhe `tuple2 = (3, 4)` në `tuple3` dhe printoje.",
+            "RequiredKeywords": [
+                "tuple3",
+                "tuple1 + tuple2",
+                "print"
+            ]
+        }
+    ]
+}

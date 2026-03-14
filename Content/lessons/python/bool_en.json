@@ -1,0 +1,48 @@
+{
+    "id": "py_bool_en",
+    "title": "Python Booleans",
+    "description": "Booleans represent one of two values: True or False.",
+    "example": "print(10 > 9)\nprint(10 == 9)\nprint(10 < 9)",
+    "challenges": [
+        {
+            "title": "Boolean Result",
+            "exercise": "Print the result of 10 > 9.",
+            "expectedOutput": "True",
+            "solution": "print(10 > 9)",
+            "difficulty": "Easy",
+            "requiredKeywords": [">"]
+        },
+        {
+            "title": "Equal Comparison",
+            "exercise": "Print the result of 10 == 9.",
+            "expectedOutput": "False",
+            "solution": "print(10 == 9)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["=="]
+        },
+        {
+            "title": "bool() Function",
+            "exercise": "Print the boolean value of the string 'Hello' using bool().",
+            "expectedOutput": "True",
+            "solution": "print(bool(\"Hello\"))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["bool("]
+        },
+        {
+            "title": "bool(0)",
+            "exercise": "Print the boolean value of the number 0 using bool().",
+            "expectedOutput": "False",
+            "solution": "print(bool(0))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["bool(0)"]
+        },
+        {
+            "title": "Logical AND",
+            "exercise": "Print (True and False).",
+            "expectedOutput": "False",
+            "solution": "print(True and False)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["and"]
+        }
+    ]
+}

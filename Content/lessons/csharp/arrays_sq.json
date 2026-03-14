@@ -1,0 +1,48 @@
+{
+    "id": "cs_arrays_sq",
+    "title": "Array-et në C#",
+    "description": "Array-et përdoren për të ruajtur disa vlera në një variabël të vetëm.",
+    "example": "string[] makina = {\"Volvo\", \"BMW\", \"Ford\"};",
+    "challenges": [
+        {
+            "title": "Krijo Array",
+            "exercise": "Krijoni një array string 'makina' me 'Volvo', 'BMW'. Printoni makina[0].",
+            "expectedOutput": "Volvo",
+            "solution": "string[] makina = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(makina[0]);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["string[]", "{", "}"]
+        },
+        {
+            "title": "Akseso Elementin",
+            "exercise": "Printoni elementin e dytë të 'makina' (Volvo, BMW).",
+            "expectedOutput": "BMW",
+            "solution": "string[] makina = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(makina[1]);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[1]"]
+        },
+        {
+            "title": "Gjatësia",
+            "exercise": "Printoni numrin e elementeve duke përdorur Length.",
+            "expectedOutput": "2",
+            "solution": "string[] makina = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(makina.Length);",
+            "difficulty": "Medium",
+            "requiredKeywords": [".Length"]
+        },
+        {
+            "title": "Ndrysho Vlerën",
+            "exercise": "Ndryshoni 'Volvo' në 'Opel' dhe printoni elementin e parë.",
+            "expectedOutput": "Opel",
+            "solution": "string[] makina = {\"Volvo\", \"BMW\"};\nmakina[0] = \"Opel\";\nConsole.WriteLine(makina[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0] ="]
+        },
+        {
+            "title": "Rendit Array-n",
+            "exercise": "Përdorni Array.Sort() në një array {2, 1} dhe printoni elementin e parë.",
+            "expectedOutput": "1",
+            "solution": "int[] nr = {2, 1};\nArray.Sort(nr);\nConsole.WriteLine(nr[0]);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Array.Sort"]
+        }
+    ]
+}

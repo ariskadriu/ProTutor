@@ -1,0 +1,48 @@
+{
+    "id": "cs_files_en",
+    "title": "C# File Handling",
+    "description": "The System.IO namespace has various classes that are used for performing operations with files and folders.",
+    "example": "using System.IO;\nstring text = \"Hello\";\nFile.WriteAllText(\"filename.txt\", text);",
+    "challenges": [
+        {
+            "title": "Write Text",
+            "exercise": "Use File.WriteAllText(\"test.txt\", \"Hi\"). Print 'Written'.",
+            "expectedOutput": "Written",
+            "solution": "using System.IO;\nFile.WriteAllText(\"test.txt\", \"Hi\");\nConsole.WriteLine(\"Written\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["File.WriteAllText"]
+        },
+        {
+            "title": "Read Text",
+            "exercise": "Print 'Hi' to simulate reading 'test.txt'.",
+            "expectedOutput": "Hi",
+            "solution": "Console.WriteLine(\"Hi\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Check Existence",
+            "exercise": "Check if 'test.txt' exists using File.Exists(). Print the result.",
+            "expectedOutput": "True",
+            "solution": "using System.IO;\nConsole.WriteLine(File.Exists(\"test.txt\"));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["File.Exists"]
+        },
+        {
+            "title": "Append Text",
+            "exercise": "Use File.AppendAllText(\"test.txt\", \" More\"). Print 'Appended'.",
+            "expectedOutput": "Appended",
+            "solution": "using System.IO;\nFile.AppendAllText(\"test.txt\", \" More\");\nConsole.WriteLine(\"Appended\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["File.AppendAllText"]
+        },
+        {
+            "title": "Delete File",
+            "exercise": "Delete 'test.txt' using File.Delete(). Print 'Deleted'.",
+            "expectedOutput": "Deleted",
+            "solution": "using System.IO;\nFile.Delete(\"test.txt\");\nConsole.WriteLine(\"Deleted\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["File.Delete"]
+        }
+    ]
+}

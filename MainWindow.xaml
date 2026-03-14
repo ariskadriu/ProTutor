@@ -1,0 +1,132 @@
+<Window x:Class="ProgrammingTutor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        xmlns:local="clr-namespace:ProgrammingTutor"
+        mc:Ignorable="mc"
+        Title="Programming Tutor IDE" Height="750" Width="1200"
+        Background="{StaticResource BackgroundBrush}"
+        Foreground="{StaticResource TextBrush}">
+    
+    <DockPanel>
+        <!-- Custom Top Bar / Menu -->
+        <Border DockPanel.Dock="Top" Background="#151517" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
+            <DockPanel Height="50" Margin="15,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Source="/Assets/app_logo.png" Height="30" Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality"/>
+                    <Menu Background="Transparent" BorderThickness="0">
+                        <MenuItem x:Name="FileMenu" Header="FILE" Foreground="{StaticResource MutedTextBrush}" Margin="5,0">
+                            <MenuItem x:Name="ExitItem" Header="Exit" Click="ExitItem_Click" Background="Transparent" BorderThickness="0"/>
+                        </MenuItem>
+                        <MenuItem x:Name="LearnMenu" Header="LEARN" Click="LearnMenu_Click" Foreground="{StaticResource MutedTextBrush}" Margin="5,0"/>
+                        <MenuItem x:Name="SettingsMenu" Header="SETTINGS" Click="SettingsMenu_Click" Foreground="{StaticResource MutedTextBrush}" Margin="5,0"/>
+                    </Menu>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Button Click="Profile_Click" Style="{StaticResource ModernButton}" Padding="10,5" Margin="0,0,10,0" Background="Transparent" BorderThickness="0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="UserText" Text="Username" VerticalAlignment="Center" Foreground="{StaticResource MutedTextBrush}" Margin="0,0,10,0"/>
+                            <Ellipse Width="24" Height="24" Fill="{DynamicResource AccentBrush}"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Content="▶ RUN" Click="Run_Click" Style="{StaticResource PrimaryButton}" Padding="15,5" FontSize="12"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- Main Content Grid -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/> <!-- Sidebar -->
+                <ColumnDefinition Width="*"/>   <!-- Editor -->
+                <ColumnDefinition Width="350"/> <!-- Lesson Info -->
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="200"/> <!-- Terminal -->
+            </Grid.RowDefinitions>
+
+            <!-- Sidebar: Lesson Navigation -->
+            <Border Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource GlassPanel}" Margin="10" BorderThickness="0,0,1,0">
+                <DockPanel Margin="15">
+                    <TextBlock x:Name="SidebarHeader" Text="MY PROGRESS" Foreground="White" FontWeight="Bold" Margin="0,0,0,15" DockPanel.Dock="Top"/>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="Transparent" BorderThickness="0">
+                        <TreeView x:Name="LessonTreeView" Background="Transparent" Foreground="{StaticResource TextBrush}" BorderThickness="0" 
+                                  SelectedItemChanged="LessonTreeView_SelectedItemChanged">
+                            <TreeView.ItemContainerStyle>
+                                <Style TargetType="TreeViewItem">
+                                    <Setter Property="Padding" Value="5"/>
+                                    <Setter Property="Margin" Value="0,2"/>
+                                </Style>
+                            </TreeView.ItemContainerStyle>
+                        </TreeView>
+                    </ScrollViewer>
+                </DockPanel>
+            </Border>
+
+            <!-- Editor Section -->
+            <Border Grid.Column="1" Grid.Row="0" Margin="10,10,10,5" Style="{StaticResource GlassPanel}" Background="#1E1E1E">
+                <avalonEdit:TextEditor x:Name="Editor" 
+                                       FontFamily="Consolas" 
+                                       FontSize="13pt"
+                                       Foreground="#D4D4D4"
+                                       ShowLineNumbers="True"
+                                       Background="Transparent">
+                </avalonEdit:TextEditor>
+            </Border>
+
+            <!-- Terminal Section -->
+            <Border Grid.Column="1" Grid.Row="1" Margin="10,5,10,10" Style="{StaticResource GlassPanel}" Background="#111112">
+                <DockPanel>
+                    <Border DockPanel.Dock="Top" Background="#1A1A1C" Padding="15,5">
+                        <TextBlock Text="TERMINAL OUTPUT" Foreground="{StaticResource MutedTextBrush}" FontSize="10" FontWeight="Bold"/>
+                    </Border>
+                    <TextBox x:Name="OutputTextBox" 
+                             IsReadOnly="True" 
+                             Background="Transparent" 
+                             Foreground="#D4D4D4" 
+                             BorderThickness="0" 
+                             FontFamily="Consolas" 
+                             TextWrapping="Wrap" 
+                             VerticalScrollBarVisibility="Auto"
+                             Padding="15"/>
+                </DockPanel>
+            </Border>
+
+            <!-- Right Panel: Lesson Curriculum -->
+            <Border Grid.Column="2" Grid.RowSpan="2" Style="{StaticResource GlassPanel}" Margin="10" Background="{StaticResource SurfaceBrush}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="20">
+                        <Border x:Name="LangBadge" CornerRadius="4" Background="{DynamicResource AccentBrush}" Padding="6,2" HorizontalAlignment="Left" Margin="0,0,0,10">
+                            <TextBlock x:Name="LangLabel" Text="PYTHON" Foreground="White" FontSize="10" FontWeight="Bold"/>
+                        </Border>
+                        
+                        <TextBlock x:Name="LessonTitleText" Text="Welcome!" FontSize="22" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                        
+                        <TextBlock x:Name="LessonDescriptionText" Text="Please select a lesson to start learning." Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" LineHeight="20" Margin="0,0,0,25"/>
+                        
+                        <Border Height="1" Background="{StaticResource BorderBrush}" Margin="0,0,0,25"/>
+
+                        <TextBlock x:Name="ChallengeHeader" Text="CHALLENGE" Foreground="{DynamicResource AccentBrush}" FontWeight="Bold" FontSize="12" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="ExerciseText" Text="Ready to test your skills?" Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" Margin="0,0,0,20"/>
+                        
+                        <Grid Margin="0,0,0,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="CheckAnswerButton" Grid.Column="0" Content="SUBMIT CHALLENGE" Click="CheckAnswer_Click" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch" Margin="0,0,5,0"/>
+                            <Button x:Name="AiHintButton" Grid.Column="1" Content="💡 HINT" Click="AiHint_Click" Style="{StaticResource ModernButton}" Background="#2A2A40" Foreground="#A8A8FF" BorderThickness="0" Padding="15,10" ToolTip="Click multiple times for progressive hints!"/>
+                        </Grid>
+                        
+                        <TextBlock x:Name="ProgressStats" Text="Lesson 0 of 0 completed" Foreground="{StaticResource MutedTextBrush}" Margin="0,30,0,0" FontSize="11" HorizontalAlignment="Center"/>
+                        <TextBlock Text="© Aris Kadriu" Foreground="{StaticResource BorderBrush}" HorizontalAlignment="Center" Margin="0,10,0,0" FontSize="10"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Window>

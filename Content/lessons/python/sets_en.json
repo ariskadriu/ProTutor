@@ -1,0 +1,48 @@
+{
+    "id": "py_sets_en",
+    "title": "Python Sets",
+    "description": "Sets are used to store multiple items in a single variable. A set is a collection which is unordered, unchangeable, and unindexed.",
+    "example": "myset = {\"apple\", \"banana\", \"cherry\"}\nprint(myset)",
+    "challenges": [
+        {
+            "title": "Create Set",
+            "exercise": "Create a set 'fruits' with 'apple', 'banana'. Print it.",
+            "expectedOutput": "{'apple', 'banana'}",
+            "solution": "fruits = {\"apple\", \"banana\"}\nprint(fruits)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["{", "}", "set"]
+        },
+        {
+            "title": "Add Item",
+            "exercise": "Add 'orange' to the 'fruits' set using add(). Print set.",
+            "expectedOutput": "{'apple', 'banana', 'orange'}",
+            "solution": "fruits = {\"apple\", \"banana\"}\nfruits.add(\"orange\")\nprint(fruits)",
+            "difficulty": "Easy",
+            "requiredKeywords": [".add("]
+        },
+        {
+            "title": "Update Set",
+            "exercise": "Add multiple items ['kiwi', 'mango'] to 'fruits' using update().",
+            "expectedOutput": "{'apple', 'banana', 'orange', 'kiwi', 'mango'}",
+            "solution": "fruits = {\"apple\", \"banana\", \"orange\"}\nfruits.update([\"kiwi\", \"mango\"])\nprint(fruits)",
+            "difficulty": "Medium",
+            "requiredKeywords": [".update("]
+        },
+        {
+            "title": "Remove Item",
+            "exercise": "Remove 'banana' from 'fruits' using discard().",
+            "expectedOutput": "{'apple', 'orange', 'kiwi', 'mango'}",
+            "solution": "fruits = {\"apple\", \"banana\", \"orange\", \"kiwi\", \"mango\"}\nfruits.discard(\"banana\")\nprint(fruits)",
+            "difficulty": "Hard",
+            "requiredKeywords": [".discard("]
+        },
+        {
+            "title": "Set Intersection",
+            "exercise": "Find the common items between {1, 2} and {2, 3} using intersection().",
+            "expectedOutput": "{2}",
+            "solution": "x = {1, 2}\ny = {2, 3}\nz = x.intersection(y)\nprint(z)",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".intersection("]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "cs_methods_en",
+    "title": "C# Methods",
+    "description": "A method is a block of code which only runs when it is called.",
+    "example": "static void MyMethod()\n{\n  Console.WriteLine(\"I just got executed!\");\n}",
+    "challenges": [
+        {
+            "title": "Create Method",
+            "exercise": "Define a static method named 'MyMethod' that prints 'Hi'.",
+            "expectedOutput": "",
+            "solution": "static void MyMethod()\n{\n  Console.WriteLine(\"Hi\");\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["static void", "MyMethod"]
+        },
+        {
+            "title": "Call Method",
+            "exercise": "Define 'MyMethod' to print 'Hi' and call it in Main.",
+            "expectedOutput": "Hi",
+            "solution": "static void MyMethod()\n{\n  Console.WriteLine(\"Hi\");\n}\n\nstatic void Main(string[] args)\n{\n  MyMethod();\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["MyMethod();"]
+        },
+        {
+            "title": "Parameters",
+            "exercise": "Create a method 'Greet' that takes string 'name' and prints 'Hello ' + name. Call with 'Aris'.",
+            "expectedOutput": "Hello Aris",
+            "solution": "static void Greet(string name)\n{\n  Console.WriteLine(\"Hello \" + name);\n}\n\nGreet(\"Aris\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(string name)"]
+        },
+        {
+            "title": "Return Value",
+            "exercise": "Create a method 'Add' that returns int x + 10. Print Add(5).",
+            "expectedOutput": "15",
+            "solution": "static int Add(int x)\n{\n  return x + 10;\n}\n\nConsole.WriteLine(Add(5));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["return", "int Add"]
+        },
+        {
+            "title": "Method Overloading",
+            "exercise": "Print 'Method Overloading' to demonstrate you understand that methods can have the same name with different parameters.",
+            "expectedOutput": "Method Overloading",
+            "solution": "Console.WriteLine(\"Method Overloading\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["Method Overloading"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "py_bool_sq",
+    "title": "Boolean-ët në Python",
+    "description": "Boolean-ët përfaqësojnë një nga dy vlerat: True ose False.",
+    "example": "print(10 > 9)\nprint(10 == 9)",
+    "challenges": [
+        {
+            "title": "Rezultati Boolean",
+            "exercise": "Printoni rezultatin e 10 > 9.",
+            "expectedOutput": "True",
+            "solution": "print(10 > 9)",
+            "difficulty": "Easy",
+            "requiredKeywords": [">"]
+        },
+        {
+            "title": "Krahasimi i Barabartë",
+            "exercise": "Printoni rezultatin e 10 == 9.",
+            "expectedOutput": "False",
+            "solution": "print(10 == 9)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["=="]
+        },
+        {
+            "title": "Funksioni bool()",
+            "exercise": "Printoni vlerën boolean të stringut 'Hello' duke përdorur bool().",
+            "expectedOutput": "True",
+            "solution": "print(bool(\"Hello\"))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["bool("]
+        },
+        {
+            "title": "bool(0)",
+            "exercise": "Printoni vlerën boolean të numrit 0 duke përdorur bool().",
+            "expectedOutput": "False",
+            "solution": "print(bool(0))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["bool(0)"]
+        },
+        {
+            "title": "AND Logjik",
+            "exercise": "Printoni (True and False).",
+            "expectedOutput": "False",
+            "solution": "print(True and False)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["and"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "cs_async_await_en",
+    "title": "C# Async/Await",
+    "description": "Async and Await are used to handle long-running operations without blocking the main thread.",
+    "example": "public async Task<string> GetDataAsync() { ... }",
+    "challenges": [
+        {
+            "title": "Task Keyword",
+            "exercise": "Write a method signature for 'DoWorkAsync' that returns a Task of string.",
+            "expectedOutput": "public async Task<string> DoWorkAsync()",
+            "solution": "public async Task<string> DoWorkAsync() { return \"Done\"; }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["async", "Task<string>"]
+        },
+        {
+            "title": "Awaiting a Task",
+            "exercise": "If you have a Task<int> named 'task', how do you wait for its result? Print the result of awaiting 'task'.",
+            "expectedOutput": "int result = await task;",
+            "solution": "int result = await task;\nConsole.WriteLine(result);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["await"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "py_lists_sq",
+    "title": "Listat në Python",
+    "description": "Listat përdoren për të ruajtur disa artikuj në një variabël të vetëm.",
+    "example": "kjo_liste = [\"mollë\", \"banane\", \"qershi\"]\nprint(kjo_liste)",
+    "challenges": [
+        {
+            "title": "Krijo Listë",
+            "exercise": "Krijoni një listë 'fruta' me 'mollë', 'banane', 'qershi'. Printojeni.",
+            "expectedOutput": "['mollë', 'banane', 'qershi']",
+            "solution": "fruta = [\"mollë\", \"banane\", \"qershi\"]\nprint(fruta)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[", "]", "print"]
+        },
+        {
+            "title": "Akseso Artikullin",
+            "exercise": "Printoni artikullin e dytë në listën frutta.",
+            "expectedOutput": "banane",
+            "solution": "fruta = [\"mollë\", \"banane\", \"qershi\"]\nprint(fruta[1])",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[1]"]
+        },
+        {
+            "title": "Ndrysho Artikullin",
+            "exercise": "Ndryshoni 'mollë' në 'kiwi' dhe printoni listën.",
+            "expectedOutput": "['kiwi', 'banane', 'qershi']",
+            "solution": "fruta = [\"mollë\", \"banane\", \"qershi\"]\nfruta[0] = \"kiwi\"\nprint(fruta)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0] =", "print"]
+        },
+        {
+            "title": "Gjatësia e Listës",
+            "exercise": "Printoni numrin e artikujve në listë duke përdorur len().",
+            "expectedOutput": "3",
+            "solution": "fruta = [\"mollë\", \"banane\", \"qershi\"]\nprint(len(fruta))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["len("]
+        },
+        {
+            "title": "Hiq Artikullin",
+            "exercise": "Hiqni 'banane' duke përdorur remove() dhe printoni listën.",
+            "expectedOutput": "['mollë', 'qershi']",
+            "solution": "fruta = [\"mollë\", \"banane\", \"qershi\"]\nfruta.remove(\"banane\")\nprint(fruta)",
+            "difficulty": "Hard",
+            "requiredKeywords": [".remove("]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "Id": "cs_inheritance_sq",
+    "Title": "Trashëgimia C#",
+    "Description": "Në C#, është e mundur të trashëgosh klasa.",
+    "Example": "Car myCar = new Car();\nmyCar.honk();",
+    "Challenges": [
+        {
+            "Title": "Klasa bazë",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një klasë `Vehicle` me metodën `honk()`.",
+            "RequiredKeywords": [
+                "class Vehicle",
+                "void honk()",
+                "Console.WriteLine"
+            ]
+        },
+        {
+            "Title": "Klasa vajzë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo klasën `Car` që trashëgon nga `Vehicle`.",
+            "RequiredKeywords": [
+                "class Car : Vehicle"
+            ]
+        },
+        {
+            "Title": "Shto fushë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto fushën `modelName` te klasa `Car`.",
+            "RequiredKeywords": [
+                "string modelName"
+            ]
+        },
+        {
+            "Title": "Krijo objekt",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo një objekt të `Car`.",
+            "RequiredKeywords": [
+                "Car myCar = new Car();"
+            ]
+        },
+        {
+            "Title": "Thirr metodë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Thirr metodën `honk()` te objekti.",
+            "RequiredKeywords": [
+                "myCar.honk();"
+            ]
+        }
+    ]
+}

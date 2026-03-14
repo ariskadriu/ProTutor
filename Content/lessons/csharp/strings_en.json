@@ -1,0 +1,48 @@
+{
+    "id": "cs_strings_en",
+    "title": "C# Strings",
+    "description": "Strings are used for storing text. A string variable contains a collection of characters surrounded by double quotes.",
+    "example": "string greeting = \"Hello\";\nConsole.WriteLine(greeting);",
+    "challenges": [
+        {
+            "title": "String Length",
+            "exercise": "Print the length of the string 'Antigravity' using the Length property.",
+            "expectedOutput": "11",
+            "solution": "string txt = \"Antigravity\";\nConsole.WriteLine(txt.Length);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Length", "Console.WriteLine"]
+        },
+        {
+            "title": "Upper Case",
+            "exercise": "Print the string 'hello' in all upper case letters.",
+            "expectedOutput": "HELLO",
+            "solution": "string txt = \"hello\";\nConsole.WriteLine(txt.ToUpper());",
+            "difficulty": "Medium",
+            "requiredKeywords": ["ToUpper"]
+        },
+        {
+            "title": "Concatenation",
+            "exercise": "Concatenate 'First' and 'Last' using string.Concat() and print it.",
+            "expectedOutput": "FirstLast",
+            "solution": "string s1 = \"First\";\nstring s2 = \"Last\";\nConsole.WriteLine(string.Concat(s1, s2));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["string.Concat"]
+        },
+        {
+            "title": "Interpolation",
+            "exercise": "Use string interpolation to print 'My name is John' using a variable name='John'.",
+            "expectedOutput": "My name is John",
+            "solution": "string name = \"John\";\nConsole.WriteLine($\"My name is {name}\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["$\"", "{", "}"]
+        },
+        {
+            "title": "Index Access",
+            "exercise": "Print the first character of 'C# Master'.",
+            "expectedOutput": "C",
+            "solution": "string myString = \"C# Master\";\nConsole.WriteLine(myString[0]);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["[0]"]
+        }
+    ]
+}

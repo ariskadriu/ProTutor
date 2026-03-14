@@ -1,0 +1,48 @@
+{
+    "id": "cs_z_master_sq",
+    "title": "Projekti Final C#",
+    "description": "Urime për përfundimin e rrugëtimit në C#! Është koha për të aplikuar gjithçka keni mësuar. Në këtë projekt final, ju do të ndërtoni logjikën për aplikacione të vogla.",
+    "example": "// Përdorni metoda, array-e, klasa, dhe gjithçka tjetër!\nclass Kalkulatori {\n  public static int Mbledh(int a, int b) { return a + b; }\n}\nConsole.WriteLine(Kalkulatori.Mbledh(5,5));",
+    "challenges": [
+        {
+            "title": "Metoda Kalkulator",
+            "exercise": "Metoda 'static double Calc(double a, double b, char op)'. Trajtoni '+', '-', '*', '/'. Ktheni 0 nqs op i pavlefshëm. Thirrni Console.WriteLine(Calc(10, 2, '/')).",
+            "expectedOutput": "5",
+            "solution": "static double Calc(double a, double b, char op) {\n  if(op=='+') return a+b;\n  if(op=='-') return a-b;\n  if(op=='*') return a*b;\n  if(op=='/') return a/b;\n  return 0;\n}\nConsole.WriteLine(Calc(10, 2, '/'));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["static double Calc", "op=='+'", "return a/b;"]
+        },
+        {
+            "title": "Menaxheri To-Do (Shto)",
+            "exercise": "Klasa 'ToDo' me 'List<string> detyrat = new List<string>();'. Metoda 'public void Shto(string d)'. Shtoni 'Studim', 'Gjumë'. Printoni detyrat[0].",
+            "expectedOutput": "Studim",
+            "solution": "using System.Collections.Generic;\nclass ToDo {\n  public List<string> detyrat = new List<string>();\n  public void Shto(string d) { detyrat.Add(d); }\n}\nstatic void Main() {\n  ToDo t = new ToDo();\n  t.Shto(\"Studim\");\n  t.Shto(\"Gjumë\");\n  Console.WriteLine(t.detyrat[0]);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["class ToDo", "List<string>", ".Add("]
+        },
+        {
+            "title": "Menaxheri To-Do (Përfundo)",
+            "exercise": "Shtoni 'public void Perfundo(string d)' në ToDo që thërret detyrat.Remove(d). Supozojmë detyrat ka 'Studim'. Thërrisni Perfundo('Studim'). Printoni detyrat.Count.",
+            "expectedOutput": "0",
+            "solution": "using System.Collections.Generic;\nclass ToDo {\n  public List<string> detyrat = new List<string>() { \"Studim\" };\n  public void Perfundo(string d) { detyrat.Remove(d); }\n}\nstatic void Main() {\n  ToDo t = new ToDo();\n  t.Perfundo(\"Studim\");\n  Console.WriteLine(t.detyrat.Count);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public void Perfundo", ".Remove("]
+        },
+        {
+            "title": "Analizues Të Dhënash",
+            "exercise": "Nga int[] piket = {80, 95, 70, 100}. Përdorni LINQ (.Max(), .Min(), .Average()) për të printuar max, min dhe mesataren në rreshta të ndarë.",
+            "expectedOutput": "100\n70\n86.25",
+            "solution": "using System.Linq;\nint[] piket = {80, 95, 70, 100};\nConsole.WriteLine(piket.Max());\nConsole.WriteLine(piket.Min());\nConsole.WriteLine(piket.Average());",
+            "difficulty": "Hard",
+            "requiredKeywords": [".Max()", ".Min()", ".Average()"]
+        },
+        {
+            "title": "Zhvillues Master",
+            "exercise": "Ju keni zotëruar C#! Shkruani metodën statike 'Pershendet(string emer)' që kthen $\"Mirësevjen, {emer}!\". Printo Pershendet(\"Aris\").",
+            "expectedOutput": "Mirësevjen, Aris!",
+            "solution": "static string Pershendet(string emer) {\n  return $\"Mirësevjen, {emer}!\";\n}\nConsole.WriteLine(Pershendet(\"Aris\"));",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["static string Pershendet", "Aris"]
+        }
+    ]
+}

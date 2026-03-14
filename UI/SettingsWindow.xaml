@@ -1,0 +1,62 @@
+<Window x:Class="ProgrammingTutor.UI.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="550" Width="400"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundBrush}"
+        Foreground="{StaticResource TextBrush}"
+        ResizeMode="NoResize">
+    
+    <Border Padding="20">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10">
+                <TextBlock x:Name="SettingsHeader" Text="SETTINGS" FontSize="20" FontWeight="Bold" Foreground="White" Margin="0,0,0,30" HorizontalAlignment="Center"/>
+                
+                <TextBlock x:Name="LangLabel" Text="App Language" Foreground="{StaticResource MutedTextBrush}" Margin="0,0,0,5"/>
+                <ComboBox x:Name="LanguageCombo" HorizontalAlignment="Stretch" Margin="0,0,0,15">
+                    <ComboBoxItem Content="English" Tag="en"/>
+                    <ComboBoxItem Content="Albanian (Shqip)" Tag="sq"/>
+                </ComboBox>
+
+                <TextBlock x:Name="TrackLabel" Text="Learning Track" Foreground="{StaticResource MutedTextBrush}" Margin="0,0,0,5"/>
+                <ComboBox x:Name="TrackCombo" HorizontalAlignment="Stretch" Margin="0,0,0,15">
+                    <ComboBoxItem Content="Python Path" Tag="py"/>
+                    <ComboBoxItem Content="C# (.NET) Path" Tag="cs"/>
+                </ComboBox>
+
+                <TextBlock x:Name="ThemeLabel" Text="App Theme Color" Foreground="{StaticResource MutedTextBrush}" Margin="0,0,0,5"/>
+                <ComboBox x:Name="ThemeCombo" HorizontalAlignment="Stretch" Margin="0,0,0,15">
+                    <ComboBoxItem Content="Ocean Blue" Tag="#007ACC"/>
+                    <ComboBoxItem Content="Emerald Green" Tag="#178600"/>
+                    <ComboBoxItem Content="Ruby Red" Tag="#E51400"/>
+                    <ComboBoxItem Content="Royal Gold" Tag="#D4AF37"/>
+                    <ComboBoxItem Content="Amethyst Purple" Tag="#9B59B6"/>
+                </ComboBox>
+
+                <!-- Admin Area -->
+                <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" Padding="10" Margin="0,5,0,15" CornerRadius="4">
+                    <StackPanel>
+                        <TextBlock x:Name="AdminHeader" Text="ADMIN PLUGINS (Requires PIN)" Foreground="#D4AF37" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <PasswordBox x:Name="PinBox" Grid.Column="0" Background="{StaticResource SurfaceBrush}" Foreground="White" BorderThickness="0" Padding="5" Margin="0,0,10,0" ToolTip="Enter Admin PIN to unlock plugins"/>
+                            <Button x:Name="AdminActionBtn" Grid.Column="1" Content="UNLOCK" Click="AdminAction_Click" Style="{StaticResource ModernButton}" Background="#2A2A40" Foreground="#A8A8FF" BorderThickness="0" Padding="15,5"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
+                    <Button x:Name="PrivacyBtn" Content="Privacy Policy" Click="Legal_Click" Tag="privacy" Style="{StaticResource ModernButton}" FontSize="11" Background="Transparent" BorderThickness="0" Foreground="{StaticResource MutedTextBrush}"/>
+                    <TextBlock Text="|" Foreground="{StaticResource BorderBrush}" VerticalAlignment="Center" Margin="5,0"/>
+                    <Button x:Name="TermsBtn" Content="Terms" Click="Legal_Click" Tag="terms" Style="{StaticResource ModernButton}" FontSize="11" Background="Transparent" BorderThickness="0" Foreground="{StaticResource MutedTextBrush}"/>
+                </StackPanel>
+
+                <Button x:Name="SaveButton" Content="SAVE &amp; RELOAD" Click="Save_Click" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</Window>
+

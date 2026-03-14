@@ -1,0 +1,48 @@
+{
+    "id": "cs_arrays_en",
+    "title": "C# Arrays",
+    "description": "Arrays are used to store multiple values in a single variable.",
+    "example": "string[] cars = {\"Volvo\", \"BMW\", \"Ford\"};",
+    "challenges": [
+        {
+            "title": "Create Array",
+            "exercise": "Create an array of strings named 'cars' with 'Volvo', 'BMW'. Print cars[0].",
+            "expectedOutput": "Volvo",
+            "solution": "string[] cars = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(cars[0]);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["string[]", "{", "}"]
+        },
+        {
+            "title": "Access Element",
+            "exercise": "Print the second element of 'cars' (Volvo, BMW).",
+            "expectedOutput": "BMW",
+            "solution": "string[] cars = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(cars[1]);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[1]"]
+        },
+        {
+            "title": "Array Length",
+            "exercise": "Print the number of elements in the cars array using Length.",
+            "expectedOutput": "2",
+            "solution": "string[] cars = {\"Volvo\", \"BMW\"};\nConsole.WriteLine(cars.Length);",
+            "difficulty": "Medium",
+            "requiredKeywords": [".Length"]
+        },
+        {
+            "title": "Change Value",
+            "exercise": "Change 'Volvo' to 'Opel' and print the first element.",
+            "expectedOutput": "Opel",
+            "solution": "string[] cars = {\"Volvo\", \"BMW\"};\ncars[0] = \"Opel\";\nConsole.WriteLine(cars[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0] ="]
+        },
+        {
+            "title": "Sort Array",
+            "exercise": "Use Array.Sort() on an array {2, 1} and print the first element.",
+            "expectedOutput": "1",
+            "solution": "int[] nums = {2, 1};\nArray.Sort(nums);\nConsole.WriteLine(nums[0]);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Array.Sort"]
+        }
+    ]
+}

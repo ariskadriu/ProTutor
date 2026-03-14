@@ -1,0 +1,48 @@
+{
+    "id": "cs_exceptions_en",
+    "title": "C# Exceptions",
+    "description": "When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.",
+    "example": "try\n{\n  int[] myNumbers = {1, 2, 3};\n  Console.WriteLine(myNumbers[10]);\n}\ncatch (Exception e)\n{\n  Console.WriteLine(e.Message);\n}",
+    "challenges": [
+        {
+            "title": "Basic Try/Catch",
+            "exercise": "Write a try/catch block. In try, print an out-of-bounds array element. In catch, print 'Error'.",
+            "expectedOutput": "Error",
+            "solution": "try { int[] n = {1}; Console.WriteLine(n[5]); } catch { Console.WriteLine(\"Error\"); }",
+            "difficulty": "Easy",
+            "requiredKeywords": ["try", "catch"]
+        },
+        {
+            "title": "Division by Zero",
+            "exercise": "Catch a DivideByZeroException specifically and print 'Cannot divide by zero'.",
+            "expectedOutput": "Cannot divide by zero",
+            "solution": "try { int x = 0; int y = 5 / x; } catch (DivideByZeroException) { Console.WriteLine(\"Cannot divide by zero\"); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["catch (DivideByZeroException)"]
+        },
+        {
+            "title": "Finally Block",
+            "exercise": "Add a finally block that prints 'Done' after a try/catch.",
+            "expectedOutput": "Done",
+            "solution": "try { } catch { } finally { Console.WriteLine(\"Done\"); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["finally"]
+        },
+        {
+            "title": "Throw Keyword",
+            "exercise": "Create a method that throws an ArithmeticException if age < 18. (Set age=15). Catch and print 'Underage'.",
+            "expectedOutput": "Underage",
+            "solution": "int age = 15;\ntry {\n  if (age < 18) throw new ArithmeticException();\n} catch (ArithmeticException) {\n  Console.WriteLine(\"Underage\");\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["throw new"]
+        },
+        {
+            "title": "Multiple Catch",
+            "exercise": "Print 'Handled' to show you understand that multiple catch blocks can handle different exception types.",
+            "expectedOutput": "Handled",
+            "solution": "Console.WriteLine(\"Handled\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["Handled"]
+        }
+    ]
+}

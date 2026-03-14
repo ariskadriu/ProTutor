@@ -1,0 +1,49 @@
+{
+    "Id": "cs_interfaces_sq",
+    "Title": "Ndërfaqet (Interfaces)",
+    "Description": "Klasa komplet abstrakte që detyrojnë zbatimin e metodave.",
+    "Example": "Pig p = new Pig();\np.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Krijo Interface",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një ndërfaqe `IAnimal`.",
+            "RequiredKeywords": [
+                "interface IAnimal"
+            ]
+        },
+        {
+            "Title": "Shto metodë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto metodën `void animalSound();`.",
+            "RequiredKeywords": [
+                "void animalSound();"
+            ]
+        },
+        {
+            "Title": "Zbato",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo një klasë `Pig` që zbaton `IAnimal`.",
+            "RequiredKeywords": [
+                "class Pig : IAnimal"
+            ]
+        },
+        {
+            "Title": "Trupi i metodës",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shkruaj trupin `public void animalSound()` me Console.WriteLine.",
+            "RequiredKeywords": [
+                "public void animalSound()",
+                "Console.WriteLine"
+            ]
+        },
+        {
+            "Title": "Shumë Ndërfaqe",
+            "Difficulty": "Mesatar",
+            "Exercise": "Zbato dhe ndërfaqen `IPrintable` me presje.",
+            "RequiredKeywords": [
+                "class Pig : IAnimal, IPrintable"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "Id": "cs_properties_sq",
+    "Title": "Vetitë C# (Get/Set)",
+    "Description": "Vetitë kombinojnë fushat dhe metodat për të mbrojtur të dhënat.",
+    "Example": "Person p = new Person();\np.Name = \"Aris\";\nConsole.WriteLine(p.Name);",
+    "Challenges": [
+        {
+            "Title": "Fushë private",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një klasë `Person` me fushë private `name`.",
+            "RequiredKeywords": [
+                "class Person",
+                "private string name;"
+            ]
+        },
+        {
+            "Title": "Veti publike",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto një veti publike `Name`.",
+            "RequiredKeywords": [
+                "public string Name",
+                "{",
+                "}"
+            ]
+        },
+        {
+            "Title": "Aksesor get",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto `get` për të kthyer `name`.",
+            "RequiredKeywords": [
+                "get",
+                "return name;"
+            ]
+        },
+        {
+            "Title": "Aksesor set",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto `set` për t'i dhënë vlerë `name = value;`.",
+            "RequiredKeywords": [
+                "set",
+                "name = value;"
+            ]
+        },
+        {
+            "Title": "Auto-Veti",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo auto-vetinë `public string Age { get; set; }`.",
+            "RequiredKeywords": [
+                "public string Age",
+                "get;",
+                "set;"
+            ]
+        }
+    ]
+}

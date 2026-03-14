@@ -1,0 +1,56 @@
+{
+    "Id": "py_regex_sq",
+    "Title": "Shprehjet e Rregullta (RegEx)",
+    "Description": "RegEx është një sekuencë karakteresh që formon një model kërkimi.",
+    "Example": "import re\nprint(re.search('^The', 'The rain'))",
+    "Challenges": [
+        {
+            "Title": "Importo re",
+            "Difficulty": "Fillestar",
+            "Exercise": "Importo modulin `re` dhe printo 'gati'.",
+            "RequiredKeywords": [
+                "import re",
+                "print",
+                "gati"
+            ]
+        },
+        {
+            "Title": "Kërko",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `re.search()` për të parë nëse 'rain' është në 'The rain in Spain'.",
+            "RequiredKeywords": [
+                "search",
+                "rain",
+                "The rain in Spain"
+            ]
+        },
+        {
+            "Title": "Gjej të gjitha",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `re.findall()` për të gjetur 'ai' në tekst.",
+            "RequiredKeywords": [
+                "findall",
+                "ai"
+            ]
+        },
+        {
+            "Title": "Ndaj",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `re.split()` për të ndarë tekstin në çdo hapësirë '\\s'.",
+            "RequiredKeywords": [
+                "split",
+                "\\s"
+            ]
+        },
+        {
+            "Title": "Zëvendëso",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `re.sub()` për të zëvendësuar hapësirat me numrin '9'.",
+            "RequiredKeywords": [
+                "sub",
+                "\\s",
+                "9"
+            ]
+        }
+    ]
+}

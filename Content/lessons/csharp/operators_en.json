@@ -1,0 +1,48 @@
+{
+    "id": "cs_operators_en",
+    "title": "C# Operators",
+    "description": "Operators are used to perform operations on variables and values.",
+    "example": "int x = 100 + 50;\nConsole.WriteLine(x);",
+    "challenges": [
+        {
+            "title": "Addition",
+            "exercise": "Print the result of 10 + 5.",
+            "expectedOutput": "15",
+            "solution": "Console.WriteLine(10 + 5);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Modulus",
+            "exercise": "Print the remainder of 10 % 3.",
+            "expectedOutput": "1",
+            "solution": "Console.WriteLine(10 % 3);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["%"]
+        },
+        {
+            "title": "Increment",
+            "exercise": "Increase the value of x=5 by 1 using ++ and print it.",
+            "expectedOutput": "6",
+            "solution": "int x = 5;\nx++;\nConsole.WriteLine(x);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["++"]
+        },
+        {
+            "title": "Assignment",
+            "exercise": "Add 5 to x=10 using the += operator and print x.",
+            "expectedOutput": "15",
+            "solution": "int x = 10;\nx += 5;\nConsole.WriteLine(x);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+="]
+        },
+        {
+            "title": "Comparison",
+            "exercise": "Print the boolean result of (10 > 5).",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 > 5);",
+            "difficulty": "Mastery",
+            "requiredKeywords": [">"]
+        }
+    ]
+}

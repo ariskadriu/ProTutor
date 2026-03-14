@@ -1,0 +1,48 @@
+{
+    "id": "py_strings_en",
+    "title": "Python Strings",
+    "description": "Strings in python are surrounded by either single quotation marks, or double quotation marks.",
+    "example": "print(\"Hello\")\nprint('Hello')",
+    "challenges": [
+        {
+            "title": "String Length",
+            "exercise": "Use the len() function to print the length of the string 'Antigravity'.",
+            "expectedOutput": "11",
+            "solution": "print(len(\"Antigravity\"))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["len", "print"]
+        },
+        {
+            "title": "String Indexing",
+            "exercise": "Print the first character of the string 'Python'.",
+            "expectedOutput": "P",
+            "solution": "txt = \"Python\"\nprint(txt[0])",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0]"]
+        },
+        {
+            "title": "String Slicing",
+            "exercise": "Print the characters from index 2 to index 5 (not included) in 'Hello World'.",
+            "expectedOutput": "llo",
+            "solution": "txt = \"Hello World\"\nprint(txt[2:5])",
+            "difficulty": "Medium",
+            "requiredKeywords": [":"]
+        },
+        {
+            "title": "String Methods",
+            "exercise": "Convert the string 'hello' to upper case and print it.",
+            "expectedOutput": "HELLO",
+            "solution": "txt = \"hello\"\nprint(txt.upper())",
+            "difficulty": "Hard",
+            "requiredKeywords": [".upper()"]
+        },
+        {
+            "title": "String Formatting",
+            "exercise": "Use an f-string to print 'My name is John and I am 36' using variables name='John' and age=36.",
+            "expectedOutput": "My name is John and I am 36",
+            "solution": "name = \"John\"\nage = 36\nprint(f\"My name is {name} and I am {age}\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["f\"", "{", "}"]
+        }
+    ]
+}

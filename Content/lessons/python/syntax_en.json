@@ -1,0 +1,49 @@
+{
+    "id": "py_syntax_en",
+    "title": "Python Syntax",
+    "description": "Python syntax can be executed by writing directly in the Command Line. It is known for its readability and use of indentation.",
+    "example": "print(\"Hello, World!\")",
+    "challenges": [
+        {
+            "title": "Basic Print",
+            "exercise": "Print the text 'Hello Python'.",
+            "expectedOutput": "Hello Python",
+            "solution": "print(\"Hello Python\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Indentation Check",
+            "exercise": "Correction needed! Fix the indentation to print 'Correct' if 5 is greater than 2.",
+            "example": "if 5 > 2:\nprint(\"Correct\")",
+            "expectedOutput": "Correct",
+            "solution": "if 5 > 2:\n  print(\"Correct\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["if", "print"]
+        },
+        {
+            "title": "Multiple Prints",
+            "exercise": "Print 'Line 1' and then 'Line 2' on separate lines.",
+            "expectedOutput": "Line 1\nLine 2",
+            "solution": "print(\"Line 1\")\nprint(\"Line 2\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Simple Logic",
+            "exercise": "Use an if statement to print 'Big' if 10 > 5 and 'Small' otherwise.",
+            "expectedOutput": "Big",
+            "solution": "if 10 > 5:\n  print(\"Big\")\nelse:\n  print(\"Small\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["if", "else"]
+        },
+        {
+            "title": "Syntax Master",
+            "exercise": "Print the result of (5 + 5) * 2.",
+            "expectedOutput": "20",
+            "solution": "print((5 + 5) * 2)",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["print", "*"]
+        }
+    ]
+}

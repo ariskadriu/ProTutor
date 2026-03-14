@@ -1,0 +1,48 @@
+{
+    "id": "cs_strings_sq",
+    "title": "Stringjet në C#",
+    "description": "Stringjet përdoren për ruajtjen e tekstit. Një variabël string përmban një mbledhje karakteresh të rrethuara nga thonjëza dyshe.",
+    "example": "string pershendetje = \"Përshëndetje\";\nConsole.WriteLine(pershendetje);",
+    "challenges": [
+        {
+            "title": "Gjatësia e Stringut",
+            "exercise": "Printoni gjatësinë e stringut 'Antigravity' duke përdorur pronën Length.",
+            "expectedOutput": "11",
+            "solution": "string txt = \"Antigravity\";\nConsole.WriteLine(txt.Length);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Length", "Console.WriteLine"]
+        },
+        {
+            "title": "Shkronja të Mëdha",
+            "exercise": "Printoni stringun 'hello' me të gjitha shkronjat të mëdha.",
+            "expectedOutput": "HELLO",
+            "solution": "string txt = \"hello\";\nConsole.WriteLine(txt.ToUpper());",
+            "difficulty": "Medium",
+            "requiredKeywords": ["ToUpper"]
+        },
+        {
+            "title": "Bashkimi (Concatenation)",
+            "exercise": "Bashkoni 'First' dhe 'Last' duke përdorur string.Concat() dhe printojeni.",
+            "expectedOutput": "FirstLast",
+            "solution": "string s1 = \"First\";\nstring s2 = \"Last\";\nConsole.WriteLine(string.Concat(s1, s2));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["string.Concat"]
+        },
+        {
+            "title": "Interpolimi",
+            "exercise": "Përdorni interpolimin e stringut për të printuar 'Emri im është John' duke përdorur një variabël name='John'.",
+            "expectedOutput": "Emri im është John",
+            "solution": "string name = \"John\";\nConsole.WriteLine($\"Emri im është {name}\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["$\"", "{", "}"]
+        },
+        {
+            "title": "Aksesi me Indeks",
+            "exercise": "Printoni karakterin e parë të 'C# Master'.",
+            "expectedOutput": "C",
+            "solution": "string myString = \"C# Master\";\nConsole.WriteLine(myString[0]);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["[0]"]
+        }
+    ]
+}

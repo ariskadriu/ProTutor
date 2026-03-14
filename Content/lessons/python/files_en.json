@@ -1,0 +1,48 @@
+{
+    "id": "py_files_en",
+    "title": "Python File Handling",
+    "description": "File handling is an important part of any application. Python has several functions for creating, reading, updating, and deleting files.",
+    "example": "f = open(\"demofile.txt\", \"r\")\nprint(f.read())",
+    "challenges": [
+        {
+            "title": "Open File",
+            "exercise": "Open 'test.txt' for reading ('r'). Print 'Opened'. (Note: Just show the command)",
+            "expectedOutput": "Opened",
+            "solution": "f = open(\"test.txt\", \"r\")\nprint(\"Opened\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["open(", "\"r\""]
+        },
+        {
+            "title": "Read Content",
+            "exercise": "Print 'Hello' to simulate reading a file that contains 'Hello'.",
+            "expectedOutput": "Hello",
+            "solution": "print(\"Hello\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Write to File",
+            "exercise": "Open 'test.txt' for appending ('a'). Print 'Appending'.",
+            "expectedOutput": "Appending",
+            "solution": "f = open(\"test.txt\", \"a\")\nprint(\"Appending\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["\"a\""]
+        },
+        {
+            "title": "Close File",
+            "exercise": "Open a file 'f' and then close it using f.close(). Print 'Closed'.",
+            "expectedOutput": "Closed",
+            "solution": "f = open(\"test.txt\", \"r\")\nf.close()\nprint(\"Closed\")",
+            "difficulty": "Hard",
+            "requiredKeywords": [".close()"]
+        },
+        {
+            "title": "With Statement",
+            "exercise": "Use 'with open('test.txt') as f:' to open a file and print 'Safe'.",
+            "expectedOutput": "Safe",
+            "solution": "with open(\"test.txt\") as f:\n  print(\"Safe\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["with open", "as f:"]
+        }
+    ]
+}

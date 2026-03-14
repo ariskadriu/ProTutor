@@ -1,0 +1,53 @@
+{
+    "Id": "cs_abstraction_en",
+    "Title": "C# Abstraction",
+    "Description": "Data abstraction hides details and shows only essential info.",
+    "Example": "Pig myPig = new Pig();\nmyPig.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Abstract class",
+            "Difficulty": "Beginner",
+            "Exercise": "Create an abstract class `Animal`.",
+            "RequiredKeywords": [
+                "abstract class Animal"
+            ]
+        },
+        {
+            "Title": "Abstract method",
+            "Difficulty": "Intermediate",
+            "Exercise": "Inside `Animal`, create an abstract method `animalSound()` (no body).",
+            "RequiredKeywords": [
+                "abstract void animalSound();"
+            ]
+        },
+        {
+            "Title": "Regular method",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a regular method `sleep()` inside `Animal` printing 'Zzz'.",
+            "RequiredKeywords": [
+                "void sleep()",
+                "Console.WriteLine",
+                "Zzz"
+            ]
+        },
+        {
+            "Title": "Inherit abstract",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create class `Pig` inheriting from `Animal` and implement `animalSound()`.",
+            "RequiredKeywords": [
+                "class Pig : Animal",
+                "override void animalSound()"
+            ]
+        },
+        {
+            "Title": "Test it",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create `Pig` object and call both methods.",
+            "RequiredKeywords": [
+                "Pig",
+                "animalSound()",
+                "sleep()"
+            ]
+        }
+    ]
+}

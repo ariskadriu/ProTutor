@@ -1,0 +1,48 @@
+{
+    "id": "py_classes_sq",
+    "title": "Klasat në Python",
+    "description": "Python është një gjuhë programimi e orientuar nga objektet. Pothuajse çdo gjë në Python është një objekt.",
+    "example": "class KlasaIme:\n  x = 5",
+    "challenges": [
+        {
+            "title": "Krijo Klasë",
+            "exercise": "Krijoni një klasë 'KlasaIme' me një pronë 'x = 5'.",
+            "expectedOutput": "",
+            "solution": "class KlasaIme:\n  x = 5",
+            "difficulty": "Easy",
+            "requiredKeywords": ["class"]
+        },
+        {
+            "title": "Krijo Objekt",
+            "exercise": "Krijoni një objekt të KlasaIme me emrin 'p1' dhe printoni p1.x.",
+            "expectedOutput": "5",
+            "solution": "class KlasaIme:\n  x = 5\n\np1 = KlasaIme()\nprint(p1.x)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["KlasaIme()"]
+        },
+        {
+            "title": "Metoda init",
+            "exercise": "Krijoni një klasë 'Person' me __init__ që merr 'emri'. Printoni Person('Aris').emri.",
+            "expectedOutput": "Aris",
+            "solution": "class Person:\n  def __init__(self, emri):\n    self.emri = emri\n\np1 = Person(\"Aris\")\nprint(p1.emri)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["__init__", "self"]
+        },
+        {
+            "title": "Metodat e Objektit",
+            "exercise": "Shtoni një metodë 'pershendet' tek Person që printon 'Hi ' + emri. Thirrni atë.",
+            "expectedOutput": "Hi Aris",
+            "solution": "class Person:\n  def __init__(self, emri):\n    self.emri = emri\n  def pershendet(self):\n    print(\"Hi \" + self.emri)\n\np1 = Person(\"Aris\")\np1.pershendet()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def pershendet(self)"]
+        },
+        {
+            "title": "Trashëgimia",
+            "exercise": "Krijoni një klasë 'Student' që trashëgon nga 'Person'. Printoni 'Trashëguar'.",
+            "expectedOutput": "Trashëguar",
+            "solution": "class Person:\n  pass\nclass Student(Person):\n  pass\n\nprint(\"Trashëguar\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["(Person)"]
+        }
+    ]
+}

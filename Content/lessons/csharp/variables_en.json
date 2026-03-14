@@ -1,0 +1,48 @@
+{
+    "id": "cs_variables_en",
+    "title": "C# Variables",
+    "description": "Variables are containers for storing data values. In C#, there are different types of variables (int, double, char, string, bool).",
+    "example": "int myNum = 15;\nstring myName = \"John\";\nConsole.WriteLine(myNum);\nConsole.WriteLine(myName);",
+    "challenges": [
+        {
+            "title": "String Variable",
+            "exercise": "Create a string variable named 'name' and assign the value 'John'. Print it.",
+            "expectedOutput": "John",
+            "solution": "string name = \"John\";\nConsole.WriteLine(name);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["string", "="]
+        },
+        {
+            "title": "Integer Variable",
+            "exercise": "Create an int variable named 'myNum' and assign 50. Print it.",
+            "expectedOutput": "50",
+            "solution": "int myNum = 50;\nConsole.WriteLine(myNum);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["int"]
+        },
+        {
+            "title": "Adding Variables",
+            "exercise": "Create x=5, y=10. Print the sum (x+y).",
+            "expectedOutput": "15",
+            "solution": "int x = 5; int y = 10;\nConsole.WriteLine(x + y);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Multiple Variables",
+            "exercise": "Declare x=5, y=6, z=50 on the same line using commas and print the sum.",
+            "expectedOutput": "61",
+            "solution": "int x = 5, y = 6, z = 50;\nConsole.WriteLine(x + y + z);",
+            "difficulty": "Hard",
+            "requiredKeywords": [","]
+        },
+        {
+            "title": "Constant Variable",
+            "exercise": "Use 'const' for a variable named 'pi' with value 3.14 (mock it with string '3.14'). Print it.",
+            "expectedOutput": "3.14",
+            "solution": "const string pi = \"3.14\";\nConsole.WriteLine(pi);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["const"]
+        }
+    ]
+}

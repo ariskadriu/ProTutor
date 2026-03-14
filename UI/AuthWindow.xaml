@@ -1,0 +1,81 @@
+<Window x:Class="ProgrammingTutor.UI.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Programming Tutor - Welcome" Height="650" Width="420"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen">
+    
+    <Border Background="{StaticResource BackgroundBrush}" CornerRadius="12" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
+        <Grid Margin="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> <!-- Header -->
+                <RowDefinition Height="Auto"/> <!-- Lang selection -->
+                <RowDefinition Height="*"/>    <!-- Content -->
+                <RowDefinition Height="Auto"/> <!-- Footer -->
+            </Grid.RowDefinitions>
+
+            <!-- Custom Title Bar -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,-20,-20,0">
+                <Button Content="✕" Click="Close_Click" Style="{StaticResource ModernButton}" Padding="10,5" BorderThickness="0" Background="Transparent"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,10,0,20">
+                <Image Source="/Assets/app_logo.png" Height="80" Margin="0,0,0,10" RenderOptions.BitmapScalingMode="HighQuality"/>
+                <TextBlock x:Name="SubtitleText" Text="Your coding journey starts here" HorizontalAlignment="Center" Foreground="{StaticResource MutedTextBrush}" Margin="0,5,0,0"/>
+            </StackPanel>
+
+            <!-- Language Selection -->
+            <StackPanel x:Name="LangSelectionPanel" Grid.Row="2" VerticalAlignment="Center">
+                <TextBlock Text="Choose Language / Zgjidh gjuhën" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <Button Content="English" Click="SetLanguage_EN" Style="{StaticResource PrimaryButton}" Margin="0,0,0,10"/>
+                <Button Content="Albanian (Shqip)" Click="SetLanguage_SQ" Style="{StaticResource ModernButton}"/>
+            </StackPanel>
+
+            <!-- Login/Register Content -->
+            <ScrollViewer x:Name="AuthScrollParent" Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed">
+                <StackPanel x:Name="AuthPanel" Margin="0,5">
+                    <TextBlock x:Name="AuthHeader" Text="LOGIN" FontSize="22" FontWeight="Bold" Foreground="White" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+                    
+                    <StackPanel x:Name="RegisterFieldsPanel" Visibility="Collapsed">
+                        <TextBlock x:Name="NameLabel" Text="Name" Foreground="{StaticResource MutedTextBrush}" Margin="5,0,0,3" FontSize="11"/>
+                        <TextBox x:Name="NameBox" Style="{StaticResource ModernTextBox}" Margin="0,0,0,8"/>
+                        
+                        <TextBlock x:Name="SurnameLabel" Text="Surname" Foreground="{StaticResource MutedTextBrush}" Margin="5,0,0,3" FontSize="11"/>
+                        <TextBox x:Name="SurnameBox" Style="{StaticResource ModernTextBox}" Margin="0,0,0,8"/>
+                    </StackPanel>
+
+                    <TextBlock x:Name="UsernameLabel" Text="Nickname" Foreground="{StaticResource MutedTextBrush}" Margin="5,0,0,3" FontSize="11"/>
+                    <TextBox x:Name="UsernameBox" Style="{StaticResource ModernTextBox}" Margin="0,0,0,10"/>
+                    
+                    <TextBlock x:Name="PasswordLabel" Text="Password" Foreground="{StaticResource MutedTextBrush}" Margin="5,0,0,3" FontSize="11"/>
+                    <PasswordBox x:Name="PasswordBox" Style="{StaticResource ModernPasswordBox}" Margin="0,0,0,20"/>
+
+                    <Button x:Name="MainAuthButton" Content="Sign In" Click="Auth_Click" Style="{StaticResource PrimaryButton}" Height="45"/>
+                    
+                    <Button x:Name="SwitchAuthButton" Content="Need an account? Register" Click="SwitchAuth_Click" 
+                            Style="{StaticResource ModernButton}" Background="Transparent" BorderThickness="0" Foreground="{StaticResource MutedTextBrush}" Margin="0,5,0,0" FontSize="11"/>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Track Selection Content -->
+            <StackPanel x:Name="TrackPanel" Grid.Row="2" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock x:Name="TrackHeader" Text="What do you want to learn today?" FontSize="18" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30" TextWrapping="Wrap" TextAlignment="Center"/>
+                
+                <Button Content="Python Path" Click="SelectTrack_PY" Style="{StaticResource PrimaryButton}" Margin="0,0,0,15"/>
+                <Button Content="C# (.NET) Path" Click="SelectTrack_CS" Style="{StaticResource ModernButton}" Margin="0,0,0,20"/>
+
+                <TextBlock x:Name="UserWelcomeText" Text="Welcome back, User!" Foreground="{StaticResource MutedTextBrush}" HorizontalAlignment="Center" FontSize="12"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Margin="0,20,0,0">
+                <TextBlock x:Name="StatusText" Text="" Foreground="#FF5555" TextAlignment="Center" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="Privacy Policy" Click="Legal_Click" Tag="privacy" Style="{StaticResource ModernButton}" FontSize="10" Padding="5,2" Background="Transparent" BorderThickness="0" Foreground="{StaticResource MutedTextBrush}"/>
+                    <TextBlock Text="|" Foreground="{StaticResource BorderBrush}" VerticalAlignment="Center" Margin="5,0"/>
+                    <Button Content="Terms of Service" Click="Legal_Click" Tag="terms" Style="{StaticResource ModernButton}" FontSize="10" Padding="5,2" Background="Transparent" BorderThickness="0" Foreground="{StaticResource MutedTextBrush}"/>
+                </StackPanel>
+                <TextBlock Text="© 2026 Aris Kadriu. All rights reserved." Foreground="{StaticResource MutedTextBrush}" FontSize="9" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

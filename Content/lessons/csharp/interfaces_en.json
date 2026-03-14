@@ -1,0 +1,49 @@
+{
+    "Id": "cs_interfaces_en",
+    "Title": "C# Interfaces",
+    "Description": "Another way to achieve abstraction is with interfaces - completely abstract classes.",
+    "Example": "Pig p = new Pig();\np.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Create Interface",
+            "Difficulty": "Beginner",
+            "Exercise": "Create an interface `IAnimal`.",
+            "RequiredKeywords": [
+                "interface IAnimal"
+            ]
+        },
+        {
+            "Title": "Add method",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a method signature `void animalSound();` inside the interface.",
+            "RequiredKeywords": [
+                "void animalSound();"
+            ]
+        },
+        {
+            "Title": "Implement Interface",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create a class `Pig` implementing `IAnimal`.",
+            "RequiredKeywords": [
+                "class Pig : IAnimal"
+            ]
+        },
+        {
+            "Title": "Write body",
+            "Difficulty": "Intermediate",
+            "Exercise": "Inside `Pig`, add the public `animalSound` method body.",
+            "RequiredKeywords": [
+                "public void animalSound()",
+                "Console.WriteLine"
+            ]
+        },
+        {
+            "Title": "Multiple Interfaces",
+            "Difficulty": "Intermediate",
+            "Exercise": "Implement a second interface `IPrintable` separated by a comma.",
+            "RequiredKeywords": [
+                "class Pig : IAnimal, IPrintable"
+            ]
+        }
+    ]
+}

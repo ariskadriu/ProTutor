@@ -1,0 +1,48 @@
+{
+    "id": "py_functions_sq",
+    "title": "Funksionet në Python",
+    "description": "Një funksion është një bllok kodi i cili ekzekutohet vetëm kur thirret.",
+    "example": "def funksioni_im():\n  print(\"Përshëndetje nga funksioni\")",
+    "challenges": [
+        {
+            "title": "Krijo Funksion",
+            "exercise": "Përcaktoni një funksion 'funksioni_im' që printon 'Përshëndetje'.",
+            "expectedOutput": "",
+            "solution": "def funksioni_im():\n  print(\"Përshëndetje\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["def", ":"]
+        },
+        {
+            "title": "Thirr Funksionin",
+            "exercise": "Përcaktoni 'funksioni_im' për të printuar 'Hi' dhe thirreni atë.",
+            "expectedOutput": "Hi",
+            "solution": "def funksioni_im():\n  print(\"Hi\")\n\nfunksioni_im()",
+            "difficulty": "Easy",
+            "requiredKeywords": ["funksioni_im()"]
+        },
+        {
+            "title": "Argumentet",
+            "exercise": "Përcaktoni 'përshëndet' që merr 'emri' dhe printon 'Përshëndetje ' + emri. Thirreni me 'Aris'.",
+            "expectedOutput": "Përshëndetje Aris",
+            "solution": "def pershendet(emri):\n  print(\"Përshëndetje \" + emri)\n\npershendet(\"Aris\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(emri)", "pershendet("]
+        },
+        {
+            "title": "Kthe Vlerë",
+            "exercise": "Përcaktoni 'mbledh' që kthen x + 5. Printoni mbledh(10).",
+            "expectedOutput": "15",
+            "solution": "def mbledh(x):\n  return x + 5\n\nprint(mbledh(10))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["return"]
+        },
+        {
+            "title": "Lambda",
+            "exercise": "Krijoni një lambda 'x' që shton 10 tek hyrja dhe printoni x(5).",
+            "expectedOutput": "15",
+            "solution": "x = lambda a : a + 10\nprint(x(5))",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["lambda"]
+        }
+    ]
+}

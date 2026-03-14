@@ -1,0 +1,48 @@
+{
+    "id": "py_print_en",
+    "title": "Python Print",
+    "description": "The print() function prints the specified message to the screen, or other standard output device.",
+    "example": "print(\"Hello World\")",
+    "challenges": [
+        {
+            "title": "Hello World",
+            "exercise": "Print the string 'Hello World'.",
+            "expectedOutput": "Hello World",
+            "solution": "print(\"Hello World\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Printing Numbers",
+            "exercise": "Print the number 100.",
+            "expectedOutput": "100",
+            "solution": "print(100)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Multiple Arguments",
+            "exercise": "Print 'Hello' and 'World' separated by a space using multiple arguments.",
+            "expectedOutput": "Hello World",
+            "solution": "print(\"Hello\", \"World\")",
+            "difficulty": "Medium",
+            "requiredKeywords": [","]
+        },
+        {
+            "title": "Custom Separator",
+            "exercise": "Print 'A', 'B', 'C' with a '-' separator.",
+            "expectedOutput": "A-B-C",
+            "solution": "print(\"A\", \"B\", \"C\", sep=\"-\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["sep="]
+        },
+        {
+            "title": "End Parameter",
+            "exercise": "Print 'Part1' followed by 'Part2' on the same line using the end parameter.",
+            "expectedOutput": "Part1Part2",
+            "solution": "print(\"Part1\", end=\"\")\nprint(\"Part2\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["end="]
+        }
+    ]
+}

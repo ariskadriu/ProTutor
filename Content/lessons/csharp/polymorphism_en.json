@@ -1,0 +1,52 @@
+{
+    "Id": "cs_polymorphism_en",
+    "Title": "C# Polymorphism",
+    "Description": "Polymorphism means 'many forms', enabling the same method to do different things.",
+    "Example": "Animal animal = new Pig();\nanimal.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Virtual method",
+            "Difficulty": "Beginner",
+            "Exercise": "Create class `Animal` with a virtual method `animalSound()`.",
+            "RequiredKeywords": [
+                "class Animal",
+                "virtual void animalSound()"
+            ]
+        },
+        {
+            "Title": "Override method",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create class `Pig` inheriting `Animal` and override `animalSound()`.",
+            "RequiredKeywords": [
+                "class Pig : Animal",
+                "override void animalSound()"
+            ]
+        },
+        {
+            "Title": "Another override",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create class `Dog` overriding `animalSound()` to say 'Bow wow'.",
+            "RequiredKeywords": [
+                "class Dog : Animal",
+                "override",
+                "Bow wow"
+            ]
+        },
+        {
+            "Title": "Create instances",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create `Animal` instance holding a `Pig`.",
+            "RequiredKeywords": [
+                "Animal myPig = new Pig();"
+            ]
+        },
+        {
+            "Title": "Call sounds",
+            "Difficulty": "Intermediate",
+            "Exercise": "Call `animalSound()` on the pig instance.",
+            "RequiredKeywords": [
+                "myPig.animalSound();"
+            ]
+        }
+    ]
+}

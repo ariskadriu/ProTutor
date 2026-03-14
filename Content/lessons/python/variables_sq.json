@@ -1,0 +1,48 @@
+{
+    "id": "py_variables_sq",
+    "title": "Variablat në Python",
+    "description": "Variablat janë kontenierë për ruajtjen e vlerave të të dhënave. Në Python, një variabël krijohet në momentin që i jepni një vlerë për herë të parë.",
+    "example": "x = 5\ny = \"Gjoni\"\nprint(x)\nprint(y)",
+    "challenges": [
+        {
+            "title": "Jepni vlerë dhe Printoni",
+            "exercise": "Krijoni një variabël me emrin 'emriMakines' dhe jepini vlerën 'Volvo'. Pastaj printojeni.",
+            "expectedOutput": "Volvo",
+            "solution": "emriMakines = \"Volvo\"\nprint(emriMakines)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["emriMakines", "="]
+        },
+        {
+            "title": "Tipet e Variablave",
+            "exercise": "Krijoni një variabël 'x' me vlerë 50 dhe printoni tipin e tij duke përdorur type(x).",
+            "expectedOutput": "<class 'int'>",
+            "solution": "x = 50\nprint(type(x))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["type"]
+        },
+        {
+            "title": "Më shumë vlerëdhënie",
+            "exercise": "Jepni vlerat 'Portokall', 'Banane', 'Qershi' tre variablave x, y, z në një rresht. Pastaj printoni y.",
+            "expectedOutput": "Banane",
+            "solution": "x, y, z = \"Portokall\", \"Banane\", \"Qershi\"\nprint(y)",
+            "difficulty": "Medium",
+            "requiredKeywords": [",", "="]
+        },
+        {
+            "title": "Matematikë me Variabla",
+            "exercise": "Krijoni variablat a=5 dhe b=10. Printoni shumën e a dhe b.",
+            "expectedOutput": "15",
+            "solution": "a = 5\nb = 10\nprint(a + b)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Mjeshtër i Kthimit (Casting)",
+            "exercise": "Krijoni një variabël x = str(3) dhe y = int(3). Printoni rezultatin e x*y.",
+            "expectedOutput": "333",
+            "solution": "x = str(3)\ny = int(3)\nprint(x * y)",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["str", "int", "*"]
+        }
+    ]
+}

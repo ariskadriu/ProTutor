@@ -1,0 +1,48 @@
+{
+    "id": "py_try_sq",
+    "title": "Try...Except në Python",
+    "description": "Blloku 'try' ju lejon të testoni një bllok kodi për gabime. Blloku 'except' ju lejon të trajtoni gabimin.",
+    "example": "try:\n  print(x)\nexcept:\n  print(\"Ndodhi një përjashtim\")",
+    "challenges": [
+        {
+            "title": "Try Bazë",
+            "exercise": "Provoni të printoni një variabël 'x' të papërcaktuar. Kapni gabimin dhe printoni 'Gabim'.",
+            "expectedOutput": "Gabim",
+            "solution": "try:\n  print(x)\nexcept:\n  print(\"Gabim\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["try:", "except:"]
+        },
+        {
+            "title": "Përjashtim Specifik",
+            "exercise": "Kapni specifshëm një NameError dhe printoni 'Gabim Emri'.",
+            "expectedOutput": "Gabim Emri",
+            "solution": "try:\n  print(x)\nexcept NameError:\n  print(\"Gabim Emri\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["except NameError:"]
+        },
+        {
+            "title": "Blloku Else",
+            "exercise": "Printoni 'Përshëndetje' në try, dhe 'Pa gabim' në bllokun else.",
+            "expectedOutput": "Përshëndetje\nPa gabim",
+            "solution": "try:\n  print(\"Përshëndetje\")\nexcept:\n  print(\"Gabim\")\nelse:\n  print(\"Pa gabim\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else:"]
+        },
+        {
+            "title": "Finally",
+            "exercise": "Printoni 'Fund' në bllokun finally pavarësisht gabimeve.",
+            "expectedOutput": "Fund",
+            "solution": "try:\n  print(x)\nexcept:\n  pass\nfinally:\n  print(\"Fund\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["finally:"]
+        },
+        {
+            "title": "Raise Exception",
+            "exercise": "Ngritni një TypeError nëse x nuk është int. (Vendosni x='hi'). Kapeni dhe printoni 'Kapur'.",
+            "expectedOutput": "Kapur",
+            "solution": "x = \"hi\"\ntry:\n  if not type(x) is int:\n    raise TypeError(\"Vetëm numra\")\nexcept TypeError:\n  print(\"Kapur\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["raise TypeError"]
+        }
+    ]
+}

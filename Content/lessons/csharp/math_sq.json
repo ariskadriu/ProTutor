@@ -1,0 +1,48 @@
+{
+    "id": "cs_math_sq",
+    "title": "C# Matematika",
+    "description": "Klasa Math në C# ka shumë metoda që ju lejojnë të kryeni detyra matematikore mbi numrat.",
+    "example": "Math.Max(5, 10);",
+    "challenges": [
+        {
+            "title": "Vlera Max",
+            "exercise": "Printoni vlerën më të lartë midis 5 dhe 10 duke përdorur Math.Max().",
+            "expectedOutput": "10",
+            "solution": "Console.WriteLine(Math.Max(5, 10));",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Math.Max"]
+        },
+        {
+            "title": "Vlera Min",
+            "exercise": "Printoni vlerën më të ulët midis 5 dhe 10 duke përdorur Math.Min().",
+            "expectedOutput": "5",
+            "solution": "Console.WriteLine(Math.Min(5, 10));",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Math.Min"]
+        },
+        {
+            "title": "Rrënja Katrore",
+            "exercise": "Printoni rrënjën katrore të 64 duke përdorur Math.Sqrt().",
+            "expectedOutput": "8",
+            "solution": "Console.WriteLine(Math.Sqrt(64));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Math.Sqrt"]
+        },
+        {
+            "title": "Vlera Absolute",
+            "exercise": "Printoni vlerën absolute të -4.7 duke përdorur Math.Abs().",
+            "expectedOutput": "4.7",
+            "solution": "Console.WriteLine(Math.Abs(-4.7));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Math.Abs"]
+        },
+        {
+            "title": "Rrumbullakimi",
+            "exercise": "Rrumbullakoni 9.99 tek integeri më i afërt duke përdorur Math.Round().",
+            "expectedOutput": "10",
+            "solution": "Console.WriteLine(Math.Round(9.99));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Math.Round"]
+        }
+    ]
+}

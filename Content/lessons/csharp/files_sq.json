@@ -1,0 +1,48 @@
+{
+    "id": "cs_files_sq",
+    "title": "Trajtimi i Skedarëve në C#",
+    "description": "Namespace-i System.IO ka klasa të ndryshme që përdoren për kryerjen e operacioneve me skedarë dhe dosje.",
+    "example": "using System.IO;\nstring teksti = \"Hello\";\nFile.WriteAllText(\"skedari.txt\", teksti);",
+    "challenges": [
+        {
+            "title": "Shkruaj Tekst",
+            "exercise": "Përdorni File.WriteAllText(\"test.txt\", \"Hi\"). Printoni 'Shkruar'.",
+            "expectedOutput": "Shkruar",
+            "solution": "using System.IO;\nFile.WriteAllText(\"test.txt\", \"Hi\");\nConsole.WriteLine(\"Shkruar\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["File.WriteAllText"]
+        },
+        {
+            "title": "Lexo Tekst",
+            "exercise": "Printoni 'Hi' për të simuluar leximin e 'test.txt'.",
+            "expectedOutput": "Hi",
+            "solution": "Console.WriteLine(\"Hi\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Kontrollo Ekzistencën",
+            "exercise": "Kontrolloni nëse 'test.txt' ekziston me File.Exists(). Printo rezultatin.",
+            "expectedOutput": "True",
+            "solution": "using System.IO;\nConsole.WriteLine(File.Exists(\"test.txt\"));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["File.Exists"]
+        },
+        {
+            "title": "Shto Tekst",
+            "exercise": "Përdorni File.AppendAllText(\"test.txt\", \" More\"). Printo 'Shtuar'.",
+            "expectedOutput": "Shtuar",
+            "solution": "using System.IO;\nFile.AppendAllText(\"test.txt\", \" More\");\nConsole.WriteLine(\"Shtuar\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["File.AppendAllText"]
+        },
+        {
+            "title": "Fshi Skedarin",
+            "exercise": "Fshini 'test.txt' duke përdorur File.Delete(). Printo 'Fshirë'.",
+            "expectedOutput": "Fshirë",
+            "solution": "using System.IO;\nFile.Delete(\"test.txt\");\nConsole.WriteLine(\"Fshirë\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["File.Delete"]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "Id": "py_math_sq",
+    "Title": "Moduli i Matematikës",
+    "Description": "Python ka modulin math për detyra matematikore.",
+    "Example": "import math\nprint(math.pi)",
+    "Challenges": [
+        {
+            "Title": "Min dhe Max",
+            "Difficulty": "Fillestar",
+            "Exercise": "Gjej vlerën më të vogël mes 5, 10, 25 me `min()` dhe printoje.",
+            "RequiredKeywords": [
+                "min",
+                "5, 10, 25",
+                "print"
+            ]
+        },
+        {
+            "Title": "Vlera absolute",
+            "Difficulty": "Mesatar",
+            "Exercise": "Gjej vlerën absolute të -7.25 me `abs()`.",
+            "RequiredKeywords": [
+                "abs",
+                "-7.25",
+                "print"
+            ]
+        },
+        {
+            "Title": "Fuqia",
+            "Difficulty": "Mesatar",
+            "Exercise": "Kthe vlerën e 4 në fuqi 3 me `pow()`.",
+            "RequiredKeywords": [
+                "pow",
+                "4, 3",
+                "print"
+            ]
+        },
+        {
+            "Title": "Moduli Math",
+            "Difficulty": "Mesatar",
+            "Exercise": "Importo math dhe gjej rrënjën katrore të 64 me `math.sqrt()`.",
+            "RequiredKeywords": [
+                "import math",
+                "math.sqrt",
+                "64"
+            ]
+        },
+        {
+            "Title": "Rrumbullakimi",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `math.ceil(1.4)` dhe printo rezultatin.",
+            "RequiredKeywords": [
+                "math.ceil",
+                "1.4",
+                "print"
+            ]
+        }
+    ]
+}

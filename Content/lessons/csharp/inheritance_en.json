@@ -1,0 +1,50 @@
+{
+    "Id": "cs_inheritance_en",
+    "Title": "C# Inheritance",
+    "Description": "In C#, it is possible to inherit fields and methods from one class to another.",
+    "Example": "Car myCar = new Car();\nmyCar.honk();",
+    "Challenges": [
+        {
+            "Title": "Base class",
+            "Difficulty": "Beginner",
+            "Exercise": "Create a `Vehicle` class with a `honk()` method.",
+            "RequiredKeywords": [
+                "class Vehicle",
+                "void honk()",
+                "Console.WriteLine"
+            ]
+        },
+        {
+            "Title": "Derived class",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create a `Car` class that inherits from `Vehicle`.",
+            "RequiredKeywords": [
+                "class Car : Vehicle"
+            ]
+        },
+        {
+            "Title": "Add field",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a string field `modelName` to the `Car` class.",
+            "RequiredKeywords": [
+                "string modelName"
+            ]
+        },
+        {
+            "Title": "Instantiate",
+            "Difficulty": "Intermediate",
+            "Exercise": "In the main logic, create an object of `Car`.",
+            "RequiredKeywords": [
+                "Car myCar = new Car();"
+            ]
+        },
+        {
+            "Title": "Call method",
+            "Difficulty": "Intermediate",
+            "Exercise": "Call the `honk()` method on `myCar`.",
+            "RequiredKeywords": [
+                "myCar.honk();"
+            ]
+        }
+    ]
+}

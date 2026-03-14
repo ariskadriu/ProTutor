@@ -1,0 +1,59 @@
+{
+    "Id": "py_tuples_en",
+    "Title": "Python Tuples",
+    "Description": "Tuples are used to store multiple items in a single variable. They are ordered and unchangeable.",
+    "Example": "print(mytuple)",
+    "Challenges": [
+        {
+            "Title": "Create a tuple",
+            "Difficulty": "Beginner",
+            "Exercise": "Create a tuple named `fruit` containing 'apple' and 'banana' and print it.",
+            "RequiredKeywords": [
+                "fruit",
+                "(",
+                "apple",
+                "print"
+            ]
+        },
+        {
+            "Title": "Access tuple items",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print the second item in the `fruit` tuple.",
+            "RequiredKeywords": [
+                "fruit",
+                "[1]",
+                "print"
+            ]
+        },
+        {
+            "Title": "Update tuples",
+            "Difficulty": "Intermediate",
+            "Exercise": "Convert `fruit` to a list `y`, change the first item to 'kiwi', and convert back to tuple `fruit`.",
+            "RequiredKeywords": [
+                "list",
+                "kiwi",
+                "tuple"
+            ]
+        },
+        {
+            "Title": "Unpack tuples",
+            "Difficulty": "Intermediate",
+            "Exercise": "Unpack the `fruit` tuple into variables `green` and `yellow` and print `green`.",
+            "RequiredKeywords": [
+                "green",
+                "yellow",
+                "print"
+            ]
+        },
+        {
+            "Title": "Join tuples",
+            "Difficulty": "Intermediate",
+            "Exercise": "Join tuple `tuple1 = (1, 2)` and `tuple2 = (3, 4)` into `tuple3` and print it.",
+            "RequiredKeywords": [
+                "tuple3",
+                "tuple1 + tuple2",
+                "print"
+            ]
+        }
+    ]
+}

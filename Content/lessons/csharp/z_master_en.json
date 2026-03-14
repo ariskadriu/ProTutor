@@ -1,0 +1,48 @@
+{
+    "id": "cs_z_master_en",
+    "title": "C# Master Project",
+    "description": "Congratulations on completing the C# track! It is time to apply everything you've learned. In this final project, you will build the logic for small applications.",
+    "example": "// Use methods, arrays, classes, and everything else!\nclass Calculator {\n  public static int Add(int a, int b) { return a + b; }\n}\nConsole.WriteLine(Calculator.Add(5,5));",
+    "challenges": [
+        {
+            "title": "Calculator Method",
+            "exercise": "Create a method 'static double Calc(double a, double b, char op)'. Handle '+', '-', '*', '/'. Return 0 if op is invalid. Call Console.WriteLine(Calc(10, 2, '/')).",
+            "expectedOutput": "5",
+            "solution": "static double Calc(double a, double b, char op) {\n  if(op=='+') return a+b;\n  if(op=='-') return a-b;\n  if(op=='*') return a*b;\n  if(op=='/') return a/b;\n  return 0;\n}\nConsole.WriteLine(Calc(10, 2, '/'));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["static double Calc", "op=='+'", "return a/b;"]
+        },
+        {
+            "title": "To-Do Manager (Add)",
+            "exercise": "Create class 'ToDo' with 'List<string> tasks = new List<string>();'. Create method 'public void Add(string t)'. Add 'Study', 'Sleep'. Print tasks[0].",
+            "expectedOutput": "Study",
+            "solution": "using System.Collections.Generic;\nclass ToDo {\n  public List<string> tasks = new List<string>();\n  public void Add(string t) { tasks.Add(t); }\n}\nstatic void Main() {\n  ToDo t = new ToDo();\n  t.Add(\"Study\");\n  t.Add(\"Sleep\");\n  Console.WriteLine(t.tasks[0]);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["class ToDo", "List<string>", ".Add("]
+        },
+        {
+            "title": "To-Do Manager (Complete)",
+            "exercise": "Add a 'public void Complete(string t)' method to ToDo that calls tasks.Remove(t). Assume tasks has 'Study'. Complete('Study'). Print tasks.Count.",
+            "expectedOutput": "0",
+            "solution": "using System.Collections.Generic;\nclass ToDo {\n  public List<string> tasks = new List<string>() { \"Study\" };\n  public void Complete(string t) { tasks.Remove(t); }\n}\nstatic void Main() {\n  ToDo t = new ToDo();\n  t.Complete(\"Study\");\n  Console.WriteLine(t.tasks.Count);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public void Complete", ".Remove("]
+        },
+        {
+            "title": "Data Analyzer",
+            "exercise": "Given int[] scores = {80, 95, 70, 100}. Use LINQ (.Max(), .Min(), .Average()) to print max, min, and average on separate lines.",
+            "expectedOutput": "100\n70\n86.25",
+            "solution": "using System.Linq;\nint[] scores = {80, 95, 70, 100};\nConsole.WriteLine(scores.Max());\nConsole.WriteLine(scores.Min());\nConsole.WriteLine(scores.Average());",
+            "difficulty": "Hard",
+            "requiredKeywords": [".Max()", ".Min()", ".Average()"]
+        },
+        {
+            "title": "Master Developer",
+            "exercise": "You have mastered C# basics! Write a static method 'Greet(string name)' that returns $\"Welcome, {name}!\". Print Greet(\"Aris\").",
+            "expectedOutput": "Welcome, Aris!",
+            "solution": "static string Greet(string name) {\n  return $\"Welcome, {name}!\";\n}\nConsole.WriteLine(Greet(\"Aris\"));",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["static string Greet", "Aris"]
+        }
+    ]
+}

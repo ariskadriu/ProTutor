@@ -1,0 +1,48 @@
+{
+    "id": "cs_classes_sq",
+    "title": "Klasat dhe Objektet në C#",
+    "description": "C# është një gjuhë programimi e orientuar nga objektet. Çdo gjë në C# lidhet me klasat dhe objektet.",
+    "example": "class Makina\n{\n  string ngjyra = \"kuqe\";\n}",
+    "challenges": [
+        {
+            "title": "Krijo Klasë",
+            "exercise": "Krijoni një klasë 'Makina' me një fushë 'ngjyra = \"kuqe\"'.",
+            "expectedOutput": "",
+            "solution": "class Makina\n{\n  public string ngjyra = \"kuqe\";\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["class", "Makina"]
+        },
+        {
+            "title": "Krijo Objekt",
+            "exercise": "Krijoni një objekt të Makina me emrin 'imja' dhe printoni imja.ngjyra.",
+            "expectedOutput": "kuqe",
+            "solution": "class Makina { public string ngjyra = \"kuqe\"; }\nMakina imja = new Makina();\nConsole.WriteLine(imja.ngjyra);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["new Makina()"]
+        },
+        {
+            "title": "Anëtarët e Klasës",
+            "exercise": "Shtoni një metodë 'Biri' tek Makina që printon 'Beep!'. Thirrni atë.",
+            "expectedOutput": "Beep!",
+            "solution": "class Makina \n{\n  public void Biri() { Console.WriteLine(\"Beep!\"); }\n}\nMakina imja = new Makina();\nimja.Biri();",
+            "difficulty": "Medium",
+            "requiredKeywords": ["public void Biri"]
+        },
+        {
+            "title": "Konstruktori",
+            "exercise": "Krijoni një konstruktor për Makina që vendos 'ngjyra'. Printoni new Makina(\"Blu\").ngjyra.",
+            "expectedOutput": "Blu",
+            "solution": "class Makina \n{\n  public string ngjyra;\n  public Makina(string n) { ngjyra = n; }\n}\nMakina imja = new Makina(\"Blu\");\nConsole.WriteLine(imja.ngjyra);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public Makina("]
+        },
+        {
+            "title": "Trashëgimia",
+            "exercise": "Krijoni një klasë 'Ford' që trashëgon nga 'Makina'. Printoni 'Trashëguar'.",
+            "expectedOutput": "Trashëguar",
+            "solution": "class Makina {} \nclass Ford : Makina {}\nConsole.WriteLine(\"Trashëguar\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": [": Makina"]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "Id": "py_inheritance_sq",
+    "Title": "Trashëgimia (Inheritance)",
+    "Description": "Trashëgimia lejon një klasë të marrë të gjitha metodat dhe vetitë nga një klasë tjetër.",
+    "Example": "x = Student('Aris')\nx.welcome()",
+    "Challenges": [
+        {
+            "Title": "Klasa prind",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një klasë `Person` me një metodë printname.",
+            "RequiredKeywords": [
+                "class Person",
+                "printname"
+            ]
+        },
+        {
+            "Title": "Klasa fëmijë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo një klasë `Student` që trashëgon nga `Person`.",
+            "RequiredKeywords": [
+                "class Student",
+                "Person",
+                "pass"
+            ]
+        },
+        {
+            "Title": "Shto init",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto metodën `__init__()` te klasa `Student`.",
+            "RequiredKeywords": [
+                "__init__",
+                "self"
+            ]
+        },
+        {
+            "Title": "Funksioni super",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `super()` brenda init të Student.",
+            "RequiredKeywords": [
+                "super()",
+                "__init__"
+            ]
+        },
+        {
+            "Title": "Shto veti",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto një veti `graduationyear` te `Student`.",
+            "RequiredKeywords": [
+                "graduationyear",
+                "self"
+            ]
+        }
+    ]
+}

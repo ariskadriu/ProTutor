@@ -1,0 +1,57 @@
+{
+    "Id": "py_dates_sq",
+    "Title": "Datat në Python",
+    "Description": "Koha në Python menaxhohet nga moduli datetime.",
+    "Example": "import datetime\nprint(datetime.datetime.now())",
+    "Challenges": [
+        {
+            "Title": "Importo datetime",
+            "Difficulty": "Fillestar",
+            "Exercise": "Importo datetime dhe printo datën aktuale me `.now()`.",
+            "RequiredKeywords": [
+                "import datetime",
+                "now",
+                "print"
+            ]
+        },
+        {
+            "Title": "Kthe vitin",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo vitin e datës aktuale.",
+            "RequiredKeywords": [
+                "year",
+                "now",
+                "print"
+            ]
+        },
+        {
+            "Title": "Krijo datë",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo një datë për 2020, 5, 17 me `datetime.datetime`.",
+            "RequiredKeywords": [
+                "2020, 5, 17",
+                "datetime.datetime"
+            ]
+        },
+        {
+            "Title": "Strftime",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo emrin e muajit me `strftime(\"%B\")`.",
+            "RequiredKeywords": [
+                "strftime",
+                "%B",
+                "print"
+            ]
+        },
+        {
+            "Title": "Dita e javës",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo ditën e javës me `strftime(\"%A\")`.",
+            "RequiredKeywords": [
+                "strftime",
+                "%A",
+                "print"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "cs_if_en",
+    "title": "C# If...Else",
+    "description": "C# uses the if statement to specify a block of code to be executed if a condition is true.",
+    "example": "if (20 > 18)\n{\n  Console.WriteLine(\"20 is greater than 18\");\n}",
+    "challenges": [
+        {
+            "title": "Basic If",
+            "exercise": "Print 'Yes' if 5 is greater than 2.",
+            "expectedOutput": "Yes",
+            "solution": "if (5 > 2)\n{\n  Console.WriteLine(\"Yes\");\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["if", "Console.WriteLine"]
+        },
+        {
+            "title": "Else Block",
+            "exercise": "Print 'Yes' if 5 > 2, else print 'No'.",
+            "expectedOutput": "Yes",
+            "solution": "if (5 > 2)\n{\n  Console.WriteLine(\"Yes\");\n}\nelse\n{\n  Console.WriteLine(\"No\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else"]
+        },
+        {
+            "title": "Else If",
+            "exercise": "Assign int a=10, b=10. If a > b print 'A', else if a == b print 'Equal'.",
+            "expectedOutput": "Equal",
+            "solution": "int a = 10; int b = 10;\nif (a > b)\n{\n  Console.WriteLine(\"A\");\n}\nelse if (a == b)\n{\n  Console.WriteLine(\"Equal\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else if"]
+        },
+        {
+            "title": "Ternary Operator",
+            "exercise": "Use the ternary operator to print 'Pass' if 10 > 5, else 'Fail'.",
+            "expectedOutput": "Pass",
+            "solution": "string result = (10 > 5) ? \"Pass\" : \"Fail\";\nConsole.WriteLine(result);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["?", ":"]
+        },
+        {
+            "title": "Complex If",
+            "exercise": "Print 'True' if (5 > 2 && 10 > 5).",
+            "expectedOutput": "True",
+            "solution": "if (5 > 2 && 10 > 5)\n{\n  Console.WriteLine(\"True\");\n}",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["&&"]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "py_syntax_sq",
+    "title": "Sintaksa e Python",
+    "description": "Sintaksa e Python mund të ekzekutohet duke shkruar direkt në Komandë. Ajo njihet për lexueshmërinë e saj dhe përdorimin e hapësirave (indentation).",
+    "example": "print(\"Përshëndetje, Botë!\")",
+    "challenges": [
+        {
+            "title": "Printimi Bazë",
+            "exercise": "Printoni tekstin 'Përshëndetje Python'.",
+            "expectedOutput": "Përshëndetje Python",
+            "solution": "print(\"Përshëndetje Python\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Kontrolli i Hapësirave",
+            "exercise": "Rregulloni hapësirat (indentation) për të printuar 'Saktë' nëse 5 është më e madhe se 2.",
+            "example": "if 5 > 2:\nprint(\"Saktë\")",
+            "expectedOutput": "Saktë",
+            "solution": "if 5 > 2:\n  print(\"Saktë\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["if", "print"]
+        },
+        {
+            "title": "Disa Printime",
+            "exercise": "Printoni 'Rreshti 1' dhe pastaj 'Rreshti 2' në rreshta të veçantë.",
+            "expectedOutput": "Rreshti 1\nRreshti 2",
+            "solution": "print(\"Rreshti 1\")\nprint(\"Rreshti 2\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Logjikë e Thjeshtë",
+            "exercise": "Përdorni një deklaratë 'if' për të printuar 'Madhe' nëse 10 > 5 dhe 'Vogël' përndryshe.",
+            "expectedOutput": "Madhe",
+            "solution": "if 10 > 5:\n  print(\"Madhe\")\nelse:\n  print(\"Vogël\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["if", "else"]
+        },
+        {
+            "title": "Mjeshtër i Sintaksës",
+            "exercise": "Printoni rezultatin e (5 + 5) * 2.",
+            "expectedOutput": "20",
+            "solution": "print((5 + 5) * 2)",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["print", "*"]
+        }
+    ]
+}

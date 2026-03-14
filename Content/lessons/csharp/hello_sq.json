@@ -1,0 +1,48 @@
+{
+    "id": "cs_hello_sq",
+    "title": "C# Përshëndetje Botë",
+    "description": "Mësoni si të nxirrni tekst në konsolë në C#.",
+    "example": "Console.WriteLine(\"Përshëndetje Botë!\");",
+    "challenges": [
+        {
+            "title": "Produkt Teksti",
+            "exercise": "Printoni tekstin 'Përshëndetje C#'.",
+            "expectedOutput": "Përshëndetje C#",
+            "solution": "Console.WriteLine(\"Përshëndetje C#\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Disa Rreshta",
+            "exercise": "Printoni 'Rreshti 1' pastaj 'Rreshti 2' në një rresht të ri.",
+            "expectedOutput": "Rreshti 1\nRreshti 2",
+            "solution": "Console.WriteLine(\"Rreshti 1\");\nConsole.WriteLine(\"Rreshti 2\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Write vs WriteLine",
+            "exercise": "Përdorni Console.Write për të printuar 'Pjesa1' pastaj 'Pjesa2' në të njëjtin rresht.",
+            "expectedOutput": "Pjesa1Pjesa2",
+            "solution": "Console.Write(\"Pjesa1\");\nConsole.Write(\"Pjesa2\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.Write"]
+        },
+        {
+            "title": "Variablat në Print",
+            "exercise": "Krijoni një string emri = 'C#'. Printoni 'Mirësevini në ' + emri.",
+            "expectedOutput": "Mirësevini në C#",
+            "solution": "string emri = \"C#\";\nConsole.WriteLine(\"Mirësevini në \" + emri);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Produkti Final",
+            "exercise": "Printoni rezultatin e 5 * 5.",
+            "expectedOutput": "25",
+            "solution": "Console.WriteLine(5 * 5);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["5", "*"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "py_loops_sq",
+    "title": "Ciklet në Python",
+    "description": "Python ka dy komanda ciklesh primitive: while dhe for.",
+    "example": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
+    "challenges": [
+        {
+            "title": "Cikli While",
+            "exercise": "Printoni i për sa kohë i është më e vogël se 6. Filloni i me 1.",
+            "expectedOutput": "1\n2\n3\n4\n5",
+            "solution": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
+            "difficulty": "Easy",
+            "requiredKeywords": ["while", "i < 6", "i += 1"]
+        },
+        {
+            "title": "Deklarata Break",
+            "exercise": "Në një cikël while, dilni nga cikli kur i është 3. Filloni i me 1.",
+            "expectedOutput": "1\n2",
+            "solution": "i = 1\nwhile i < 6:\n  if i == 3:\n    break\n  print(i)\n  i += 1",
+            "difficulty": "Medium",
+            "requiredKeywords": ["break"]
+        },
+        {
+            "title": "Cikli For",
+            "exercise": "Shfletoni artikujt në listën ['mollë', 'dardhë'] dhe printoni secilin.",
+            "expectedOutput": "mollë\ndardhë",
+            "solution": "for x in [\"mollë\", \"dardhë\"]:\n  print(x)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["for", "in"]
+        },
+        {
+            "title": "Funksioni Range",
+            "exercise": "Përdorni funksionin range() për të bërë cikël 6 herë (0 deri në 5) dhe printoni secilin.",
+            "expectedOutput": "0\n1\n2\n3\n4\n5",
+            "solution": "for x in range(6):\n  print(x)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["range(6)"]
+        },
+        {
+            "title": "Else në For",
+            "exercise": "Në një for x in range(3), printoni x, pastaj 'U krye' pas ciklit duke përdorur else.",
+            "expectedOutput": "0\n1\n2\nU krye",
+            "solution": "for x in range(3):\n  print(x)\nelse:\n  print(\"U krye\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["else:"]
+        }
+    ]
+}

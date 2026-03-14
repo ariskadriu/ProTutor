@@ -1,0 +1,48 @@
+{
+    "id": "py_if_sq",
+    "title": "Python If...Else (Shqip)",
+    "description": "Python mbështet kushtet e zakonshme logjike nga matematika: Baraz (a == b), Jo Baraz (a != b), Më pak se (a < b), etj.",
+    "example": "a = 33\nb = 200\nif b > a:\n  print(\"b është më e madhe se a\")",
+    "challenges": [
+        {
+            "title": "If Bazë",
+            "exercise": "Printoni 'Po' nëse 5 është më e madhe se 2.",
+            "expectedOutput": "Po",
+            "solution": "if 5 > 2:\n  print(\"Po\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["if", "print"]
+        },
+        {
+            "title": "Deklarata Else",
+            "exercise": "Printoni 'Po' nëse 5 > 2, përndryshe printoni 'Jo'.",
+            "expectedOutput": "Po",
+            "solution": "if 5 > 2:\n  print(\"Po\")\nelse:\n  print(\"Jo\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else"]
+        },
+        {
+            "title": "Logjika Elif",
+            "exercise": "Jepni a=33, b=33. Nëse b > a printoni 'B', elif a == b printoni 'Barabartë'.",
+            "expectedOutput": "Barabartë",
+            "solution": "a = 33\nb = 33\nif b > a:\n  print(\"B\")\nelif a == b:\n  print(\"Barabartë\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["elif"]
+        },
+        {
+            "title": "If i Shkurtër",
+            "exercise": "Përdorni 'short hand if' për të printuar 'Përshëndetje' nëse 5 > 2.",
+            "expectedOutput": "Përshëndetje",
+            "solution": "if 5 > 2: print(\"Përshëndetje\")",
+            "difficulty": "Hard",
+            "requiredKeywords": [":", "print"]
+        },
+        {
+            "title": "AND Logjik",
+            "exercise": "Printoni 'Të dyja' nëse 5 > 2 DHE 10 > 5.",
+            "expectedOutput": "Të dyja",
+            "solution": "if 5 > 2 and 10 > 5:\n  print(\"Të dyja\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["and"]
+        }
+    ]
+}

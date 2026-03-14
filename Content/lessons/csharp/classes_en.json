@@ -1,0 +1,48 @@
+{
+    "id": "cs_classes_en",
+    "title": "C# Classes & Objects",
+    "description": "C# is an object-oriented programming language. Everything in C# is associated with classes and objects.",
+    "example": "class Car\n{\n  string color = \"red\";\n}",
+    "challenges": [
+        {
+            "title": "Create Class",
+            "exercise": "Create a class named 'Car' with a field 'color = \"red\"'.",
+            "expectedOutput": "",
+            "solution": "class Car\n{\n  public string color = \"red\";\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["class", "Car"]
+        },
+        {
+            "title": "Create Object",
+            "exercise": "Create an object of Car named 'myObj' and print myObj.color.",
+            "expectedOutput": "red",
+            "solution": "class Car { public string color = \"red\"; }\nCar myObj = new Car();\nConsole.WriteLine(myObj.color);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["new Car()"]
+        },
+        {
+            "title": "Class Members",
+            "exercise": "Add a method 'Honk' to Car that prints 'Beep!'. Call it.",
+            "expectedOutput": "Beep!",
+            "solution": "class Car \n{\n  public void Honk() { Console.WriteLine(\"Beep!\"); }\n}\nCar myObj = new Car();\nmyObj.Honk();",
+            "difficulty": "Medium",
+            "requiredKeywords": ["public void Honk"]
+        },
+        {
+            "title": "Constructor",
+            "exercise": "Create a constructor for Car that sets 'color'. Print new Car(\"Blue\").color.",
+            "expectedOutput": "Blue",
+            "solution": "class Car \n{\n  public string color;\n  public Car(string c) { color = c; }\n}\nCar myObj = new Car(\"Blue\");\nConsole.WriteLine(myObj.color);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public Car("]
+        },
+        {
+            "title": "Inheritance",
+            "exercise": "Create a class 'Ford' that inherits from 'Car'. Print 'Inherited'.",
+            "expectedOutput": "Inherited",
+            "solution": "class Car {} \nclass Ford : Car {}\nConsole.WriteLine(\"Inherited\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": [": Car"]
+        }
+    ]
+}

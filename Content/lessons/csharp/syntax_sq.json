@@ -1,0 +1,48 @@
+{
+    "id": "cs_syntax_sq",
+    "title": "Sintaksa në C#",
+    "description": "C# është një gjuhë programimi e orientuar nga objektet e zhvilluar nga Microsoft.",
+    "example": "using System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Përshëndetje Botë!\");\n    }\n  }\n}",
+    "challenges": [
+        {
+            "title": "Deklarata Bazë",
+            "exercise": "Çdo deklaratë në C# përfundon me pikëpresje. Printoni 'Semi' me një pikëpresje në fund.",
+            "expectedOutput": "Semi",
+            "solution": "Console.WriteLine(\"Semi\");",
+            "difficulty": "Easy",
+            "requiredKeywords": [";"]
+        },
+        {
+            "title": "Komentet",
+            "exercise": "Përdorni një koment me një rresht '//' dhe printoni 'Ok'.",
+            "expectedOutput": "Ok",
+            "solution": "// Ky është një koment\nConsole.WriteLine(\"Ok\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["//"]
+        },
+        {
+            "title": "Ndjeshmëria ndaj Shkronjave",
+            "exercise": "C# është i ndjeshëm ndaj shkronjave të mëdha/vogla. Printoni 'text'. Shënim: Console.WriteLine është ndryshe nga console.writeline.",
+            "expectedOutput": "text",
+            "solution": "Console.WriteLine(\"text\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Metoda Main",
+            "exercise": "Printoni emrin e metodës ku fillon ekzekutimi: 'Main'.",
+            "expectedOutput": "Main",
+            "solution": "Console.WriteLine(\"Main\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["print", "Main"]
+        },
+        {
+            "title": "Logjika e Namespace",
+            "exercise": "Printoni 'System' që është një namespace i zakonshëm i përdorur në C#.",
+            "expectedOutput": "System",
+            "solution": "Console.WriteLine(\"System\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["System"]
+        }
+    ]
+}

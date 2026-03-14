@@ -1,0 +1,48 @@
+{
+    "id": "py_z_master_en",
+    "title": "Python Master Project",
+    "description": "Congratulations on completing the Python track! It is time to apply everything you've learned. In this final project, you will build the logic for small applications.",
+    "example": "# Use functions, loops, lists, and everything else!\ndef calculator(a, b, op):\n  if op == '+': return a + b\n  return 0\n\nprint(calculator(5, 5, '+'))",
+    "challenges": [
+        {
+            "title": "Calculator Function",
+            "exercise": "Create a function 'calc(a, b, op)' that returns a+b for '+', a-b for '-', a*b for '*', and 'Error' for division by 0 ('/'). Call print(calc(10, 2, '/')).",
+            "expectedOutput": "5.0",
+            "solution": "def calc(a, b, op):\n  if op == '+': return a + b\n  if op == '-': return a - b\n  if op == '*': return a * b\n  if op == '/':\n    if b == 0: return 'Error'\n    return a / b\n\nprint(calc(10, 2, '/'))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def calc", "if op ==", "return a / b"]
+        },
+        {
+            "title": "To-Do Manager (Add)",
+            "exercise": "Create a class 'ToDo'. In __init__, define self.tasks = []. Create method 'add(task)' that appends to list. Create obj 't', add 'Study', add 'Sleep'. Print t.tasks.",
+            "expectedOutput": "['Study', 'Sleep']",
+            "solution": "class ToDo:\n  def __init__(self):\n    self.tasks = []\n  def add(self, task):\n    self.tasks.append(task)\n\nt = ToDo()\nt.add('Study')\nt.add('Sleep')\nprint(t.tasks)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["class ToDo:", "def __init__(self):", ".append(", "t.add("]
+        },
+        {
+            "title": "To-Do Manager (Complete)",
+            "exercise": "Add a 'complete(task)' method to ToDo that removes the task if it exists. Assume initial tasks = ['Study', 'Sleep']. complete('Study'). Print tasks.",
+            "expectedOutput": "['Sleep']",
+            "solution": "class ToDo:\n  def __init__(self):\n    self.tasks = ['Study', 'Sleep']\n  def complete(self, task):\n    if task in self.tasks:\n      self.tasks.remove(task)\n\nt = ToDo()\nt.complete('Study')\nprint(t.tasks)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def complete", ".remove("]
+        },
+        {
+            "title": "Data Analyzer",
+            "exercise": "Given scores = [80, 95, 70, 100]. Print the max score using max(), min score using min(), and average (sum/len) on separate lines.",
+            "expectedOutput": "100\n70\n86.25",
+            "solution": "scores = [80, 95, 70, 100]\nprint(max(scores))\nprint(min(scores))\nprint(sum(scores)/len(scores))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["max(", "min(", "sum(", "len("]
+        },
+        {
+            "title": "Master Developer",
+            "exercise": "You have mastered Python basics! Write a function 'greet(name)' that returns 'Welcome, {name}!'. Print greet('Aris').",
+            "expectedOutput": "Welcome, Aris!",
+            "solution": "def greet(name):\n  return f\"Welcome, {name}!\"\n\nprint(greet('Aris'))",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["def greet", "Aris"]
+        }
+    ]
+}

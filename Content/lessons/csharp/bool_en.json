@@ -1,0 +1,48 @@
+{
+    "id": "cs_bool_en",
+    "title": "C# Booleans",
+    "description": "Very often, in programming, you will need a data type that can only have one of two values, like: YES / NO, ON / OFF, TRUE / FALSE.",
+    "example": "bool isCSharpFun = true;\nConsole.WriteLine(isCSharpFun);",
+    "challenges": [
+        {
+            "title": "Boolean Value",
+            "exercise": "Print the boolean value true.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(true);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["true"]
+        },
+        {
+            "title": "Comparison",
+            "exercise": "Print the result of 10 > 9.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 > 9);",
+            "difficulty": "Easy",
+            "requiredKeywords": [">"]
+        },
+        {
+            "title": "Equal To",
+            "exercise": "Print the result of 10 == 10.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 == 10);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["=="]
+        },
+        {
+            "title": "Variable Comparison",
+            "exercise": "Create int x=10, y=9. Print x > y.",
+            "expectedOutput": "True",
+            "solution": "int x = 10; int y = 9;\nConsole.WriteLine(x > y);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["int", ">"]
+        },
+        {
+            "title": "Logical NOT",
+            "exercise": "Print the opposite of true using ! operator.",
+            "expectedOutput": "False",
+            "solution": "Console.WriteLine(!true);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["!"]
+        }
+    ]
+}

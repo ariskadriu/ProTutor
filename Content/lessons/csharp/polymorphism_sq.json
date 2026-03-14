@@ -1,0 +1,52 @@
+{
+    "Id": "cs_polymorphism_sq",
+    "Title": "Polimorfizmi C#",
+    "Description": "Polimorfizmi do të thotë 'shumë forma', duke lejuar metoda me sjellje të ndryshme.",
+    "Example": "Animal animal = new Pig();\nanimal.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Metoda Virtual",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo `Animal` me metodë virtuale `animalSound()`.",
+            "RequiredKeywords": [
+                "class Animal",
+                "virtual void animalSound()"
+            ]
+        },
+        {
+            "Title": "Metoda Override",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo klasë `Pig` dhe mbishkruaj `animalSound()`.",
+            "RequiredKeywords": [
+                "class Pig : Animal",
+                "override void animalSound()"
+            ]
+        },
+        {
+            "Title": "Mbishkrim tjetër",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo klasë `Dog` me zërin 'Bow wow'.",
+            "RequiredKeywords": [
+                "class Dog : Animal",
+                "override",
+                "Bow wow"
+            ]
+        },
+        {
+            "Title": "Instanca",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo një `Animal` që mban një `Pig`.",
+            "RequiredKeywords": [
+                "Animal myPig = new Pig();"
+            ]
+        },
+        {
+            "Title": "Thirr metodat",
+            "Difficulty": "Mesatar",
+            "Exercise": "Thirr `animalSound()`.",
+            "RequiredKeywords": [
+                "myPig.animalSound();"
+            ]
+        }
+    ]
+}

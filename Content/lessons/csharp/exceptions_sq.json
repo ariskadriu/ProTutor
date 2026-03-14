@@ -1,0 +1,48 @@
+{
+    "id": "cs_exceptions_sq",
+    "title": "Përjashtimet në C# (Exceptions)",
+    "description": "Gjatë ekzekutimit të kodit C#, mund të ndodhin gabime të ndryshme: gabime programimi, gabime nga hyrja e gabuar, ose gjëra të tjera të paparashikueshme.",
+    "example": "try\n{\n  int[] numrat = {1, 2, 3};\n  Console.WriteLine(numrat[10]);\n}\ncatch (Exception e)\n{\n  Console.WriteLine(e.Message);\n}",
+    "challenges": [
+        {
+            "title": "Try/Catch Bazë",
+            "exercise": "Shkruani një bllok try/catch. Në try, printoni një element array jashtë kufijve. Në catch, printoni 'Gabim'.",
+            "expectedOutput": "Gabim",
+            "solution": "try { int[] n = {1}; Console.WriteLine(n[5]); } catch { Console.WriteLine(\"Gabim\"); }",
+            "difficulty": "Easy",
+            "requiredKeywords": ["try", "catch"]
+        },
+        {
+            "title": "Pjesëtimi me Zero",
+            "exercise": "Kapni specifshëm një DivideByZeroException dhe printoni 'Nuk pjesëtohet me zero'.",
+            "expectedOutput": "Nuk pjesëtohet me zero",
+            "solution": "try { int x = 0; int y = 5 / x; } catch (DivideByZeroException) { Console.WriteLine(\"Nuk pjesëtohet me zero\"); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["catch (DivideByZeroException)"]
+        },
+        {
+            "title": "Blloku Finally",
+            "exercise": "Shtoni një bllok finally që printon 'U krye' pas një try/catch.",
+            "expectedOutput": "U krye",
+            "solution": "try { } catch { } finally { Console.WriteLine(\"U krye\"); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["finally"]
+        },
+        {
+            "title": "Fjala Throw",
+            "exercise": "Krijoni një metodë që hedh ArithmeticException nëse mosha < 18. (Vendosni mosha=15). Kapeni dhe printoni 'I mitur'.",
+            "expectedOutput": "I mitur",
+            "solution": "int mosha = 15;\ntry {\n  if (mosha < 18) throw new ArithmeticException();\n} catch (ArithmeticException) {\n  Console.WriteLine(\"I mitur\");\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["throw new"]
+        },
+        {
+            "title": "Catch-e të Shumëfishta",
+            "exercise": "Printoni 'Trajtuar' për të treguar se kuptoni që blloqe të shumta catch mund të trajtojnë lloje të ndryshme gabimesh.",
+            "expectedOutput": "Trajtuar",
+            "solution": "Console.WriteLine(\"Trajtuar\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["Trajtuar"]
+        }
+    ]
+}

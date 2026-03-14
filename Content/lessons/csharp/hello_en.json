@@ -1,0 +1,48 @@
+{
+    "id": "cs_hello_en",
+    "title": "C# Hello World",
+    "description": "Learn how to output text to the console in C#.",
+    "example": "Console.WriteLine(\"Hello World!\");",
+    "challenges": [
+        {
+            "title": "Output Text",
+            "exercise": "Print the text 'Hello C#'.",
+            "expectedOutput": "Hello C#",
+            "solution": "Console.WriteLine(\"Hello C#\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Multiple Lines",
+            "exercise": "Print 'Line 1' then 'Line 2' on a new line.",
+            "expectedOutput": "Line 1\nLine 2",
+            "solution": "Console.WriteLine(\"Line 1\");\nConsole.WriteLine(\"Line 2\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Write vs WriteLine",
+            "exercise": "Use Console.Write to print 'Part1' then 'Part2' on the same line.",
+            "expectedOutput": "Part1Part2",
+            "solution": "Console.Write(\"Part1\");\nConsole.Write(\"Part2\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.Write"]
+        },
+        {
+            "title": "Variables in Print",
+            "exercise": "Create a string name = 'C#'. Print 'Welcome to ' + name.",
+            "expectedOutput": "Welcome to C#",
+            "solution": "string name = \"C#\";\nConsole.WriteLine(\"Welcome to \" + name);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Final Output",
+            "exercise": "Print the result of 5 * 5.",
+            "expectedOutput": "25",
+            "solution": "Console.WriteLine(5 * 5);",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["5", "*"]
+        }
+    ]
+}

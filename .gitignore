@@ -1,0 +1,11 @@
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.doccache
+Data/progress_*.json
+startup_log.txt
+.vs/
+/tmp/

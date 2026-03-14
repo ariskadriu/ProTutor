@@ -1,0 +1,48 @@
+{
+    "id": "py_classes_en",
+    "title": "Python Classes",
+    "description": "Python is an object oriented programming language. Almost everything in Python is an object.",
+    "example": "class MyClass:\n  x = 5",
+    "challenges": [
+        {
+            "title": "Create Class",
+            "exercise": "Create a class named 'MyClass' with a property 'x = 5'.",
+            "expectedOutput": "",
+            "solution": "class MyClass:\n  x = 5",
+            "difficulty": "Easy",
+            "requiredKeywords": ["class"]
+        },
+        {
+            "title": "Create Object",
+            "exercise": "Create an object of MyClass named 'p1' and print p1.x.",
+            "expectedOutput": "5",
+            "solution": "class MyClass:\n  x = 5\n\np1 = MyClass()\nprint(p1.x)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["MyClass()"]
+        },
+        {
+            "title": "init Method",
+            "exercise": "Create a class 'Person' with __init__ taking 'name'. Print Person('Aris').name.",
+            "expectedOutput": "Aris",
+            "solution": "class Person:\n  def __init__(self, name):\n    self.name = name\n\np1 = Person(\"Aris\")\nprint(p1.name)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["__init__", "self"]
+        },
+        {
+            "title": "Object Methods",
+            "exercise": "Add a method 'greet' to Person that prints 'Hi ' + name. Call it.",
+            "expectedOutput": "Hi Aris",
+            "solution": "class Person:\n  def __init__(self, name):\n    self.name = name\n  def greet(self):\n    print(\"Hi \" + self.name)\n\np1 = Person(\"Aris\")\np1.greet()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def greet(self)"]
+        },
+        {
+            "title": "Inheritance",
+            "exercise": "Create a class 'Student' that inherits from 'Person'. Print 'Inherited'.",
+            "expectedOutput": "Inherited",
+            "solution": "class Person:\n  pass\nclass Student(Person):\n  pass\n\nprint(\"Inherited\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["(Person)"]
+        }
+    ]
+}

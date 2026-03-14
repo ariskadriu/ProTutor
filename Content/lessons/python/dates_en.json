@@ -1,0 +1,57 @@
+{
+    "Id": "py_dates_en",
+    "Title": "Python Dates",
+    "Description": "A date in Python is not a data type of its own, but we can import a module named datetime.",
+    "Example": "import datetime\nprint(datetime.datetime.now())",
+    "Challenges": [
+        {
+            "Title": "Import datetime",
+            "Difficulty": "Beginner",
+            "Exercise": "Import the datetime module and print the current date using `.now()`.",
+            "RequiredKeywords": [
+                "import datetime",
+                "now",
+                "print"
+            ]
+        },
+        {
+            "Title": "Return year",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print the year of the current date.",
+            "RequiredKeywords": [
+                "year",
+                "now",
+                "print"
+            ]
+        },
+        {
+            "Title": "Create date",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create a date object for 2020, 5, 17 using `datetime.datetime`.",
+            "RequiredKeywords": [
+                "2020, 5, 17",
+                "datetime.datetime"
+            ]
+        },
+        {
+            "Title": "Strftime",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print the name of the month using `strftime(\"%B\")`.",
+            "RequiredKeywords": [
+                "strftime",
+                "%B",
+                "print"
+            ]
+        },
+        {
+            "Title": "Weekday",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print the weekday of the date using `strftime(\"%A\")`.",
+            "RequiredKeywords": [
+                "strftime",
+                "%A",
+                "print"
+            ]
+        }
+    ]
+}

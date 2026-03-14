@@ -1,0 +1,56 @@
+{
+    "Id": "cs_user_input_en",
+    "Title": "C# User Input",
+    "Description": "You have already learned that Console.WriteLine() is used to output values. Now we will use Console.ReadLine() to get user input.",
+    "Example": "Console.WriteLine(\"Enter name:\");\nstring userName = Console.ReadLine();\nConsole.WriteLine(\"Name is: \" + userName);",
+    "Challenges": [
+        {
+            "Title": "Prompt user",
+            "Difficulty": "Beginner",
+            "Exercise": "Use `Console.WriteLine` to ask 'Enter username:'.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "Enter username:"
+            ]
+        },
+        {
+            "Title": "Read input",
+            "Difficulty": "Intermediate",
+            "Exercise": "Use `Console.ReadLine()` and assign it to a string `userName`.",
+            "RequiredKeywords": [
+                "string userName",
+                "Console.ReadLine()"
+            ]
+        },
+        {
+            "Title": "Print output",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print 'Username is: ' followed by `userName`.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "Username is: ",
+                "+ userName"
+            ]
+        },
+        {
+            "Title": "Numeric input",
+            "Difficulty": "Intermediate",
+            "Exercise": "Prompt for an age, read the input, and Convert.ToInt32 it to `int age`.",
+            "RequiredKeywords": [
+                "int age",
+                "Convert.ToInt32",
+                "Console.ReadLine()"
+            ]
+        },
+        {
+            "Title": "Print age",
+            "Difficulty": "Intermediate",
+            "Exercise": "Print 'Your age is: ' plus `age`.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "Your age is: ",
+                "+ age"
+            ]
+        }
+    ]
+}

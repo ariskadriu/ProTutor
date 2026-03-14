@@ -1,0 +1,56 @@
+{
+    "Id": "py_lambda_en",
+    "Title": "Python Lambda",
+    "Description": "A lambda function is a small anonymous function. It can take any number of arguments, but can only have one expression.",
+    "Example": "print(x(5))",
+    "Challenges": [
+        {
+            "Title": "Create Lambda",
+            "Difficulty": "Beginner",
+            "Exercise": "Create a lambda function `x` that adds 10 to the number passed in.",
+            "RequiredKeywords": [
+                "lambda",
+                "a",
+                "+ 10"
+            ]
+        },
+        {
+            "Title": "Multiple args",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create lambda `x` that multiplies argument `a` with argument `b`.",
+            "RequiredKeywords": [
+                "lambda a, b",
+                "*"
+            ]
+        },
+        {
+            "Title": "Inside Function",
+            "Difficulty": "Intermediate",
+            "Exercise": "Use lambda inside a function `myfunc(n)` returning `lambda a : a * n`.",
+            "RequiredKeywords": [
+                "def myfunc",
+                "lambda"
+            ]
+        },
+        {
+            "Title": "Call Lambda",
+            "Difficulty": "Intermediate",
+            "Exercise": "Assing the lambda from `myfunc(2)` to `mydoubler` and print `mydoubler(11)`.",
+            "RequiredKeywords": [
+                "mydoubler",
+                "22",
+                "print"
+            ]
+        },
+        {
+            "Title": "Advanced Lambda",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create a lambda `greet` that takes a name and returns 'Hello ' + name.",
+            "RequiredKeywords": [
+                "lambda",
+                "Hello",
+                "greet"
+            ]
+        }
+    ]
+}

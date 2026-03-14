@@ -1,0 +1,48 @@
+{
+    "id": "py_dict_sq",
+    "title": "Fjalorët në Python (Dictionaries)",
+    "description": "Fjalorët përdoren për të ruajtur vlerat në çifte çelës:vlerë (key:value).",
+    "example": "fjalori_im = {\"brand\": \"Ford\", \"model\": \"Mustang\"}",
+    "challenges": [
+        {
+            "title": "Krijo Fjalor",
+            "exercise": "Krijoni një fjalor 'makina' me brand='Ford'. Printojeni.",
+            "expectedOutput": "{'brand': 'Ford'}",
+            "solution": "makina = {\"brand\": \"Ford\"}\nprint(makina)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["{", "}", ":"]
+        },
+        {
+            "title": "Akseso Vlerën",
+            "exercise": "Printoni vlerën e çelësit 'brand'.",
+            "expectedOutput": "Ford",
+            "solution": "makina = {\"brand\": \"Ford\"}\nprint(makina['brand'])",
+            "difficulty": "Easy",
+            "requiredKeywords": ["['brand']"]
+        },
+        {
+            "title": "Ndrysho Vlerën",
+            "exercise": "Ndryshoni 'brand' në 'BMW' dhe printoni fjalorin.",
+            "expectedOutput": "{'brand': 'BMW'}",
+            "solution": "makina = {\"brand\": \"Ford\"}\nmakina['brand'] = \"BMW\"\nprint(makina)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["['brand'] ="]
+        },
+        {
+            "title": "Shto Artikull",
+            "exercise": "Shtoni ngjyra='kuqe' në fjalorin makina dhe printojeni.",
+            "expectedOutput": "{'brand': 'Ford', 'ngjyra': 'kuqe'}",
+            "solution": "makina = {\"brand\": \"Ford\"}\nmakina['ngjyra'] = \"kuqe\"\nprint(makina)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["['ngjyra'] ="]
+        },
+        {
+            "title": "Hiq Artikull",
+            "exercise": "Hiqni 'brand' duke përdorur pop() dhe printojeni.",
+            "expectedOutput": "{}",
+            "solution": "makina = {\"brand\": \"Ford\"}\nmakina.pop(\"brand\")\nprint(makina)",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".pop("]
+        }
+    ]
+}

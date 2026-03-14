@@ -1,0 +1,48 @@
+{
+    "id": "cs_linq_en",
+    "title": "C# LINQ Basics",
+    "description": "LINQ (Language Integrated Query) is a set of technologies that allows you to query data from different sources (arrays, collections, etc.).",
+    "example": "int[] scores = { 90, 71, 82, 93, 75, 82 };\nvar query = from s in scores where s > 80 select s;",
+    "challenges": [
+        {
+            "title": "Numbers Query",
+            "exercise": "Create int[] nr = {1, 5, 8}. Use LINQ to select numbers > 4. Print the count.",
+            "expectedOutput": "2",
+            "solution": "using System.Linq;\nint[] nr = {1, 5, 8};\nvar res = from n in nr where n > 4 select n;\nConsole.WriteLine(res.Count());",
+            "difficulty": "Easy",
+            "requiredKeywords": ["from", "where", "select"]
+        },
+        {
+            "title": "LINQ Methods",
+            "exercise": "Use .Where(n => n > 4) on {1, 5, 8} and print the sum.",
+            "expectedOutput": "13",
+            "solution": "using System.Linq;\nint[] nr = {1, 5, 8};\nConsole.WriteLine(nr.Where(n => n > 4).Sum());",
+            "difficulty": "Medium",
+            "requiredKeywords": [".Where(", "=>"]
+        },
+        {
+            "title": "Ordering",
+            "exercise": "Order the list {3, 1, 2} using .OrderBy(n => n) and print the first element.",
+            "expectedOutput": "1",
+            "solution": "using System.Linq;\nint[] nr = {3, 1, 2};\nConsole.WriteLine(nr.OrderBy(n => n).First());",
+            "difficulty": "Medium",
+            "requiredKeywords": [".OrderBy("]
+        },
+        {
+            "title": "Any Method",
+            "exercise": "Check if {1, 2} contains any number > 1 using .Any(). Print result.",
+            "expectedOutput": "True",
+            "solution": "using System.Linq;\nint[] nr = {1, 2};\nConsole.WriteLine(nr.Any(n => n > 1));",
+            "difficulty": "Hard",
+            "requiredKeywords": [".Any("]
+        },
+        {
+            "title": "Average",
+            "exercise": "Calculate the average of {10, 20, 30} using LINQ and print it.",
+            "expectedOutput": "20",
+            "solution": "using System.Linq;\nint[] nr = {10, 20, 30};\nConsole.WriteLine(nr.Average());",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".Average()"]
+        }
+    ]
+}

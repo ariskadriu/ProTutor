@@ -1,0 +1,54 @@
+{
+    "Id": "py_inheritance_en",
+    "Title": "Python Inheritance",
+    "Description": "Inheritance allows us to define a class that inherits all the methods and properties from another class.",
+    "Example": "x = Student('John')\nx.welcome()",
+    "Challenges": [
+        {
+            "Title": "Parent class",
+            "Difficulty": "Beginner",
+            "Exercise": "Create a class `Person` with a printname method.",
+            "RequiredKeywords": [
+                "class Person",
+                "printname"
+            ]
+        },
+        {
+            "Title": "Child class",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create a class `Student` that inherits from `Person`.",
+            "RequiredKeywords": [
+                "class Student",
+                "Person",
+                "pass"
+            ]
+        },
+        {
+            "Title": "Add init",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add an `__init__()` function to the `Student` class.",
+            "RequiredKeywords": [
+                "__init__",
+                "self"
+            ]
+        },
+        {
+            "Title": "Super function",
+            "Difficulty": "Intermediate",
+            "Exercise": "Use the `super()` function inside the Student's init.",
+            "RequiredKeywords": [
+                "super()",
+                "__init__"
+            ]
+        },
+        {
+            "Title": "Add properties",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a property called `graduationyear` to the `Student` class.",
+            "RequiredKeywords": [
+                "graduationyear",
+                "self"
+            ]
+        }
+    ]
+}

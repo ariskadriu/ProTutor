@@ -1,0 +1,48 @@
+{
+    "id": "cs_loops_en",
+    "title": "C# Loops",
+    "description": "Loops can execute a block of code as long as a specified condition is reached.",
+    "example": "int i = 0;\nwhile (i < 5)\n{\n  Console.WriteLine(i);\n  i++;\n}",
+    "challenges": [
+        {
+            "title": "While Loop",
+            "exercise": "Print i as long as i is less than 5. Start i at 0.",
+            "expectedOutput": "0\n1\n2\n3\n4",
+            "solution": "int i = 0;\nwhile (i < 5)\n{\n  Console.WriteLine(i);\n  i++;\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["while", "i++"]
+        },
+        {
+            "title": "Do While",
+            "exercise": "Use a do/while loop to print 0 once. Start i at 0.",
+            "expectedOutput": "0",
+            "solution": "int i = 0;\ndo {\n  Console.WriteLine(i);\n  i++;\n} while (i < 0);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["do", "while"]
+        },
+        {
+            "title": "For Loop",
+            "exercise": "Use a for loop to print 1 to 3.",
+            "expectedOutput": "1\n2\n3",
+            "solution": "for (int i = 1; i <= 3; i++)\n{\n  Console.WriteLine(i);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["for"]
+        },
+        {
+            "title": "Break Statement",
+            "exercise": "In a for loop (0 to 10), exit when i is 2.",
+            "expectedOutput": "0\n1",
+            "solution": "for (int i = 0; i < 10; i++)\n{\n  if (i == 2) break;\n  Console.WriteLine(i);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["break"]
+        },
+        {
+            "title": "Foreach Loop",
+            "exercise": "Loop through string[] cars = {'Volvo', 'BMW'} and print each.",
+            "expectedOutput": "Volvo\nBMW",
+            "solution": "string[] cars = {\"Volvo\", \"BMW\"};\nforeach (string i in cars)\n{\n  Console.WriteLine(i);\n}",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["foreach"]
+        }
+    ]
+}

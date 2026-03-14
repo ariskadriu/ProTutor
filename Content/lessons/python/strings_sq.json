@@ -1,0 +1,48 @@
+{
+    "id": "py_strings_sq",
+    "title": "Stringjet në Python",
+    "description": "Stringjet në python rrethohen ose nga thonjëza teke, ose nga thonjëza dyshe.",
+    "example": "print(\"Përshendetje\")\nprint('Përshendetje')",
+    "challenges": [
+        {
+            "title": "Gjatësia e Stringut",
+            "exercise": "Përdorni funksionin len() për të printuar gjatësinë e stringut 'Antigravity'.",
+            "expectedOutput": "11",
+            "solution": "print(len(\"Antigravity\"))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["len", "print"]
+        },
+        {
+            "title": "Indeksimi i Stringut",
+            "exercise": "Printoni karakterin e parë të stringut 'Python'.",
+            "expectedOutput": "P",
+            "solution": "txt = \"Python\"\nprint(txt[0])",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0]"]
+        },
+        {
+            "title": "Prerja e Stringut (Slicing)",
+            "exercise": "Printoni karakteret nga indeksi 2 në indeksin 5 (pa përfshirë 5) në 'Hello World'.",
+            "expectedOutput": "llo",
+            "solution": "txt = \"Hello World\"\nprint(txt[2:5])",
+            "difficulty": "Medium",
+            "requiredKeywords": [":"]
+        },
+        {
+            "title": "Metodat e Stringut",
+            "exercise": "Ktheni stringun 'hello' në shkronja të mëdha (upper case) dhe printojeni.",
+            "expectedOutput": "HELLO",
+            "solution": "txt = \"hello\"\nprint(txt.upper())",
+            "difficulty": "Hard",
+            "requiredKeywords": [".upper()"]
+        },
+        {
+            "title": "Formatimi i Stringut",
+            "exercise": "Përdorni një f-string për të printuar 'Emri im është John dhe jam 36 vjeç' duke përdorur variablat name='John' dhe age=36.",
+            "expectedOutput": "Emri im është John dhe jam 36 vjeç",
+            "solution": "name = \"John\"\nage = 36\nprint(f\"Emri im është {name} dhe jam {age} vjeç\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["f\"", "{", "}"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "py_files_sq",
+    "title": "Trajtimi i Skedarëve në Python (Files)",
+    "description": "Trajtimi i skedarëve është një pjesë e rëndësishme e çdo aplikacioni. Python ka disa funksione për krijimin, leximin, përditësimin dhe fshirjen e skedarëve.",
+    "example": "f = open(\"skedari_im.txt\", \"r\")\nprint(f.read())",
+    "challenges": [
+        {
+            "title": "Hap Skedarin",
+            "exercise": "Hapni 'test.txt' për lexim ('r'). Printoni 'Hapur'.",
+            "expectedOutput": "Hapur",
+            "solution": "f = open(\"test.txt\", \"r\")\nprint(\"Hapur\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["open(", "\"r\""]
+        },
+        {
+            "title": "Lexo Përmbajtjen",
+            "exercise": "Printoni 'Hello' për të simuluar leximin e një skedari që përmban 'Hello'.",
+            "expectedOutput": "Hello",
+            "solution": "print(\"Hello\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Shkruaj në Skedar",
+            "exercise": "Hapni 'test.txt' për shtim ('a'). Printoni 'Shtuar'.",
+            "expectedOutput": "Shtuar",
+            "solution": "f = open(\"test.txt\", \"a\")\nprint(\"Shtuar\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["\"a\""]
+        },
+        {
+            "title": "Mbyll Skedarin",
+            "exercise": "Hapni një skedar 'f' dhe pastaj mbylleni duke përdorur f.close(). Printoni 'Mbyllur'.",
+            "expectedOutput": "Mbyllur",
+            "solution": "f = open(\"test.txt\", \"r\")\nf.close()\nprint(\"Mbyllur\")",
+            "difficulty": "Hard",
+            "requiredKeywords": [".close()"]
+        },
+        {
+            "title": "Deklarata With",
+            "exercise": "Përdorni 'with open('test.txt') as f:' për të hapur një skedar dhe printoni 'Sigurt'.",
+            "expectedOutput": "Sigurt",
+            "solution": "with open(\"test.txt\") as f:\n  print(\"Sigurt\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["with open", "as f:"]
+        }
+    ]
+}

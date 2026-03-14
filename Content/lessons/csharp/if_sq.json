@@ -1,0 +1,48 @@
+{
+    "id": "cs_if_sq",
+    "title": "C# If...Else (Shqip)",
+    "description": "C# përdor deklaratën 'if' për të specifikuar një bllok kodi që do të ekzekutohet nëse një kusht është i vërtetë.",
+    "example": "if (20 > 18)\n{\n  Console.WriteLine(\"20 është më e madhe se 18\");\n}",
+    "challenges": [
+        {
+            "title": "If Bazë",
+            "exercise": "Printoni 'Po' nëse 5 është më e madhe se 2.",
+            "expectedOutput": "Po",
+            "solution": "if (5 > 2)\n{\n  Console.WriteLine(\"Po\");\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["if", "Console.WriteLine"]
+        },
+        {
+            "title": "Blloku Else",
+            "exercise": "Printoni 'Po' nëse 5 > 2, përndryshe 'Jo'.",
+            "expectedOutput": "Po",
+            "solution": "if (5 > 2)\n{\n  Console.WriteLine(\"Po\");\n}\nelse\n{\n  Console.WriteLine(\"Jo\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else"]
+        },
+        {
+            "title": "Else If",
+            "exercise": "Jepni int a=10, b=10. Nëse a > b printoni 'A', else if a == b printoni 'Barabartë'.",
+            "expectedOutput": "Barabartë",
+            "solution": "int a = 10; int b = 10;\nif (a > b)\n{\n  Console.WriteLine(\"A\");\n}\nelse if (a == b)\n{\n  Console.WriteLine(\"Barabartë\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else if"]
+        },
+        {
+            "title": "Operatori Ternar",
+            "exercise": "Përdorni operatorin ternar për të printuar 'Kaloi' nëse 10 > 5, përndryshe 'Ngeli'.",
+            "expectedOutput": "Kaloi",
+            "solution": "string result = (10 > 5) ? \"Kaloi\" : \"Ngeli\";\nConsole.WriteLine(result);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["?", ":"]
+        },
+        {
+            "title": "If Kompleks",
+            "exercise": "Printoni 'True' nëse (5 > 2 && 10 > 5).",
+            "expectedOutput": "True",
+            "solution": "if (5 > 2 && 10 > 5)\n{\n  Console.WriteLine(\"True\");\n}",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["&&"]
+        }
+    ]
+}

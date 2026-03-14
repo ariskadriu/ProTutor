@@ -1,0 +1,48 @@
+{
+    "id": "py_functions_en",
+    "title": "Python Functions",
+    "description": "A function is a block of code which only runs when it is called.",
+    "example": "def my_function():\n  print(\"Hello from a function\")",
+    "challenges": [
+        {
+            "title": "Create Function",
+            "exercise": "Define a function named 'my_func' that prints 'Hello'.",
+            "expectedOutput": "",
+            "solution": "def my_func():\n  print(\"Hello\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["def", ":"]
+        },
+        {
+            "title": "Call Function",
+            "exercise": "Define 'my_func' to print 'Hi' and then call it.",
+            "expectedOutput": "Hi",
+            "solution": "def my_func():\n  print(\"Hi\")\n\nmy_func()",
+            "difficulty": "Easy",
+            "requiredKeywords": ["my_func()"]
+        },
+        {
+            "title": "Arguments",
+            "exercise": "Define a function 'greet' that takes a 'name' and prints 'Hello ' + name. Call it with 'Aris'.",
+            "expectedOutput": "Hello Aris",
+            "solution": "def greet(name):\n  print(\"Hello \" + name)\n\ngreet(\"Aris\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(name)", "greet("]
+        },
+        {
+            "title": "Return Value",
+            "exercise": "Define a function 'add' that returns x + 5. Print add(10).",
+            "expectedOutput": "15",
+            "solution": "def add(x):\n  return x + 5\n\nprint(add(10))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["return"]
+        },
+        {
+            "title": "Lambda",
+            "exercise": "Create a lambda function 'x' that adds 10 to the input and print x(5).",
+            "expectedOutput": "15",
+            "solution": "x = lambda a : a + 10\nprint(x(5))",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["lambda"]
+        }
+    ]
+}

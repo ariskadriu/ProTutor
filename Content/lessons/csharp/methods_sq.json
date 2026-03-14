@@ -1,0 +1,48 @@
+{
+    "id": "cs_methods_sq",
+    "title": "Metodat në C#",
+    "description": "Një metodë është një bllok kodi i cili ekzekutohet vetëm kur thirret.",
+    "example": "static void MetodaIme()\n{\n  Console.WriteLine(\"Sapo u ekzekutua!\");\n}",
+    "challenges": [
+        {
+            "title": "Krijo Metodë",
+            "exercise": "Përcaktoni një metodë statike 'MetodaIme' që printon 'Hi'.",
+            "expectedOutput": "",
+            "solution": "static void MetodaIme()\n{\n  Console.WriteLine(\"Hi\");\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["static void", "MetodaIme"]
+        },
+        {
+            "title": "Thirr Metodën",
+            "exercise": "Përcaktoni 'MetodaIme' për të printuar 'Hi' dhe thirreni në Main.",
+            "expectedOutput": "Hi",
+            "solution": "static void MetodaIme()\n{\n  Console.WriteLine(\"Hi\");\n}\n\nstatic void Main(string[] args)\n{\n  MetodaIme();\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["MetodaIme();"]
+        },
+        {
+            "title": "Parametrat",
+            "exercise": "Krijoni një metodë 'Pershendet' që merr string 'emri' dhe printon 'Hello ' + emri. Thirreni me 'Aris'.",
+            "expectedOutput": "Hello Aris",
+            "solution": "static void Pershendet(string emri)\n{\n  Console.WriteLine(\"Hello \" + emri);\n}\n\nPershendet(\"Aris\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(string emri)"]
+        },
+        {
+            "title": "Kthe Vlerë",
+            "exercise": "Krijoni një metodë 'Mbledh' që kthen int x + 10. Printoni Mbledh(5).",
+            "expectedOutput": "15",
+            "solution": "static int Mbledh(int x)\n{\n  return x + 10;\n}\n\nConsole.WriteLine(Mbledh(5));",
+            "difficulty": "Hard",
+            "requiredKeywords": ["return", "int Mbledh"]
+        },
+        {
+            "title": "Mbingarkimi i Metodave",
+            "exercise": "Printoni 'Method Overloading' për të demonstruar se kuptoni se metodat mund të kenë të njëjtin emër me parametra të ndryshëm.",
+            "expectedOutput": "Method Overloading",
+            "solution": "Console.WriteLine(\"Method Overloading\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["Method Overloading"]
+        }
+    ]
+}

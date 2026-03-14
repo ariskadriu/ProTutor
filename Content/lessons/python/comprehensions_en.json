@@ -1,0 +1,24 @@
+{
+    "id": "py_comprehensions_en",
+    "title": "Python List Comprehensions",
+    "description": "List comprehensions offer a shorter syntax when you want to create a new list based on the values of an existing list.",
+    "example": "newlist = [x for x in fruits if \"a\" in x]",
+    "challenges": [
+        {
+            "title": "Square Numbers",
+            "exercise": "Create a list of squares for numbers 0-4 using list comprehension. Print it.",
+            "expectedOutput": "[0, 1, 4, 9, 16]",
+            "solution": "squares = [x*x for x in range(5)]\nprint(squares)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[", "for", "in", "range"]
+        },
+        {
+            "title": "Filter Evens",
+            "exercise": "Given list [1, 2, 3, 4, 5], create a new list with only even numbers using list comprehension. Print it.",
+            "expectedOutput": "[2, 4]",
+            "solution": "nums = [1, 2, 3, 4, 5]\nevens = [x for x in nums if x % 2 == 0]\nprint(evens)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["if", "% 2 == 0"]
+        }
+    ]
+}

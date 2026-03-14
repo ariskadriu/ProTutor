@@ -1,0 +1,48 @@
+{
+    "id": "py_if_en",
+    "title": "Python If...Else",
+    "description": "Python supports the usual logical conditions from mathematics: Equals (a == b), Not Equals (a != b), Less than (a < b), etc.",
+    "example": "a = 33\nb = 200\nif b > a:\n  print(\"b is greater than a\")",
+    "challenges": [
+        {
+            "title": "Basic If",
+            "exercise": "Print 'Yes' if 5 is greater than 2.",
+            "expectedOutput": "Yes",
+            "solution": "if 5 > 2:\n  print(\"Yes\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["if", "print"]
+        },
+        {
+            "title": "Else Statement",
+            "exercise": "Print 'Yes' if 5 > 2, otherwise print 'No'.",
+            "expectedOutput": "Yes",
+            "solution": "if 5 > 2:\n  print(\"Yes\")\nelse:\n  print(\"No\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else"]
+        },
+        {
+            "title": "Elif Logic",
+            "exercise": "Assign a=33, b=33. If b > a print 'B', elif a == b print 'Equal'.",
+            "expectedOutput": "Equal",
+            "solution": "a = 33\nb = 33\nif b > a:\n  print(\"B\")\nelif a == b:\n  print(\"Equal\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["elif"]
+        },
+        {
+            "title": "Short Hand If",
+            "exercise": "Use short hand if to print 'Hello' if 5 > 2.",
+            "expectedOutput": "Hello",
+            "solution": "if 5 > 2: print(\"Hello\")",
+            "difficulty": "Hard",
+            "requiredKeywords": [":", "print"]
+        },
+        {
+            "title": "Logical AND",
+            "exercise": "Print 'Both' if 5 > 2 AND 10 > 5.",
+            "expectedOutput": "Both",
+            "solution": "if 5 > 2 and 10 > 5:\n  print(\"Both\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["and"]
+        }
+    ]
+}

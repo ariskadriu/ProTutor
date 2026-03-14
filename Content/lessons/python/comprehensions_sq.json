@@ -1,0 +1,16 @@
+{
+    "id": "py_comprehensions_sq",
+    "title": "Python List Comprehensions (Shqip)",
+    "description": "List comprehensions ofrojnë një sintaksë më të shkurtër kur dëshironi të krijoni një listë të re bazuar në vlerat e një liste ekzistuese.",
+    "example": "newlist = [x for x in fruits if \"a\" in x]",
+    "challenges": [
+        {
+            "title": "Numrat në katror",
+            "exercise": "Krijoni një listë të katrorëve për numrat 0-4 duke përdorur list comprehension. Printoni atë.",
+            "expectedOutput": "[0, 1, 4, 9, 16]",
+            "solution": "squares = [x*x for x in range(5)]\nprint(squares)",
+            "difficulty": "Mesatare",
+            "requiredKeywords": ["[", "for", "in", "range"]
+        }
+    ]
+}

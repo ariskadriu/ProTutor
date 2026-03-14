@@ -1,0 +1,54 @@
+{
+    "Id": "cs_switch_en",
+    "Title": "C# Switch",
+    "Description": "Use the switch statement to select one of many code blocks to be executed.",
+    "Example": "int day = 4;\nswitch(day) { case 4: Console.WriteLine(\"Thursday\"); break; }",
+    "Challenges": [
+        {
+            "Title": "Switch statement",
+            "Difficulty": "Beginner",
+            "Exercise": "Write a `switch(day)` block for an int variable `day`.",
+            "RequiredKeywords": [
+                "switch",
+                "(day)",
+                "{"
+            ]
+        },
+        {
+            "Title": "Add cases",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add `case 1:` and print 'Monday'.",
+            "RequiredKeywords": [
+                "case 1:",
+                "Monday"
+            ]
+        },
+        {
+            "Title": "Break keyword",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add the `break;` keyword after your case.",
+            "RequiredKeywords": [
+                "break;"
+            ]
+        },
+        {
+            "Title": "Default case",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a `default:` block that prints 'Weekend'.",
+            "RequiredKeywords": [
+                "default:",
+                "Weekend",
+                "break;"
+            ]
+        },
+        {
+            "Title": "Execute",
+            "Difficulty": "Intermediate",
+            "Exercise": "Set `day = 1;` and ensure 'Monday' prints.",
+            "RequiredKeywords": [
+                "int day = 1;",
+                "Monday"
+            ]
+        }
+    ]
+}

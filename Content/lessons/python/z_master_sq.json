@@ -1,0 +1,48 @@
+{
+    "id": "py_z_master_sq",
+    "title": "Projekti Final Python",
+    "description": "Urime për përfundimin e rrugëtimit në Python! Është koha për të aplikuar gjithçka keni mësuar. Në këtë projekt final, ju do të ndërtoni logjikën për aplikacione të vogla.",
+    "example": "# Përdorni funksione, loops, lists, dhe gjithçka tjetër!\ndef llogarites(a, b, op):\n  if op == '+': return a + b\n  return 0\n\nprint(llogarites(5, 5, '+'))",
+    "challenges": [
+        {
+            "title": "Funksioni Kalkulator",
+            "exercise": "Krijoni një funksion 'calc(a, b, op)' që kthen a+b për '+', a-b për '-', a*b për '*', dhe 'Gabim' për pjesëtim me 0 ('/'). Printoni calc(10, 2, '/').",
+            "expectedOutput": "5.0",
+            "solution": "def calc(a, b, op):\n  if op == '+': return a + b\n  if op == '-': return a - b\n  if op == '*': return a * b\n  if op == '/':\n    if b == 0: return 'Gabim'\n    return a / b\n\nprint(calc(10, 2, '/'))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def calc", "if op ==", "return a / b"]
+        },
+        {
+            "title": "Menaxheri To-Do (Shto)",
+            "exercise": "Krijoni klasën 'ToDo'. Në __init__, përcaktoni self.detyrat = []. Krijoni metodën 'shto(detyre)' që e shton në listë. Krijoni obj 't', shtoni 'Studim', 'Gjumë'. Printoni t.detyrat.",
+            "expectedOutput": "['Studim', 'Gjumë']",
+            "solution": "class ToDo:\n  def __init__(self):\n    self.detyrat = []\n  def shto(self, d):\n    self.detyrat.append(d)\n\nt = ToDo()\nt.shto('Studim')\nt.shto('Gjumë')\nprint(t.detyrat)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["class ToDo:", "def __init__(self):", ".append(", "t.shto("]
+        },
+        {
+            "title": "Menaxheri To-Do (Përfundo)",
+            "exercise": "Shtoni metodën 'perfundo(detyre)' në ToDo që heq detyrën nëse ekziston. Supozoni detyrat fillestare = ['Studim', 'Gjumë']. perfundo('Studim'). Printoni detyrat.",
+            "expectedOutput": "['Gjumë']",
+            "solution": "class ToDo:\n  def __init__(self):\n    self.detyrat = ['Studim', 'Gjumë']\n  def perfundo(self, d):\n    if d in self.detyrat:\n      self.detyrat.remove(d)\n\nt = ToDo()\nt.perfundo('Studim')\nprint(t.detyrat)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def perfundo", ".remove("]
+        },
+        {
+            "title": "Analizues Të Dhënash",
+            "exercise": "Nga piket = [80, 95, 70, 100]. Printoni pikët maksimale me max(), minimale me min(), dhe mesataren (sum/len) në rreshta të ndarë.",
+            "expectedOutput": "100\n70\n86.25",
+            "solution": "piket = [80, 95, 70, 100]\nprint(max(piket))\nprint(min(piket))\nprint(sum(piket)/len(piket))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["max(", "min(", "sum(", "len("]
+        },
+        {
+            "title": "Zhvillues Master",
+            "exercise": "Ju keni zotëruar bazat e Python! Shkruani 'pershendet(emer)' që kthen 'Mirësevjen, {emer}!'. Printoni pershendet('Aris').",
+            "expectedOutput": "Mirësevjen, Aris!",
+            "solution": "def pershendet(emer):\n  return f\"Mirësevjen, {emer}!\"\n\nprint(pershendet('Aris'))",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["def pershendet", "Aris"]
+        }
+    ]
+}

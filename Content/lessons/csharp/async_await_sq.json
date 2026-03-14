@@ -1,0 +1,16 @@
+{
+    "id": "cs_async_await_sq",
+    "title": "C# Async/Await (Shqip)",
+    "description": "Async dhe Await përdoren për të menaxhuar operacione që marrin kohë pa bllokuar programin kryesor.",
+    "example": "public async Task<string> GetDataAsync() { ... }",
+    "challenges": [
+        {
+            "title": "Fjala kyçe Task",
+            "exercise": "Shkruani signaturën e një metode 'DoWorkAsync' që kthen një Task të llojit string.",
+            "expectedOutput": "public async Task<string> DoWorkAsync()",
+            "solution": "public async Task<string> DoWorkAsync() { return \"U krye\"; }",
+            "difficulty": "Mesatare",
+            "requiredKeywords": ["async", "Task<string>"]
+        }
+    ]
+}

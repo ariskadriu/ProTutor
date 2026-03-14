@@ -1,0 +1,48 @@
+{
+    "id": "py_variables_en",
+    "title": "Python Variables",
+    "description": "Variables are containers for storing data values. In Python, a variable is created the moment you first assign a value to it.",
+    "example": "x = 5\ny = \"John\"\nprint(x)\nprint(y)",
+    "challenges": [
+        {
+            "title": "Assign and Print",
+            "exercise": "Create a variable named 'carName' and assign the value 'Volvo' to it. Then print it.",
+            "expectedOutput": "Volvo",
+            "solution": "carName = \"Volvo\"\nprint(carName)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["carName", "="]
+        },
+        {
+            "title": "Variable Types",
+            "exercise": "Create a variable 'x' with value 50 and print its type using type(x).",
+            "expectedOutput": "<class 'int'>",
+            "solution": "x = 50\nprint(type(x))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["type"]
+        },
+        {
+            "title": "Multi-Assignment",
+            "exercise": "Assign the values 'Orange', 'Banana', 'Cherry' to three variables x, y, z in one line. Then print y.",
+            "expectedOutput": "Banana",
+            "solution": "x, y, z = \"Orange\", \"Banana\", \"Cherry\"\nprint(y)",
+            "difficulty": "Medium",
+            "requiredKeywords": [",", "="]
+        },
+        {
+            "title": "Math with Variables",
+            "exercise": "Create variables a=5 and b=10. Print the sum of a and b.",
+            "expectedOutput": "15",
+            "solution": "a = 5\nb = 10\nprint(a + b)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Casting Master",
+            "exercise": "Create a variable x = str(3) and y = int(3). Print the output of x*y.",
+            "expectedOutput": "333",
+            "solution": "x = str(3)\ny = int(3)\nprint(x * y)",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["str", "int", "*"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "py_print_sq",
+    "title": "Printimi në Python",
+    "description": "Funksioni print() printon mesazhin e specifikuar në ekran, ose në një pajisje tjetër standarde dalëse.",
+    "example": "print(\"Përshëndetje Botë\")",
+    "challenges": [
+        {
+            "title": "Përshëndetje Botë",
+            "exercise": "Printoni stringun 'Përshëndetje Botë'.",
+            "expectedOutput": "Përshëndetje Botë",
+            "solution": "print(\"Përshëndetje Botë\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Printimi i Numrave",
+            "exercise": "Printoni numrin 100.",
+            "expectedOutput": "100",
+            "solution": "print(100)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print"]
+        },
+        {
+            "title": "Disa Argumente",
+            "exercise": "Printoni 'Përshëndetje' dhe 'Botë' të ndara nga një hapësirë duke përdorur disa argumente.",
+            "expectedOutput": "Përshëndetje Botë",
+            "solution": "print(\"Përshëndetje\", \"Botë\")",
+            "difficulty": "Medium",
+            "requiredKeywords": [","]
+        },
+        {
+            "title": "Ndarës Personalizuar",
+            "exercise": "Printoni 'A', 'B', 'C' me një ndarës '-'.",
+            "expectedOutput": "A-B-C",
+            "solution": "print(\"A\", \"B\", \"C\", sep=\"-\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["sep="]
+        },
+        {
+            "title": "Parametri End",
+            "exercise": "Printoni 'Pjesa1' pasuar nga 'Pjesa2' në të njëjtin rresht duke përdorur parametrin end.",
+            "expectedOutput": "Pjesa1Pjesa2",
+            "solution": "print(\"Pjesa1\", end=\"\")\nprint(\"Pjesa2\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["end="]
+        }
+    ]
+}

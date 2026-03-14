@@ -1,0 +1,48 @@
+{
+    "id": "cs_loops_sq",
+    "title": "Ciklet në C#",
+    "description": "Ciklet mund të ekzekutojnë një bllok kodi për sa kohë që arrihet një kusht i caktuar.",
+    "example": "int i = 0;\nwhile (i < 5)\n{\n  Console.WriteLine(i);\n  i++;\n}",
+    "challenges": [
+        {
+            "title": "Cikli While",
+            "exercise": "Printoni i për sa kohë i është më e vogël se 5. Filloni i në 0.",
+            "expectedOutput": "0\n1\n2\n3\n4",
+            "solution": "int i = 0;\nwhile (i < 5)\n{\n  Console.WriteLine(i);\n  i++;\n}",
+            "difficulty": "Easy",
+            "requiredKeywords": ["while", "i++"]
+        },
+        {
+            "title": "Do While",
+            "exercise": "Përdorni një cikël do/while për të printuar 0 një herë. Filloni i në 0.",
+            "expectedOutput": "0",
+            "solution": "int i = 0;\ndo {\n  Console.WriteLine(i);\n  i++;\n} while (i < 0);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["do", "while"]
+        },
+        {
+            "title": "Cikli For",
+            "exercise": "Përdorni një cikël for për të printuar 1 deri në 3.",
+            "expectedOutput": "1\n2\n3",
+            "solution": "for (int i = 1; i <= 3; i++)\n{\n  Console.WriteLine(i);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["for"]
+        },
+        {
+            "title": "Deklarata Break",
+            "exercise": "Në një cikël for (0 deri në 10), dilni kur i është 2.",
+            "expectedOutput": "0\n1",
+            "solution": "for (int i = 0; i < 10; i++)\n{\n  if (i == 2) break;\n  Console.WriteLine(i);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["break"]
+        },
+        {
+            "title": "Cikli Foreach",
+            "exercise": "Shfletoni string[] makina = {'Volvo', 'BMW'} dhe printoni secilën.",
+            "expectedOutput": "Volvo\nBMW",
+            "solution": "string[] makina = {\"Volvo\", \"BMW\"};\nforeach (string i in makina)\n{\n  Console.WriteLine(i);\n}",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["foreach"]
+        }
+    ]
+}

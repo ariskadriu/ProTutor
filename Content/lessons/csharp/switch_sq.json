@@ -1,0 +1,54 @@
+{
+    "Id": "cs_switch_sq",
+    "Title": "C# Switch",
+    "Description": "Përdoret për të zgjedhur një bllok kodi nga shumë opsione.",
+    "Example": "int day = 4;\nswitch(day) { case 4: Console.WriteLine(\"E Enjte\"); break; }",
+    "Challenges": [
+        {
+            "Title": "Blloku Switch",
+            "Difficulty": "Fillestar",
+            "Exercise": "Shkruaj një bllok `switch(day)`.",
+            "RequiredKeywords": [
+                "switch",
+                "(day)",
+                "{"
+            ]
+        },
+        {
+            "Title": "Shto case",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto `case 1:` që printon 'E Hënë'.",
+            "RequiredKeywords": [
+                "case 1:",
+                "E Hënë"
+            ]
+        },
+        {
+            "Title": "Fjala break",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto `break;` pas përfundimit.",
+            "RequiredKeywords": [
+                "break;"
+            ]
+        },
+        {
+            "Title": "Rasti default",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto bllokun `default:` që printon 'Fundjavë'.",
+            "RequiredKeywords": [
+                "default:",
+                "Fundjavë",
+                "break;"
+            ]
+        },
+        {
+            "Title": "Ekzekuto",
+            "Difficulty": "Mesatar",
+            "Exercise": "Lëre `day = 1;` që të printojë 'E Hënë'.",
+            "RequiredKeywords": [
+                "int day = 1;",
+                "E Hënë"
+            ]
+        }
+    ]
+}

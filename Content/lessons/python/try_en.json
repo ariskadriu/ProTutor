@@ -1,0 +1,48 @@
+{
+    "id": "py_try_en",
+    "title": "Python Try...Except",
+    "description": "The 'try' block lets you test a block of code for errors. The 'except' block lets you handle the error.",
+    "example": "try:\n  print(x)\nexcept:\n  print(\"An exception occurred\")",
+    "challenges": [
+        {
+            "title": "Basic Try",
+            "exercise": "Try to print an undefined variable 'x'. Catch the error and print 'Error'.",
+            "expectedOutput": "Error",
+            "solution": "try:\n  print(x)\nexcept:\n  print(\"Error\")",
+            "difficulty": "Easy",
+            "requiredKeywords": ["try:", "except:"]
+        },
+        {
+            "title": "Specific Exception",
+            "exercise": "Catch a NameError specifically and print 'Name Error'.",
+            "expectedOutput": "Name Error",
+            "solution": "try:\n  print(x)\nexcept NameError:\n  print(\"Name Error\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["except NameError:"]
+        },
+        {
+            "title": "Else Block",
+            "exercise": "Print 'Hello' in try, and 'No error' in the else block.",
+            "expectedOutput": "Hello\nNo error",
+            "solution": "try:\n  print(\"Hello\")\nexcept:\n  print(\"Error\")\nelse:\n  print(\"No error\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["else:"]
+        },
+        {
+            "title": "Finally",
+            "exercise": "Print 'Final' in the finally block regardless of errors.",
+            "expectedOutput": "Final",
+            "solution": "try:\n  print(x)\nexcept:\n  pass\nfinally:\n  print(\"Final\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["finally:"]
+        },
+        {
+            "title": "Raise Exception",
+            "exercise": "Raise a TypeError if x is not an int. (Set x='hi'). catch it and print 'Caught'.",
+            "expectedOutput": "Caught",
+            "solution": "x = \"hi\"\ntry:\n  if not type(x) is int:\n    raise TypeError(\"Only integers\")\nexcept TypeError:\n  print(\"Caught\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["raise TypeError"]
+        }
+    ]
+}

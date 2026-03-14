@@ -1,0 +1,48 @@
+{
+    "id": "py_loops_en",
+    "title": "Python Loops",
+    "description": "Python has two primitive loop commands: while loops and for loops.",
+    "example": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
+    "challenges": [
+        {
+            "title": "While Loop",
+            "exercise": "Print i as long as i is less than 6. Start i at 1.",
+            "expectedOutput": "1\n2\n3\n4\n5",
+            "solution": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
+            "difficulty": "Easy",
+            "requiredKeywords": ["while", "i < 6", "i += 1"]
+        },
+        {
+            "title": "Break Statement",
+            "exercise": "In a while loop, exit the loop when i is 3. Start i at 1.",
+            "expectedOutput": "1\n2",
+            "solution": "i = 1\nwhile i < 6:\n  if i == 3:\n    break\n  print(i)\n  i += 1",
+            "difficulty": "Medium",
+            "requiredKeywords": ["break"]
+        },
+        {
+            "title": "For Loop",
+            "exercise": "Loop through the items in ['apple', 'banana'] and print each.",
+            "expectedOutput": "apple\nbanana",
+            "solution": "for x in [\"apple\", \"banana\"]:\n  print(x)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["for", "in"]
+        },
+        {
+            "title": "Range Function",
+            "exercise": "Use the range() function to loop 6 times (0 to 5) and print each.",
+            "expectedOutput": "0\n1\n2\n3\n4\n5",
+            "solution": "for x in range(6):\n  print(x)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["range(6)"]
+        },
+        {
+            "title": "Else in For",
+            "exercise": "In a for x in range(3), print x, then print 'Done' after the loop using else.",
+            "expectedOutput": "0\n1\n2\nDone",
+            "solution": "for x in range(3):\n  print(x)\nelse:\n  print(\"Done\")",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["else:"]
+        }
+    ]
+}

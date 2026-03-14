@@ -1,0 +1,55 @@
+{
+    "Id": "cs_user_input_sq",
+    "Title": "Kërkesat ndaj Përdoruesit",
+    "Description": "Si të marrim hyrje nga përdoruesi me Console.ReadLine().",
+    "Example": "Console.WriteLine(\"Shkruaj emrin:\");\nstring userName = Console.ReadLine();\nConsole.WriteLine(\"Emri: \" + userName);",
+    "Challenges": [
+        {
+            "Title": "Kërko info",
+            "Difficulty": "Fillestar",
+            "Exercise": "Printo 'Shkruaj emrin:'.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "Shkruaj emrin:"
+            ]
+        },
+        {
+            "Title": "Lexo hyrjen",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor `Console.ReadLine()` te `userName`.",
+            "RequiredKeywords": [
+                "string userName",
+                "Console.ReadLine()"
+            ]
+        },
+        {
+            "Title": "Printo",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo 'Emri është: ' ndjekur nga emri.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "Emri është: ",
+                "+ userName"
+            ]
+        },
+        {
+            "Title": "Lexo numra",
+            "Difficulty": "Mesatar",
+            "Exercise": "Lexo një numër dhe përdor Convert.ToInt32 te `int age`.",
+            "RequiredKeywords": [
+                "int age",
+                "Convert.ToInt32",
+                "Console.ReadLine()"
+            ]
+        },
+        {
+            "Title": "Printo moshën",
+            "Difficulty": "Mesatar",
+            "Exercise": "Printo moshën tuaj.",
+            "RequiredKeywords": [
+                "Console.WriteLine",
+                "+ age"
+            ]
+        }
+    ]
+}

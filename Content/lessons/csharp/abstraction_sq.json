@@ -1,0 +1,53 @@
+{
+    "Id": "cs_abstraction_sq",
+    "Title": "Abstraksioni C#",
+    "Description": "Abstraksioni fsheh detajet dhe tregon vetëm infon thelbësore.",
+    "Example": "Pig myPig = new Pig();\nmyPig.animalSound();",
+    "Challenges": [
+        {
+            "Title": "Klasë abstrakte",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një klasë abstrakte `Animal`.",
+            "RequiredKeywords": [
+                "abstract class Animal"
+            ]
+        },
+        {
+            "Title": "Metodë abstrakte",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto metodën abstrakte `animalSound()` pa trup.",
+            "RequiredKeywords": [
+                "abstract void animalSound();"
+            ]
+        },
+        {
+            "Title": "Metodë e rregullt",
+            "Difficulty": "Mesatar",
+            "Exercise": "Shto metodën e rregullt `sleep()` (Zzz).",
+            "RequiredKeywords": [
+                "void sleep()",
+                "Console.WriteLine",
+                "Zzz"
+            ]
+        },
+        {
+            "Title": "Implemento",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo klasën `Pig` që zbaton `Animal`.",
+            "RequiredKeywords": [
+                "class Pig : Animal",
+                "override void animalSound()"
+            ]
+        },
+        {
+            "Title": "Testo zbatimin",
+            "Difficulty": "Mesatar",
+            "Exercise": "Thirr metodat te një objekt `Pig`.",
+            "RequiredKeywords": [
+                "Pig",
+                "animalSound()",
+                "sleep()"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "Id": "py_lambda_sq",
+    "Title": "Funksionet Lambda",
+    "Description": "Lambda është një funksion i vogël anonim. Merr disa argumente por ka vetëm një shprehje.",
+    "Example": "print(x(5))",
+    "Challenges": [
+        {
+            "Title": "Krijo Lambda",
+            "Difficulty": "Fillestar",
+            "Exercise": "Krijo një lambda `x` që shton 10 te numri.",
+            "RequiredKeywords": [
+                "lambda",
+                "a",
+                "+ 10"
+            ]
+        },
+        {
+            "Title": "Shumë argumente",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo lambda `x` që shumëzon `a` dhe `b`.",
+            "RequiredKeywords": [
+                "lambda a, b",
+                "*"
+            ]
+        },
+        {
+            "Title": "Brenda Funksionit",
+            "Difficulty": "Mesatar",
+            "Exercise": "Përdor lambda brenda funksionit `myfunc(n)` që kthen `lambda a : a * n`.",
+            "RequiredKeywords": [
+                "def myfunc",
+                "lambda"
+            ]
+        },
+        {
+            "Title": "Thirr Lambda",
+            "Difficulty": "Mesatar",
+            "Exercise": "Ruaje rezultatin te `mydoubler` dhe printo `mydoubler(11)`.",
+            "RequiredKeywords": [
+                "mydoubler",
+                "22",
+                "print"
+            ]
+        },
+        {
+            "Title": "Lambda i avancuar",
+            "Difficulty": "Mesatar",
+            "Exercise": "Krijo lambda `greet` që kthen 'Hello ' + emri.",
+            "RequiredKeywords": [
+                "lambda",
+                "Hello",
+                "greet"
+            ]
+        }
+    ]
+}

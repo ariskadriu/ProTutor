@@ -1,0 +1,48 @@
+{
+    "id": "py_sets_sq",
+    "title": "Set-et në Python (Sets)",
+    "description": "Set-et përdoren për të ruajtur disa artikuj në një variabël të vetëm. Një set është një koleksion i paorganizuar, i pandryshueshëm dhe i paindekswuar.",
+    "example": "seti_im = {\"mollë\", \"banane\", \"qershi\"}\nprint(seti_im)",
+    "challenges": [
+        {
+            "title": "Krijo Set",
+            "exercise": "Krijoni një set 'fruta' me 'mollë', 'banane'. Printojeni.",
+            "expectedOutput": "{'apple', 'banana'}",
+            "solution": "fruta = {\"mollë\", \"banane\"}\nprint(fruta)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["{", "}", "set"]
+        },
+        {
+            "title": "Shto Artikull",
+            "exercise": "Shtoni 'portokall' tek seti 'fruta' duke përdorur add(). Printo setin.",
+            "expectedOutput": "{'apple', 'banana', 'orange'}",
+            "solution": "fruta = {\"mollë\", \"banane\"}\nfruta.add(\"portokall\")\nprint(fruta)",
+            "difficulty": "Easy",
+            "requiredKeywords": [".add("]
+        },
+        {
+            "title": "Rifresko Setin",
+            "exercise": "Shtoni artikujt ['kiwi', 'mango'] tek 'fruta' duke përdorur update().",
+            "expectedOutput": "{'apple', 'banana', 'orange', 'kiwi', 'mango'}",
+            "solution": "fruta = {\"mollë\", \"banane\", \"portokall\"}\nfruta.update([\"kiwi\", \"mango\"])\nprint(fruta)",
+            "difficulty": "Medium",
+            "requiredKeywords": [".update("]
+        },
+        {
+            "title": "Hiq Artikull",
+            "exercise": "Hiqni 'banane' nga 'fruta' duke përdorur discard().",
+            "expectedOutput": "{'apple', 'orange', 'kiwi', 'mango'}",
+            "solution": "fruta = {\"mollë\", \"banane\", \"portokall\", \"kiwi\", \"mango\"}\nfruta.discard(\"banane\")\nprint(fruta)",
+            "difficulty": "Hard",
+            "requiredKeywords": [".discard("]
+        },
+        {
+            "title": "Prerja e Set-eve",
+            "exercise": "Gjeni artikujt e përbashkët midis {1, 2} dhe {2, 3} me intersection().",
+            "expectedOutput": "{2}",
+            "solution": "x = {1, 2}\ny = {2, 3}\nz = x.intersection(y)\nprint(z)",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".intersection("]
+        }
+    ]
+}

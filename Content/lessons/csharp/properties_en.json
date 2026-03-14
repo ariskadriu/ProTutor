@@ -1,0 +1,55 @@
+{
+    "Id": "cs_properties_en",
+    "Title": "C# Properties (Get/Set)",
+    "Description": "Properties combine fields and methods to protect data.",
+    "Example": "Person p = new Person();\np.Name = \"John\";\nConsole.WriteLine(p.Name);",
+    "Challenges": [
+        {
+            "Title": "Private field",
+            "Difficulty": "Beginner",
+            "Exercise": "Create a class `Person` with a private string field `name`.",
+            "RequiredKeywords": [
+                "class Person",
+                "private string name;"
+            ]
+        },
+        {
+            "Title": "Public property",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a public string property `Name` to `Person`.",
+            "RequiredKeywords": [
+                "public string Name",
+                "{",
+                "}"
+            ]
+        },
+        {
+            "Title": "Get accessor",
+            "Difficulty": "Intermediate",
+            "Exercise": "Inside the `Name` property, add a get accessor returning `name`.",
+            "RequiredKeywords": [
+                "get",
+                "return name;"
+            ]
+        },
+        {
+            "Title": "Set accessor",
+            "Difficulty": "Intermediate",
+            "Exercise": "Add a set accessor assigning `value` to `name`.",
+            "RequiredKeywords": [
+                "set",
+                "name = value;"
+            ]
+        },
+        {
+            "Title": "Auto-Property",
+            "Difficulty": "Intermediate",
+            "Exercise": "Create an auto-property `public string Age { get; set; }`.",
+            "RequiredKeywords": [
+                "public string Age",
+                "get;",
+                "set;"
+            ]
+        }
+    ]
+}

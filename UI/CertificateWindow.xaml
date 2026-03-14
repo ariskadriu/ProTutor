@@ -1,0 +1,74 @@
+<Window x:Class="ProgrammingTutor.UI.CertificateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Your Certificate" Height="600" Width="800"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BackgroundBrush}"
+        Foreground="{StaticResource TextBrush}"
+        ResizeMode="NoResize">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Top Control Bar -->
+        <Border Grid.Row="0" Background="#151517" Padding="10" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="SavePdfBtn" Content="💾 SAVE AS PNG" Click="SavePdf_Click" Style="{StaticResource PrimaryButton}" Margin="0,0,10,0" Padding="15,5"/>
+                <Button Content="CLOSE" Click="Close_Click" Style="{StaticResource ModernButton}" Background="Transparent" Foreground="{StaticResource MutedTextBrush}" BorderThickness="0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Certificate Rendering Area -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Border Padding="40" Background="#0C0C0D">
+                <!-- The actual Certificate Grid to be rendered -->
+                <Grid x:Name="CertificateGrid" Width="800" Height="565" Background="#1A1A1C">
+                    <!-- Outer Gold Border -->
+                    <Border BorderBrush="#D4AF37" BorderThickness="4" Margin="20">
+                        <!-- Inner Gold Border -->
+                        <Border BorderBrush="#D4AF37" BorderThickness="1" Margin="5">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                
+                                <TextBlock Text="PRO-TUTOR ACADEMY" Foreground="#D4AF37" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+                                
+                                <TextBlock Text="CERTIFICATE OF COMPLETION" Foreground="White" FontSize="36" FontWeight="ExtraBold" HorizontalAlignment="Center" Margin="0,0,0,40"/>
+                                
+                                <TextBlock Text="This certifies that" Foreground="{StaticResource MutedTextBrush}" FontSize="16" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                                
+                                <TextBlock x:Name="RecipientName" Text="Username" Foreground="#D4AF37" FontSize="48" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                                
+                                <TextBlock Text="has successfully completed the immersive" Foreground="{StaticResource MutedTextBrush}" FontSize="16" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                                
+                                <TextBlock x:Name="CourseNameText" Text="Python Programming Masterclass" Foreground="White" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,50"/>
+                                
+                                <Grid Width="600" Margin="0,20,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                                        <TextBlock x:Name="DateText" Text="Date" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                                        <Border BorderBrush="{StaticResource MutedTextBrush}" BorderThickness="0,1,0,0" Width="150" Margin="0,5,0,0"/>
+                                        <TextBlock Text="Date Awarded" Foreground="{StaticResource MutedTextBrush}" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                                        <TextBlock Text="Aris Kadriu" Foreground="White" FontSize="20" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+                                        <Border BorderBrush="{StaticResource MutedTextBrush}" BorderThickness="0,1,0,0" Width="150" Margin="0,5,0,0"/>
+                                        <TextBlock Text="Founder &amp; Lead Instructor" Foreground="{StaticResource MutedTextBrush}" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                    </Border>
+                    <!-- Small Logo Overlay -->
+                    <Image Source="/Assets/app_logo.png" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Opacity="0.1" RenderOptions.BitmapScalingMode="HighQuality"/>
+                </Grid>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

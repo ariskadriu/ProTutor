@@ -1,0 +1,48 @@
+{
+    "id": "cs_operators_sq",
+    "title": "Operatorët në C#",
+    "description": "Operatorët përdoren për të kryer operacione mbi variablat dhe vlerat.",
+    "example": "int x = 100 + 50;\nConsole.WriteLine(x);",
+    "challenges": [
+        {
+            "title": "Mbledhja",
+            "exercise": "Printoni rezultatin e 10 + 5.",
+            "expectedOutput": "15",
+            "solution": "Console.WriteLine(10 + 5);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Modulusi",
+            "exercise": "Printoni mbetjen e 10 % 3.",
+            "expectedOutput": "1",
+            "solution": "Console.WriteLine(10 % 3);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["%"]
+        },
+        {
+            "title": "Rritja",
+            "exercise": "Rrisni x=5 me 1 duke përdorur ++ dhe printojeni.",
+            "expectedOutput": "6",
+            "solution": "int x = 5;\nx++;\nConsole.WriteLine(x);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["++"]
+        },
+        {
+            "title": "Dhënia",
+            "exercise": "Shtoni 5 tek x=10 me += dhe printoni x.",
+            "expectedOutput": "15",
+            "solution": "int x = 10;\nx += 5;\nConsole.WriteLine(x);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["+="]
+        },
+        {
+            "title": "Krahasimi",
+            "exercise": "Printoni rezultatin boolean të (10 > 5).",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(10 > 5);",
+            "difficulty": "Mastery",
+            "requiredKeywords": [">"]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "cs_syntax_en",
+    "title": "C# Syntax",
+    "description": "C# is an object-oriented programming language developed by Microsoft.",
+    "example": "using System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      Console.WriteLine(\"Hello World!\");\n    }\n  }\n}",
+    "challenges": [
+        {
+            "title": "Basic Statement",
+            "exercise": "Every C# statement ends with a semicolon. Print 'Semi' with a semicolon at the end.",
+            "expectedOutput": "Semi",
+            "solution": "Console.WriteLine(\"Semi\");",
+            "difficulty": "Easy",
+            "requiredKeywords": [";"]
+        },
+        {
+            "title": "Comments",
+            "exercise": "Use a single-line comment '//' and print 'Ok'.",
+            "expectedOutput": "Ok",
+            "solution": "// This is a comment\nConsole.WriteLine(\"Ok\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["//"]
+        },
+        {
+            "title": "Case Sensitivity",
+            "exercise": "C# is case sensitive. Print 'text'. Note: Console.WriteLine is different from console.writeline.",
+            "expectedOutput": "text",
+            "solution": "Console.WriteLine(\"text\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Main Method",
+            "exercise": "Print the name of the method where execution starts: 'Main'.",
+            "expectedOutput": "Main",
+            "solution": "Console.WriteLine(\"Main\");",
+            "difficulty": "Hard",
+            "requiredKeywords": ["print", "Main"]
+        },
+        {
+            "title": "Namespace Logic",
+            "exercise": "Print 'System' which is a common namespace used in C#.",
+            "expectedOutput": "System",
+            "solution": "Console.WriteLine(\"System\");",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["System"]
+        }
+    ]
+}

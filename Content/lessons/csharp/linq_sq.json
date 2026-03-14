@@ -1,0 +1,48 @@
+{
+    "id": "cs_linq_sq",
+    "title": "Bazat e LINQ në C#",
+    "description": "LINQ (Language Integrated Query) është një grup teknologjish që ju lejojnë të kërkoni të dhëna nga burime të ndryshme (array-e, koleksione, etj.).",
+    "example": "int[] piket = { 90, 71, 82, 93, 75, 82 };\nvar query = from p in piket where p > 80 select p;",
+    "challenges": [
+        {
+            "title": "Kërkimi i Numrave",
+            "exercise": "Krijoni int[] nr = {1, 5, 8}. Përdorni LINQ për të zgjedhur numrat > 4. Printoni numrin e tyre (count).",
+            "expectedOutput": "2",
+            "solution": "using System.Linq;\nint[] nr = {1, 5, 8};\nvar res = from n in nr where n > 4 select n;\nConsole.WriteLine(res.Count());",
+            "difficulty": "Easy",
+            "requiredKeywords": ["from", "where", "select"]
+        },
+        {
+            "title": "Metodat e LINQ",
+            "exercise": "Përdorni .Where(n => n > 4) tek {1, 5, 8} dhe printoni shumën (sum).",
+            "expectedOutput": "13",
+            "solution": "using System.Linq;\nint[] nr = {1, 5, 8};\nConsole.WriteLine(nr.Where(n => n > 4).Sum());",
+            "difficulty": "Medium",
+            "requiredKeywords": [".Where(", "=>"]
+        },
+        {
+            "title": "Renditja",
+            "exercise": "Renditni listën {3, 1, 2} me .OrderBy(n => n) dhe printoni elementin e parë.",
+            "expectedOutput": "1",
+            "solution": "using System.Linq;\nint[] nr = {3, 1, 2};\nConsole.WriteLine(nr.OrderBy(n => n).First());",
+            "difficulty": "Medium",
+            "requiredKeywords": [".OrderBy("]
+        },
+        {
+            "title": "Metoda Any",
+            "exercise": "Kontrolloni nëse {1, 2} përmban ndonjë numër > 1 me .Any(). Printo rezultatin.",
+            "expectedOutput": "True",
+            "solution": "using System.Linq;\nint[] nr = {1, 2};\nConsole.WriteLine(nr.Any(n => n > 1));",
+            "difficulty": "Hard",
+            "requiredKeywords": [".Any("]
+        },
+        {
+            "title": "Mesatarja",
+            "exercise": "Llogaritni mesataren e {10, 20, 30} me LINQ dhe printojeni.",
+            "expectedOutput": "20",
+            "solution": "using System.Linq;\nint[] nr = {10, 20, 30};\nConsole.WriteLine(nr.Average());",
+            "difficulty": "Mastery",
+            "requiredKeywords": [".Average()"]
+        }
+    ]
+}

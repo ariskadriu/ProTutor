@@ -1,0 +1,48 @@
+{
+    "id": "py_lists_en",
+    "title": "Python Lists",
+    "description": "Lists are used to store multiple items in a single variable.",
+    "example": "thislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist)",
+    "challenges": [
+        {
+            "title": "Create List",
+            "exercise": "Create a list named 'fruits' with 'apple', 'banana', 'cherry'. Print it.",
+            "expectedOutput": "['apple', 'banana', 'cherry']",
+            "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[", "]", "print"]
+        },
+        {
+            "title": "Access Item",
+            "exercise": "Print the second item in the fruits list.",
+            "expectedOutput": "banana",
+            "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[1])",
+            "difficulty": "Easy",
+            "requiredKeywords": ["[1]"]
+        },
+        {
+            "title": "Change Item",
+            "exercise": "Change 'apple' to 'kiwi' and print the list.",
+            "expectedOutput": "['kiwi', 'banana', 'cherry']",
+            "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits[0] = \"kiwi\"\nprint(fruits)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0] =", "print"]
+        },
+        {
+            "title": "List Length",
+            "exercise": "Print the number of items in the fruits list using len().",
+            "expectedOutput": "3",
+            "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(len(fruits))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["len("]
+        },
+        {
+            "title": "Remove Item",
+            "exercise": "Remove 'banana' using the remove() method and print the list.",
+            "expectedOutput": "['apple', 'cherry']",
+            "solution": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.remove(\"banana\")\nprint(fruits)",
+            "difficulty": "Hard",
+            "requiredKeywords": [".remove("]
+        }
+    ]
+}

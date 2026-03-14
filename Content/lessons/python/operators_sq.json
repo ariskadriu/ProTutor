@@ -1,0 +1,48 @@
+{
+    "id": "py_operators_sq",
+    "title": "Operatorët në Python",
+    "description": "Operatorët përdoren për të kryer operacione mbi variablat dhe vlerat.",
+    "example": "print(10 + 5)",
+    "challenges": [
+        {
+            "title": "Mbledhja",
+            "exercise": "Printoni rezultatin e 10 + 5.",
+            "expectedOutput": "15",
+            "solution": "print(10 + 5)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["+"]
+        },
+        {
+            "title": "Shumëzimi",
+            "exercise": "Printoni rezultatin e 10 * 5.",
+            "expectedOutput": "50",
+            "solution": "print(10 * 5)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["*"]
+        },
+        {
+            "title": "Pjesëtimi",
+            "exercise": "Printoni rezultatin e 10 / 2.",
+            "expectedOutput": "5.0",
+            "solution": "print(10 / 2)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["/"]
+        },
+        {
+            "title": "Mbetja",
+            "exercise": "Printoni mbetjen e 10 % 3.",
+            "expectedOutput": "1",
+            "solution": "print(10 % 3)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["%"]
+        },
+        {
+            "title": "Fuqia",
+            "exercise": "Printoni rezultatin e 2 në fuqi 3 (2**3).",
+            "expectedOutput": "8",
+            "solution": "print(2 ** 3)",
+            "difficulty": "Mastery",
+            "requiredKeywords": ["**"]
+        }
+    ]
+}
