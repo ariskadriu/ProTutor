@@ -9,3 +9,6 @@ Data/progress_*.json
 startup_log.txt
 .vs/
 /tmp/
+*.zip
+*.rar
+*.7z
