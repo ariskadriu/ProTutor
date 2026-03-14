@@ -1,0 +1,24 @@
+{
+    "id": "py_strings_adv_en",
+    "title": "Python Strings Advanced",
+    "description": "Master string slicing, modification, and formatting.",
+    "example": "a = \"Hello, World!\"\nprint(a[2:5]) # Slicing\nprint(a.upper()) # Modifying",
+    "challenges": [
+        {
+            "title": "Slicing",
+            "exercise": "Get characters from position 2 to 5 (not included) in 'b = \"Hello\"'. Print it.",
+            "expectedOutput": "ell",
+            "solution": "b = \"Hello\"\nprint(b[2:5])",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[2:5]"]
+        },
+        {
+            "title": "Format String",
+            "exercise": "Use the f-string to print 'Age is ' + 'age = 36'.",
+            "expectedOutput": "Age is 36",
+            "solution": "age = 36\nprint(f\"Age is {age}\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["f\"", "{age}"]
+        }
+    ]
+}

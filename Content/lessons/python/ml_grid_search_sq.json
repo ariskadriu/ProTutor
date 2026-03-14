@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_grid_search_sq",
+    "title": "Python ML: Kërkimi në Rrjetë (Grid Search)",
+    "description": "Shumica e modeleve të machine learning përmbajnë parametra që mund të rregullohen për të ndryshuar mënyrën se si mëson modeli. Pasi kemi gjetur modelin më të mirë, ne mund ta optimizojmë atë duke përdorur Grid Search. Kjo metodë kërkon në mënyrë rraskapitëse përmes një nëngrupi të specifikuar manualisht të hapësirës së hiperparametrave.",
+    "example": "// Grid Search me Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import GridSearchCV\n\nlogit = LogisticRegression(max_iter = 10000)\nC = [0.25, 0.5, 0.75, 1, 1.25, 1.5]\nparam_grid = [ {'C': C} ]\n\nclf = GridSearchCV(logit, param_grid = param_grid, cv = 3)\n# Fitimi i modelit per te gjetur parametrat me te mire",
+    "challenges": [
+        {
+            "title": "Mjeti i Optimizimit",
+            "exercise": "Printoni 'GridSearchCV' për të konfirmuar që njihni mjetin e përdorur për optimizimin e hiperparametrave.",
+            "expectedOutput": "GridSearchCV",
+            "solution": "print('GridSearchCV')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["GridSearchCV"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_mongodb_en",
+    "title": "Python MongoDB",
+    "description": "Python can be used with databases like MongoDB, a popular NoSQL database.",
+    "example": "import pymongo\nmyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]",
+    "challenges": [
+        {
+            "title": "Import MongoDB",
+            "exercise": "Print 'MongoDB Ready' after importing pymongo.",
+            "expectedOutput": "MongoDB Ready",
+            "solution": "import pymongo\nprint(\"MongoDB Ready\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import pymongo"]
+        }
+    ]
+}

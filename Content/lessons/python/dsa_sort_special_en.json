@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_sort_special_en",
+    "title": "DSA: Counting & Radix Sort",
+    "description": "Counting Sort and Radix Sort are non-comparison-based sorting algorithms. Counting sort works by counting the number of occurrences of each unique element. Radix sort processes the numbers by their individual digits. These can achieve linear O(n) complexity under specific conditions.",
+    "example": "// Counting Sort Principle\ndef countingSort(array):\n    size = len(array)\n    output = [0] * size\n    count = [0] * 10 # Assuming digits 0-9\n    for i in range(0, size): count[array[i]] += 1\n    for i in range(1, 10): count[i] += count[i - 1]\n    # Building output array based on counts...",
+    "challenges": [
+        {
+            "title": "Linear Sort?",
+            "exercise": "Print 'Linear time complexity' if Counting sort can be faster than O(n log n).",
+            "expectedOutput": "Linear time complexity",
+            "solution": "print('Linear time complexity')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Linear"]
+        }
+    ]
+}

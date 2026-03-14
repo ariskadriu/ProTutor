@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_cross_validation_en",
+    "title": "Python ML: Cross Validation",
+    "description": "Cross Validation is a technique for evaluating a machine learning model and testing its performance. It is a more robust method than a simple train/test split. In K-Fold Cross Validation, the data is divided into 'k' subsets. The model is trained on k-1 subsets and tested on the remaining one, repeating this process k times.",
+    "example": "// K-Fold Cross Validation with Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import KFold, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\nclf = DecisionTreeClassifier(random_state=42)\n\nk_folds = KFold(n_splits = 5)\nscores = cross_val_score(clf, X, y, cv = k_folds)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average Score: \", scores.mean())",
+    "challenges": [
+        {
+            "title": "Fold Count",
+            "exercise": "Print 'K-Fold divides data into k subsets' to confirm you understand the core mechanism.",
+            "expectedOutput": "K-Fold divides data into k subsets",
+            "solution": "print('K-Fold divides data into k subsets')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["subsets"]
+        }
+    ]
+}

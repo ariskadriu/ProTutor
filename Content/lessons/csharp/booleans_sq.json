@@ -1,0 +1,16 @@
+{
+    "id": "cs_booleans_sq",
+    "title": "C# Boolean-ët dhe Shprehjet",
+    "description": "Boolean-ët përfaqësojnë vlera që janë ose 'true' (e vërtetë) ose 'false' (e gabuar). Ato janë themeli i logjikës dhe vendimmarrjes në programim. Mund të përdorni shprehje booleane me operatorë si '>', '<', dhe '==' për të vlerësuar kushtet.",
+    "example": "// Logjika Boolean në Veprim\nbool isGraduated = true;\nbool hasJob = false;\n\n// Vlerësimi i Shprehjeve\nint x = 10;\nint y = 9;\nConsole.WriteLine(x > y); // Kthen true sepse 10 është më i madh se 9",
+    "challenges": [
+        {
+            "title": "Krahasimi Boolean",
+            "exercise": "Krahasoni 10 me 5 duke përdorur '=='. Printoni rezultatin (duhet të jetë False).",
+            "expectedOutput": "False",
+            "solution": "Console.WriteLine(10 == 5);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["=="]
+        }
+    ]
+}

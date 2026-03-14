@@ -1,0 +1,24 @@
+{
+    "id": "cs_basics_en",
+    "title": "C# Basics: Intro & Syntax",
+    "description": "Getting started with C#, understanding the basic syntax, output, and comments.",
+    "example": "// This is a comment\nConsole.WriteLine(\"Hello World!\");",
+    "challenges": [
+        {
+            "title": "Hello Get Started",
+            "exercise": "Print 'I am learning C#' to the console.",
+            "expectedOutput": "I am learning C#",
+            "solution": "Console.WriteLine(\"I am learning C#\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Code Comments",
+            "exercise": "Add a single-line comment that says 'Start' before printing 'End'.",
+            "expectedOutput": "End",
+            "solution": "// Start\nConsole.WriteLine(\"End\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["//", "Start"]
+        }
+    ]
+}

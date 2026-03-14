@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_queue_sq",
+    "title": "DSA: Rradhët (Queues)",
+    "description": "Një Rradhë (Queue) është një strukturë të dhënash lineare që ndjek parimin FIFO (I Pari Brenda - I Pari Jashtë). Kjo do të thotë që elementi i parë i futur është i pari që hiqet. Operacionet e zakonshme përfshijnë 'enqueue' (shto) dhe 'dequeue' (hiq).",
+    "example": "// Zbatimi i Rradhes duke perdorur deque\nfrom collections import deque\nqueue = deque([\"a\", \"b\", \"c\"])\n\n# Enqueue (Shto ne fund)\nqueue.append(\"d\")\n\n# Dequeue (Hiq nga fillimi)\nprint(queue.popleft()) # 'a'",
+    "challenges": [
+        {
+            "title": "Koncepti FIFO",
+            "exercise": "Printoni 'First-In-First-Out' për të konfirmuar që kuptoni parimin e rradhës.",
+            "expectedOutput": "First-In-First-Out",
+            "solution": "print('First-In-First-Out')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["FIFO"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "cs_input_en",
+    "title": "C# User Input",
+    "description": "User input is essential for creating interactive applications. In C#, we use 'Console.ReadLine()' to capture text entered by the user. Note that 'Console.ReadLine()' always returns a string; if you need a number, you must convert it using 'Convert.ToDouble()' or 'int.Parse()'.",
+    "example": "// Professional Input Handler\nConsole.WriteLine(\"Enter username:\");\nstring userName = Console.ReadLine(); // Capture input\nConsole.WriteLine(\"Username is: \" + userName);\n\n// Input with Conversion\nConsole.WriteLine(\"Enter age:\");\nint age = Convert.ToInt32(Console.ReadLine()); // Convert string to int",
+    "challenges": [
+        {
+            "title": "Basic Input",
+            "exercise": "Prompt the user with 'Name:' then capture their input into variable 'name'. Print 'Hello {name}' using interpolation.",
+            "expectedOutput": "Hello Aris",
+            "solution": "Console.Write(\"Name:\");\nstring name = Console.ReadLine();\nConsole.WriteLine($\"Hello {name}\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.ReadLine", "$"]
+        }
+    ]
+}

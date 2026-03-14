@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_en",
+    "title": "Python Machine Learning",
+    "description": "Machine Learning is making computers learn from data and statistics. Python is the most popular language for Machine Learning.",
+    "example": "import numpy\nfrom scipy import stats\n\nspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.mean(speed)\nprint(x)",
+    "challenges": [
+        {
+            "title": "Mean Calculation",
+            "exercise": "Calculate the mean of [10, 20, 30] using numpy.mean(). Print it.",
+            "expectedOutput": "20.0",
+            "solution": "import numpy\narr = [10, 20, 30]\nprint(numpy.mean(arr))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.mean"]
+        }
+    ]
+}

@@ -1,56 +1,16 @@
 {
-    "Id": "py_regex_sq",
-    "Title": "Shprehjet e Rregullta (RegEx)",
-    "Description": "RegEx është një sekuencë karakteresh që formon një model kërkimi.",
-    "Example": "import re\nprint(re.search('^The', 'The rain'))",
-    "Challenges": [
+    "id": "py_regex_sq",
+    "title": "Python RegEx (Shprehjet e Rregullta)",
+    "description": "Një RegEx, ose Shprehje e Rregullt, është një sekuencë karakteresh që formon një model kërkimi. RegEx mund të përdoret për të kontrolluar nëse një string përmban modelin e specifikuar të kërkimit. Python ka një paketë të integruar të quajtur 're', e cila mund të përdoret për të punuar me Shprehjet e Rregullta.",
+    "example": "// Funksionet e Zakonshme RegEx\nimport re\n\ntxt = \"Shiu në Spanjë\"\nx = re.search(\"^Shiu.*Spanjë$\", txt)\nif x: print(\"PO! Përputhje!\")\n\n# Shembull Findall\nx = re.findall(\"në\", txt)\nprint(x)",
+    "challenges": [
         {
-            "Title": "Importo re",
-            "Difficulty": "Fillestar",
-            "Exercise": "Importo modulin `re` dhe printo 'gati'.",
-            "RequiredKeywords": [
-                "import re",
-                "print",
-                "gati"
-            ]
-        },
-        {
-            "Title": "Kërko",
-            "Difficulty": "Mesatar",
-            "Exercise": "Përdor `re.search()` për të parë nëse 'rain' është në 'The rain in Spain'.",
-            "RequiredKeywords": [
-                "search",
-                "rain",
-                "The rain in Spain"
-            ]
-        },
-        {
-            "Title": "Gjej të gjitha",
-            "Difficulty": "Mesatar",
-            "Exercise": "Përdor `re.findall()` për të gjetur 'ai' në tekst.",
-            "RequiredKeywords": [
-                "findall",
-                "ai"
-            ]
-        },
-        {
-            "Title": "Ndaj",
-            "Difficulty": "Mesatar",
-            "Exercise": "Përdor `re.split()` për të ndarë tekstin në çdo hapësirë '\\s'.",
-            "RequiredKeywords": [
-                "split",
-                "\\s"
-            ]
-        },
-        {
-            "Title": "Zëvendëso",
-            "Difficulty": "Mesatar",
-            "Exercise": "Përdor `re.sub()` për të zëvendësuar hapësirat me numrin '9'.",
-            "RequiredKeywords": [
-                "sub",
-                "\\s",
-                "9"
-            ]
+            "title": "Modeli i Kerkimit",
+            "exercise": "Importoni re. Perdorni re.search() per te kontrolluar nese 'txt' fillon me 'Shiu'. Printoni 'Match'.",
+            "expectedOutput": "Match",
+            "solution": "import re\ntxt = 'Shiu ne Spanje'\nif re.search('^Shiu', txt): print('Match')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import re", "re.search"]
         }
     ]
 }

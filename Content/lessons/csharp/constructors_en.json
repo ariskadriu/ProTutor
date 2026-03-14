@@ -1,0 +1,24 @@
+{
+    "id": "cs_constructors_en",
+    "title": "C# Constructors",
+    "description": "A constructor is a special method that is used to initialize objects.",
+    "example": "class Car {\n  public string model;\n  public Car() {\n    model = \"Mustang\";\n  }\n}",
+    "challenges": [
+        {
+            "title": "Default Constructor",
+            "exercise": "Create a class 'Dog' with a public string 'Name'. Use a constructor to set Name to 'Buddy'. In Main, print 'dog.Name'.",
+            "expectedOutput": "Buddy",
+            "solution": "class Dog {\n  public string Name;\n  public Dog() { Name = \"Buddy\"; }\n}\nstatic void Main() {\n  Dog dog = new Dog();\n  Console.WriteLine(dog.Name);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["public Dog()", "Name = \"Buddy\""]
+        },
+        {
+            "title": "Parameter Constructor",
+            "exercise": "Create a class 'Person' with string 'Name'. Create a constructor that takes a string 'n' and sets Name to 'n'. Create a 'Person' with 'Aris' and print Name.",
+            "expectedOutput": "Aris",
+            "solution": "class Person {\n  public string Name;\n  public Person(string n) { Name = n; }\n}\nstatic void Main() {\n  Person p = new Person(\"Aris\");\n  Console.WriteLine(p.Name);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public Person(string n)", "Name = n"]
+        }
+    ]
+}

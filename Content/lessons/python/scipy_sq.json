@@ -1,0 +1,16 @@
+{
+    "id": "py_scipy_sq",
+    "title": "Python SciPy",
+    "description": "SciPy është një bibliotekë e llogaritjes shkencore që përdor NumPy nën të. SciPy qëndron për Scientific Python.",
+    "example": "from scipy import constants\nprint(constants.liter)",
+    "challenges": [
+        {
+            "title": "Konstantet SciPy",
+            "exercise": "Importoni 'constants' nga 'scipy' dhe printoni vlerën e 'constants.pi'.",
+            "expectedOutput": "3.141592653589793",
+            "solution": "from scipy import constants\nprint(constants.pi)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["from scipy import constants"]
+        }
+    ]
+}

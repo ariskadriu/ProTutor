@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_stack_en",
+    "title": "DSA: Stacks (LIFO)",
+    "description": "A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. This means the last element inserted is the first one removed. Common operations include 'push' (add) and 'pop' (remove). Stacks are used in function calls, undo mechanisms, and expression parsing.",
+    "example": "// Stack Implementation using List\nstack = []\n\n# Push\nstack.append('a')\nstack.append('b')\n\n# Pop\nprint(stack.pop()) # 'b'\n\n# Peek (Last element)\nprint(stack[-1]) # 'a'",
+    "challenges": [
+        {
+            "title": "LIFO Concept",
+            "exercise": "Print 'Last-In-First-Out' to confirm you understand the stack principle.",
+            "expectedOutput": "Last-In-First-Out",
+            "solution": "print('Last-In-First-Out')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["LIFO"]
+        }
+    ]
+}

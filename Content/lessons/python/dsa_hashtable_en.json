@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_hashtable_en",
+    "title": "DSA: Hash Tables",
+    "description": "A Hash Table is a data structure that maps keys to values using a special function called a hash function. It provides highly efficient data retrieval, with an average time complexity of O(1) for search, insert, and delete operations. It is the underlying technology for Python dictionaries.",
+    "example": "// Hash Table Logic (Manual Implementation)\nclass HashTable:\n    def __init__(self, size):\n        self.size = size\n        self.hash_table = [[] for _ in range(size)]\n\n    def hash_func(self, key):\n        return key % self.size\n\n    def insert(self, key, value):\n        hash_key = self.hash_func(key)\n        self.hash_table[hash_key].append(value)",
+    "challenges": [
+        {
+            "title": "Hash Complexity",
+            "exercise": "Print 'O(1)' to confirm you know the average search complexity of a Hash Table.",
+            "expectedOutput": "O(1)",
+            "solution": "print('O(1)')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["O(1)"]
+        }
+    ]
+}

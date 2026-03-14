@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_categorical_sq",
+    "title": "Python ML: Të Dhënat Kategorike",
+    "description": "Modelet e machine learning kërkojnë hyrje numerike. Kur keni të dhëna kategorike (etiketa si 'Kuqe', 'Blunë', 'Gjelbër'), duhet t'i konvertoni ato në numra. One-Hot Encoding është një metodë e zakonshme ku çdo kategori bëhet një kolonë e re me vlera 0 ose 1. 'pandas.get_dummies()' e bën këtë të lehtë.",
+    "example": "// One-Hot Encoding me Pandas\nimport pandas\n\ndf = pandas.DataFrame({'Car': ['BMW', 'Volvo', 'Ford']})\ndummied = pandas.get_dummies(df['Car'])\n\nprint(dummied)",
+    "challenges": [
+        {
+            "title": "Lloji i Kodimit",
+            "exercise": "Printoni 'pandas.get_dummies' për të konfirmuar që njihni funksionin për one-hot encoding.",
+            "expectedOutput": "pandas.get_dummies",
+            "solution": "print('pandas.get_dummies')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["get_dummies"]
+        }
+    ]
+}

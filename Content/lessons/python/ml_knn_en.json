@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_knn_en",
+    "title": "Python ML: K-Nearest Neighbors (KNN)",
+    "description": "KNN (K-Nearest Neighbors) is a simple, easy-to-implement supervised machine learning algorithm that can be used to solve both classification and regression problems. It works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label.",
+    "example": "// KNN Classification with Scikit-learn\nimport matplotlib.pyplot as plt\nfrom sklearn.neighbors import KNeighborsClassifier\n\nx = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\nclasses = [0, 0, 1, 0, 0, 1, 1, 1, 1, 1]\n\nknn = KNeighborsClassifier(n_neighbors=1)\ndata = list(zip(x, y))\nknn.fit(data, classes)\n\n# Predict new point\nnew_x, new_y = 8, 21\nprediction = knn.predict([(new_x, new_y)])\nprint(prediction)",
+    "challenges": [
+        {
+            "title": "KNN Purpose",
+            "exercise": "Print 'KNN finds the closest K neighbors' to confirm your understanding.",
+            "expectedOutput": "KNN finds the closest K neighbors",
+            "solution": "print('KNN finds the closest K neighbors')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["neighbors"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_structures_en",
+    "title": "Python DSA: Structures",
+    "description": "Learn about Stacks, Queues, and Linked Lists in Python.",
+    "example": "# Stack using list:\nstack = []\nstack.append('a')\nstack.pop()",
+    "challenges": [
+        {
+            "title": "Stack Pop",
+            "exercise": "Create a list 's = [1, 2]'. Pop the last element and print 's'.",
+            "expectedOutput": "[1]",
+            "solution": "s = [1, 2]\ns.pop()\nprint(s)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["pop()"]
+        }
+    ]
+}

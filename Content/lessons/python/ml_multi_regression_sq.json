@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_multi_regression_sq",
+    "title": "Python ML: Regresioni i Shumëfishtë",
+    "description": "Regresioni i shumëfishtë është si regresioni linear, por me më shumë se një vlerë të pavarur. Ai përpiqet të parashikojë vlerën e një variable të varur bazuar në disa variabla të pavarura. Në Python, libraria 'sklearn' është standardi i industrisë për zbatimin e këtyre modeleve.",
+    "example": "// Regresioni i Shumëfishtë me Pandas & Scikit-learn\nimport pandas\nfrom sklearn import linear_model\n\ndf = pandas.read_csv(\"te_dhena.csv\")\nX = df[['Pesha', 'Volumi']] # Variablat e pavarura\ny = df['CO2'] # Variabla e varur\n\nregr = linear_model.LinearRegression()\nregr.fit(X, y)\n\n# Parashiko emetimin e CO2\npredictedCO2 = regr.predict([[2300, 1300]])\nprint(predictedCO2)",
+    "challenges": [
+        {
+            "title": "Parashikimi i Shumefishte",
+            "exercise": "Printoni 'Regresioni i shumefishte perdor me shume se nje variable te pavarur' për të konfirmuar konceptin.",
+            "expectedOutput": "Regresioni i shumefishte perdor me shume se nje variable te pavarur",
+            "solution": "print('Regresioni i shumefishte perdor me shume se nje variable te pavarur')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["pavarur"]
+        }
+    ]
+}

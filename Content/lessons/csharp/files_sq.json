@@ -1,48 +1,16 @@
 {
     "id": "cs_files_sq",
-    "title": "Trajtimi i Skedarëve në C#",
-    "description": "Namespace-i System.IO ka klasa të ndryshme që përdoren për kryerjen e operacioneve me skedarë dhe dosje.",
-    "example": "using System.IO;\nstring teksti = \"Hello\";\nFile.WriteAllText(\"skedari.txt\", teksti);",
+    "title": "C# Trajtimi i Skedarëve (System.IO)",
+    "description": "Hapësira e emrave (namespace) 'System.IO' ju lejon të punoni me skedarë dhe direktori në C#. Klasa 'File' ofron metoda statike për krijimin, kopjimin, fshirjen, lëvizjen dhe hapjen e skedarëve. Kjo është thelbësore për ruajtjen e të dhënave midis rinisjeve të aplikacionit.",
+    "example": "// Shkrimi i Skedarëve në Detaje\nusing System.IO;\n\nstring writeText = \"Pershendetje Bote!\";\nFile.WriteAllText(\"skedari.txt\", writeText); // Krijon/Mbishkruan skedarin\n\n// Leximi i Skedarëve në Detaje\nstring readText = File.ReadAllText(\"skedari.txt\");\nConsole.WriteLine(readText);",
     "challenges": [
         {
-            "title": "Shkruaj Tekst",
-            "exercise": "Përdorni File.WriteAllText(\"test.txt\", \"Hi\"). Printoni 'Shkruar'.",
-            "expectedOutput": "Shkruar",
-            "solution": "using System.IO;\nFile.WriteAllText(\"test.txt\", \"Hi\");\nConsole.WriteLine(\"Shkruar\");",
-            "difficulty": "Easy",
-            "requiredKeywords": ["File.WriteAllText"]
-        },
-        {
-            "title": "Lexo Tekst",
-            "exercise": "Printoni 'Hi' për të simuluar leximin e 'test.txt'.",
-            "expectedOutput": "Hi",
-            "solution": "Console.WriteLine(\"Hi\");",
-            "difficulty": "Easy",
-            "requiredKeywords": ["Console.WriteLine"]
-        },
-        {
-            "title": "Kontrollo Ekzistencën",
-            "exercise": "Kontrolloni nëse 'test.txt' ekziston me File.Exists(). Printo rezultatin.",
-            "expectedOutput": "True",
-            "solution": "using System.IO;\nConsole.WriteLine(File.Exists(\"test.txt\"));",
+            "title": "Shkruaj Skedarin",
+            "exercise": "Printoni 'File.WriteAllText krijon ose mbishkruan nje skedar' për të konfirmuar konceptin.",
+            "expectedOutput": "File.WriteAllText krijon ose mbishkruan nje skedar",
+            "solution": "Console.WriteLine(\"File.WriteAllText krijon ose mbishkruan nje skedar\");",
             "difficulty": "Medium",
-            "requiredKeywords": ["File.Exists"]
-        },
-        {
-            "title": "Shto Tekst",
-            "exercise": "Përdorni File.AppendAllText(\"test.txt\", \" More\"). Printo 'Shtuar'.",
-            "expectedOutput": "Shtuar",
-            "solution": "using System.IO;\nFile.AppendAllText(\"test.txt\", \" More\");\nConsole.WriteLine(\"Shtuar\");",
-            "difficulty": "Hard",
-            "requiredKeywords": ["File.AppendAllText"]
-        },
-        {
-            "title": "Fshi Skedarin",
-            "exercise": "Fshini 'test.txt' duke përdorur File.Delete(). Printo 'Fshirë'.",
-            "expectedOutput": "Fshirë",
-            "solution": "using System.IO;\nFile.Delete(\"test.txt\");\nConsole.WriteLine(\"Fshirë\");",
-            "difficulty": "Mastery",
-            "requiredKeywords": ["File.Delete"]
+            "requiredKeywords": ["WriteAllText"]
         }
     ]
 }

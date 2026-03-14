@@ -1,0 +1,16 @@
+{
+    "id": "py_numpy_en",
+    "title": "Python NumPy",
+    "description": "NumPy is used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.",
+    "example": "import numpy as np\narr = np.array([1, 2, 3])\nprint(arr)",
+    "challenges": [
+        {
+            "title": "Create Array",
+            "exercise": "Import numpy as np and create an array [1, 2, 3, 4, 5]. Print the array.",
+            "expectedOutput": "[1 2 3 4 5]",
+            "solution": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import numpy as np", "np.array"]
+        }
+    ]
+}

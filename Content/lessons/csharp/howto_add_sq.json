@@ -1,0 +1,16 @@
+{
+    "id": "cs_howto_add_sq",
+    "title": "C# Si të: Shtojmë dy numra",
+    "description": "Në këtë shembull, do të shohim se si të shtojmë dy numra në C#.",
+    "example": "int x = 5;\nint y = 6;\nint sum = x + y;\nConsole.WriteLine(sum);",
+    "challenges": [
+        {
+            "title": "Shto dy variabla",
+            "exercise": "Krijoni x = 10, y = 20. Printoni shumën e tyre.",
+            "expectedOutput": "30",
+            "solution": "int x = 10;\nint y = 20;\nConsole.WriteLine(x + y);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["x + y"]
+        }
+    ]
+}

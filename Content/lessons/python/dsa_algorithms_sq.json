@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_algorithms_sq",
+    "title": "Python DSA: Algoritmet",
+    "description": "Mësoni rreth algoritmeve të renditjes dhe kërkimit si Bubble Sort dhe Binary Search.",
+    "example": "# Shembull Bubble Sort\ndef bubbleSort(arr):\n  pass",
+    "challenges": [
+        {
+            "title": "Bubble Sort Swap",
+            "exercise": "Duke pasur a = [2, 1]. Ndërrojini (swap) nëse a[0] > a[1]. Printoni a.",
+            "expectedOutput": "[1, 2]",
+            "solution": "a = [2, 1]\nif a[0] > a[1]: a[0], a[1] = a[1], a[0]\nprint(a)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["a[0], a[1] = a[1], a[0]"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_linkedlist_en",
+    "title": "DSA: Linked Lists",
+    "description": "A Linked List is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers. This allows for efficient insertion and deletion compared to arrays, especially at the beginning of the list.",
+    "example": "// Linked List Implementation\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init__(self): self.head = None\n\n# Usage\nllist = LinkedList()\nllist.head = Node(1)\nsecond = Node(2)\nllist.head.next = second",
+    "challenges": [
+        {
+            "title": "List Head",
+            "exercise": "Print 'self.head' to confirm you understand the starting node of a Linked List.",
+            "expectedOutput": "self.head",
+            "solution": "print('self.head')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["head"]
+        }
+    ]
+}

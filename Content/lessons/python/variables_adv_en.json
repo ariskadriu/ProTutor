@@ -1,0 +1,16 @@
+{
+    "id": "py_variables_adv_en",
+    "title": "Python Variables Advanced",
+    "description": "Variable names, global variables, and assigning multiple values.",
+    "example": "x, y, z = \"Orange\", \"Banana\", \"Cherry\"\nglobal x",
+    "challenges": [
+        {
+            "title": "Global Variable",
+            "exercise": "Create a variable 'x = \"awesome\"' inside a function using 'global' so it can be used outside. Call function and print x.",
+            "expectedOutput": "awesome",
+            "solution": "def myfunc():\n  global x\n  x = \"awesome\"\n\nmyfunc()\nprint(x)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["global"]
+        }
+    ]
+}

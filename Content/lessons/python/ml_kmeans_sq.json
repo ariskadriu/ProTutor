@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_kmeans_sq",
+    "title": "Python ML: K-means Clustering",
+    "description": "K-means është një algoritëm i mësimit të pambikëqyrur (unsupervised learning) që grupon të dhënat në K numër grupesh (clusters). Algoritmi punon në mënyrë përsëritëse për të caktuar çdo pikë të dhënash në një nga grupet K bazuar në karakteristikat që janë dhënë. Është një mjet i fuqishëm për të gjetur modele në të dhëna pa etiketa.",
+    "example": "// Zbatimi i K-means\nimport matplotlib.pyplot as plt\nfrom sklearn.cluster import KMeans\n\nx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\ndata = list(zip(x, y))\n\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(data)\n\nplt.scatter(x, y, c=kmeans.labels_)\nplt.show()",
+    "challenges": [
+        {
+            "title": "Grupet K",
+            "exercise": "Printoni 'K-means eshte unsupervised learning' për të konfirmuar që kuptoni llojin e algoritmit.",
+            "expectedOutput": "K-means eshte unsupervised learning",
+            "solution": "print('K-means eshte unsupervised learning')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["unsupervised"]
+        }
+    ]
+}

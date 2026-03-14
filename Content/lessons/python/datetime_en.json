@@ -1,0 +1,16 @@
+{
+    "id": "py_datetime_en",
+    "title": "Python Date & Time",
+    "description": "A date in Python is not a data type of its own, but we can import a module named 'datetime' to work with dates as date objects. This is essential for logging, scheduling, and time-stamping data.",
+    "example": "// Working with Dates\nimport datetime\n\nx = datetime.datetime.now()\nprint(x)\n\n# Creating specific dates\ny = datetime.datetime(2020, 5, 17)\nprint(y.strftime(\"%B\")) # Output: May",
+    "challenges": [
+        {
+            "title": "Current Year",
+            "exercise": "Import datetime and print x.year where x is datetime.datetime.now().",
+            "expectedOutput": "2026",
+            "solution": "import datetime\nx = datetime.datetime.now()\nprint(x.year)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["datetime.now()", "year"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "py_strings_adv_sq",
+    "title": "Python Stringjet e Avancuara",
+    "description": "Zotëroni prerjen (slicing), modifikimin dhe formatimin e stringjeve.",
+    "example": "a = \"Hello, World!\"\nprint(a[2:5]) # Slicing\nprint(a.upper()) # Modifying",
+    "challenges": [
+        {
+            "title": "Slicing (Prerja)",
+            "exercise": "Merrni karakteret nga pozicioni 2 deri në 5 (nuk përfshihet) te 'b = \"Hello\"'. Printojeni.",
+            "expectedOutput": "ell",
+            "solution": "b = \"Hello\"\nprint(b[2:5])",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[2:5]"]
+        },
+        {
+            "title": "Formatimi",
+            "exercise": "Përdorni f-string për të printuar 'Mosha eshte ' + 'age = 36'.",
+            "expectedOutput": "Mosha eshte 36",
+            "solution": "age = 36\nprint(f\"Mosha eshte {age}\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["f\"", "{age}"]
+        }
+    ]
+}

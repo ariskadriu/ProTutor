@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_algorithms_en",
+    "title": "Python DSA: Algorithms",
+    "description": "Learn about Sorting and Searching algorithms like Bubble Sort and Binary Search.",
+    "example": "# Bubble Sort example\ndef bubbleSort(arr):\n  n = len(arr)\n  for i in range(n):\n    for j in range(0, n-i-1):\n      if arr[j] > arr[j+1]: arr[j], arr[j+1] = arr[j+1], arr[j]",
+    "challenges": [
+        {
+            "title": "Bubble Sort Swap",
+            "exercise": "Given a = [2, 1]. Swap them if a[0] > a[1]. Print a.",
+            "expectedOutput": "[1, 2]",
+            "solution": "a = [2, 1]\nif a[0] > a[1]: a[0], a[1] = a[1], a[0]\nprint(a)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["a[0], a[1] = a[1], a[0]"]
+        }
+    ]
+}

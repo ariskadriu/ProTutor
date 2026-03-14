@@ -1,0 +1,16 @@
+{
+    "id": "cs_oop_intro_en",
+    "title": "C# OOP Introduction",
+    "description": "OOP stands for Object-Oriented Programming. Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.",
+    "example": "// Classes and Objects are the two main aspects of OOP.",
+    "challenges": [
+        {
+            "title": "OOP Concept",
+            "exercise": "Print 'Objects contain data and methods' to confirm you understand the concept.",
+            "expectedOutput": "Objects contain data and methods",
+            "solution": "Console.WriteLine(\"Objects contain data and methods\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["data", "methods"]
+        }
+    ]
+}

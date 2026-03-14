@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_scale_en",
+    "title": "Python ML: Feature Scaling",
+    "description": "When your data has different values, and even different measurement units, it can be difficult to compare them. Scaling allows you to put all your variables on the same scale, making them easier for machine learning models to process. Common methods include StandardScaler (mean=0, variance=1).",
+    "example": "// StandardScaler implementation\nimport pandas\nfrom sklearn import linear_model\nfrom sklearn.preprocessing import StandardScaler\nscale = StandardScaler()\n\ndf = pandas.read_csv(\"data.csv\")\nX = df[['Weight', 'Volume']]\n\nscaledX = scale.fit_transform(X)\nprint(scaledX)",
+    "challenges": [
+        {
+            "title": "Scale Concept",
+            "exercise": "Print 'StandardScaler' to confirm you know the name of the scaling tool in sklearn.",
+            "expectedOutput": "StandardScaler",
+            "solution": "print('StandardScaler')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["StandardScaler"]
+        }
+    ]
+}

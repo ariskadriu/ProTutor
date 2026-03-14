@@ -1,0 +1,16 @@
+{
+    "id": "cs_class_members_en",
+    "title": "C# Class Members",
+    "description": "Fields and methods inside classes are often referred to as 'Class Members'.",
+    "example": "class MyClass {\n  public string color = \"red\";\n  public void PrintColor() {\n    Console.WriteLine(color);\n  }\n}",
+    "challenges": [
+        {
+            "title": "Access Member",
+            "exercise": "Create class 'Car' with field 'model = \"Ford\"'. In Main, create object 'myCar' and print 'myCar.model'.",
+            "expectedOutput": "Ford",
+            "solution": "class Car {\n  public string model = \"Ford\";\n}\nstatic void Main() {\n  Car myCar = new Car();\n  Console.WriteLine(myCar.model);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["myCar.model"]
+        }
+    ]
+}

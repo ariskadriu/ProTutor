@@ -1,0 +1,16 @@
+{
+    "id": "py_polymorphism_pro_en",
+    "title": "Python Polymorphism",
+    "description": "Polymorphism means 'many forms'. In programming, it refers to methods/functions/operators with the same name that can be executed on many objects or classes. For example, the '+' operator performs addition on numbers but concatenation on strings.",
+    "example": "class Car:\n  def move(self): print(\"Drive!\")\n\nclass Boat:\n  def move(self): print(\"Sail!\")\n\n# Polymorphic Loop\nfor x in (Car(), Boat()):\n  x.move() # Executes move() correctly for each class",
+    "challenges": [
+        {
+            "title": "Multi-form Method",
+            "exercise": "Create two classes 'Bird' and 'Plane' both with method 'fly()'. Call 'fly()' on each in a loop. Print 'Flying'.",
+            "expectedOutput": "Flying",
+            "solution": "class Bird: \n  def fly(self): pass\nclass Plane: \n  def fly(self): pass\n\nfor x in (Bird(), Plane()):\n  x.fly()\n\nprint(\"Flying\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["fly(self)"]
+        }
+    ]
+}

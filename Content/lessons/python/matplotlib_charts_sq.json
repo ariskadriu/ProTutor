@@ -1,0 +1,16 @@
+{
+    "id": "py_matplotlib_charts_sq",
+    "title": "Python Matplotlib Diagramat",
+    "description": "Mësoni të krijoni Bar, Histogram dhe Pie Charts në Matplotlib.",
+    "example": "import matplotlib.pyplot as plt\nplt.bar(x, y)\nplt.hist(data)\nplt.pie(y)",
+    "challenges": [
+        {
+            "title": "Diagrami me Shtylla (Bar)",
+            "exercise": "Vizatoni një diagram bar për x=['A', 'B'], y=[10, 20]. Printoni 'Bar Done'.",
+            "expectedOutput": "Bar Done",
+            "solution": "import matplotlib.pyplot as plt\nplt.bar(['A', 'B'], [10, 20])\nprint(\"Bar Done\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["plt.bar"]
+        }
+    ]
+}

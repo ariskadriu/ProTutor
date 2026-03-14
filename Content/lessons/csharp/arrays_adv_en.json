@@ -1,0 +1,24 @@
+{
+    "id": "cs_arrays_adv_en",
+    "title": "C# Arrays Advanced",
+    "description": "Sorting arrays and working with multidimensional arrays.",
+    "example": "Array.Sort(cars);\nint[,] myNumbers = { {1, 4}, {3, 5} };",
+    "challenges": [
+        {
+            "title": "Sort Array",
+            "exercise": "Given 'int[] nums = {3, 1, 2}'. Sort it and print nums[0].",
+            "expectedOutput": "1",
+            "solution": "int[] nums = {3, 1, 2};\nArray.Sort(nums);\nConsole.WriteLine(nums[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Array.Sort"]
+        },
+        {
+            "title": "Multi Array",
+            "exercise": "Create 2D array 'int[,] grid = {{1, 2}, {3, 4}}'. Print grid[1, 1].",
+            "expectedOutput": "4",
+            "solution": "int[,] grid = {{1, 2}, {3, 4}};\nConsole.WriteLine(grid[1, 1]);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["int[,]"]
+        }
+    ]
+}

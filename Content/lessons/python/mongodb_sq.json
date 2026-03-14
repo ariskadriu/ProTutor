@@ -1,0 +1,16 @@
+{
+    "id": "py_mongodb_sq",
+    "title": "Python MongoDB",
+    "description": "Python mund të përdoret me baza të dhënash si MongoDB, një bazë të dhënash popullore NoSQL.",
+    "example": "import pymongo\n# Shembull MongoDB",
+    "challenges": [
+        {
+            "title": "Importo MongoDB",
+            "exercise": "Printoni 'MongoDB Gati' pasi të keni importuar pymongo.",
+            "expectedOutput": "MongoDB Gati",
+            "solution": "import pymongo\nprint(\"MongoDB Gati\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import pymongo"]
+        }
+    ]
+}

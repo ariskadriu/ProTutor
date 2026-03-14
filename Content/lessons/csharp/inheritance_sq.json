@@ -1,50 +1,16 @@
 {
-    "Id": "cs_inheritance_sq",
-    "Title": "Trashëgimia C#",
-    "Description": "Në C#, është e mundur të trashëgosh klasa.",
-    "Example": "Car myCar = new Car();\nmyCar.honk();",
-    "Challenges": [
+    "id": "cs_inheritance_sq",
+    "title": "C# Trashëgimia dhe Polimorfizmi",
+    "description": "Trashëgimia (Inheritance) lejon një klasë (fëmijë) të trashëgojë fusha dhe metoda nga një klasë tjetër (prind). Polimorfizmi i përdor ato metoda të trashëguara për të kryer detyra të ndryshme. Kjo arrihet përmes metodave 'virtual' në klasën prind dhe 'override' në klasën fëmijë.",
+    "example": "// Klasa bazë (Prindi)\nclass Animal {\n  public virtual void animalSound() {\n    Console.WriteLine(\"Kafsha lëshon një tingull\");\n  }\n}\n\n// Klasa e rrjedhur (Fëmija)\nclass Pig : Animal {\n  public override void animalSound() {\n    Console.WriteLine(\"Derri thotë: wee wee\");\n  }\n}",
+    "challenges": [
         {
-            "Title": "Klasa bazë",
-            "Difficulty": "Fillestar",
-            "Exercise": "Krijo një klasë `Vehicle` me metodën `honk()`.",
-            "RequiredKeywords": [
-                "class Vehicle",
-                "void honk()",
-                "Console.WriteLine"
-            ]
-        },
-        {
-            "Title": "Klasa vajzë",
-            "Difficulty": "Mesatar",
-            "Exercise": "Krijo klasën `Car` që trashëgon nga `Vehicle`.",
-            "RequiredKeywords": [
-                "class Car : Vehicle"
-            ]
-        },
-        {
-            "Title": "Shto fushë",
-            "Difficulty": "Mesatar",
-            "Exercise": "Shto fushën `modelName` te klasa `Car`.",
-            "RequiredKeywords": [
-                "string modelName"
-            ]
-        },
-        {
-            "Title": "Krijo objekt",
-            "Difficulty": "Mesatar",
-            "Exercise": "Krijo një objekt të `Car`.",
-            "RequiredKeywords": [
-                "Car myCar = new Car();"
-            ]
-        },
-        {
-            "Title": "Thirr metodë",
-            "Difficulty": "Mesatar",
-            "Exercise": "Thirr metodën `honk()` te objekti.",
-            "RequiredKeywords": [
-                "myCar.honk();"
-            ]
+            "title": "Trashëgimi e Klasës",
+            "exercise": "Krijoni një klasë 'Car' që trashëgon nga 'Vehicle'. 'Vehicle' ka fushën string model = 'Base'. Printoni car.model.",
+            "expectedOutput": "Base",
+            "solution": "class Vehicle {\n  public string model = \"Base\";\n}\nclass Car : Vehicle {}\n\nstatic void Main() {\n  Car myCar = new Car();\n  Console.WriteLine(myCar.model);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": [":", "myCar.model"]
         }
     ]
 }

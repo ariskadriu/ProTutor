@@ -1,0 +1,16 @@
+{
+    "id": "py_polymorphism_pro_sq",
+    "title": "Python Polimorfizmi",
+    "description": "Polimorfizmi do të thotë 'shumë forma'. Në programim, ai i referohet metodave/funksioneve/operatorëve me të njëjtin emër që mund të ekzekutohen në shumë objekte ose klasa. Për shembull, operatori '+' kryen mbledhje te numrat, por bashkim (concatenation) te stringjet.",
+    "example": "class Car:\n  def move(self): print(\"Drive!\")\n\nclass Boat:\n  def move(self): print(\"Sail!\")\n\n# Cikli Polimorfik\nfor x in (Car(), Boat()):\n  x.move() # Ekzekuton move() saktë për çdo klasë",
+    "challenges": [
+        {
+            "title": "Metoda me Shumë Forma",
+            "exercise": "Krijoni dy klasa 'Bird' dhe 'Plane' me metodën 'fly()'. Thirrni 'fly()' për secilën në një cikël. Printoni 'Flying'.",
+            "expectedOutput": "Flying",
+            "solution": "class Bird: \n  def fly(self): pass\nclass Plane: \n  def fly(self): pass\n\nfor x in (Bird(), Plane()):\n  x.fly()\n\nprint(\"Flying\")",
+            "difficulty": "Hard",
+            "requiredKeywords": ["fly(self)"]
+        }
+    ]
+}

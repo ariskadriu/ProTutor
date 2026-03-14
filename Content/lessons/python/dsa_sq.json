@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_sq",
+    "title": "Python DSA",
+    "description": "Strukturat e të dhënave dhe algoritmet (DSA) janë bazat e shkencës kompjuterike. Python ofron struktura të integruara si listat dhe fjalorët.",
+    "example": "def binary_search(arr, low, high, x):\n  # Shembull i Binary Search\n  pass",
+    "challenges": [
+        {
+            "title": "Linear Search",
+            "exercise": "Shkruani një funksion 'search(arr, n)' që kthen indeksin e 'n' në 'arr' duke përdorur një for loop. Testoni me [1,2,3], 2.",
+            "expectedOutput": "1",
+            "solution": "def search(arr, n):\n  for i in range(len(arr)):\n    if arr[i] == n: return i\n  return -1\n\nprint(search([1, 2, 3], 2))",
+            "difficulty": "Hard",
+            "requiredKeywords": ["def search", "for", "range", "return"]
+        }
+    ]
+}

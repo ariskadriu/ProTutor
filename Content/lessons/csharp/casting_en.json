@@ -1,0 +1,32 @@
+{
+    "id": "cs_casting_en",
+    "title": "C# Type Casting",
+    "description": "Type casting is when you assign a value of one data type to another type.",
+    "example": "double myDouble = 9.78;\nint myInt = (int)myDouble; // Manual casting: double to int",
+    "challenges": [
+        {
+            "title": "Implicit Casting",
+            "exercise": "Create an int 'myInt = 9'. Assign it to a double 'myDouble'. Print myDouble.",
+            "expectedOutput": "9",
+            "solution": "int myInt = 9;\ndouble myDouble = myInt;\nConsole.WriteLine(myDouble);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["int myInt = 9", "double myDouble = myInt"]
+        },
+        {
+            "title": "Explicit Casting",
+            "exercise": "Create a double 'd = 10.65'. Cast it to an int 'i' and print it.",
+            "expectedOutput": "10",
+            "solution": "double d = 10.65;\nint i = (int)d;\nConsole.WriteLine(i);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(int)"]
+        },
+        {
+            "title": "Convert Methods",
+            "exercise": "Use Convert.ToString(true) to print a boolean as a string.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(Convert.ToString(true));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Convert.ToString"]
+        }
+    ]
+}

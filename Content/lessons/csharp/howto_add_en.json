@@ -1,0 +1,16 @@
+{
+    "id": "cs_howto_add_en",
+    "title": "C# How To: Add Two Numbers",
+    "description": "In this example, we will see how to add two numbers in C#.",
+    "example": "int x = 5;\nint y = 6;\nint sum = x + y;\nConsole.WriteLine(sum);",
+    "challenges": [
+        {
+            "title": "Add Two Variables",
+            "exercise": "Create x = 10, y = 20. Print their sum.",
+            "expectedOutput": "30",
+            "solution": "int x = 10;\nint y = 20;\nConsole.WriteLine(x + y);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["x + y"]
+        }
+    ]
+}

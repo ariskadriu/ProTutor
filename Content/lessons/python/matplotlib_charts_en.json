@@ -1,0 +1,16 @@
+{
+    "id": "py_matplotlib_charts_en",
+    "title": "Python Matplotlib Charts",
+    "description": "Learn to create Bars, Histograms, and Pie Charts in Matplotlib.",
+    "example": "import matplotlib.pyplot as plt\nplt.bar(x, y)\nplt.hist(data)\nplt.pie(y)",
+    "challenges": [
+        {
+            "title": "Bar Chart",
+            "exercise": "Plot a bar chart for x=['A', 'B'], y=[10, 20]. Print 'Bar Done'.",
+            "expectedOutput": "Bar Done",
+            "solution": "import matplotlib.pyplot as plt\nplt.bar(['A', 'B'], [10, 20])\nprint(\"Bar Done\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["plt.bar"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_inheritance_pro_sq",
+    "title": "Python Trashëgimia dhe super()",
+    "description": "Trashëgimia (Inheritance) ju lejon të përcaktoni një klasë që trashëgon të gjitha metodat dhe vetitë nga një klasë tjetër. Funksioni 'super()' është një metodë e integruar që lejon klasën fëmijë të aksesojë lehtësisht metodat e klasës prind pa përmendur emrin e saj në mënyrë eksplicite.",
+    "example": "class Person:\n  def __init__(self, fname, lname):\n    self.firstname = fname\n    self.lastname = lname\n\nclass Student(Person):\n  def __init__(self, fname, lname, year):\n    super().__init__(fname, lname) # Akseson konstruktorin e prindit\n    self.graduationyear = year",
+    "challenges": [
+        {
+            "title": "Funksioni Super",
+            "exercise": "Krijoni klasën 'Child' nga 'Parent'. Brenda __init__ të Child, thirrni super().__init__(). Printoni 'Init'.",
+            "expectedOutput": "Init",
+            "solution": "class Parent:\n  def __init__(self): pass\nclass Child(Parent):\n  def __init__(self):\n    super().__init__()\n    print(\"Init\")\n\nc = Child()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["super()"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_json_sq",
+    "title": "Python JSON dhe Iteratoret",
+    "description": "JSON është një sintaksë për ruajtjen dhe shkëmbimin e të dhënave. Python ka një paketë të integruar të quajtur 'json' që mund të përdoret për të punuar me të dhënat JSON. Ju mund të analizoni (parse) stringjet JSON në fjalorë (dictionaries) duke përdorur 'json.loads()' dhe të konvertoni fjalorët në stringje JSON duke përdorur 'json.dumps()'.",
+    "example": "// Puna me JSON\nimport json\n\n# String JSON ne Dictionary\nx = '{ \"emri\":\"Genti\", \"mosha\":25 }'\ny = json.loads(x)\nprint(y[\"mosha\"])\n\n# Dictionary ne string JSON\nz = json.dumps(y)\nprint(z)",
+    "challenges": [
+        {
+            "title": "Parse JSON",
+            "exercise": "Importoni json dhe printoni 'json.loads' për të konfirmuar që dini si të analizoni një string JSON.",
+            "expectedOutput": "json.loads",
+            "solution": "import json\nprint('json.loads')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["json", "loads"]
+        }
+    ]
+}

@@ -1,53 +1,16 @@
 {
-    "Id": "cs_abstraction_sq",
-    "Title": "Abstraksioni C#",
-    "Description": "Abstraksioni fsheh detajet dhe tregon vetëm infon thelbësore.",
-    "Example": "Pig myPig = new Pig();\nmyPig.animalSound();",
-    "Challenges": [
+    "id": "cs_abstraction_sq",
+    "title": "C# Abstraksioni: Klasat Abstrakte",
+    "description": "Abstraksioni i të dhënave është procesi i fshehjes së detajeve të caktuara dhe shfaqjes vetëm të informacionit thelbësor për përdoruesin. Abstraksioni mund të arrihet me klasa abstrakte ose ndërfaqe (interfaces). Një klasë abstrakte nuk mund të përdoret për të krijuar objekte; ajo duhet të trashëgohet nga një klasë tjetër.",
+    "example": "// Klasa abstrakte\nabstract class Animal {\n  public abstract void animalSound();\n  public void sleep() {\n    Console.WriteLine(\"Zzz\");\n  }\n}\n\n// Klasa e rrjedhur duhet të zbatojë metodën abstrakte\nclass Pig : Animal {\n  public override void animalSound() {\n    Console.WriteLine(\"Derri thotë: wee wee\");\n  }\n}",
+    "challenges": [
         {
-            "Title": "Klasë abstrakte",
-            "Difficulty": "Fillestar",
-            "Exercise": "Krijo një klasë abstrakte `Animal`.",
-            "RequiredKeywords": [
-                "abstract class Animal"
-            ]
-        },
-        {
-            "Title": "Metodë abstrakte",
-            "Difficulty": "Mesatar",
-            "Exercise": "Shto metodën abstrakte `animalSound()` pa trup.",
-            "RequiredKeywords": [
-                "abstract void animalSound();"
-            ]
-        },
-        {
-            "Title": "Metodë e rregullt",
-            "Difficulty": "Mesatar",
-            "Exercise": "Shto metodën e rregullt `sleep()` (Zzz).",
-            "RequiredKeywords": [
-                "void sleep()",
-                "Console.WriteLine",
-                "Zzz"
-            ]
-        },
-        {
-            "Title": "Implemento",
-            "Difficulty": "Mesatar",
-            "Exercise": "Krijo klasën `Pig` që zbaton `Animal`.",
-            "RequiredKeywords": [
-                "class Pig : Animal",
-                "override void animalSound()"
-            ]
-        },
-        {
-            "Title": "Testo zbatimin",
-            "Difficulty": "Mesatar",
-            "Exercise": "Thirr metodat te një objekt `Pig`.",
-            "RequiredKeywords": [
-                "Pig",
-                "animalSound()",
-                "sleep()"
-            ]
+            "title": "Metoda Abstrakte",
+            "exercise": "Printoni 'Abstraksioni fsheh detajet' për të konfirmuar konceptin.",
+            "expectedOutput": "Abstraksioni fsheh detajet",
+            "solution": "Console.WriteLine(\"Abstraksioni fsheh detajet\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["fsheh"]
         }
     ]
 }

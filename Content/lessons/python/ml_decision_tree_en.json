@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_decision_tree_en",
+    "title": "Python ML: Decision Tree",
+    "description": "A Decision Tree is a flowchart-like structure in which each internal node represents a 'test' on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label. It is one of the most popular and easy to understand classification algorithms.",
+    "example": "// Decision Tree Implementation\nimport pandas\nfrom sklearn import tree\nfrom sklearn.tree import DecisionTreeClassifier\nimport matplotlib.pyplot as plt\n\ndf = pandas.read_csv(\"data.csv\")\nd = {'UK': 0, 'USA': 1, 'N': 2}\ndf['Nationality'] = df['Nationality'].map(d)\n\nfeatures = ['Age', 'Experience', 'Rank', 'Nationality']\nX = df[features]\ny = df['Go'] # Predict if someone should go to a show\n\ndtcree = DecisionTreeClassifier()\ndtcree = dtcree.fit(X, y)\n\ntree.plot_tree(dtcree, feature_names=features)\nplt.show()",
+    "challenges": [
+        {
+            "title": "Tree Leaf",
+            "exercise": "Print 'Leaf nodes represent class labels' to confirm you understand the Decision Tree structure.",
+            "expectedOutput": "Leaf nodes represent class labels",
+            "solution": "print('Leaf nodes represent class labels')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["leaf", "class label"]
+        }
+    ]
+}

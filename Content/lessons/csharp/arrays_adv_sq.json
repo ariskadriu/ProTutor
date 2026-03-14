@@ -1,0 +1,24 @@
+{
+    "id": "cs_arrays_adv_sq",
+    "title": "C# Vargjet e Avancuara",
+    "description": "Renditja e vargjeve (arrays) dhe puna me vargje shumëdimensionale.",
+    "example": "Array.Sort(cars);\nint[,] myNumbers = { {1, 4}, {3, 5} };",
+    "challenges": [
+        {
+            "title": "Rendit Vargun",
+            "exercise": "Duke pasur 'int[] nums = {3, 1, 2}'. Renditeni dhe printoni nums[0].",
+            "expectedOutput": "1",
+            "solution": "int[] nums = {3, 1, 2};\nArray.Sort(nums);\nConsole.WriteLine(nums[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Array.Sort"]
+        },
+        {
+            "title": "Vargu Shumëdimensional",
+            "exercise": "Krijoni vargun 2D 'int[,] grid = {{1, 2}, {3, 4}}'. Printoni grid[1, 1].",
+            "expectedOutput": "4",
+            "solution": "int[,] grid = {{1, 2}, {3, 4}};\nConsole.WriteLine(grid[1, 1]);",
+            "difficulty": "Hard",
+            "requiredKeywords": ["int[,]"]
+        }
+    ]
+}

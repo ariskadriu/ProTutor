@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_stats_sq",
+    "title": "Python ML: Statistikat",
+    "description": "Mësoni rreth Mesatares (Mean), Medians (Median), Modës (Mode) dhe Devijimit Standart (Std Dev).",
+    "example": "import numpy\nspeed = [99,86,87,88,111,86]\nx = numpy.mean(speed)\ny = numpy.median(speed)",
+    "challenges": [
+        {
+            "title": "Llogaritja e Medianës",
+            "exercise": "Llogaritni medianën e [10, 20, 30, 40] duke përdorur numpy.median(). Printojeni.",
+            "expectedOutput": "25.0",
+            "solution": "import numpy\narr = [10, 20, 30, 40]\nprint(numpy.median(arr))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.median"]
+        }
+    ]
+}

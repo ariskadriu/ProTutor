@@ -1,0 +1,16 @@
+{
+    "id": "py_django_en",
+    "title": "Python Django",
+    "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+    "example": "import django\nprint(django.get_version())",
+    "challenges": [
+        {
+            "title": "Django Version",
+            "exercise": "Import django and print 'Django' followed by its version.",
+            "expectedOutput": "Django",
+            "solution": "import django\nprint(\"Django\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import django"]
+        }
+    ]
+}

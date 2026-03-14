@@ -1,0 +1,16 @@
+{
+    "id": "cs_method_overloading_en",
+    "title": "C# Method Overloading",
+    "description": "With method overloading, multiple methods can have the same name with different parameters.",
+    "example": "static int PlusMethod(int x, int y) { return x + y; }\nstatic double PlusMethod(double x, double y) { return x + y; }",
+    "challenges": [
+        {
+            "title": "Overload Sum",
+            "exercise": "Create two 'Plus' methods. One takes two ints, the other two doubles. Print Plus(5, 5) and Plus(5.5, 5.5).",
+            "expectedOutput": "10\n11",
+            "solution": "static int Plus(int x, int y) { return x + y; }\nstatic double Plus(double x, double y) { return x + y; }\nstatic void Main() {\n  Console.WriteLine(Plus(5, 5));\n  Console.WriteLine(Plus(5.5, 5.5));\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["int x, int y", "double x, double y"]
+        }
+    ]
+}

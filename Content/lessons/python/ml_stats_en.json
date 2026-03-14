@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_stats_en",
+    "title": "Python ML: Statistics",
+    "description": "Learn about Mean, Median, Mode, and Standard Deviation for Machine Learning.",
+    "example": "import numpy\nspeed = [99,86,87,88,111,86]\nx = numpy.mean(speed)\ny = numpy.median(speed)",
+    "challenges": [
+        {
+            "title": "Median Calculation",
+            "exercise": "Calculate the median of [10, 20, 30, 40] using numpy.median(). Print it.",
+            "expectedOutput": "25.0",
+            "solution": "import numpy\narr = [10, 20, 30, 40]\nprint(numpy.median(arr))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.median"]
+        }
+    ]
+}

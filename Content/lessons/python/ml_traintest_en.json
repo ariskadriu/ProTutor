@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_traintest_en",
+    "title": "Python ML: Train/Test",
+    "description": "Train/Test is a method to measure the accuracy of your model. It is called Train/Test because you split the data set into two sets: a training set (80%) and a testing set (20%). You train the model using the training set and test the model using the testing set to avoid overfitting.",
+    "example": "// Train/Test Split Example\nimport numpy\nfrom sklearn.metrics import r2_score\n\nx = numpy.random.normal(3, 1, 100)\ny = numpy.random.normal(150, 40, 100) / x\n\ntrain_x = x[:80]\ntrain_y = y[:80]\n\ntest_x = x[80:]\ntest_y = y[80:]\n\n// Train the model (Polynomial example)\nmymodel = numpy.poly1d(numpy.polyfit(train_x, train_y, 4))\nr2 = r2_score(train_y, mymodel(train_x))\nprint(r2) # R-squared should be high for training set",
+    "challenges": [
+        {
+            "title": "Split Ratio",
+            "exercise": "Print '80-20' to confirm you understand the typical train/test split ratio.",
+            "expectedOutput": "80-20",
+            "solution": "print('80-20')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["80-20"]
+        }
+    ]
+}

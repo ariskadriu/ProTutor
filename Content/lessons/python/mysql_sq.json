@@ -1,0 +1,16 @@
+{
+    "id": "py_mysql_sq",
+    "title": "Python MySQL",
+    "description": "Python mund të përdoret në aplikacionet e bazave të të dhënave. Një nga bazat e të dhënave më të njohura është MySQL.",
+    "example": "import mysql.connector\n# Lidhja me bazën e të dhënave",
+    "challenges": [
+        {
+            "title": "Importo MySQL",
+            "exercise": "Printoni 'MySQL Gati' pasi të keni importuar mysql.connector.",
+            "expectedOutput": "MySQL Gati",
+            "solution": "import mysql.connector\nprint(\"MySQL Gati\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import mysql.connector"]
+        }
+    ]
+}

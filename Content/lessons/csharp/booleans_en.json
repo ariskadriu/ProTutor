@@ -1,0 +1,16 @@
+{
+    "id": "cs_booleans_en",
+    "title": "C# Booleans & Expressions",
+    "description": "Booleans represent values that are either 'true' or 'false'. They are the foundation of logic and decision-making in programming. You can use boolean expressions with operators like '>', '<', and '==' to evaluate conditions.",
+    "example": "// Boolean Logic in Action\nbool isGraduated = true;\nbool hasJob = false;\n\n// Evaluating Expressions\nint x = 10;\nint y = 9;\nConsole.WriteLine(x > y); // Returns true because 10 is higher than 9",
+    "challenges": [
+        {
+            "title": "Boolean Comparison",
+            "exercise": "Compare 10 with 5 using '=='. Print the result (should be False).",
+            "expectedOutput": "False",
+            "solution": "Console.WriteLine(10 == 5);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["=="]
+        }
+    ]
+}

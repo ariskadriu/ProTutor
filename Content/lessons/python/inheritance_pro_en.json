@@ -1,0 +1,16 @@
+{
+    "id": "py_inheritance_pro_en",
+    "title": "Python Inheritance & super()",
+    "description": "Inheritance allows us to define a class that inherits all the methods and properties from another class. The 'super()' function is a built-in method that allows the child class to easily access methods of the parent class without explicitly naming the parent class.",
+    "example": "class Person:\n  def __init__(self, fname, lname):\n    self.firstname = fname\n    self.lastname = lname\n\nclass Student(Person):\n  def __init__(self, fname, lname, year):\n    super().__init__(fname, lname) # Access parent constructor\n    self.graduationyear = year",
+    "challenges": [
+        {
+            "title": "Super Function",
+            "exercise": "Create class 'Child' from 'Parent'. Inside Child's __init__, call super().__init__(). Print 'Init'.",
+            "expectedOutput": "Init",
+            "solution": "class Parent:\n  def __init__(self): pass\nclass Child(Parent):\n  def __init__(self):\n    super().__init__()\n    print(\"Init\")\n\nc = Child()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["super()"]
+        }
+    ]
+}

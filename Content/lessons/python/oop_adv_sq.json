@@ -1,0 +1,16 @@
+{
+    "id": "py_oop_adv_sq",
+    "title": "Python OOP i Avancuar",
+    "description": "Zotëroni kapsulimin (encapsulation) dhe klasat e brendshme (inner classes) në Python.",
+    "example": "class Outer:\n  class Inner:\n    def msg(self): print(\"Brena\")",
+    "challenges": [
+        {
+            "title": "Atribut Privat",
+            "exercise": "Krijoni klasën 'Bank' me atribut privat '__balance = 100'. Shtoni metodën 'get_balance'. Printoni bank.get_balance().",
+            "expectedOutput": "100",
+            "solution": "class Bank:\n  def __init__(self):\n    self.__balance = 100\n  def get_balance(self):\n    return self.__balance\n\nb = Bank()\nprint(b.get_balance())",
+            "difficulty": "Hard",
+            "requiredKeywords": ["__balance", "self.__balance"]
+        }
+    ]
+}

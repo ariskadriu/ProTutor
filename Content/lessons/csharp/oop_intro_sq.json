@@ -1,0 +1,16 @@
+{
+    "id": "cs_oop_intro_sq",
+    "title": "C# Hyrje në OOP",
+    "description": "OOP do të thotë Programim i Orientuar drejt Objekteve. Programimi procedural ka të bëjë me shkrimin e procedurave ose metodave që kryejnë operacione mbi të dhënat, ndërsa OOP ka të bëjë me krijimin e objekteve që përmbajnë të dhëna dhe metoda.",
+    "example": "// Klasat dhe Objektet janë dy aspektet kryesore të OOP.",
+    "challenges": [
+        {
+            "title": "Koncepti OOP",
+            "exercise": "Printoni 'Objektet permbajne te dhena dhe metoda' për të konfirmuar që e kuptoni konceptin.",
+            "expectedOutput": "Objektet permbajne te dhena dhe metoda",
+            "solution": "Console.WriteLine(\"Objektet permbajne te dhena dhe metoda\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["te dhena", "metoda"]
+        }
+    ]
+}

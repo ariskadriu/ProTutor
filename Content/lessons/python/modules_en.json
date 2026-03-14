@@ -1,0 +1,24 @@
+{
+    "id": "py_modules_en",
+    "title": "Python Modules",
+    "description": "A module is a file containing a set of functions you want to include in your application.",
+    "example": "import platform\nx = platform.system()\nprint(x)",
+    "challenges": [
+        {
+            "title": "Import Module",
+            "exercise": "Import the 'math' module and print math.sqrt(16).",
+            "expectedOutput": "4.0",
+            "solution": "import math\nprint(math.sqrt(16))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["import math", "math.sqrt"]
+        },
+        {
+            "title": "Module Alias",
+            "exercise": "Import 'platform' as 'pf'. Print pf.system().",
+            "expectedOutput": "Windows",
+            "solution": "import platform as pf\nprint(pf.system())",
+            "difficulty": "Medium",
+            "requiredKeywords": ["as pf"]
+        }
+    ]
+}

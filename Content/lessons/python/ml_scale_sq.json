@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_scale_sq",
+    "title": "Python ML: Shkallëzimi i Karakteristikave",
+    "description": "Kur të dhënat tuaja kanë vlera të ndryshme, madje edhe njësi të ndryshme matëse, mund të jetë e vështirë t'i krahasoni ato. Shkallëzimi (scaling) ju lejon t'i vendosni të gjitha variablat tuaja në të njëjtën shkallë, duke i bërë ato më të lehta për t'u përpunuar nga modelet e machine learning. Metodat e zakonshme përfshijnë StandardScaler (mesatarja=0, varianca=1).",
+    "example": "// Zbatimi i StandardScaler\nimport pandas\nfrom sklearn import linear_model\nfrom sklearn.preprocessing import StandardScaler\nscale = StandardScaler()\n\ndf = pandas.read_csv(\"te_dhena.csv\")\nX = df[['Pesha', 'Volumi']]\n\nscaledX = scale.fit_transform(X)\nprint(scaledX)",
+    "challenges": [
+        {
+            "title": "Koncepti i Shkallezimit",
+            "exercise": "Printoni 'StandardScaler' për të konfirmuar që dini emrin e mjetit të shkallëzimit në sklearn.",
+            "expectedOutput": "StandardScaler",
+            "solution": "print('StandardScaler')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["StandardScaler"]
+        }
+    ]
+}

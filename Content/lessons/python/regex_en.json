@@ -1,56 +1,16 @@
 {
-    "Id": "py_regex_en",
-    "Title": "Python RegEx",
-    "Description": "A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.",
-    "Example": "import re\nprint(re.search('^The', 'The rain'))",
-    "Challenges": [
+    "id": "py_regex_en",
+    "title": "Python RegEx",
+    "description": "A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern. RegEx can be used to check if a string contains the specified search pattern. Python has a built-in package called 're', which can be used to work with Regular Expressions.",
+    "example": "// Common RegEx Functions\nimport re\n\ntxt = \"The rain in Spain\"\nx = re.search(\"^The.*Spain$\", txt)\nif x: print(\"YES! Match!\")\n\n# Findall example\nx = re.findall(\"ai\", txt)\nprint(x) # ['ai', 'ai']",
+    "challenges": [
         {
-            "Title": "Import re",
-            "Difficulty": "Beginner",
-            "Exercise": "Import the `re` module and print 'ready'.",
-            "RequiredKeywords": [
-                "import re",
-                "print",
-                "ready"
-            ]
-        },
-        {
-            "Title": "Search",
-            "Difficulty": "Intermediate",
-            "Exercise": "Use `re.search()` to see if 'rain' is in the string 'The rain in Spain'.",
-            "RequiredKeywords": [
-                "search",
-                "rain",
-                "The rain in Spain"
-            ]
-        },
-        {
-            "Title": "Findall",
-            "Difficulty": "Intermediate",
-            "Exercise": "Use `re.findall()` to find all matches of 'ai' in the string.",
-            "RequiredKeywords": [
-                "findall",
-                "ai"
-            ]
-        },
-        {
-            "Title": "Split",
-            "Difficulty": "Intermediate",
-            "Exercise": "Use `re.split()` to split the string at every white-space character '\\s'.",
-            "RequiredKeywords": [
-                "split",
-                "\\s"
-            ]
-        },
-        {
-            "Title": "Sub",
-            "Difficulty": "Intermediate",
-            "Exercise": "Use `re.sub()` to replace all white-space characters with the digit '9'.",
-            "RequiredKeywords": [
-                "sub",
-                "\\s",
-                "9"
-            ]
+            "title": "Search Pattern",
+            "exercise": "Import re. Use re.search() to check if 'txt' starts with 'The'. If yes, print 'Match'.",
+            "expectedOutput": "Match",
+            "solution": "import re\ntxt = 'The rain'\nif re.search('^The', txt): print('Match')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import re", "re.search"]
         }
     ]
 }

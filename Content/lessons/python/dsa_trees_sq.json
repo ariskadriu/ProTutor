@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_trees_sq",
+    "title": "DSA: Pemat Binare dhe BST",
+    "description": "Një pemë (tree) është një strukturë të dhënash jo-lineare ku nyjet janë të rregulluara në një hierarki. Një Pemë Binare ka më së shumti dy fëmijë për nyje. Një Pemë Binare Kërkimi (BST) është një variant ku fëmija i majtë përmban vlera më të vogla se prindi, dhe fëmija i djathtë më të mëdha, duke lejuar kërkimin O(log n).",
+    "example": "// Nyja e Thjeshte BST dhe Kerkimi\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.val = key\n\ndef search(root, key):\n    if root is None or root.val == key: return root\n    if root.val < key: return search(root.right, key)\n    return search(root.left, key)",
+    "challenges": [
+        {
+            "title": "Logjika BST",
+            "exercise": "Printoni 'Left small, Right large' për të konfirmuar që kuptoni rregullin e rradhitjes në BST.",
+            "expectedOutput": "Left small, Right large",
+            "solution": "print('Left small, Right large')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Left", "Right"]
+        }
+    ]
+}

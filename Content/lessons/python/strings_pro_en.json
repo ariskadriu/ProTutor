@@ -1,0 +1,16 @@
+{
+    "id": "py_strings_pro_en",
+    "title": "Python String Methods Mastery",
+    "description": "Python has a set of built-in methods that you can use on strings. All string methods return new values; they do not change the original string. Essential methods include 'upper()', 'lower()', 'strip()' (to remove whitespace), and 'replace()'. Mastering these is key for data cleaning.",
+    "example": "// Common String Operations\na = \" Hello, World! \"\nprint(a.strip()) # \"Hello, World!\"\nprint(a.lower()) # \" hello, world! \"\nprint(a.replace(\"H\", \"J\")) # \" Jello, World! \"\n\n# Splitting into a list\nprint(a.split(\",\")) # [' Hello', ' World! ']",
+    "challenges": [
+        {
+            "title": "Strip & Upper",
+            "exercise": "Given s = ' python '. Strip it and make it uppercase. Print the result.",
+            "expectedOutput": "PYTHON",
+            "solution": "s = ' python '\nprint(s.strip().upper())",
+            "difficulty": "Easy",
+            "requiredKeywords": ["strip()", "upper()"]
+        }
+    ]
+}

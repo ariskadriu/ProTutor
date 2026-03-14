@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_sq",
+    "title": "Python Machine Learning",
+    "description": "Machine Learning (Mësimi i Makinerisë) bën që kompjuterët të mësojnë nga të dhënat dhe statistikat. Python është gjuha më e njohur për Machine Learning.",
+    "example": "import numpy\nfrom scipy import stats\n\nspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.mean(speed)\nprint(x)",
+    "challenges": [
+        {
+            "title": "Kalkulimi i Mesatares",
+            "exercise": "Llogaritni mesataren e [10, 20, 30] duke përdorur numpy.mean(). Printojeni.",
+            "expectedOutput": "20.0",
+            "solution": "import numpy\narr = [10, 20, 30]\nprint(numpy.mean(arr))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.mean"]
+        }
+    ]
+}

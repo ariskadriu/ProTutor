@@ -1,0 +1,24 @@
+{
+    "id": "py_numbers_sq",
+    "title": "Python Numrat",
+    "description": "Ekzistojnë tre lloje numerike në Python: int, float dhe complex.",
+    "example": "x = 1    # int\ny = 2.8  # float\nz = 1j   # complex",
+    "challenges": [
+        {
+            "title": "Kontrollo Tipin",
+            "exercise": "Krijoni x = 5. Gjeni tipin e tij duke përdorur type(x) dhe printojeni.",
+            "expectedOutput": "<class 'int'>",
+            "solution": "x = 5\nprint(type(x))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["type(x)"]
+        },
+        {
+            "title": "Numrat Float",
+            "exercise": "Krijoni x = 35e3. Printojeni atë. Çfarë lloj numri është?",
+            "expectedOutput": "35000.0",
+            "solution": "x = 35e3\nprint(x)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["35e3"]
+        }
+    ]
+}

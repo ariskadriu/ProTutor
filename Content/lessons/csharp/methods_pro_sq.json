@@ -1,0 +1,24 @@
+{
+    "id": "cs_methods_pro_sq",
+    "title": "C# Metodat Pro",
+    "description": "Veçoritë e avancuara të metodave: argumentet e emërtuara dhe parametrat e paracaktuar.",
+    "example": "static void MyMethod(string country = \"Norway\") { ... }\nMyMethod(child1: \"Liam\", child2: \"Jenny\");",
+    "challenges": [
+        {
+            "title": "Parametri i Paracaktuar",
+            "exercise": "Krijoni 'Show(string msg = \"Hello\")' që printon 'msg'. Thirrni Show() pa argumente.",
+            "expectedOutput": "Hello",
+            "solution": "static void Show(string msg = \"Hello\") { Console.WriteLine(msg); }\nstatic void Main() { Show(); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["string msg = \"Hello\""]
+        },
+        {
+            "title": "Argumentet e Emërtuara",
+            "exercise": "Krijoni 'Check(int x, int y)'. Thirrni atë duke përdorur argumente të emërtuara 'y: 2, x: 1'. Printoni 'Done'.",
+            "expectedOutput": "Done",
+            "solution": "static void Check(int x, int y) {}\nstatic void Main() {\n  Check(y: 2, x: 1);\n  Console.WriteLine(\"Done\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["y:"]
+        }
+    ]
+}

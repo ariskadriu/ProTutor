@@ -1,0 +1,16 @@
+{
+    "id": "py_matplotlib_sq",
+    "title": "Python Matplotlib",
+    "description": "Matplotlib është një bibliotekë grafike në nivel të ulët në Python që shërben si një mjet vizualizimi.",
+    "example": "import matplotlib.pyplot as plt\nimport numpy as np\nxpoints = np.array([0, 6])\nypoints = np.array([0, 250])\nplt.plot(xpoints, ypoints)\nplt.show()",
+    "challenges": [
+        {
+            "title": "Plot i Thjeshtë",
+            "exercise": "Importoni matplotlib.pyplot si plt. Vizatoni një linjë nga [0, 6] në [0, 100]. Përdorni plt.show().",
+            "expectedOutput": "",
+            "solution": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.array([0, 6])\ny = np.array([0, 100])\nplt.plot(x, y)\nplt.show()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["import matplotlib.pyplot as plt", "plt.plot"]
+        }
+    ]
+}

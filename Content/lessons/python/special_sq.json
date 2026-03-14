@@ -1,0 +1,24 @@
+{
+    "id": "py_special_sq",
+    "title": "Python Karakteret Speciale dhe Bitwise",
+    "description": "Mësoni rreth karaktereve escape dhe operatorëve bitwise në Python.",
+    "example": "txt = \"Ne jemi të ashtuquajturit \\\"Vikingët\\\" nga veriu.\"\nprint(6 & 3) # Bitwise AND",
+    "challenges": [
+        {
+            "title": "Karakteri Escape",
+            "exercise": "Printoni 'It\\'s alright' duke përdorur një karakter escape për thonjëzën.",
+            "expectedOutput": "It's alright",
+            "solution": "print('It\\'s alright')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["\\'"]
+        },
+        {
+            "title": "Bitwise AND",
+            "exercise": "Printoni rezultatin e 6 & 3.",
+            "expectedOutput": "2",
+            "solution": "print(6 & 3)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["&"]
+        }
+    ]
+}

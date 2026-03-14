@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_sort_special_sq",
+    "title": "DSA: Counting dhe Radix Sort",
+    "description": "Counting Sort dhe Radix Sort janë algoritme rradhitjeje që nuk bazohen në krahasim. Counting sort funksionon duke numëruar shfaqjet e çdo elementi unik. Radix sort përpunon numrat sipas shifrave të tyre individuale. Këto mund të arrijnë kompleksitet linear O(n) në kushte specifike.",
+    "example": "// Parimi i Counting Sort\ndef countingSort(array):\n    size = len(array)\n    output = [0] * size\n    count = [0] * 10\n    for i in range(0, size): count[array[i]] += 1\n    # Ndërtimi i vargut të rezultatit bazuar në numërime...",
+    "challenges": [
+        {
+            "title": "Rradhitje Lineare?",
+            "exercise": "Printoni 'Linear time complexity' nëse Counting sort mund të jetë më i shpejtë se O(n log n).",
+            "expectedOutput": "Linear time complexity",
+            "solution": "print('Linear time complexity')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Linear"]
+        }
+    ]
+}

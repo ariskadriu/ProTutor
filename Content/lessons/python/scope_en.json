@@ -1,0 +1,16 @@
+{
+    "id": "py_scope_en",
+    "title": "Python Scope (Global vs Local)",
+    "description": "A variable is only available from inside the region it remains created. This is called scope. Local Scope: A variable created inside a function belongs to the local scope of that function. Global Scope: A variable created in the main body of the Python code is a global variable and belongs to the global scope.",
+    "example": "// Local vs Global\nx = 300 # Global\n\ndef myfunc():\n  x = 200 # Local\n  print(x) # 200\n\nmyfunc()\nprint(x) # 300\n\n# Using 'global' keyword\ndef change_global():\n  global x\n  x = 500",
+    "challenges": [
+        {
+            "title": "Global Keyword",
+            "exercise": "Print 'global' to confirm you know the keyword to change a global variable inside a function.",
+            "expectedOutput": "global",
+            "solution": "print('global')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["global"]
+        }
+    ]
+}

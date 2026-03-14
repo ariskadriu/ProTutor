@@ -1,0 +1,24 @@
+{
+    "id": "cs_constructors_sq",
+    "title": "C# Konstruktorët",
+    "description": "Një konstruktor është një metodë speciale që përdoret për të inicializuar objektet.",
+    "example": "class Car {\n  public string model;\n  public Car() {\n    model = \"Mustang\";\n  }\n}",
+    "challenges": [
+        {
+            "title": "Konstruktori i Paracaktuar",
+            "exercise": "Krijoni një klasë 'Dog' me një public string 'Name'. Përdorni një konstruktor për të vendosur Name në 'Buddy'. Në Main, printoni 'dog.Name'.",
+            "expectedOutput": "Buddy",
+            "solution": "class Dog {\n  public string Name;\n  public Dog() { Name = \"Buddy\"; }\n}\nstatic void Main() {\n  Dog dog = new Dog();\n  Console.WriteLine(dog.Name);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["public Dog()", "Name = \"Buddy\""]
+        },
+        {
+            "title": "Konstruktori me Parametra",
+            "exercise": "Krijoni një klasë 'Person' me string 'Name'. Krijoni një konstruktor që merr një string 'n' dhe vendos Name në 'n'. Krijoni një 'Person' me 'Aris' dhe printoni Name.",
+            "expectedOutput": "Aris",
+            "solution": "class Person {\n  public string Name;\n  public Person(string n) { Name = n; }\n}\nstatic void Main() {\n  Person p = new Person(\"Aris\");\n  Console.WriteLine(p.Name);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["public Person(string n)", "Name = n"]
+        }
+    ]
+}

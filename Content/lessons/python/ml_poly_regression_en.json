@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_poly_regression_en",
+    "title": "Python ML: Polynomial Regression",
+    "description": "If your data points clearly do not fit a linear regression (a straight line), it might be ideal for polynomial regression. Polynomial regression, like linear regression, uses the relationship between the variables x and y to find the best way to draw a line through the data points.",
+    "example": "// Polynomial Regression Implementation\nimport numpy\nimport matplotlib.pyplot as plt\n\nx = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]\ny = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]\n\n# Create the Polynomial model (4th degree)\nmymodel = numpy.poly1d(numpy.polyfit(x, y, 3))\n\n# Visualize the result\nmyline = numpy.linspace(1, 22, 100)\nplt.scatter(x, y)\nplt.plot(myline, mymodel(myline))\nplt.show()",
+    "challenges": [
+        {
+            "title": "Curve Fit",
+            "exercise": "Print 'Polynomial regression is used for non-linear data' to confirm concept.",
+            "expectedOutput": "Polynomial regression is used for non-linear data",
+            "solution": "print('Polynomial regression is used for non-linear data')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["non-linear"]
+        }
+    ]
+}

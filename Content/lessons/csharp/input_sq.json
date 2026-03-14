@@ -1,0 +1,16 @@
+{
+    "id": "cs_input_sq",
+    "title": "C# Input nga Përdoruesi",
+    "description": "Input-i nga përdoruesi është thelbësor për krijimin e aplikacioneve interaktive. Në C#, ne përdorim 'Console.ReadLine()' për të kapur tekstin e futur nga përdoruesi. Kini parasysh që 'Console.ReadLine()' kthen gjithmonë një string; nëse ju duhet një numër, duhet ta konvertoni duke përdorur 'Convert.ToDouble()' ose 'int.Parse()'.",
+    "example": "// Trajtuesi Profesional i Input-it\nConsole.WriteLine(\"Shkruani emrin e përdoruesit:\");\nstring userName = Console.ReadLine(); // Kap input-in\nConsole.WriteLine(\"Emri i përdoruesit është: \" + userName);\n\n// Input me Konvertim\nConsole.WriteLine(\"Shkruani moshën:\");\nint age = Convert.ToInt32(Console.ReadLine()); // Konverton string-un në int",
+    "challenges": [
+        {
+            "title": "Input Bazë",
+            "exercise": "Pyetni përdoruesin me 'Emri:' pastaj kapni input-in e tyre në variablën 'name'. Printoni 'Pershendetje {name}' duke përdorur interpolimin.",
+            "expectedOutput": "Pershendetje Aris",
+            "solution": "Console.Write(\"Emri:\");\nstring name = Console.ReadLine();\nConsole.WriteLine($\"Pershendetje {name}\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.ReadLine", "$"]
+        }
+    ]
+}

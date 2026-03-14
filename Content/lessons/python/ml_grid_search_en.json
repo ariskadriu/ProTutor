@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_grid_search_en",
+    "title": "Python ML: Grid Search",
+    "description": "The majority of machine learning models contain parameters that can be adjusted to vary how the model learns. After finding the best model, we can optimize it using Grid Search. This method exhaustively searches through a manually specified subset of the hyperparameter space of a learning algorithm.",
+    "example": "// Grid Search with Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import GridSearchCV\n\niris = datasets.load_iris()\nX, y = iris.data, iris.target\n\nlogit = LogisticRegression(max_iter = 10000)\n\n# Define the grid of parameters\nC = [0.25, 0.5, 0.75, 1, 1.25, 1.5]\nparam_grid = [ {'C': C} ]\n\nclf = GridSearchCV(logit, param_grid = param_grid, cv = 3)\nbest_clf = clf.fit(X, y)\n\nprint(best_clf.best_estimator_.get_params()['C'])",
+    "challenges": [
+        {
+            "title": "Optimization Tool",
+            "exercise": "Print 'GridSearchCV' to confirm you know the tool used for hyperparameter optimization.",
+            "expectedOutput": "GridSearchCV",
+            "solution": "print('GridSearchCV')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["GridSearchCV"]
+        }
+    ]
+}

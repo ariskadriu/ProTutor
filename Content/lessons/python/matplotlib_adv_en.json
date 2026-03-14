@@ -1,0 +1,16 @@
+{
+    "id": "py_matplotlib_adv_en",
+    "title": "Python Matplotlib Advanced",
+    "description": "Learn to use markers, lines, labels, and grids in Matplotlib.",
+    "example": "import matplotlib.pyplot as plt\nplt.plot(ypoints, marker = 'o')\nplt.grid()",
+    "challenges": [
+        {
+            "title": "Plot with Labels",
+            "exercise": "Plot x=[1,2,3], y=[4,5,6]. Set xlabel to 'X Axis' and ylabel to 'Y Axis'. Print 'Labeled'.",
+            "expectedOutput": "Labeled",
+            "solution": "import matplotlib.pyplot as plt\nplt.plot([1,2,3], [4,5,6])\nplt.xlabel(\"X Axis\")\nplt.ylabel(\"Y Axis\")\nprint(\"Labeled\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["plt.xlabel", "plt.ylabel"]
+        }
+    ]
+}

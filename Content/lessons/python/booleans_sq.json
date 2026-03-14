@@ -1,0 +1,16 @@
+{
+    "id": "py_booleans_sq",
+    "title": "Python Boolean-ët dhe Krahasimet",
+    "description": "Boolean-ët përfaqësojnë një nga dy vlerat: 'True' (e vërtetë) ose 'False' (e gabuar). Në Python, pothuajse çdo vlerë vlerësohet si 'True' nëse ka ndonjë lloj përmbajtjeje. Operatorët boolean si 'and', 'or', dhe 'not' lejojnë zinxhirë kompleksë logjikë.",
+    "example": "// Zinxhirët Logjikë\nprint(10 > 9) # True\nprint(10 == 9) # False\n\n# E vërteta e vlerave\nprint(bool(\"abc\")) # True\nprint(bool(0)) # False",
+    "challenges": [
+        {
+            "title": "Deklarata True",
+            "exercise": "Printoni rezultatin boolean të 10 > 5.",
+            "expectedOutput": "True",
+            "solution": "print(10 > 5)",
+            "difficulty": "Easy",
+            "requiredKeywords": ["print", ">"]
+        }
+    ]
+}

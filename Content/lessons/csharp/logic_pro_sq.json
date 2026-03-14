@@ -1,0 +1,16 @@
+{
+    "id": "cs_logic_pro_sq",
+    "title": "C# Logjika Pro: Shkurtesa If dhe Switch",
+    "description": "C# ofron mënyra efikase për të trajtuar kushte të shumta. Operatori ternar '? :' është një shkurtim për 'if..else', ndërsa deklarata 'switch' është ideale për të zgjedhur një nga blloqet e shumta të kodit bazuar në vlerën e një variable.",
+    "example": "// Operatori Ternar (Kushti ? PjesaTrue : PjesaFalse)\nint time = 20;\nstring result = (time < 18) ? \"Dite e mire.\" : \"Mbremje e mire.\";\nConsole.WriteLine(result);\n\n// Deklarata Switch me Default\nint day = 4;\nswitch (day) {\n  case 6: Console.WriteLine(\"E Shtune\"); break;\n  case 7: Console.WriteLine(\"E Djele\"); break;\n  default: Console.WriteLine(\"Dite jave\"); break;\n}",
+    "challenges": [
+        {
+            "title": "Shkurtesa If",
+            "exercise": "Përdorni operatorin ternar për të printuar 'Odd' (tek) ose 'Even' (çift) për 'int n = 5'.",
+            "expectedOutput": "Odd",
+            "solution": "int n = 5;\nstring res = (n % 2 == 0) ? \"Even\" : \"Odd\";\nConsole.WriteLine(res);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["?", ":"]
+        }
+    ]
+}

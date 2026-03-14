@@ -1,0 +1,24 @@
+{
+    "id": "cs_strings_adv_sq",
+    "title": "C# Stringjet e Avancuara",
+    "description": "Analizë e thellë në interpolimin e stringjeve, aksesin dhe karakteret speciale.",
+    "example": "string firstName = \"John\";\nstring lastName = \"Doe\";\nstring name = $\"Emri im i plotë është: {firstName} {lastName}\";",
+    "challenges": [
+        {
+            "title": "Interpolimi",
+            "exercise": "Përdorni interpolimin ($) për të printuar 'Pershendetje' pasuar nga variabla 'name = \"Aris\"'.",
+            "expectedOutput": "Pershendetje Aris",
+            "solution": "string name = \"Aris\";\nConsole.WriteLine($\"Pershendetje {name}\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["$", "{", "}"]
+        },
+        {
+            "title": "Aksesi në String",
+            "exercise": "Printoni karakterin e parë të string-ut 'myString = \"Hello\"'.",
+            "expectedOutput": "H",
+            "solution": "string myString = \"Hello\";\nConsole.WriteLine(myString[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0]"]
+        }
+    ]
+}

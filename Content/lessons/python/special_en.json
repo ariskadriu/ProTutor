@@ -1,0 +1,24 @@
+{
+    "id": "py_special_en",
+    "title": "Python Special Characters & Bitwise",
+    "description": "Learn about escape characters and bitwise operators in Python.",
+    "example": "txt = \"We are the so-called \\\"Vikings\\\" from the north.\"\nprint(6 & 3) # Bitwise AND",
+    "challenges": [
+        {
+            "title": "Escape Char",
+            "exercise": "Print 'It\\'s alright' using an escape character for the quote.",
+            "expectedOutput": "It's alright",
+            "solution": "print('It\\'s alright')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["\\'"]
+        },
+        {
+            "title": "Bitwise AND",
+            "exercise": "Print the result of 6 & 3.",
+            "expectedOutput": "2",
+            "solution": "print(6 & 3)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["&"]
+        }
+    ]
+}

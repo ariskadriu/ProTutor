@@ -1,50 +1,16 @@
 {
-    "Id": "cs_inheritance_en",
-    "Title": "C# Inheritance",
-    "Description": "In C#, it is possible to inherit fields and methods from one class to another.",
-    "Example": "Car myCar = new Car();\nmyCar.honk();",
-    "Challenges": [
+    "id": "cs_inheritance_en",
+    "title": "C# Inheritance & Polymorphism",
+    "description": "Inheritance allows a class (child) to inherit fields and methods from another class (parent). Polymorphism uses those inherited methods to perform different tasks. This is achieved via 'virtual' methods in the parent class and 'override' in the child class.",
+    "example": "// Base class (Parent)\nclass Animal {\n  public virtual void animalSound() {\n    Console.WriteLine(\"The animal makes a sound\");\n  }\n}\n\n// Derived class (Child)\nclass Pig : Animal {\n  public override void animalSound() {\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}",
+    "challenges": [
         {
-            "Title": "Base class",
-            "Difficulty": "Beginner",
-            "Exercise": "Create a `Vehicle` class with a `honk()` method.",
-            "RequiredKeywords": [
-                "class Vehicle",
-                "void honk()",
-                "Console.WriteLine"
-            ]
-        },
-        {
-            "Title": "Derived class",
-            "Difficulty": "Intermediate",
-            "Exercise": "Create a `Car` class that inherits from `Vehicle`.",
-            "RequiredKeywords": [
-                "class Car : Vehicle"
-            ]
-        },
-        {
-            "Title": "Add field",
-            "Difficulty": "Intermediate",
-            "Exercise": "Add a string field `modelName` to the `Car` class.",
-            "RequiredKeywords": [
-                "string modelName"
-            ]
-        },
-        {
-            "Title": "Instantiate",
-            "Difficulty": "Intermediate",
-            "Exercise": "In the main logic, create an object of `Car`.",
-            "RequiredKeywords": [
-                "Car myCar = new Car();"
-            ]
-        },
-        {
-            "Title": "Call method",
-            "Difficulty": "Intermediate",
-            "Exercise": "Call the `honk()` method on `myCar`.",
-            "RequiredKeywords": [
-                "myCar.honk();"
-            ]
+            "title": "Inherit Class",
+            "exercise": "Create a class 'Car' that inherits from 'Vehicle'. 'Vehicle' has string model = 'Base'. Print car.model.",
+            "expectedOutput": "Base",
+            "solution": "class Vehicle {\n  public string model = \"Base\";\n}\nclass Car : Vehicle {}\n\nstatic void Main() {\n  Car myCar = new Car();\n  Console.WriteLine(myCar.model);\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": [":", "myCar.model"]
         }
     ]
 }

@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_multi_regression_en",
+    "title": "Python ML: Multiple Regression",
+    "description": "Multiple regression is like linear regression, but with more than one independent value. It attempts to predict the value of a dependent variable based on several independent variables. In Python, the 'sklearn' library is the industry standard for implementing these models.",
+    "example": "// Multiple Regression with Pandas & Scikit-learn\nimport pandas\nfrom sklearn import linear_model\n\ndf = pandas.read_csv(\"data.csv\")\nX = df[['Weight', 'Volume']] # Independent variables\ny = df['CO2'] # Dependent variable\n\nregr = linear_model.LinearRegression()\nregr.fit(X, y)\n\n# Predict CO2 emission for a car weighing 2300kg with volume 1300cm3\npredictedCO2 = regr.predict([[2300, 1300]])\nprint(predictedCO2)",
+    "challenges": [
+        {
+            "title": "Multi Predict",
+            "exercise": "Print 'Multiple regression uses more than one independent variable' to confirm concept.",
+            "expectedOutput": "Multiple regression uses more than one independent variable",
+            "solution": "print('Multiple regression uses more than one independent variable')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["independent variable"]
+        }
+    ]
+}

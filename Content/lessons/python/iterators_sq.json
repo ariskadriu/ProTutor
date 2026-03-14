@@ -1,0 +1,16 @@
+{
+    "id": "py_iterators_sq",
+    "title": "Python Iteratoret",
+    "description": "Një iterator është një objekt që përmban një numër të numërueshëm vlerash. Një iterator është një objekt që mund të kalohet (iterated), që do të thotë se mund të përshkoni të gjitha vlerat. Në Python, një iterator implementon protokollin e iteratorit, i cili përbëhet nga metodat '__iter__()' dhe '__next__()'.",
+    "example": "// Perdorimi i Zakonshem i Iteratorit\nmytuple = (\"molla\", \"dardha\", \"qershia\")\nmyit = iter(mytuple)\n\nprint(next(myit))\nprint(next(myit))\n\n# Edhe stringjet jane objekte qe mund te iterohen\nmystr = \"dardha\"\nmyit = iter(mystr)\nprint(next(myit)) # 'd'",
+    "challenges": [
+        {
+            "title": "Vlera e Radhes",
+            "exercise": "Printoni 'next(myit)' për të konfirmuar që dini si të merrni vlerën e radhës nga një iterator.",
+            "expectedOutput": "next(myit)",
+            "solution": "print('next(myit)')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["next"]
+        }
+    ]
+}

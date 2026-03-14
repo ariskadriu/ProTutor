@@ -1,48 +1,16 @@
 {
     "id": "cs_enums_en",
     "title": "C# Enums",
-    "description": "An enum is a special 'class' that represents a group of constants (unchangeable variables, like final variables).",
-    "example": "enum Level { Low, Medium, High }",
+    "description": "An enum is a special 'class' that represents a group of constants (unchangeable variables). Use enums when you have values that you know aren't going to change, like month names, days, colors, deck of cards, etc.",
+    "example": "// Enum Definition\nenum Level {\n  Low,\n  Medium,\n  High\n}\n\n// Usage inside a class\nLevel myVar = Level.Medium;\nConsole.WriteLine(myVar);",
     "challenges": [
         {
-            "title": "Create Enum",
-            "exercise": "Create an enum 'Level' with values: Low, Medium, High.",
-            "expectedOutput": "",
-            "solution": "enum Level { Low, Medium, High }",
-            "difficulty": "Easy",
-            "requiredKeywords": ["enum", "Level"]
-        },
-        {
-            "title": "Access Enum",
-            "exercise": "Create 'Level' enum, set 'Level myVar = Level.Medium' and print it.",
-            "expectedOutput": "Medium",
-            "solution": "enum Level { Low, Medium, High }\nstatic void Main(string[] args) {\n  Level myVar = Level.Medium;\n  Console.WriteLine(myVar);\n}",
-            "difficulty": "Easy",
-            "requiredKeywords": ["Level.Medium"]
-        },
-        {
-            "title": "Enum Int Value",
-            "exercise": "Print the integer value of Level.Medium (should be 1).",
-            "expectedOutput": "1",
-            "solution": "enum Level { Low, Medium, High }\nConsole.WriteLine((int)Level.Medium);",
+            "title": "Enum Value",
+            "exercise": "Create enum 'TrafficLight' with Red, Yellow, Green. Print 'TrafficLight.Red'.",
+            "expectedOutput": "Red",
+            "solution": "enum TrafficLight { Red, Yellow, Green }\nstatic void Main() {\n  Console.WriteLine(TrafficLight.Red);\n}",
             "difficulty": "Medium",
-            "requiredKeywords": ["(int)"]
-        },
-        {
-            "title": "Custom Values",
-            "exercise": "Define enum Status { Start=10, Stop=20 }. Print (int)Status.Stop.",
-            "expectedOutput": "20",
-            "solution": "enum Status { Start=10, Stop=20 }\nConsole.WriteLine((int)Status.Stop);",
-            "difficulty": "Hard",
-            "requiredKeywords": ["Start=10"]
-        },
-        {
-            "title": "Switch Enum",
-            "exercise": "Use a switch on Level.High and print 'Is High'.",
-            "expectedOutput": "Is High",
-            "solution": "Level myVar = Level.High;\nswitch(myVar) {\n  case Level.High: Console.WriteLine(\"Is High\"); break;\n}",
-            "difficulty": "Mastery",
-            "requiredKeywords": ["switch", "case Level.High"]
+            "requiredKeywords": ["enum", "Red"]
         }
     ]
 }

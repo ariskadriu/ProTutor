@@ -1,53 +1,16 @@
 {
-    "Id": "cs_abstraction_en",
-    "Title": "C# Abstraction",
-    "Description": "Data abstraction hides details and shows only essential info.",
-    "Example": "Pig myPig = new Pig();\nmyPig.animalSound();",
-    "Challenges": [
+    "id": "cs_abstraction_en",
+    "title": "C# Abstraction: Abstract Classes",
+    "description": "Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved with either abstract classes or interfaces. An abstract class cannot be used to create objects; it must be inherited by another class.",
+    "example": "// Abstract class\nabstract class Animal {\n  public abstract void animalSound();\n  public void sleep() {\n    Console.WriteLine(\"Zzz\");\n  }\n}\n\n// Derived class must implement the abstract method\nclass Pig : Animal {\n  public override void animalSound() {\n    Console.WriteLine(\"The pig says: wee wee\");\n  }\n}",
+    "challenges": [
         {
-            "Title": "Abstract class",
-            "Difficulty": "Beginner",
-            "Exercise": "Create an abstract class `Animal`.",
-            "RequiredKeywords": [
-                "abstract class Animal"
-            ]
-        },
-        {
-            "Title": "Abstract method",
-            "Difficulty": "Intermediate",
-            "Exercise": "Inside `Animal`, create an abstract method `animalSound()` (no body).",
-            "RequiredKeywords": [
-                "abstract void animalSound();"
-            ]
-        },
-        {
-            "Title": "Regular method",
-            "Difficulty": "Intermediate",
-            "Exercise": "Add a regular method `sleep()` inside `Animal` printing 'Zzz'.",
-            "RequiredKeywords": [
-                "void sleep()",
-                "Console.WriteLine",
-                "Zzz"
-            ]
-        },
-        {
-            "Title": "Inherit abstract",
-            "Difficulty": "Intermediate",
-            "Exercise": "Create class `Pig` inheriting from `Animal` and implement `animalSound()`.",
-            "RequiredKeywords": [
-                "class Pig : Animal",
-                "override void animalSound()"
-            ]
-        },
-        {
-            "Title": "Test it",
-            "Difficulty": "Intermediate",
-            "Exercise": "Create `Pig` object and call both methods.",
-            "RequiredKeywords": [
-                "Pig",
-                "animalSound()",
-                "sleep()"
-            ]
+            "title": "Abstract Method",
+            "exercise": "Print 'Abstract classes provide a blueprint' to confirm the concept.",
+            "expectedOutput": "Abstract classes provide a blueprint",
+            "solution": "Console.WriteLine(\"Abstract classes provide a blueprint\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["blueprint"]
         }
     ]
 }

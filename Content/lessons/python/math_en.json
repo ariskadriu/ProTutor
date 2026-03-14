@@ -1,58 +1,16 @@
 {
-    "Id": "py_math_en",
-    "Title": "Python Math",
-    "Description": "Python has a built-in math module for mathematical tasks.",
-    "Example": "import math\nprint(math.pi)",
-    "Challenges": [
+    "id": "py_math_en",
+    "title": "Python Math & Random",
+    "description": "Python has a built-in module 'math' that extends the list of mathematical functions. For generating random numbers, we use the 'random' module. These are critical for scientific computing and game development.",
+    "example": "// Math & Random Power\nimport math\nimport random\n\nprint(math.sqrt(64)) # 8.0\nprint(math.ceil(1.4)) # 2\n\n# Random integers\nprint(random.randint(1, 10))",
+    "challenges": [
         {
-            "Title": "Min and Max",
-            "Difficulty": "Beginner",
-            "Exercise": "Find the lowest value of 5, 10, 25 using `min()` and print it.",
-            "RequiredKeywords": [
-                "min",
-                "5, 10, 25",
-                "print"
-            ]
-        },
-        {
-            "Title": "Absolute",
-            "Difficulty": "Intermediate",
-            "Exercise": "Find the absolute value of -7.25 using `abs()`.",
-            "RequiredKeywords": [
-                "abs",
-                "-7.25",
-                "print"
-            ]
-        },
-        {
-            "Title": "Power",
-            "Difficulty": "Intermediate",
-            "Exercise": "Return the value of 4 to the power of 3 using `pow()`.",
-            "RequiredKeywords": [
-                "pow",
-                "4, 3",
-                "print"
-            ]
-        },
-        {
-            "Title": "Math Module",
-            "Difficulty": "Intermediate",
-            "Exercise": "Import math and find the square root of 64 using `math.sqrt()`.",
-            "RequiredKeywords": [
-                "import math",
-                "math.sqrt",
-                "64"
-            ]
-        },
-        {
-            "Title": "Ceil Floor",
-            "Difficulty": "Intermediate",
-            "Exercise": "Use `math.ceil(1.4)` and print the result.",
-            "RequiredKeywords": [
-                "math.ceil",
-                "1.4",
-                "print"
-            ]
+            "title": "Square Root",
+            "exercise": "Print math.sqrt(100).",
+            "expectedOutput": "10.0",
+            "solution": "import math\nprint(math.sqrt(100))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["math.sqrt"]
         }
     ]
 }

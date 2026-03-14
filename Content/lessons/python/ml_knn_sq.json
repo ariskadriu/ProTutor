@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_knn_sq",
+    "title": "Python ML: K-Fqinjët më të Afërt (KNN)",
+    "description": "KNN (K-Nearest Neighbors) është një algoritëm i thjeshtë dhe i lehtë për t'u zbatuar i mësimit të mbikëqyrur që mund të përdoret për të zgjidhur si problemet e klasifikimit ashtu edhe ato të regresionit. Ai funksionon duke gjetur distancat midis një pike kërkese dhe të gjithë shembujve në të dhëna, duke përzgjedhur numrin e caktuar të shembujve (K) më të afërt me kërkesën, dhe pastaj voton për etiketën më të shpeshtë.",
+    "example": "// Klasifikimi KNN me Scikit-learn\nimport matplotlib.pyplot as plt\nfrom sklearn.neighbors import KNeighborsClassifier\n\nx = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\nclasses = [0, 0, 1, 0, 0, 1, 1, 1, 1, 1]\n\nknn = KNeighborsClassifier(n_neighbors=1)\ndata = list(zip(x, y))\nknn.fit(data, classes)\n\n# Parashiko piken e re\nnew_x, new_y = 8, 21\nprediction = knn.predict([(new_x, new_y)])\nprint(prediction)",
+    "challenges": [
+        {
+            "title": "Qellimi i KNN",
+            "exercise": "Printoni 'KNN gjen K fqinjet me te afert' për të konfirmuar kuptimin tuaj.",
+            "expectedOutput": "KNN gjen K fqinjet me te afert",
+            "solution": "print('KNN gjen K fqinjet me te afert')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["fqinjet"]
+        }
+    ]
+}

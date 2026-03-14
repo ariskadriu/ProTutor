@@ -1,0 +1,16 @@
+{
+    "id": "py_strings_pro_sq",
+    "title": "Python: Zotërimi i Metodave të Stringjeve",
+    "description": "Python ka një grup metodash të integruara që mund t'i përdorni te stringjet (tekstet). Të gjitha metodat e stringjeve kthejnë vlera të reja; ato nuk e ndryshojnë stringun origjinal. Metodat thelbësore përfshijnë 'upper()', 'lower()', 'strip()' (heq hapësirat) dhe 'replace()'.",
+    "example": "// Operacionet e Zakonshme\na = \" Pershendetje, Bote! \"\nprint(a.strip()) # \"Pershendetje, Bote!\"\nprint(a.lower()) # \" pershendetje, bote! \"\nprint(a.replace(\"P\", \"J\")) # \" Jershendetje, Bote! \"\n\n# Ndarja ne liste\nprint(a.split(\",\")) # [' Pershendetje', ' Bote! ']",
+    "challenges": [
+        {
+            "title": "Strip dhe Upper",
+            "exercise": "Duke pasur s = ' python '. Hiqni hapësirat (strip) dhe bëjeni me shkronja të mëdha (upper). Printoni rezultatin.",
+            "expectedOutput": "PYTHON",
+            "solution": "s = ' python '\nprint(s.strip().upper())",
+            "difficulty": "Easy",
+            "requiredKeywords": ["strip()", "upper()"]
+        }
+    ]
+}

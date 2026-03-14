@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_cross_validation_sq",
+    "title": "Python ML: Validimi i Kryqëzuar (Cross Validation)",
+    "description": "Validimi i kryqëzuar (Cross Validation) është një teknikë për vlerësimin e një modeli machine learning dhe testimin e performancës së tij. Është një metodë më e fuqishme se një ndarje e thjeshtë train/test. Në K-Fold Cross Validation, të dhënat ndahen në 'k' nëngrupe. Modeli trajnohet në k-1 nëngrupe dhe testohet në atë që mbetet, duke e përsëritur këtë proces k herë.",
+    "example": "// K-Fold Cross Validation me Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import KFold, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\nclf = DecisionTreeClassifier(random_state=42)\n\nk_folds = KFold(n_splits = 5)\nscores = cross_val_score(clf, X, y, cv = k_folds)\n\nprint(\"Rezultatet e Cross Validation: \", scores)\nprint(\"Rezultati Mesatar: \", scores.mean())",
+    "challenges": [
+        {
+            "title": "Numri i Fold-eve",
+            "exercise": "Printoni 'K-Fold ndan te dhenat ne k nengrupe' për të konfirmuar që kuptoni mekanizmin kryesor.",
+            "expectedOutput": "K-Fold ndan te dhenat ne k nengrupe",
+            "solution": "print('K-Fold ndan te dhenat ne k nengrupe')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["nengrupe"]
+        }
+    ]
+}

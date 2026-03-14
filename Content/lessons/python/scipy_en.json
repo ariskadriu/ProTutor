@@ -1,0 +1,16 @@
+{
+    "id": "py_scipy_en",
+    "title": "Python SciPy",
+    "description": "SciPy is a scientific computation library that uses NumPy underneath. SciPy stands for Scientific Python.",
+    "example": "from scipy import constants\nprint(constants.liter)",
+    "challenges": [
+        {
+            "title": "SciPy Constants",
+            "exercise": "Import 'constants' from 'scipy' and print the value of 'constants.pi'.",
+            "expectedOutput": "3.141592653589793",
+            "solution": "from scipy import constants\nprint(constants.pi)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["from scipy import constants"]
+        }
+    ]
+}

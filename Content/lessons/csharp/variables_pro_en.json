@@ -1,0 +1,24 @@
+{
+    "id": "cs_variables_pro_en",
+    "title": "C# Variables Pro",
+    "description": "Advanced variable concepts: constants, multiple declarations, and identifiers.",
+    "example": "const int myNum = 15;\nint x = 5, y = 6, z = 50;",
+    "challenges": [
+        {
+            "title": "Constants",
+            "exercise": "Create a constant int 'minutesPerHour' and set it to 60. Print it.",
+            "expectedOutput": "60",
+            "solution": "const int minutesPerHour = 60;\nConsole.WriteLine(minutesPerHour);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["const"]
+        },
+        {
+            "title": "Multiple Variables",
+            "exercise": "Declare x, y, z as int in one line. Assign x=1, y=2, z=3. Print their sum.",
+            "expectedOutput": "6",
+            "solution": "int x = 1, y = 2, z = 3;\nConsole.WriteLine(x + y + z);",
+            "difficulty": "Medium",
+            "requiredKeywords": [","]
+        }
+    ]
+}

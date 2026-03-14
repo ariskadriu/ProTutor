@@ -1,0 +1,16 @@
+{
+    "id": "py_pandas_sq",
+    "title": "Python Pandas",
+    "description": "Pandas përdoret për të analizuar të dhënat. Ai ka funksione për analizimin, pastrimin, eksplorimin dhe manipulimin e të dhënave.",
+    "example": "import pandas as pd\ndataset = {\n  'cars': [\"BMW\", \"Volvo\", \"Ford\"],\n  'passings': [3, 7, 2]\n}\nmyvar = pd.DataFrame(dataset)\nprint(myvar)",
+    "challenges": [
+        {
+            "title": "Pandas Series",
+            "exercise": "Importoni pandas si pd. Krijoni një Pandas Series të thjeshtë nga një listë [1, 7, 2]. Printojeni.",
+            "expectedOutput": "0    1\n1    7\n2    2\ndtype: int64",
+            "solution": "import pandas as pd\na = [1, 7, 2]\nmyvar = pd.Series(a)\nprint(myvar)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import pandas as pd", "pd.Series"]
+        }
+    ]
+}

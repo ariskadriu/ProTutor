@@ -1,0 +1,24 @@
+{
+    "id": "py_operators_adv_sq",
+    "title": "Python Operatorët e Avancuar",
+    "description": "Operatorët e identitetit, anëtarësimit dhe bitwise në Python.",
+    "example": "x is y # Identiteti\nx in y # Anëtarësimi",
+    "challenges": [
+        {
+            "title": "Anëtarësimi",
+            "exercise": "Kontrolloni nëse 'apple' është në fruits = ['apple', 'banana']. Printoni rezultatin boolean.",
+            "expectedOutput": "True",
+            "solution": "fruits = [\"apple\", \"banana\"]\nprint(\"apple\" in fruits)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["in"]
+        },
+        {
+            "title": "Identiteti",
+            "exercise": "Kontrolloni nëse x = [1,2] është i njëjti objekt si y = [1,2] duke përdorur 'is'. Printojeni.",
+            "expectedOutput": "False",
+            "solution": "x = [1, 2]\ny = [1, 2]\nprint(x is y)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["is"]
+        }
+    ]
+}

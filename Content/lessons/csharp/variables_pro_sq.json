@@ -1,0 +1,24 @@
+{
+    "id": "cs_variables_pro_sq",
+    "title": "C# Variablat Pro",
+    "description": "Konceptet e avancuara të variablave: konstantet, deklarimet e shumëfishta dhe identifikuesit.",
+    "example": "const int myNum = 15;\nint x = 5, y = 6, z = 50;",
+    "challenges": [
+        {
+            "title": "Konstantet",
+            "exercise": "Krijoni një int konstant 'minutesPerHour' dhe vendoseni në 60. Printojeni.",
+            "expectedOutput": "60",
+            "solution": "const int minutesPerHour = 60;\nConsole.WriteLine(minutesPerHour);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["const"]
+        },
+        {
+            "title": "Variabla të Shumëfishta",
+            "exercise": "Deklaroni x, y, z si int në një rresht. Caktoni x=1, y=2, z=3. Printoni shumën e tyre.",
+            "expectedOutput": "6",
+            "solution": "int x = 1, y = 2, z = 3;\nConsole.WriteLine(x + y + z);",
+            "difficulty": "Medium",
+            "requiredKeywords": [","]
+        }
+    ]
+}

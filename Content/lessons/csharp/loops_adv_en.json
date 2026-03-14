@@ -1,0 +1,16 @@
+{
+    "id": "cs_loops_adv_en",
+    "title": "C# Loops Advanced: Foreach & While",
+    "description": "Loops allow you to execute a block of code repeatedly. While 'for' loops are great for known counts, 'foreach' is optimized for iterating through collections like arrays. The 'while' and 'do-while' loops are used when the number of iterations depends on a condition being true.",
+    "example": "// Iterating with Foreach\nstring[] cars = {\"Volvo\", \"BMW\", \"Ford\"};\nforeach (string i in cars) {\n  Console.WriteLine(i);\n}\n\n// While Loop with Break\nint i = 0;\nwhile (i < 10) {\n  Console.WriteLine(i);\n  i++;\n  if (i == 4) break; // Terminate early\n}",
+    "challenges": [
+        {
+            "title": "Foreach Sum",
+            "exercise": "Given 'int[] nums = {1, 2, 3}'. Use a foreach loop to print each number.",
+            "expectedOutput": "1\n2\n3",
+            "solution": "int[] nums = {1, 2, 3};\nforeach (int x in nums) {\n  Console.WriteLine(x);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["foreach"]
+        }
+    ]
+}

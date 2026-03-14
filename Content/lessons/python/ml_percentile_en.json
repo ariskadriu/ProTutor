@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_percentile_en",
+    "title": "Python ML: Percentile",
+    "description": "Percentiles are used in statistics to give you a number that describes the value that a given percent of the values are lower than. For example, if we say the 75th percentile is 43, it means that 75% of the people are 43 or younger. This is widely used in data analysis to understand data distribution.",
+    "example": "// Using NumPy for Percentiles\nimport numpy\n\nages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 75)\nprint(x) # Output: 43.0",
+    "challenges": [
+        {
+            "title": "Calculate 90th Percentile",
+            "exercise": "Calculate the 90th percentile of ages = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] using numpy.percentile(). Print it.",
+            "expectedOutput": "45.5",
+            "solution": "import numpy\nages = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]\nprint(numpy.percentile(ages, 90))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.percentile", "90"]
+        }
+    ]
+}

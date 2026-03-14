@@ -1,0 +1,16 @@
+{
+    "id": "cs_access_modifiers_sq",
+    "title": "C# Modifikuesit e Aksesit",
+    "description": "Modifikuesit e aksesit përdoren për të vendosur nivelin e aksesit/dukshmërisë për klasat, fushat, metodat dhe vetitë.",
+    "example": "public string name; // Kodi është i aksesueshëm për të gjitha klasat\nprivate int speed; // Kodi është i aksesueshëm vetëm brenda të njëjtës klasë",
+    "challenges": [
+        {
+            "title": "Fusha Private",
+            "exercise": "Krijoni një klasë 'Account' me një private string 'secret = \"Hidden\"'. Krijoni një metodë publike 'GetSecret()' që kthen 'secret'. Printoni account.GetSecret().",
+            "expectedOutput": "Hidden",
+            "solution": "class Account {\n  private string secret = \"Hidden\";\n  public string GetSecret() { return secret; }\n}\nstatic void Main() {\n  Account a = new Account();\n  Console.WriteLine(a.GetSecret());\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["private string secret", "public string GetSecret"]
+        }
+    ]
+}

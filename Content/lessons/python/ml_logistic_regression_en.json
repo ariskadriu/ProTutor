@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_logistic_regression_en",
+    "title": "Python ML: Logistic Regression",
+    "description": "Logistic regression is used to solve classification problems by predicting the likelihood of an event occurring (e.g., whether someone will buy a product or not). Unlike linear regression which predicts continuous values, logistic regression output is usually between 0 and 1, often interpreted as a probability.",
+    "example": "// Logistic Regression with Scikit-learn\nimport numpy\nfrom sklearn import linear_model\n\n# Reshaped for sklearn\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\n# Predict if a value of 3.46 makes y = 1\npredicted = logr.predict(numpy.array([3.46]).reshape(-1,1))\nprint(predicted)",
+    "challenges": [
+        {
+            "title": "Logistic Logic",
+            "exercise": "Print 'Logistic regression is for classification' to confirm you understand its purpose.",
+            "expectedOutput": "Logistic regression is for classification",
+            "solution": "print('Logistic regression is for classification')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["classification"]
+        }
+    ]
+}

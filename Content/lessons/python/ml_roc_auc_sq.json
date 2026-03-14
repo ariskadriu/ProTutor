@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_roc_auc_sq",
+    "title": "Python ML: Kurbat AUC - ROC",
+    "description": "Kurba ROC (Receiver Operating Characteristic) është një grafik që tregon performancën e një modeli klasifikimi në të gjitha pragjet e klasifikimit. AUC (Area Under the ROC Curve) mat të gjithë zonën dydimensionale nën të gjithë kurbën ROC nga (0,0) në (1,1). Ajo ofron një masë të përgjithshme të performancës në të gjitha pragjet e mundshme.",
+    "example": "// Kurba ROC me Scikit-learn\nimport matplotlib.pyplot as plt\nfrom sklearn import metrics\n\ny = [0, 0, 1, 1]\nscores = [0.1, 0.4, 0.35, 0.8]\nfpr, tpr, thresholds = metrics.roc_curve(y, scores)\nroc_auc = metrics.auc(fpr, tpr)\n\ndisplay = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc)\ndisplay.plot()",
+    "challenges": [
+        {
+            "title": "Koncepti i Zones",
+            "exercise": "Printoni 'Area Under Curve' për të konfirmuar që kuptoni se çfarë përfaqëson AUC.",
+            "expectedOutput": "Area Under Curve",
+            "solution": "print('Area Under Curve')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Area"]
+        }
+    ]
+}

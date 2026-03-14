@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_logistic_regression_sq",
+    "title": "Python ML: Regresioni Logjistik",
+    "description": "Regresioni logjistik përdoret për të zgjidhur problemet e klasifikimit duke parashikuar gjasat e ndodhjes së një ngjarjeje (p.sh., nëse dikush do të blejë një produkt apo jo). Ndryshe nga regresioni linear që parashikon vlera të vazhdueshme, rezultati i regresionit logjistik është zakonisht midis 0 dhe 1, i interpretuar shpesh si një probabilitet.",
+    "example": "// Regresioni Logjistik me Scikit-learn\nimport numpy\nfrom sklearn import linear_model\n\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\n# Parashiko nese vlera 3.46 e ben y = 1\npredicted = logr.predict(numpy.array([3.46]).reshape(-1,1))\nprint(predicted)",
+    "challenges": [
+        {
+            "title": "Logjika e Regresionit",
+            "exercise": "Printoni 'Regresioni logjistik eshte per klasifikim' për të konfirmuar që kuptoni qëllimin e tij.",
+            "expectedOutput": "Regresioni logjistik eshte per klasifikim",
+            "solution": "print('Regresioni logjistik eshte per klasifikim')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["klasifikim"]
+        }
+    ]
+}

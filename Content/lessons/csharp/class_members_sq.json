@@ -1,0 +1,16 @@
+{
+    "id": "cs_class_members_sq",
+    "title": "C# Anëtarët e Klasës",
+    "description": "Fushat dhe metodat brenda klasave shpesh referohen si 'Anëtarët e Klasës' (Class Members).",
+    "example": "class MyClass {\n  public string color = \"e kuqe\";\n  public void PrintColor() {\n    Console.WriteLine(color);\n  }\n}",
+    "challenges": [
+        {
+            "title": "Aksesi në Anëtarë",
+            "exercise": "Krijoni klasën 'Car' me fushën 'model = \"Ford\"'. Në Main, krijoni objektin 'myCar' dhe printoni 'myCar.model'.",
+            "expectedOutput": "Ford",
+            "solution": "class Car {\n  public string model = \"Ford\";\n}\nstatic void Main() {\n  Car myCar = new Car();\n  Console.WriteLine(myCar.model);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["myCar.model"]
+        }
+    ]
+}

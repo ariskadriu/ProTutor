@@ -1,0 +1,16 @@
+{
+    "id": "py_django_sq",
+    "title": "Python Django",
+    "description": "Django është një framework web i nivelit të lartë në Python që inkurajon zhvillimin e shpejtë dhe dizajnin e pastër e pragmatik.",
+    "example": "import django\n# Shembull Django",
+    "challenges": [
+        {
+            "title": "Versioni i Django",
+            "exercise": "Importoni django dhe printoni 'Django'.",
+            "expectedOutput": "Django",
+            "solution": "import django\nprint(\"Django\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import django"]
+        }
+    ]
+}

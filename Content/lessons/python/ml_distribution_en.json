@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_distribution_en",
+    "title": "Python ML: Data Distributions",
+    "description": "In the real world, data sets can be huge. To work with big data, we need to understand how the data is scattered or distributed. NumPy's random module allows us to create random sets of data of any size, following specific distributions like Uniform or Normal (Gaussian) distributions.",
+    "example": "// Uniform Data Distribution\nimport numpy\nimport matplotlib.pyplot as plt\n\nx = numpy.random.uniform(0.0, 5.0, 250) # 250 random floats between 0 and 5\n\n// Normal Data Distribution (Bell Curve)\nx = numpy.random.normal(5.0, 1.0, 100000) # mean 5, std dev 1, size 100k\nplt.hist(x, 100)\nplt.show()",
+    "challenges": [
+        {
+            "title": "Uniform Random",
+            "exercise": "Create 100 random floats between 0 and 1 using numpy.random.uniform(). Print the length of the result.",
+            "expectedOutput": "100",
+            "solution": "import numpy\nx = numpy.random.uniform(0, 1, 100)\nprint(len(x))",
+            "difficulty": "Medium",
+            "requiredKeywords": ["numpy.random.uniform", "len"]
+        }
+    ]
+}

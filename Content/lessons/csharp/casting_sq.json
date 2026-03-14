@@ -1,0 +1,32 @@
+{
+    "id": "cs_casting_sq",
+    "title": "C# Kthimi i Tipit (Type Casting)",
+    "description": "Kthimi i tipit (Type casting) ndodh kur i caktoni një vlerë të një lloji të dhënash një tipi tjetër.",
+    "example": "double myDouble = 9.78;\nint myInt = (int)myDouble; // Kthimi manual: double në int",
+    "challenges": [
+        {
+            "title": "Kthimi Implicit",
+            "exercise": "Krijoni një int 'myInt = 9'. Caktojeni atë te një double 'myDouble'. Printoni myDouble.",
+            "expectedOutput": "9",
+            "solution": "int myInt = 9;\ndouble myDouble = myInt;\nConsole.WriteLine(myDouble);",
+            "difficulty": "Easy",
+            "requiredKeywords": ["int myInt = 9", "double myDouble = myInt"]
+        },
+        {
+            "title": "Kthimi Eksplicit",
+            "exercise": "Krijoni një double 'd = 10.65'. Kthejeni atë në një int 'i' dhe printojeni.",
+            "expectedOutput": "10",
+            "solution": "double d = 10.65;\nint i = (int)d;\nConsole.WriteLine(i);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["(int)"]
+        },
+        {
+            "title": "Metodat e Konvertimit",
+            "exercise": "Përdorni Convert.ToString(true) për të printuar një vlerë booleane si string.",
+            "expectedOutput": "True",
+            "solution": "Console.WriteLine(Convert.ToString(true));",
+            "difficulty": "Medium",
+            "requiredKeywords": ["Convert.ToString"]
+        }
+    ]
+}

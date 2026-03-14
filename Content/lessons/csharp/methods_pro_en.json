@@ -1,0 +1,24 @@
+{
+    "id": "cs_methods_pro_en",
+    "title": "C# Methods Pro",
+    "description": "Advanced method features: named arguments and default parameters.",
+    "example": "static void MyMethod(string country = \"Norway\") { ... }\nMyMethod(child1: \"Liam\", child2: \"Jenny\");",
+    "challenges": [
+        {
+            "title": "Default Parameter",
+            "exercise": "Create 'Show(string msg = \"Hello\")' that prints 'msg'. Call Show() with no args.",
+            "expectedOutput": "Hello",
+            "solution": "static void Show(string msg = \"Hello\") { Console.WriteLine(msg); }\nstatic void Main() { Show(); }",
+            "difficulty": "Medium",
+            "requiredKeywords": ["string msg = \"Hello\""]
+        },
+        {
+            "title": "Named Arguments",
+            "exercise": "Create 'Check(int x, int y)'. Call it using named arguments 'y: 2, x: 1'. Print 'Done'.",
+            "expectedOutput": "Done",
+            "solution": "static void Check(int x, int y) {}\nstatic void Main() {\n  Check(y: 2, x: 1);\n  Console.WriteLine(\"Done\");\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["y:"]
+        }
+    ]
+}

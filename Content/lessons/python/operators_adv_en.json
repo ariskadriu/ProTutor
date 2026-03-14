@@ -1,0 +1,24 @@
+{
+    "id": "py_operators_adv_en",
+    "title": "Python Operators Advanced",
+    "description": "Identity, Membership, and Bitwise operators in Python.",
+    "example": "x is y # Identity\nx in y # Membership",
+    "challenges": [
+        {
+            "title": "Membership",
+            "exercise": "Check if 'apple' is in fruits = ['apple', 'banana']. Print the boolean result.",
+            "expectedOutput": "True",
+            "solution": "fruits = [\"apple\", \"banana\"]\nprint(\"apple\" in fruits)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["in"]
+        },
+        {
+            "title": "Identity",
+            "exercise": "Check if x = [1,2] is the same object as y = [1,2] using 'is'. Print it.",
+            "expectedOutput": "False",
+            "solution": "x = [1, 2]\ny = [1, 2]\nprint(x is y)",
+            "difficulty": "Hard",
+            "requiredKeywords": ["is"]
+        }
+    ]
+}

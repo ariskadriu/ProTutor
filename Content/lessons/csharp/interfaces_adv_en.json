@@ -1,0 +1,16 @@
+{
+    "id": "cs_interfaces_adv_en",
+    "title": "C# Multiple Interfaces",
+    "description": "In C#, a class can also implement multiple interfaces.",
+    "example": "interface IFirst { void MyMethod(); }\ninterface ISecond { void MyOtherMethod(); }\nclass MyClass : IFirst, ISecond { ... }",
+    "challenges": [
+        {
+            "title": "Multi Interface",
+            "exercise": "Create 'IOne' (method 'One') and 'ITwo' (method 'Two'). Class 'Demo' implements both. Print 'Done'.",
+            "expectedOutput": "Done",
+            "solution": "interface IOne { void One(); }\ninterface ITwo { void Two(); }\nclass Demo : IOne, ITwo {\n  public void One() {} \n  public void Two() {} \n}\nstatic void Main() { Console.WriteLine(\"Done\"); }",
+            "difficulty": "Hard",
+            "requiredKeywords": [": IOne, ITwo"]
+        }
+    ]
+}

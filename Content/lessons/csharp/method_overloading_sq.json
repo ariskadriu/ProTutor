@@ -1,0 +1,16 @@
+{
+    "id": "cs_method_overloading_sq",
+    "title": "C# Mbingarkesa e Metodave",
+    "description": "Me mbingarkesën e metodave (method overloading), shumë metoda mund të kenë të njëjtin emër me parametra të ndryshëm.",
+    "example": "static int PlusMethod(int x, int y) { return x + y; }\nstatic double PlusMethod(double x, double y) { return x + y; }",
+    "challenges": [
+        {
+            "title": "Mbingarkesa Plus",
+            "exercise": "Krijoni dy metoda 'Plus'. Njëra merr dy int, tjetra dy double. Printoni Plus(5, 5) dhe Plus(5.5, 5.5).",
+            "expectedOutput": "10\n11",
+            "solution": "static int Plus(int x, int y) { return x + y; }\nstatic double Plus(double x, double y) { return x + y; }\nstatic void Main() {\n  Console.WriteLine(Plus(5, 5));\n  Console.WriteLine(Plus(5.5, 5.5));\n}",
+            "difficulty": "Hard",
+            "requiredKeywords": ["int x, int y", "double x, double y"]
+        }
+    ]
+}

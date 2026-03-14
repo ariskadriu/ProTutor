@@ -1,0 +1,16 @@
+{
+    "id": "py_numpy_sq",
+    "title": "Python NumPy",
+    "description": "NumPy përdoret për të punuar me vargu (arrays). Ai gjithashtu ka funksione për të punuar në domenin e algjebrës lineare, transformimin fourier dhe matricat.",
+    "example": "import numpy as np\narr = np.array([1, 2, 3])\nprint(arr)",
+    "challenges": [
+        {
+            "title": "Krijo Vargun",
+            "exercise": "Importoni numpy si np dhe krijoni një varg [1, 2, 3, 4, 5]. Printoni vargun.",
+            "expectedOutput": "[1 2 3 4 5]",
+            "solution": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import numpy as np", "np.array"]
+        }
+    ]
+}

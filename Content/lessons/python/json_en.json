@@ -1,0 +1,16 @@
+{
+    "id": "py_json_en",
+    "title": "Python JSON & Iterators",
+    "description": "JSON is a syntax for storing and exchanging data. Python has a built-in package called 'json' which can be used to work with JSON data. You can parse JSON strings into dictionaries using 'json.loads()' and convert dictionaries into JSON strings using 'json.dumps()'.",
+    "example": "// Working with JSON\nimport json\n\n# JSON string to Dictionary\nx = '{ \"name\":\"John\", \"age\":30, \"city\":\"New York\"}'\ny = json.loads(x)\nprint(y[\"age\"])\n\n# Dictionary to JSON string\nz = json.dumps(y)\nprint(z)",
+    "challenges": [
+        {
+            "title": "Parse JSON",
+            "exercise": "Import json and print 'json.loads' to confirm you know how to parse a JSON string.",
+            "expectedOutput": "json.loads",
+            "solution": "import json\nprint('json.loads')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["json", "loads"]
+        }
+    ]
+}

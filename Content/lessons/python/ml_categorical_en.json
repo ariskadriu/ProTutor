@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_categorical_en",
+    "title": "Python ML: Categorical Data",
+    "description": "Machine learning models require numerical input. When you have categorical data (labels like 'Red', 'Blue', 'Green'), you must convert them into numbers. One-Hot Encoding is a common method where each category becomes a new column with values 0 or 1. 'pandas.get_dummies()' makes this easy.",
+    "example": "// One-Hot Encoding with Pandas\nimport pandas\n\ndf = pandas.DataFrame({'Car': ['BMW', 'Volvo', 'Ford']})\ndummied = pandas.get_dummies(df['Car'])\n\nprint(dummied)\n# Output will be columns for BMW, Volvo, Ford with 0s and 1s",
+    "challenges": [
+        {
+            "title": "Encoding Type",
+            "exercise": "Print 'pandas.get_dummies' to confirm you know the function for one-hot encoding.",
+            "expectedOutput": "pandas.get_dummies",
+            "solution": "print('pandas.get_dummies')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["get_dummies"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "py_modules_sq",
+    "title": "Python Modulet",
+    "description": "Një modul është një skedar që përmban një grup funksionesh që dëshironi të përfshini në aplikacionin tuaj.",
+    "example": "import platform\nx = platform.system()\nprint(x)",
+    "challenges": [
+        {
+            "title": "Importo Modulin",
+            "exercise": "Importoni modulin 'math' dhe printoni math.sqrt(16).",
+            "expectedOutput": "4.0",
+            "solution": "import math\nprint(math.sqrt(16))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["import math", "math.sqrt"]
+        },
+        {
+            "title": "Aliasi i Modulit",
+            "exercise": "Importoni 'platform' si 'pf'. Printoni pf.system().",
+            "expectedOutput": "Windows",
+            "solution": "import platform as pf\nprint(pf.system())",
+            "difficulty": "Medium",
+            "requiredKeywords": ["as pf"]
+        }
+    ]
+}

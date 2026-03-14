@@ -1,0 +1,24 @@
+{
+    "id": "cs_strings_adv_en",
+    "title": "C# Strings Advanced",
+    "description": "Deep dive into string interpolation, access, and special characters.",
+    "example": "string firstName = \"John\";\nstring lastName = \"Doe\";\nstring name = $\"My full name is: {firstName} {lastName}\";",
+    "challenges": [
+        {
+            "title": "Interpolation",
+            "exercise": "Use interpolation ($) to print 'Hello' followed by string variable 'name = \"Aris\"'.",
+            "expectedOutput": "Hello Aris",
+            "solution": "string name = \"Aris\";\nConsole.WriteLine($\"Hello {name}\");",
+            "difficulty": "Medium",
+            "requiredKeywords": ["$", "{", "}"]
+        },
+        {
+            "title": "Access String",
+            "exercise": "Print the first character of string 'myString = \"Hello\"'.",
+            "expectedOutput": "H",
+            "solution": "string myString = \"Hello\";\nConsole.WriteLine(myString[0]);",
+            "difficulty": "Medium",
+            "requiredKeywords": ["[0]"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "cs_interfaces_adv_sq",
+    "title": "C# Ndërfaqe të Shumëfishta",
+    "description": "Në C#, një klasë mund të zbatojë gjithashtu ndërfaqe (interfaces) të shumëfishta.",
+    "example": "interface IFirst { void MyMethod(); }\ninterface ISecond { void MyOtherMethod(); }\nclass MyClass : IFirst, ISecond { ... }",
+    "challenges": [
+        {
+            "title": "Ndërfaqe të Shumëfishta",
+            "exercise": "Krijoni 'IOne' (metoda 'One') dhe 'ITwo' (metoda 'Two'). Klasa 'Demo' i zbaton të dyja. Printoni 'Done'.",
+            "expectedOutput": "Done",
+            "solution": "interface IOne { void One(); }\ninterface ITwo { void Two(); }\nclass Demo : IOne, ITwo {\n  public void One() {} \n  public void Two() {} \n}\nstatic void Main() { Console.WriteLine(\"Done\"); }",
+            "difficulty": "Hard",
+            "requiredKeywords": [": IOne, ITwo"]
+        }
+    ]
+}

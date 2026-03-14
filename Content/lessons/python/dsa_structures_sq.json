@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_structures_sq",
+    "title": "Python DSA: Strukturat",
+    "description": "Mësoni rreth Stacks (Stivave), Queues (Radhëve) dhe Linked Lists (Listave të Lidhura) në Python.",
+    "example": "# Stack duke perdorur list:\nstack = []\nstack.append('a')\nstack.pop()",
+    "challenges": [
+        {
+            "title": "Stack Pop",
+            "exercise": "Krijoni një listë 's = [1, 2]'. Hiqni elementin e fundit (pop) dhe printoni 's'.",
+            "expectedOutput": "[1]",
+            "solution": "s = [1, 2]\ns.pop()\nprint(s)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["pop()"]
+        }
+    ]
+}

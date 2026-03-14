@@ -1,0 +1,24 @@
+{
+    "id": "py_casting_en",
+    "title": "Python Casting",
+    "description": "Casting in Python is done using constructor functions: int(), float(), and str().",
+    "example": "x = int(1)   # x will be 1\ny = int(2.8) # y will be 2\nz = int(\"3\") # z will be 3",
+    "challenges": [
+        {
+            "title": "Float to Int",
+            "exercise": "Convert x = 2.8 into an integer and print it.",
+            "expectedOutput": "2",
+            "solution": "x = 2.8\nprint(int(x))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["int(x)"]
+        },
+        {
+            "title": "String to Float",
+            "exercise": "Convert z = '3' into a float and print it.",
+            "expectedOutput": "3.0",
+            "solution": "z = '3'\nprint(float(z))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["float(z)"]
+        }
+    ]
+}

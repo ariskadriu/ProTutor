@@ -1,48 +1,16 @@
 {
     "id": "cs_files_en",
-    "title": "C# File Handling",
-    "description": "The System.IO namespace has various classes that are used for performing operations with files and folders.",
-    "example": "using System.IO;\nstring text = \"Hello\";\nFile.WriteAllText(\"filename.txt\", text);",
+    "title": "C# File Handling (System.IO)",
+    "description": "The 'System.IO' namespace allows you to work with files and directories in C#. The 'File' class provides static methods for creating, copying, deleting, moving, and opening files. This is crucial for persisting data between application restarts.",
+    "example": "// Detailed File Writing\nusing System.IO;\n\nstring writeText = \"Hello World!\";\nFile.WriteAllText(\"filename.txt\", writeText); // Create/Overwrite file\n\n// Detailed File Reading\nstring readText = File.ReadAllText(\"filename.txt\");\nConsole.WriteLine(readText);",
     "challenges": [
         {
-            "title": "Write Text",
-            "exercise": "Use File.WriteAllText(\"test.txt\", \"Hi\"). Print 'Written'.",
-            "expectedOutput": "Written",
-            "solution": "using System.IO;\nFile.WriteAllText(\"test.txt\", \"Hi\");\nConsole.WriteLine(\"Written\");",
-            "difficulty": "Easy",
-            "requiredKeywords": ["File.WriteAllText"]
-        },
-        {
-            "title": "Read Text",
-            "exercise": "Print 'Hi' to simulate reading 'test.txt'.",
-            "expectedOutput": "Hi",
-            "solution": "Console.WriteLine(\"Hi\");",
-            "difficulty": "Easy",
-            "requiredKeywords": ["Console.WriteLine"]
-        },
-        {
-            "title": "Check Existence",
-            "exercise": "Check if 'test.txt' exists using File.Exists(). Print the result.",
-            "expectedOutput": "True",
-            "solution": "using System.IO;\nConsole.WriteLine(File.Exists(\"test.txt\"));",
+            "title": "Write File",
+            "exercise": "Print 'File.WriteAllText creates or overwrites a file' to confirm concept.",
+            "expectedOutput": "File.WriteAllText creates or overwrites a file",
+            "solution": "Console.WriteLine(\"File.WriteAllText creates or overwrites a file\");",
             "difficulty": "Medium",
-            "requiredKeywords": ["File.Exists"]
-        },
-        {
-            "title": "Append Text",
-            "exercise": "Use File.AppendAllText(\"test.txt\", \" More\"). Print 'Appended'.",
-            "expectedOutput": "Appended",
-            "solution": "using System.IO;\nFile.AppendAllText(\"test.txt\", \" More\");\nConsole.WriteLine(\"Appended\");",
-            "difficulty": "Hard",
-            "requiredKeywords": ["File.AppendAllText"]
-        },
-        {
-            "title": "Delete File",
-            "exercise": "Delete 'test.txt' using File.Delete(). Print 'Deleted'.",
-            "expectedOutput": "Deleted",
-            "solution": "using System.IO;\nFile.Delete(\"test.txt\");\nConsole.WriteLine(\"Deleted\");",
-            "difficulty": "Mastery",
-            "requiredKeywords": ["File.Delete"]
+            "requiredKeywords": ["WriteAllText"]
         }
     ]
 }

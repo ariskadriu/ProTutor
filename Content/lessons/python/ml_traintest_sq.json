@@ -1,0 +1,16 @@
+{
+    "id": "py_ml_traintest_sq",
+    "title": "Python ML: Train/Test split",
+    "description": "Train/Test është një metodë për të matur saktësinë e modelit tuaj. Quhet Train/Test sepse e ndani grupin e të dhënave në dy grupe: një grup trajnimi (80%) dhe një grup testimi (20%). Ju trajnoni modelin duke përdorur grupin e trajnimit dhe e testoni atë duke përdorur grupin e testimit për të shmangur 'overfitting'.",
+    "example": "// Shembull i Ndarjes Train/Test\nimport numpy\nfrom sklearn.metrics import r2_score\n\nx = numpy.random.normal(3, 1, 100)\ny = numpy.random.normal(150, 40, 100) / x\n\ntrain_x = x[:80]\ntrain_y = y[:80]\n\ntest_x = x[80:]\ntest_y = y[80:]\n\n// Trajnimi i modelit (Shembull Polinomial)\nmymodel = numpy.poly1d(numpy.polyfit(train_x, train_y, 4))\nr2 = r2_score(train_y, mymodel(train_x))\nprint(r2) # R-squared duhet të jetë i lartë",
+    "challenges": [
+        {
+            "title": "Raporti i ndarjes",
+            "exercise": "Printoni '80-20' për të konfirmuar që kuptoni raportin tipik të ndarjes train/test.",
+            "expectedOutput": "80-20",
+            "solution": "print('80-20')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["80-20"]
+        }
+    ]
+}

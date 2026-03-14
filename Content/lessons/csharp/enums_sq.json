@@ -1,48 +1,16 @@
 {
     "id": "cs_enums_sq",
-    "title": "Enums në C#",
-    "description": "Një enum është një 'klasë' speciale që përfaqëson një grup konstantesh (variabla të pandryshueshme).",
-    "example": "enum Gradimi { I_ulet, Mesatar, I_larte }",
+    "title": "C# Enums (Numëruesit)",
+    "description": "Një enum është një 'klasë' speciale që përfaqëson një grup konstantesh (variabla të pandryshueshme). Përdorni enums kur keni vlera që e dini se nuk do të ndryshojnë, si emrat e muajve, ditët, ngjyrat, letra bixhozi, etj.",
+    "example": "// Përkufizimi i Enum\nenum Level {\n  Low,\n  Medium,\n  High\n}\n\n// Përdorimi brenda një klase\nLevel myVar = Level.Medium;\nConsole.WriteLine(myVar);",
     "challenges": [
         {
-            "title": "Krijo Enum",
-            "exercise": "Krijoni një enum 'Niveli' me vlerat: I_ulet, Mesatar, I_larte.",
-            "expectedOutput": "",
-            "solution": "enum Niveli { I_ulet, Mesatar, I_larte }",
-            "difficulty": "Easy",
-            "requiredKeywords": ["enum", "Niveli"]
-        },
-        {
-            "title": "Akseso Enum-in",
-            "exercise": "Krijoni enum 'Niveli', vendosni 'Niveli imi = Niveli.Mesatar' dhe printojeni.",
-            "expectedOutput": "Mesatar",
-            "solution": "enum Niveli { I_ulet, Mesatar, I_larte }\nstatic void Main(string[] args) {\n  Niveli imi = Niveli.Mesatar;\n  Console.WriteLine(imi);\n}",
-            "difficulty": "Easy",
-            "requiredKeywords": ["Niveli.Mesatar"]
-        },
-        {
-            "title": "Vlera Int",
-            "exercise": "Printoni vlerën integer të Niveli.Mesatar (duhet të jetë 1).",
-            "expectedOutput": "1",
-            "solution": "enum Niveli { I_ulet, Mesatar, I_larte }\nConsole.WriteLine((int)Niveli.Mesatar);",
+            "title": "Vlera e Enum",
+            "exercise": "Krijoni enum 'TrafficLight' me Red, Yellow, Green. Printoni 'TrafficLight.Red'.",
+            "expectedOutput": "Red",
+            "solution": "enum TrafficLight { Red, Yellow, Green }\nstatic void Main() {\n  Console.WriteLine(TrafficLight.Red);\n}",
             "difficulty": "Medium",
-            "requiredKeywords": ["(int)"]
-        },
-        {
-            "title": "Vlera Custom",
-            "exercise": "Përcaktoni enum Statusi { Start=10, Stop=20 }. Printoni (int)Statusi.Stop.",
-            "expectedOutput": "20",
-            "solution": "enum Statusi { Start=10, Stop=20 }\nConsole.WriteLine((int)Statusi.Stop);",
-            "difficulty": "Hard",
-            "requiredKeywords": ["Start=10"]
-        },
-        {
-            "title": "Switch me Enum",
-            "exercise": "Përdorni switch mbi Niveli.I_larte dhe printoni 'Është lartë'.",
-            "expectedOutput": "Është lartë",
-            "solution": "Niveli imi = Niveli.I_larte;\nswitch(imi) {\n  case Niveli.I_larte: Console.WriteLine(\"Është lartë\"); break;\n}",
-            "difficulty": "Mastery",
-            "requiredKeywords": ["switch", "case Niveli.I_larte"]
+            "requiredKeywords": ["enum", "Red"]
         }
     ]
 }

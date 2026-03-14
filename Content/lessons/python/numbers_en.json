@@ -1,0 +1,24 @@
+{
+    "id": "py_numbers_en",
+    "title": "Python Numbers",
+    "description": "There are three numeric types in Python: int, float, and complex.",
+    "example": "x = 1    # int\ny = 2.8  # float\nz = 1j   # complex",
+    "challenges": [
+        {
+            "title": "Check Type",
+            "exercise": "Create x = 5. Find its type using type(x) and print it.",
+            "expectedOutput": "<class 'int'>",
+            "solution": "x = 5\nprint(type(x))",
+            "difficulty": "Easy",
+            "requiredKeywords": ["type(x)"]
+        },
+        {
+            "title": "Float Science",
+            "exercise": "Create x = 35e3. Print it. What kind of number is it?",
+            "expectedOutput": "35000.0",
+            "solution": "x = 35e3\nprint(x)",
+            "difficulty": "Medium",
+            "requiredKeywords": ["35e3"]
+        }
+    ]
+}

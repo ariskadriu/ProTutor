@@ -1,0 +1,16 @@
+{
+    "id": "py_matplotlib_en",
+    "title": "Python Matplotlib",
+    "description": "Matplotlib is a low level graph plotting library in python that serves as a visualization utility.",
+    "example": "import matplotlib.pyplot as plt\nimport numpy as np\nxpoints = np.array([0, 6])\nypoints = np.array([0, 250])\nplt.plot(xpoints, ypoints)\nplt.show()",
+    "challenges": [
+        {
+            "title": "Simple Plot",
+            "exercise": "Import matplotlib.pyplot as plt. Plot a line from [0, 6] to [0, 100]. Use plt.show().",
+            "expectedOutput": "",
+            "solution": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.array([0, 6])\ny = np.array([0, 100])\nplt.plot(x, y)\nplt.show()",
+            "difficulty": "Hard",
+            "requiredKeywords": ["import matplotlib.pyplot as plt", "plt.plot"]
+        }
+    ]
+}

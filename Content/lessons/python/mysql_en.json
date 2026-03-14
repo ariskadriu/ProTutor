@@ -1,0 +1,16 @@
+{
+    "id": "py_mysql_en",
+    "title": "Python MySQL",
+    "description": "Python can be used in database applications. One of the most popular databases is MySQL.",
+    "example": "import mysql.connector\nmydb = mysql.connector.connect(\n  host=\"localhost\",\n  user=\"yourusername\",\n  password=\"yourpassword\"\n)",
+    "challenges": [
+        {
+            "title": "Import MySQL",
+            "exercise": "Print 'MySQL Ready' after importing mysql.connector (just simulate).",
+            "expectedOutput": "MySQL Ready",
+            "solution": "import mysql.connector\nprint(\"MySQL Ready\")",
+            "difficulty": "Medium",
+            "requiredKeywords": ["import mysql.connector"]
+        }
+    ]
+}

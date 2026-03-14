@@ -1,0 +1,16 @@
+{
+    "id": "cs_loops_adv_sq",
+    "title": "C# Ciklet e Avancuara: Foreach dhe While",
+    "description": "Ciklet (loops) ju lejojnë të ekzekutoni një bllok kodi në mënyrë të përsëritur. Ndërsa ciklet 'for' janë të shkëlqyera për numërime të njohura, 'foreach' është i optimizuar për lëvizjen nëpër koleksione si vargjet. Ciklet 'while' dhe 'do-while' përdoren kur numri i përsëritjeve varet nga vërtetësia e një kushti.",
+    "example": "// Lëvizja me Foreach\nstring[] cars = {\"Volvo\", \"BMW\", \"Ford\"};\nforeach (string i in cars) {\n  Console.WriteLine(i);\n}\n\n// Cikli While me Break\nint i = 0;\nwhile (i < 10) {\n  Console.WriteLine(i);\n  i++;\n  if (i == 4) break; // Përfundon para kohe\n}",
+    "challenges": [
+        {
+            "title": "Shuma me Foreach",
+            "exercise": "Duke pasur 'int[] nums = {1, 2, 3}'. Përdorni një cikël foreach për të printuar çdo numër.",
+            "expectedOutput": "1\n2\n3",
+            "solution": "int[] nums = {1, 2, 3};\nforeach (int x in nums) {\n  Console.WriteLine(x);\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["foreach"]
+        }
+    ]
+}

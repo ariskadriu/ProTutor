@@ -1,0 +1,16 @@
+{
+    "id": "py_oop_adv_en",
+    "title": "Python OOP Advanced",
+    "description": "Master encapsulation and inner classes in Python.",
+    "example": "class Outer:\n  class Inner:\n    def msg(self): print(\"Inner\")",
+    "challenges": [
+        {
+            "title": "Private Attribute",
+            "exercise": "Create class 'Bank' with private attribute '__balance = 100'. Add method 'get_balance' to return it. Print bank.get_balance().",
+            "expectedOutput": "100",
+            "solution": "class Bank:\n  def __init__(self):\n    self.__balance = 100\n  def get_balance(self):\n    return self.__balance\n\nb = Bank()\nprint(b.get_balance())",
+            "difficulty": "Hard",
+            "requiredKeywords": ["__balance", "self.__balance"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "py_dsa_trees_en",
+    "title": "DSA: Binary & BST Trees",
+    "description": "A tree is a non-linear data structure where nodes are arranged in a hierarchy. A Binary Tree has at most two children per node. A Binary Search Tree (BST) is a variant where the left child contains values smaller than the parent, and the right child larger, allowing for O(log n) searching.",
+    "example": "// Simple BST Node and Search\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.val = key\n\ndef search(root, key):\n    if root is None or root.val == key: return root\n    if root.val < key: return search(root.right, key)\n    return search(root.left, key)",
+    "challenges": [
+        {
+            "title": "BST Logic",
+            "exercise": "Print 'Left small, Right large' to confirm you understand the BST ordering rule.",
+            "expectedOutput": "Left small, Right large",
+            "solution": "print('Left small, Right large')",
+            "difficulty": "Hard",
+            "requiredKeywords": ["Left", "Right"]
+        }
+    ]
+}

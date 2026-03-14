@@ -1,0 +1,16 @@
+{
+    "id": "py_file_handling_sq",
+    "title": "Python Trajtimi i Skedarëve",
+    "description": "Trajtimi i skedarëve është një pjesë e rëndësishme e çdo aplikacioni. Python ka disa funksione për krijimin, leximin, përditësimin dhe fshirjen e skedarëve. Funksioni kryesor për të punuar me skedarët në Python është funksioni 'open()', i cili merr dy parametra: emrin e skedarit dhe modalitetin ('r' për lexim, 'a' për shtim, 'w' për shkrim, 'x' për krijim).",
+    "example": "// Trajtimi Profesional i Skedarëve\nf = open(\"demofile.txt\", \"r\")\nprint(f.read())\nf.close()\n\n# Shkrimi me Context Manager (Praktika më e mirë)\nwith open(\"demofile.txt\", \"a\") as f:\n  f.write(\"Tani skedari ka më shumë përmbajtje!\")",
+    "challenges": [
+        {
+            "title": "Lexo Skedarin",
+            "exercise": "Printoni 'open(\"file\", \"r\") perdoret per lexim' për të konfirmuar që kuptoni modalitetin.",
+            "expectedOutput": "open(\"file\", \"r\") perdoret per lexim",
+            "solution": "print('open(\"file\", \"r\") perdoret per lexim')",
+            "difficulty": "Medium",
+            "requiredKeywords": ["open", "\"r\""]
+        }
+    ]
+}

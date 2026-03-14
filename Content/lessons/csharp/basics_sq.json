@@ -1,0 +1,24 @@
+{
+    "id": "cs_basics_sq",
+    "title": "C# Bazat: Hyrje dhe Sintaksa",
+    "description": "Fillimi me C#, kuptimi i sintaksës bazë, output-i dhe komentet.",
+    "example": "// Ky është një koment\nConsole.WriteLine(\"Hello World!\");",
+    "challenges": [
+        {
+            "title": "Fillimi i mbarë",
+            "exercise": "Printoni 'Unë po mësoj C#' në konsolë.",
+            "expectedOutput": "Unë po mësoj C#",
+            "solution": "Console.WriteLine(\"Unë po mësoj C#\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["Console.WriteLine"]
+        },
+        {
+            "title": "Komentet në Kod",
+            "exercise": "Shtoni një koment me një rresht që thotë 'Fillimi' para se të printoni 'Fundi'.",
+            "expectedOutput": "Fundi",
+            "solution": "// Fillimi\nConsole.WriteLine(\"Fundi\");",
+            "difficulty": "Easy",
+            "requiredKeywords": ["//", "Fillimi"]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": "cs_access_modifiers_en",
+    "title": "C# Access Modifiers",
+    "description": "Access modifiers are used to set the access level/visibility for classes, fields, methods and properties.",
+    "example": "public string name; // The code is accessible for all classes\nprivate int speed; // The code is only accessible within the same class",
+    "challenges": [
+        {
+            "title": "Private Field",
+            "exercise": "Create a class 'Account' with a private string 'secret = \"Hidden\"'. Create a public method 'GetSecret()' that returns 'secret'. Print account.GetSecret().",
+            "expectedOutput": "Hidden",
+            "solution": "class Account {\n  private string secret = \"Hidden\";\n  public string GetSecret() { return secret; }\n}\nstatic void Main() {\n  Account a = new Account();\n  Console.WriteLine(a.GetSecret());\n}",
+            "difficulty": "Medium",
+            "requiredKeywords": ["private string secret", "public string GetSecret"]
+        }
+    ]
+}
