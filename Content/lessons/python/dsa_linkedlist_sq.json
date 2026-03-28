@@ -2,7 +2,7 @@
     "id": "py_dsa_linkedlist_sq",
     "title": "DSA: Listat e Lidhura (Linked Lists)",
     "description": "Një Listë e Lidhur (Linked List) është një strukturë të dhënash lineare, në të cilën elementet nuk ruhen në lokacione memorie të vazhdueshme. Elementet në një listë të lidhur lidhen duke përdorur tregues (pointers). Kjo lejon futjen dhe fshirjen efikase në krahasim me vargjet (arrays).",
-    "example": "// Zbatimi i Linked List\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init__(self): self.head = None\n\n# Perdorimi\nllist = LinkedList()\nllist.head = Node(1)\nsecond = Node(2)\nllist.head.next = second",
+    "example": "# Zbatimi i Linked List\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init__(self): self.head = None\n\n# Perdorimi\nllist = LinkedList()\nllist.head = Node(1)\nsecond = Node(2)\nllist.head.next = second",
     "challenges": [
         {
             "title": "Kreu i Listes",

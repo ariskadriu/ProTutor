@@ -2,7 +2,7 @@
     "id": "py_dsa_search_en",
     "title": "DSA: Linear vs Binary Search",
     "description": "Searching is a fundamental operation in computing. Linear search checks every element (O(n)), while Binary Search is significantly faster (O(log n)) but requires the data to be sorted. Binary search works by repeatedly dividing the search interval in half.",
-    "example": "// Binary Search Algorithm\ndef binarySearch(array, x, low, high):\n    while low <= high:\n        mid = low + (high - low) // 2\n        if array[mid] == x: return mid\n        elif array[mid] < x: low = mid + 1\n        else: high = mid - 1\n    return -1\n\n# Optimized search\narr = [2, 3, 4, 10, 40] # Sorted\nprint(binarySearch(arr, 10, 0, len(arr)-1))",
+    "example": "# Binary Search Algorithm\ndef binarySearch(array, x, low, high):\n    while low <= high:\n        mid = low + (high - low) # 2\n        if array[mid] == x: return mid\n        elif array[mid] < x: low = mid + 1\n        else: high = mid - 1\n    return -1\n\n# Optimized search\narr = [2, 3, 4, 10, 40] # Sorted\nprint(binarySearch(arr, 10, 0, len(arr)-1))",
     "challenges": [
         {
             "title": "Search Efficiency",

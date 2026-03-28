@@ -2,7 +2,7 @@
     "id": "py_dsa_stack_sq",
     "title": "DSA: Stivat (Stacks)",
     "description": "Një Stivë (Stack) është një strukturë të dhënash lineare që ndjek parimin LIFO (I Fundit Brenda - I Pari Jashtë). Kjo do të thotë që elementi i fundit i futur është i pari që hiqet. Operacionet e zakonshme përfshijnë 'push' (shto) dhe 'pop' (hiq).",
-    "example": "// Zbatimi i Stives duke perdorur List\nstack = []\n\n# Push\nstack.append('a')\nstack.append('b')\n\n# Pop\nprint(stack.pop()) # 'b'\n\n# Peek\nprint(stack[-1]) # 'a'",
+    "example": "# Zbatimi i Stives duke perdorur List\nstack = []\n\n# Push\nstack.append('a')\nstack.append('b')\n\n# Pop\nprint(stack.pop()) # 'b'\n\n# Peek\nprint(stack[-1]) # 'a'",
     "challenges": [
         {
             "title": "Koncepti LIFO",

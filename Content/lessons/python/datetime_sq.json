@@ -2,7 +2,7 @@
     "id": "py_datetime_sq",
     "title": "Python Data dhe Koha",
     "description": "Një datë në Python nuk është një lloj i vetë i të dhënave, por ne mund të importojmë një modul të quajtur 'datetime' për të punuar me datat si objekte. Kjo është thelbësore për regjistrimin e log-eve, planifikimin dhe vendosjen e vulave kohore (time-stamping).",
-    "example": "// Puna me Datat\nimport datetime\n\nx = datetime.datetime.now()\nprint(x)\n\n# Krijimi i datave specifike\ny = datetime.datetime(2020, 5, 17)\nprint(y.strftime(\"%B\")) # Rezultati: May (Maji)",
+    "example": "# Puna me Datat\nimport datetime\n\nx = datetime.datetime.now()\nprint(x)\n\n# Krijimi i datave specifike\ny = datetime.datetime(2020, 5, 17)\nprint(y.strftime(\"%B\")) # Rezultati: May (Maji)",
     "challenges": [
         {
             "title": "Viti Aktual",

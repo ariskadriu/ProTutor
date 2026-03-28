@@ -2,7 +2,7 @@
     "id": "py_dsa_avl_trees_sq",
     "title": "DSA: Pemat AVL (Vetë-Balancuese)",
     "description": "Një pemë AVL është një Pemë Binare Kërkimi vetë-balancuese ku diferenca midis lartësive të nënpemëve të majtë dhe të djathtë nuk mund të jetë më shumë se një për të gjitha nyjet. Ky balancim është vendimtar sepse siguron që operacionet si kërkimi, futja dhe fshirja të marrin gjithmonë kohë O(log n).",
-    "example": "// Konceptet e Rotacionit AVL\n# Kur nje nyje behet e pabalancuar, ne kryejme rotacione:\n# 1. Rotacion i Majte (Rasti RR)\n# 2. Rotacion i Djathte (Rasti LL)\n# 3. Rotacion i Majte-Djathte (Rasti LR)\n# 4. Rotacion i Djathte-Majte (Rasti RL)",
+    "example": "# Konceptet e Rotacionit AVL\n# Kur nje nyje behet e pabalancuar, ne kryejme rotacione:\n# 1. Rotacion i Majte (Rasti RR)\n# 2. Rotacion i Djathte (Rasti LL)\n# 3. Rotacion i Majte-Djathte (Rasti LR)\n# 4. Rotacion i Djathte-Majte (Rasti RL)",
     "challenges": [
         {
             "title": "Lartesia AVL",

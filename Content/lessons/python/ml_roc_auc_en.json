@@ -2,7 +2,7 @@
     "id": "py_ml_roc_auc_en",
     "title": "Python ML: AUC - ROC Curve",
     "description": "The ROC curve (Receiver Operating Characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. AUC (Area Under the ROC Curve) measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1). It provides an aggregate measure of performance across all possible classification thresholds.",
-    "example": "// ROC Curve with Scikit-learn\nimport matplotlib.pyplot as plt\nfrom sklearn import metrics\n\ny = [0, 0, 1, 1]\nscores = [0.1, 0.4, 0.35, 0.8]\nfpr, tpr, thresholds = metrics.roc_curve(y, scores)\nroc_auc = metrics.auc(fpr, tpr)\n\ndisplay = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc)\ndisplay.plot()\nplt.show()",
+    "example": "# ROC Curve with Scikit-learn\nimport matplotlib.pyplot as plt\nfrom sklearn import metrics\n\ny = [0, 0, 1, 1]\nscores = [0.1, 0.4, 0.35, 0.8]\nfpr, tpr, thresholds = metrics.roc_curve(y, scores)\nroc_auc = metrics.auc(fpr, tpr)\n\ndisplay = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc)\ndisplay.plot()\nplt.show()",
     "challenges": [
         {
             "title": "Area Concept",

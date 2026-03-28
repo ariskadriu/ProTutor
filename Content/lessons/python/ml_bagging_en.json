@@ -2,7 +2,7 @@
     "id": "py_ml_bagging_en",
     "title": "Python ML: Bootstrap Aggregation (Bagging)",
     "description": "Bootstrap Aggregation (Bagging) is an ensemble meta-algorithm designed to improve the stability and accuracy of machine learning algorithms. It involves taking multiple random samples of the data with replacement (bootstrap) and training a model on each. The final prediction is the average of all individual predictions.",
-    "example": "// Bagging with Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.ensemble import BaggingClassifier\nfrom sklearn.tree import DecisionTreeClassifier\n\niris = datasets.load_iris()\nX, y = iris.data, iris.target\n\n# Create a Bagging ensemble of Decision Trees\nbagging = BaggingClassifier(DecisionTreeClassifier(), n_estimators=10)\nbagging.fit(X, y)\n\nprint(\"Model Accuracy: \", bagging.score(X, y))",
+    "example": "# Bagging with Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.ensemble import BaggingClassifier\nfrom sklearn.tree import DecisionTreeClassifier\n\niris = datasets.load_iris()\nX, y = iris.data, iris.target\n\n# Create a Bagging ensemble of Decision Trees\nbagging = BaggingClassifier(DecisionTreeClassifier(), n_estimators=10)\nbagging.fit(X, y)\n\nprint(\"Model Accuracy: \", bagging.score(X, y))",
     "challenges": [
         {
             "title": "Bagging Concept",

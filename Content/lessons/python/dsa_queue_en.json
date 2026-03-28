@@ -2,7 +2,7 @@
     "id": "py_dsa_queue_en",
     "title": "DSA: Queues (FIFO)",
     "description": "A Queue is a linear data structure that follows the FIFO (First-In-First-Out) principle. This means the first element inserted is the first one removed. Common operations include 'enqueue' (add) and 'dequeue' (remove). Queues are widely used in printer tasks, CPU scheduling, and data buffering.",
-    "example": "// Queue Implementation using collections.deque\nfrom collections import deque\nqueue = deque([\"a\", \"b\", \"c\"])\n\n# Enqueue (Add to end)\nqueue.append(\"d\")\n\n# Dequeue (Remove from front)\nprint(queue.popleft()) # 'a'\n\nprint(queue) # deque(['b', 'c', 'd'])",
+    "example": "# Queue Implementation using collections.deque\nfrom collections import deque\nqueue = deque([\"a\", \"b\", \"c\"])\n\n# Enqueue (Add to end)\nqueue.append(\"d\")\n\n# Dequeue (Remove from front)\nprint(queue.popleft()) # 'a'\n\nprint(queue) # deque(['b', 'c', 'd'])",
     "challenges": [
         {
             "title": "FIFO Concept",

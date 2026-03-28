@@ -2,7 +2,7 @@
     "id": "py_dsa_graphs_en",
     "title": "DSA: Graphs & Traversals",
     "description": "A Graph is a non-linear data structure consisting of nodes (vertices) and edges. Graphs are used to represent networks, such as social networks or transportation paths. Key traversal algorithms include Breadth-First Search (BFS) for shortest paths and Depth-First Search (DFS) for exploring branches.",
-    "example": "// Adjacency List Representation\ngraph = {\n  'A' : ['B','C'],\n  'B' : ['D', 'E'],\n  'C' : ['F'],\n  'D' : [],\n  'E' : ['F'],\n  'F' : []\n}\n\n# BFS uses a Queue, DFS uses a Stack/Recursion.",
+    "example": "# Adjacency List Representation\ngraph = {\n  'A' : ['B','C'],\n  'B' : ['D', 'E'],\n  'C' : ['F'],\n  'D' : [],\n  'E' : ['F'],\n  'F' : []\n}\n\n# BFS uses a Queue, DFS uses a Stack/Recursion.",
     "challenges": [
         {
             "title": "BFS vs DFS",

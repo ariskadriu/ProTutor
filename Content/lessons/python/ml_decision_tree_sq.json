@@ -2,7 +2,7 @@
     "id": "py_ml_decision_tree_sq",
     "title": "Python ML: Pema e Vendimit (Decision Tree)",
     "description": "Një Pemë Vendimi (Decision Tree) është një strukturë e ngjashme me një bllok-skemë (flowchart) në të cilën çdo nyje e brendshme përfaqëson një 'test' mbi një atribut, çdo degë përfaqëson rezultatin e testit dhe çdo nyje gjethe (leaf) përfaqëson një etiketë klase. Është një nga algoritmet më të njohura dhe më të lehta për t'u kuptuar.",
-    "example": "// Zbatimi i Decision Tree\nimport pandas\nfrom sklearn import tree\nfrom sklearn.tree import DecisionTreeClassifier\n\ndf = pandas.read_csv(\"te_dhena.csv\")\nfeatures = ['Mosha', 'Eksperienca', 'Rank', 'Nacionaliteti']\nX = df[features]\ny = df['Shko']\n\ndtcree = DecisionTreeClassifier()\ndtcree = dtcree.fit(X, y)\n\ntree.plot_tree(dtcree, feature_names=features)",
+    "example": "# Zbatimi i Decision Tree\nimport pandas\nfrom sklearn import tree\nfrom sklearn.tree import DecisionTreeClassifier\n\ndf = pandas.read_csv(\"te_dhena.csv\")\nfeatures = ['Mosha', 'Eksperienca', 'Rank', 'Nacionaliteti']\nX = df[features]\ny = df['Shko']\n\ndtcree = DecisionTreeClassifier()\ndtcree = dtcree.fit(X, y)\n\ntree.plot_tree(dtcree, feature_names=features)",
     "challenges": [
         {
             "title": "Gjethja e Pemes",

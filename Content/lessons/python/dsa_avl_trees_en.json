@@ -2,7 +2,7 @@
     "id": "py_dsa_avl_trees_en",
     "title": "DSA: AVL Trees (Self-Balancing)",
     "description": "An AVL tree is a self-balancing Binary Search Tree where the difference between heights of left and right subtrees cannot be more than one for all nodes. This balancing is crucial because it ensures that operations like search, insert, and delete always take O(log n) time, even in worst-case scenarios.",
-    "example": "// AVL Rotation Concepts\n# When a node becomes unbalanced, we perform rotations:\n# 1. Left Rotation (RR Case)\n# 2. Right Rotation (LL Case)\n# 3. Left-Right Rotation (LR Case)\n# 4. Right-Left Rotation (RL Case)\n\n# Height of AVL tree is always logarithmic.",
+    "example": "# AVL Rotation Concepts\n# When a node becomes unbalanced, we perform rotations:\n# 1. Left Rotation (RR Case)\n# 2. Right Rotation (LL Case)\n# 3. Left-Right Rotation (LR Case)\n# 4. Right-Left Rotation (RL Case)\n\n# Height of AVL tree is always logarithmic.",
     "challenges": [
         {
             "title": "AVL Height",

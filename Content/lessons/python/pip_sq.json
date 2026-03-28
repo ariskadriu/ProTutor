@@ -2,7 +2,7 @@
     "id": "py_pip_sq",
     "title": "Python PIP dhe Menaxhimi i Paketave",
     "description": "PIP është një menaxher paketash për paketat e Python, ose modulet. Një paketë përmban të gjithë skedarët që ju nevojiten për një modul. Modulet janë biblioteka kodi Python që mund t'i përfshini në projektin tuaj. Ju mund të shkarkoni paketa nga Python Package Index (PyPI) duke përdorur 'pip install emri_i_paketes'.",
-    "example": "// Komandat e Zakonshme PIP (Terminal)\n# pip --version\n# pip install camelcase\n# pip uninstall camelcase\n# pip list\n\n# Perdorimi i nje pakete te shkarkuar\nimport camelcase\nc = camelcase.CamelCase()\ntxt = \"pershendetje bote\"\nprint(c.hump(txt))",
+    "example": "# Komandat e Zakonshme PIP (Terminal)\n# pip --version\n# pip install camelcase\n# pip uninstall camelcase\n# pip list\n\n# Perdorimi i nje pakete te shkarkuar\nimport camelcase\nc = camelcase.CamelCase()\ntxt = \"pershendetje bote\"\nprint(c.hump(txt))",
     "challenges": [
         {
             "title": "Komanda PIP",

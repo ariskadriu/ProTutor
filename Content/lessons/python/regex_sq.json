@@ -2,7 +2,7 @@
     "id": "py_regex_sq",
     "title": "Python RegEx (Shprehjet e Rregullta)",
     "description": "Një RegEx, ose Shprehje e Rregullt, është një sekuencë karakteresh që formon një model kërkimi. RegEx mund të përdoret për të kontrolluar nëse një string përmban modelin e specifikuar të kërkimit. Python ka një paketë të integruar të quajtur 're', e cila mund të përdoret për të punuar me Shprehjet e Rregullta.",
-    "example": "// Funksionet e Zakonshme RegEx\nimport re\n\ntxt = \"Shiu në Spanjë\"\nx = re.search(\"^Shiu.*Spanjë$\", txt)\nif x: print(\"PO! Përputhje!\")\n\n# Shembull Findall\nx = re.findall(\"në\", txt)\nprint(x)",
+    "example": "# Funksionet e Zakonshme RegEx\nimport re\n\ntxt = \"Shiu në Spanjë\"\nx = re.search(\"^Shiu.*Spanjë$\", txt)\nif x: print(\"PO! Përputhje!\")\n\n# Shembull Findall\nx = re.findall(\"në\", txt)\nprint(x)",
     "challenges": [
         {
             "title": "Modeli i Kerkimit",

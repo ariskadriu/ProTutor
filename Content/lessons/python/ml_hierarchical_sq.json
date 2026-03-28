@@ -2,7 +2,7 @@
     "id": "py_ml_hierarchical_sq",
     "title": "Python ML: Shpërndarja Hierarkike",
     "description": "Clustering hierarkik është një tjetër algoritëm i mësimit të pambikëqyrur që ndërton një hierarki grupesh. Clustering aglomerativ është lloji më i zakonshëm, ku çdo pikë të dhënash fillon si grupi i saj dhe çiftet e grupeve bashkohen ndërsa ngjiteni lart në hierarki. Dendrogramet përdoren për të vizualizuar procesin e bashkimit.",
-    "example": "// Agglomerative Clustering me Dendrogram\nimport matplotlib.pyplot as plt\nfrom scipy.cluster.hierarchy import dendrogram, linkage\n\nx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\ndata = list(zip(x, y))\n\nlinkage_data = linkage(data, method='ward', metric='euclidean')\ndendrogram(linkage_data)\nplt.show()",
+    "example": "# Agglomerative Clustering me Dendrogram\nimport matplotlib.pyplot as plt\nfrom scipy.cluster.hierarchy import dendrogram, linkage\n\nx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\ndata = list(zip(x, y))\n\nlinkage_data = linkage(data, method='ward', metric='euclidean')\ndendrogram(linkage_data)\nplt.show()",
     "challenges": [
         {
             "title": "Pamja Dendrogram",

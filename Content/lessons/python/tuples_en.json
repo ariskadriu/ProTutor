@@ -8,6 +8,8 @@
             "Title": "Create a tuple",
             "Difficulty": "Beginner",
             "Exercise": "Create a tuple named `fruit` containing 'apple' and 'banana' and print it.",
+            "ExpectedOutput": "('apple', 'banana')",
+            "Solution": "fruit = ('apple', 'banana')\nprint(fruit)",
             "RequiredKeywords": [
                 "fruit",
                 "(",
@@ -19,6 +21,8 @@
             "Title": "Access tuple items",
             "Difficulty": "Intermediate",
             "Exercise": "Print the second item in the `fruit` tuple.",
+            "ExpectedOutput": "banana",
+            "Solution": "fruit = ('apple', 'banana')\nprint(fruit[1])",
             "RequiredKeywords": [
                 "fruit",
                 "[1]",
@@ -29,6 +33,8 @@
             "Title": "Update tuples",
             "Difficulty": "Intermediate",
             "Exercise": "Convert `fruit` to a list `y`, change the first item to 'kiwi', and convert back to tuple `fruit`.",
+            "ExpectedOutput": "('kiwi', 'banana')",
+            "Solution": "fruit = ('apple', 'banana')\ny = list(fruit)\ny[0] = 'kiwi'\nfruit = tuple(y)\nprint(fruit)",
             "RequiredKeywords": [
                 "list",
                 "kiwi",
@@ -39,6 +45,8 @@
             "Title": "Unpack tuples",
             "Difficulty": "Intermediate",
             "Exercise": "Unpack the `fruit` tuple into variables `green` and `yellow` and print `green`.",
+            "ExpectedOutput": "apple",
+            "Solution": "fruit = ('apple', 'banana')\n(green, yellow) = fruit\nprint(green)",
             "RequiredKeywords": [
                 "green",
                 "yellow",
@@ -49,6 +57,8 @@
             "Title": "Join tuples",
             "Difficulty": "Intermediate",
             "Exercise": "Join tuple `tuple1 = (1, 2)` and `tuple2 = (3, 4)` into `tuple3` and print it.",
+            "ExpectedOutput": "(1, 2, 3, 4)",
+            "Solution": "tuple1 = (1, 2)\ntuple2 = (3, 4)\ntuple3 = tuple1 + tuple2\nprint(tuple3)",
             "RequiredKeywords": [
                 "tuple3",
                 "tuple1 + tuple2",

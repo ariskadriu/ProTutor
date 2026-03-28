@@ -2,7 +2,7 @@
     "id": "py_ml_confusion_matrix_sq",
     "title": "Python ML: Matrica e Konfuzionit",
     "description": "Një Matricë Konfuzioni (Confusion Matrix) është një tabelë që përdoret shpesh për të përshkruar performancën e një modeli klasifikimi në një grup të dhënash testimi për të cilat njihen vlerat e vërteta. Ajo lejon vizualizimin e performancës së një algoritmi dhe identifikon se ku modeli është 'i konfuzuar' duke i klasifikuar gabim mostrat.",
-    "example": "// Vizualizimi i Matricës së Konfuzionit\nimport matplotlib.pyplot as plt\nimport numpy\nfrom sklearn import metrics\n\nactual = numpy.random.binomial(1,.9,size = 1000)\npredicted = numpy.random.binomial(1,.9,size = 1000)\n\nconfusion_matrix = metrics.confusion_matrix(actual, predicted)\ncm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])\n\ncm_display.plot()\nplt.show()",
+    "example": "# Vizualizimi i Matricës së Konfuzionit\nimport matplotlib.pyplot as plt\nimport numpy\nfrom sklearn import metrics\n\nactual = numpy.random.binomial(1,.9,size = 1000)\npredicted = numpy.random.binomial(1,.9,size = 1000)\n\nconfusion_matrix = metrics.confusion_matrix(actual, predicted)\ncm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])\n\ncm_display.plot()\nplt.show()",
     "challenges": [
         {
             "title": "TP vs FP",

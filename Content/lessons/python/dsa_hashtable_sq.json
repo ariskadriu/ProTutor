@@ -2,7 +2,7 @@
     "id": "py_dsa_hashtable_sq",
     "title": "DSA: Tabelat Hash (Hash Tables)",
     "description": "Një Tabelë Hash (Hash Table) është një strukturë të dhënash që lidh çelësat me vlerat duke përdorur një funksion special të quajtur funksion hash. Ajo ofron marrje shumë efikase të të dhënave, me një kompleksitet mesatar kohor O(1) për kërkimin, futjen dhe fshirjen. Kjo është teknologjia bazë e fjalorëve (dictionaries) të Python.",
-    "example": "// Logjika e Hash Table (Zbatimi manual)\nclass HashTable:\n    def __init__(self, size):\n        self.size = size\n        self.hash_table = [[] for _ in range(size)]\n\n    def hash_func(self, key):\n        return key % self.size\n\n    def insert(self, key, value):\n        hash_key = self.hash_func(key)\n        self.hash_table[hash_key].append(value)",
+    "example": "# Logjika e Hash Table (Zbatimi manual)\nclass HashTable:\n    def __init__(self, size):\n        self.size = size\n        self.hash_table = [[] for _ in range(size)]\n\n    def hash_func(self, key):\n        return key % self.size\n\n    def insert(self, key, value):\n        hash_key = self.hash_func(key)\n        self.hash_table[hash_key].append(value)",
     "challenges": [
         {
             "title": "Kompleksiteti Hash",

@@ -8,58 +8,114 @@
         mc:Ignorable="mc"
         Title="Programming Tutor IDE" Height="750" Width="1200"
         Background="{StaticResource BackgroundBrush}"
-        Foreground="{StaticResource TextBrush}">
+        Foreground="{StaticResource TextBrush}"
+        WindowStartupLocation="CenterScreen">
     
-    <DockPanel>
-        <!-- Custom Top Bar / Menu -->
-        <Border DockPanel.Dock="Top" Background="#151517" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
-            <DockPanel Height="50" Margin="15,0">
+    <Window.Resources>
+        <!-- Page Transit Animations -->
+    </Window.Resources>
+    
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource FadeIn}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Row 0 -->
+            <RowDefinition Height="*"/>    <!-- Row 1 -->
+            <RowDefinition Height="Auto"/> <!-- Row 2 -->
+            <RowDefinition Height="250" MinHeight="100" MaxHeight="600"/> <!-- Row 3 -->
+        </Grid.RowDefinitions>
+
+        <GridSplitter Grid.Row="2" Height="6" 
+                      HorizontalAlignment="Stretch" 
+                      VerticalAlignment="Center" 
+                      Background="#1AFFFFFF"
+                      ShowsPreview="True"
+                      BorderBrush="{StaticResource BorderBrush}"
+                      BorderThickness="0,1"/>
+
+        <!-- TOP BAR (Row 0) -->
+        <Border Grid.Row="0" Background="#0F111A" Height="65" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1">
+            <Grid Margin="20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/> <!-- Logo/Title -->
+                    <ColumnDefinition Width="*"/>    <!-- Nav Buttons -->
+                    <ColumnDefinition Width="Auto"/> <!-- Profile/Run -->
+                </Grid.ColumnDefinitions>
+
+                <!-- Left: Logo & Title -->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Image Source="/Assets/app_logo.png" Height="30" Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality"/>
-                    <Menu Background="Transparent" BorderThickness="0">
-                        <MenuItem x:Name="FileMenu" Header="FILE" Foreground="{StaticResource MutedTextBrush}" Margin="5,0">
-                            <MenuItem x:Name="ExitItem" Header="Exit" Click="ExitItem_Click" Background="Transparent" BorderThickness="0"/>
-                        </MenuItem>
-                        <MenuItem x:Name="LearnMenu" Header="LEARN" Click="LearnMenu_Click" Foreground="{StaticResource MutedTextBrush}" Margin="5,0"/>
-                        <MenuItem x:Name="SettingsMenu" Header="SETTINGS" Click="SettingsMenu_Click" Foreground="{StaticResource MutedTextBrush}" Margin="5,0"/>
-                    </Menu>
+                    <Image Source="/Assets/app_logo.png" Height="45" Width="45" Margin="0,0,15,0"/>
+                    <TextBlock Text="Programming Tutor IDE" FontSize="18" FontWeight="Black" Foreground="White" VerticalAlignment="Center"/>
                 </StackPanel>
-                
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Button Click="Profile_Click" Style="{StaticResource ModernButton}" Padding="10,5" Margin="0,0,10,0" Background="Transparent" BorderThickness="0">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock x:Name="UserText" Text="Username" VerticalAlignment="Center" Foreground="{StaticResource MutedTextBrush}" Margin="0,0,10,0"/>
-                            <Ellipse Width="24" Height="24" Fill="{DynamicResource AccentBrush}"/>
+
+                <!-- Center: Navigation -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="LearnMenu" Content="Learn" Style="{StaticResource ModernButton}" Background="Transparent" BorderThickness="0" Margin="10,0" Foreground="{StaticResource AccentBrush}" Click="LearnMenu_Click"/>
+                    <Button x:Name="SettingsMenu" Content="Settings" Style="{StaticResource ModernButton}" Background="Transparent" BorderThickness="0" Margin="10,0" Opacity="0.6" Click="SettingsMenu_Click"/>
+                    <Button x:Name="ProgressMenu" Content="Progress" Style="{StaticResource ModernButton}" Background="Transparent" BorderThickness="0" Margin="10,0" Opacity="0.6" Click="LearnMenu_Click"/>
+                </StackPanel>
+
+                <!-- Right: Profile & Run -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Click="Profile_Click" Style="{StaticResource ModernButton}" Background="Transparent" BorderThickness="0" Padding="10,5" Margin="0,0,10,0">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <TextBlock x:Name="UserText" Text="Guest" Foreground="White" FontSize="12" FontWeight="Bold" HorizontalAlignment="Right"/>
+                            <TextBlock Text="Pro Member" Foreground="{StaticResource AccentBrush}" FontSize="10" HorizontalAlignment="Right"/>
                         </StackPanel>
                     </Button>
-                    <Button Content="▶ RUN" Click="Run_Click" Style="{StaticResource PrimaryButton}" Padding="15,5" FontSize="12"/>
+                    
+                    <Button x:Name="RunButton" Click="Run_Click" Style="{StaticResource PrimaryButton}" Height="40" Padding="20,0" Margin="0,0,10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="▶" Margin="0,0,10,1" VerticalAlignment="Center" FontSize="14"/>
+                            <TextBlock Text="RUN" FontWeight="Black" FontSize="11" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="StopButton" Click="Stop_Click" Style="{StaticResource ModernButton}" Height="40" Padding="15,0" Visibility="Collapsed">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="■" Margin="0,0,8,1" VerticalAlignment="Center" FontSize="14" Foreground="#EF4444"/>
+                            <TextBlock Text="STOP" FontWeight="Black" FontSize="11" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
-            </DockPanel>
+            </Grid>
         </Border>
 
-        <!-- Main Content Grid -->
-        <Grid>
+        <!-- MAIN WORKSPACE (Row 1 - 3 Columns) -->
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="280"/> <!-- Sidebar -->
-                <ColumnDefinition Width="*"/>   <!-- Editor -->
-                <ColumnDefinition Width="350"/> <!-- Lesson Info -->
+                <ColumnDefinition Width="260"/> <!-- Sidebar -->
+                <ColumnDefinition Width="1.2*"/> <!-- Lesson Content -->
+                <ColumnDefinition Width="1.5*"/> <!-- Editor -->
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="200"/> <!-- Terminal -->
-            </Grid.RowDefinitions>
 
-            <!-- Sidebar: Lesson Navigation -->
-            <Border Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource GlassPanel}" Margin="10" BorderThickness="0,0,1,0">
-                <DockPanel Margin="15">
-                    <TextBlock x:Name="SidebarHeader" Text="MY PROGRESS" Foreground="White" FontWeight="Bold" Margin="0,0,0,15" DockPanel.Dock="Top"/>
+            <!-- LEFT SIDEBAR: Lesson Navigation -->
+            <Border Grid.Column="0" Background="#1A1D29" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
+                <DockPanel Margin="18">
+                    <TextBlock x:Name="SidebarHeader" Text="MY PROGRESS" Foreground="White" FontSize="10" FontWeight="Black" Opacity="0.5" Margin="0,0,0,20" DockPanel.Dock="Top"/>
                     <ScrollViewer VerticalScrollBarVisibility="Auto" Background="Transparent" BorderThickness="0">
                         <TreeView x:Name="LessonTreeView" Background="Transparent" Foreground="{StaticResource TextBrush}" BorderThickness="0" 
                                   SelectedItemChanged="LessonTreeView_SelectedItemChanged">
                             <TreeView.ItemContainerStyle>
                                 <Style TargetType="TreeViewItem">
-                                    <Setter Property="Padding" Value="5"/>
-                                    <Setter Property="Margin" Value="0,2"/>
+                                    <Setter Property="Padding" Value="10,6"/>
+                                    <Setter Property="Margin" Value="0,1"/>
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Style.Resources>
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#3B82F6"/>
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="#1A1D29"/>
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="White"/>
+                                    </Style.Resources>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
                                 </Style>
                             </TreeView.ItemContainerStyle>
                         </TreeView>
@@ -67,66 +123,160 @@
                 </DockPanel>
             </Border>
 
-            <!-- Editor Section -->
-            <Border Grid.Column="1" Grid.Row="0" Margin="10,10,10,5" Style="{StaticResource GlassPanel}" Background="#1E1E1E">
-                <avalonEdit:TextEditor x:Name="Editor" 
-                                       FontFamily="Consolas" 
-                                       FontSize="13pt"
-                                       Foreground="#D4D4D4"
-                                       ShowLineNumbers="True"
-                                       Background="Transparent">
-                </avalonEdit:TextEditor>
-            </Border>
-
-            <!-- Terminal Section -->
-            <Border Grid.Column="1" Grid.Row="1" Margin="10,5,10,10" Style="{StaticResource GlassPanel}" Background="#111112">
-                <DockPanel>
-                    <Border DockPanel.Dock="Top" Background="#1A1A1C" Padding="15,5">
-                        <TextBlock Text="TERMINAL OUTPUT" Foreground="{StaticResource MutedTextBrush}" FontSize="10" FontWeight="Bold"/>
-                    </Border>
-                    <TextBox x:Name="OutputTextBox" 
-                             IsReadOnly="True" 
-                             Background="Transparent" 
-                             Foreground="#D4D4D4" 
-                             BorderThickness="0" 
-                             FontFamily="Consolas" 
-                             TextWrapping="Wrap" 
-                             VerticalScrollBarVisibility="Auto"
-                             Padding="15"/>
-                </DockPanel>
-            </Border>
-
-            <!-- Right Panel: Lesson Curriculum -->
-            <Border Grid.Column="2" Grid.RowSpan="2" Style="{StaticResource GlassPanel}" Margin="10" Background="{StaticResource SurfaceBrush}">
+            <!-- CENTER PANEL: Lesson Content -->
+            <Border Grid.Column="1" Background="{StaticResource BackgroundBrush}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel Margin="20">
-                        <Border x:Name="LangBadge" CornerRadius="4" Background="{DynamicResource AccentBrush}" Padding="6,2" HorizontalAlignment="Left" Margin="0,0,0,10">
+                    <StackPanel Margin="35">
+                        <Border x:Name="LangBadge" CornerRadius="4" Background="{DynamicResource AccentBrush}" Padding="8,3" HorizontalAlignment="Left" Margin="0,0,0,20">
                             <TextBlock x:Name="LangLabel" Text="PYTHON" Foreground="White" FontSize="10" FontWeight="Bold"/>
                         </Border>
                         
-                        <TextBlock x:Name="LessonTitleText" Text="Welcome!" FontSize="22" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap" Margin="0,0,0,15"/>
+                        <TextBlock x:Name="LessonTitleText" Text="Welcome!" FontSize="28" Foreground="White" FontWeight="Black" TextWrapping="Wrap" Margin="0,0,0,20"/>
                         
-                        <TextBlock x:Name="LessonDescriptionText" Text="Please select a lesson to start learning." Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" LineHeight="20" Margin="0,0,0,25"/>
+                        <TextBlock x:Name="LessonDescriptionText" Text="Please select a lesson to start learning." Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" LineHeight="26" Margin="0,0,0,40" Opacity="0.9" FontSize="14"/>
                         
-                        <Border Height="1" Background="{StaticResource BorderBrush}" Margin="0,0,0,25"/>
+                        <Border Height="1" Background="{StaticResource BorderBrush}" Margin="0,0,0,35" Opacity="0.3"/>
 
-                        <TextBlock x:Name="ChallengeHeader" Text="CHALLENGE" Foreground="{DynamicResource AccentBrush}" FontWeight="Bold" FontSize="12" Margin="0,0,0,10"/>
-                        <TextBlock x:Name="ExerciseText" Text="Ready to test your skills?" Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" Margin="0,0,0,20"/>
+                        <TextBlock x:Name="ChallengeHeader" Text="CHALLENGE" Foreground="{DynamicResource AccentBrush}" FontWeight="Black" FontSize="11" Margin="0,0,0,15"/>
+                        <TextBlock x:Name="ExerciseText" Text="Ready to test your skills?" Foreground="{StaticResource TextBrush}" TextWrapping="Wrap" LineHeight="22" Margin="0,0,0,35" FontSize="14"/>
                         
-                        <Grid Margin="0,0,0,15">
+                        <Grid Margin="0,0,0,30">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
-                            <Button x:Name="CheckAnswerButton" Grid.Column="0" Content="SUBMIT CHALLENGE" Click="CheckAnswer_Click" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch" Margin="0,0,5,0"/>
-                            <Button x:Name="AiHintButton" Grid.Column="1" Content="💡 HINT" Click="AiHint_Click" Style="{StaticResource ModernButton}" Background="#2A2A40" Foreground="#A8A8FF" BorderThickness="0" Padding="15,10" ToolTip="Click multiple times for progressive hints!"/>
+                            <Button x:Name="CheckAnswerButton" Grid.Column="0" Content="SUBMIT CHALLENGE" Click="CheckAnswer_Click" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch" Margin="0,0,10,0" Height="48"/>
+                            <Button x:Name="AiHintButton" Grid.Column="1" Content="✨" Click="AiHint_Click" Style="{StaticResource ModernButton}" Background="#1A1A2E" Foreground="{StaticResource AccentBrush}" BorderThickness="0" Padding="15,0" Height="48" FontSize="18"/>
                         </Grid>
-                        
-                        <TextBlock x:Name="ProgressStats" Text="Lesson 0 of 0 completed" Foreground="{StaticResource MutedTextBrush}" Margin="0,30,0,0" FontSize="11" HorizontalAlignment="Center"/>
-                        <TextBlock Text="© Aris Kadriu" Foreground="{StaticResource BorderBrush}" HorizontalAlignment="Center" Margin="0,10,0,0" FontSize="10"/>
+
+                        <!-- Progress indicator (Interactive) -->
+                        <Button Click="LearnMenu_Click" Style="{StaticResource ModernButton}" Background="#05FFFFFF" Padding="20,15" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" HorizontalContentAlignment="Stretch">
+                            <StackPanel>
+                                <Grid Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock x:Name="ProgressStats" Grid.Column="0" Text="0 / 126 lessons" Foreground="{StaticResource MutedTextBrush}" FontSize="12" FontWeight="Bold"/>
+                                    <TextBlock Grid.Column="1" Text="Total Progress" Foreground="White" FontSize="12" Opacity="0.6"/>
+                                </Grid>
+                                <ProgressBar x:Name="MainProgressBar" Value="14" Maximum="126" Height="6" Foreground="{StaticResource AccentBrush}" Background="#1AFFFFFF" BorderThickness="0"/>
+                            </StackPanel>
+                        </Button>
                     </StackPanel>
                 </ScrollViewer>
             </Border>
+
+            <!-- CODE EDITOR PANEL (Column 2) -->
+            <Border Grid.Column="2" Background="#0C0E14">
+                <avalonEdit:TextEditor x:Name="Editor" 
+                                       FontFamily="Consolas" 
+                                       FontSize="14"
+                                       Foreground="#E5E7EB"
+                                       ShowLineNumbers="True"
+                                       Background="Transparent"
+                                       Margin="15">
+                </avalonEdit:TextEditor>
+            </Border>
         </Grid>
-    </DockPanel>
+
+        <!-- BOTTOM PANEL: Terminal & AI Chat (Row 3) -->
+        <Border Grid.Row="3" Background="#0C0E14" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,0">
+            <TabControl Background="Transparent" BorderThickness="0" Padding="0">
+                <TabControl.Resources>
+                    <Style TargetType="TabItem">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="#888"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,2"/>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="Padding" Value="20,10"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TabItem">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                                        <ContentPresenter ContentSource="Header" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+                                <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TabControl.Resources>
+
+                <!-- TERMINAL TAB -->
+                <TabItem Header="TERMINAL OUTPUT">
+                    <DockPanel>
+                        <TextBox x:Name="OutputTextBox" 
+                                 IsReadOnly="False" 
+                                 Background="Transparent" 
+                                 Foreground="#00FF88" 
+                                 BorderThickness="0" 
+                                 FontFamily="Consolas" 
+                                 TextWrapping="Wrap" 
+                                 VerticalScrollBarVisibility="Auto"
+                                 Padding="25,15"
+                                 FontSize="13"
+                                 PreviewKeyDown="OutputTextBox_PreviewKeyDown"/>
+                    </DockPanel>
+                </TabItem>
+
+                <!-- AI CHAT TAB -->
+                <TabItem x:Name="AiChatTab" Header="ARIS AI CHAT ✨">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        <ListBox x:Name="AiChatListBox" 
+                                 Background="#0C0E14" 
+                                 BorderThickness="0" 
+                                 Padding="20,10"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                 ScrollViewer.CanContentScroll="False">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="{Binding Color}" CornerRadius="10" Padding="15,10" Margin="0,5" MaxWidth="700" HorizontalAlignment="{Binding Alignment}">
+                                        <TextBlock Text="{Binding Text}" Foreground="White" TextWrapping="Wrap" FontSize="13"/>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                        <Border Grid.Row="1" Background="#111116" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,0" Padding="20,10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox x:Name="AiChatInput" 
+                                         Background="#1A1A2E" 
+                                         Foreground="White" 
+                                         BorderThickness="1" 
+                                         BorderBrush="#2A2A4E" 
+                                         Padding="15,8" 
+                                         FontSize="13" 
+                                         KeyDown="AiChatInput_KeyDown"
+                                         GotFocus="AiChatInput_GotFocus"/>
+                                <Button x:Name="AiChatSendButton" 
+                                        Grid.Column="1" 
+                                        Content="SEND" 
+                                        Click="AiChatSend_Click" 
+                                        Style="{StaticResource PrimaryButton}" 
+                                        Padding="20,0" 
+                                        Margin="10,0,0,0" 
+                                        Height="35"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Border>
+    </Grid>
 </Window>

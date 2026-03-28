@@ -2,7 +2,7 @@
     "id": "py_dsa_graphs_sq",
     "title": "DSA: Grafet dhe Pershkimi",
     "description": "Një Graf është një strukturë të dhënash jo-lineare që përbëhet nga nyje (vertice) dhe lidhje (edges). Grafet përdoren për të përfaqësuar rrjete, si rrjetet sociale ose rrugët e transportit. Algoritmet kryesore të përshkimit përfshijnë Breadth-First Search (BFS) dhe Depth-First Search (DFS).",
-    "example": "// Perfaqesimi me Liste Adjacence\ngraph = {\n  'A' : ['B','C'],\n  'B' : ['D', 'E'],\n  'C' : ['F'],\n  'D' : [],\n  'E' : ['F'],\n  'F' : []\n}\n\n# BFS perdor nje Queue (Rradhe), DFS perdor nje Stack (Stive).",
+    "example": "# Perfaqesimi me Liste Adjacence\ngraph = {\n  'A' : ['B','C'],\n  'B' : ['D', 'E'],\n  'C' : ['F'],\n  'D' : [],\n  'E' : ['F'],\n  'F' : []\n}\n\n# BFS perdor nje Queue (Rradhe), DFS perdor nje Stack (Stive).",
     "challenges": [
         {
             "title": "BFS vs DFS",

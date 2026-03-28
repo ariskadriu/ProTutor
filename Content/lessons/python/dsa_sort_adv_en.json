@@ -2,7 +2,7 @@
     "id": "py_dsa_sort_adv_en",
     "title": "DSA: Quick & Merge Sort",
     "description": "Advanced sorting algorithms like Quick Sort and Merge Sort use the 'Divide and Conquer' strategy to achieve O(n log n) average time complexity, which is significantly more efficient for large data sets than basic sorting. Merge sort is stable and uses additional space, while Quick Sort is often faster in practice.",
-    "example": "// Merge Sort Implementation\ndef mergeSort(arr):\n    if len(arr) > 1:\n        mid = len(arr)//2\n        L, R = arr[:mid], arr[mid:]\n        mergeSort(L); mergeSort(R)\n        i = j = k = 0\n        while i < len(L) and j < len(R):\n            if L[i] < j[j]: arr[k] = L[i]; i += 1\n            else: arr[k] = R[j]; j += 1\n            k += 1\n        while i < len(L): arr[k] = L[i]; i += 1; k += 1\n        while j < len(R): arr[k] = R[j]; j += 1; k += 1",
+    "example": "# Merge Sort Implementation\ndef mergeSort(arr):\n    if len(arr) > 1:\n        mid = len(arr)#2\n        L, R = arr[:mid], arr[mid:]\n        mergeSort(L); mergeSort(R)\n        i = j = k = 0\n        while i < len(L) and j < len(R):\n            if L[i] < j[j]: arr[k] = L[i]; i += 1\n            else: arr[k] = R[j]; j += 1\n            k += 1\n        while i < len(L): arr[k] = L[i]; i += 1; k += 1\n        while j < len(R): arr[k] = R[j]; j += 1; k += 1",
     "challenges": [
         {
             "title": "Efficient Big O",

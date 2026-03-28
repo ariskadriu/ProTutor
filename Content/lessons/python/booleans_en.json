@@ -2,7 +2,7 @@
     "id": "py_booleans_en",
     "title": "Python Booleans & Comparisons",
     "description": "Booleans represent one of two values: 'True' or 'False'. In Python, almost any value is evaluated to 'True' if it has some sort of content. Boolean operators like 'and', 'or', and 'not' allow complex logic chains.",
-    "example": "// Logical Chains\nprint(10 > 9) # True\nprint(10 == 9) # False\n\n# Truthiness\nprint(bool(\"abc\")) # True\nprint(bool(0)) # False",
+    "example": "# Logical Chains\nprint(10 > 9) # True\nprint(10 == 9) # False\n\n# Truthiness\nprint(bool(\"abc\")) # True\nprint(bool(0)) # False",
     "challenges": [
         {
             "title": "True Statement",

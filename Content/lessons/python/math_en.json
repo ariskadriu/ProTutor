@@ -2,7 +2,7 @@
     "id": "py_math_en",
     "title": "Python Math & Random",
     "description": "Python has a built-in module 'math' that extends the list of mathematical functions. For generating random numbers, we use the 'random' module. These are critical for scientific computing and game development.",
-    "example": "// Math & Random Power\nimport math\nimport random\n\nprint(math.sqrt(64)) # 8.0\nprint(math.ceil(1.4)) # 2\n\n# Random integers\nprint(random.randint(1, 10))",
+    "example": "# Math & Random Power\nimport math\nimport random\n\nprint(math.sqrt(64)) # 8.0\nprint(math.ceil(1.4)) # 2\n\n# Random integers\nprint(random.randint(1, 10))",
     "challenges": [
         {
             "title": "Square Root",

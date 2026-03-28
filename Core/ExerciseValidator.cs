@@ -51,16 +51,29 @@ namespace ProgrammingTutor.Core
             // 2. Output Validation
             (string Output, string Error) result;
             if (lesson.Id.StartsWith("py"))
-                result = await _codeRunner.RunPythonAsync(userCode);
+                result = await _codeRunner.RunAndCapturePythonAsync(userCode);
             else
-                result = await _codeRunner.RunCSharpAsync(userCode);
+                result = await _codeRunner.RunAndCaptureCSharpAsync(userCode);
 
             if (!string.IsNullOrEmpty(result.Error))
             {
                 return new ValidationResult { Success = false, Message = result.Error };
             }
 
-            bool isCorrect = result.Output.Trim() == challenge.ExpectedOutput.Trim();
+            // Handling dynamic/keyword-only validation
+            bool isKeywordsOnly = string.IsNullOrWhiteSpace(challenge.ExpectedOutput);
+            bool isCorrect;
+
+            if (isKeywordsOnly)
+            {
+                // If no expected output is defined, we assume success IF it ran without error 
+                // and passed the keyword check above.
+                isCorrect = true;
+            }
+            else
+            {
+                isCorrect = result.Output.Trim() == challenge.ExpectedOutput.Trim();
+            }
 
             if (isCorrect)
             {

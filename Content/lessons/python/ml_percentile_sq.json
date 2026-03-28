@@ -2,7 +2,7 @@
     "id": "py_ml_percentile_sq",
     "title": "Python ML: Përqindjet (Percentile)",
     "description": "Përqindjet (percentiles) përdoren në statistikë për t'ju dhënë një numër që përshkruan vlerën më të cilën një përqindje e caktuar e vlerave janë më të ulëta. Për shembull, nëse themi se përqindja e 75-të është 43, do të thotë se 75% e njerëzve janë 43 vjeç ose më të rinj. Kjo përdoret gjerësisht në analizën e të dhënave.",
-    "example": "// Përdorimi i NumPy për Percentiles\nimport numpy\n\nages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 75)\nprint(x) # Rezultati: 43.0",
+    "example": "# Përdorimi i NumPy për Percentiles\nimport numpy\n\nages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 75)\nprint(x) # Rezultati: 43.0",
     "challenges": [
         {
             "title": "Llogarit Përqindjen e 90-të",

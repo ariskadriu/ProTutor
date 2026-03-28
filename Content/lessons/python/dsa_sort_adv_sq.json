@@ -2,7 +2,7 @@
     "id": "py_dsa_sort_adv_sq",
     "title": "DSA: Quick dhe Merge Sort",
     "description": "Algoritmet e avancuara të rradhitjes si Quick Sort dhe Merge Sort përdorin strategjinë 'Divide and Conquer' (Ndaj dhe Sundo) për të arritur kompleksitetin mesatar O(n log n). Kjo është dukshëm më efikase për grupe të mëdha të dhënash. Merge sort është i qëndrueshëm (stable), ndërsa Quick Sort është shpesh më i shpejtë në praktikë.",
-    "example": "// Zbatimi i Merge Sort\ndef mergeSort(arr):\n    if len(arr) > 1:\n        mid = len(arr)//2\n        L, R = arr[:mid], arr[mid:]\n        mergeSort(L); mergeSort(R)\n        # Procesi i bashkimit (mergeing) i listave te ndara",
+    "example": "# Zbatimi i Merge Sort\ndef mergeSort(arr):\n    if len(arr) > 1:\n        mid = len(arr)#2\n        L, R = arr[:mid], arr[mid:]\n        mergeSort(L); mergeSort(R)\n        # Procesi i bashkimit (mergeing) i listave te ndara",
     "challenges": [
         {
             "title": "Big O Efikas",

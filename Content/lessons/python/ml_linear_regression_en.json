@@ -2,7 +2,7 @@
     "id": "py_ml_linear_regression_en",
     "title": "Python ML: Linear Regression",
     "description": "Linear regression uses the relationship between data points to draw a straight line through all them. This line can be used to predict future values. In Python, typically 'scipy.stats' is used to find the relationship (coefficient) and 'matplotlib' is used to visualize the trend line.",
-    "example": "// Linear Regression Implementation\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nx = [5,7,8,7,2,17,2,9,4,11,12,9,6]\ny = [99,86,87,88,111,86,103,87,94,78,77,85,86]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\n  return slope * x + intercept\n\nmymodel = list(map(myfunc, x))\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.show()",
+    "example": "# Linear Regression Implementation\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nx = [5,7,8,7,2,17,2,9,4,11,12,9,6]\ny = [99,86,87,88,111,86,103,87,94,78,77,85,86]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\n  return slope * x + intercept\n\nmymodel = list(map(myfunc, x))\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.show()",
     "challenges": [
         {
             "title": "Regression Prediction",

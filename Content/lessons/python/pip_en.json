@@ -2,7 +2,7 @@
     "id": "py_pip_en",
     "title": "Python PIP & Package Management",
     "description": "PIP is a package manager for Python packages, or modules if you like. A package contains all the files you need for a module. Modules are Python code libraries you can include in your project. You can download packages from the Python Package Index (PyPI) using 'pip install package_name'.",
-    "example": "// Common PIP Commands (Terminal)\n# pip --version\n# pip install camelcase\n# pip uninstall camelcase\n# pip list\n\n# Usage of a downloaded package\nimport camelcase\nc = camelcase.CamelCase()\ntxt = \"hello world\"\nprint(c.hump(txt)) # Output: Hello World",
+    "example": "# Common PIP Commands (Terminal)\n# pip --version\n# pip install camelcase\n# pip uninstall camelcase\n# pip list\n\n# Usage of a downloaded package\nimport camelcase\nc = camelcase.CamelCase()\ntxt = \"hello world\"\nprint(c.hump(txt)) # Output: Hello World",
     "challenges": [
         {
             "title": "PIP Command",

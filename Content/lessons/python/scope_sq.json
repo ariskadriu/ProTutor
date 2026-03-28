@@ -2,7 +2,7 @@
     "id": "py_scope_sq",
     "title": "Python Scope (Global vs Local)",
     "description": "Një variabël është i disponueshëm vetëm nga brenda rajonit ku është krijuar. Kjo quhet scope (fusha e veprimit). Scope Lokal: Një variabël i krijuar brenda një funksioni i përket fushës lokale të atij funksioni. Scope Global: Një variabël i krijuar në trupin kryesor të kodit i përket fushës globale.",
-    "example": "// Lokal vs Global\nx = 300 # Global\n\ndef myfunc():\n  x = 200 # Lokal\n  print(x) # 200\n\nmyfunc()\nprint(x) # 300\n\n# Perdorimi i fjales kyce 'global'\ndef change_global():\n  global x\n  x = 500",
+    "example": "# Lokal vs Global\nx = 300 # Global\n\ndef myfunc():\n  x = 200 # Lokal\n  print(x) # 200\n\nmyfunc()\nprint(x) # 300\n\n# Perdorimi i fjales kyce 'global'\ndef change_global():\n  global x\n  x = 500",
     "challenges": [
         {
             "title": "Fjala Kyce Global",

@@ -8,6 +8,8 @@
             "Title": "Krijo një tuple",
             "Difficulty": "Fillestar",
             "Exercise": "Krijo një tuple `fruit` me 'apple' dhe 'banana' dhe printoje.",
+            "ExpectedOutput": "('apple', 'banana')",
+            "Solution": "fruit = ('apple', 'banana')\nprint(fruit)",
             "RequiredKeywords": [
                 "fruit",
                 "(",
@@ -19,6 +21,8 @@
             "Title": "Qasja në elemente",
             "Difficulty": "Mesatar",
             "Exercise": "Printo elementin e dytë në `fruit`.",
+            "ExpectedOutput": "banana",
+            "Solution": "fruit = ('apple', 'banana')\nprint(fruit[1])",
             "RequiredKeywords": [
                 "fruit",
                 "[1]",
@@ -29,6 +33,8 @@
             "Title": "Përditëso tuple",
             "Difficulty": "Mesatar",
             "Exercise": "Ktheje `fruit` në listë `y`, ndrysho elementin e parë në 'kiwi', dhe ktheje prapë në tuple `fruit`.",
+            "ExpectedOutput": "('kiwi', 'banana')",
+            "Solution": "fruit = ('apple', 'banana')\ny = list(fruit)\ny[0] = 'kiwi'\nfruit = tuple(y)\nprint(fruit)",
             "RequiredKeywords": [
                 "list",
                 "kiwi",
@@ -39,6 +45,8 @@
             "Title": "Shpaketo tuple",
             "Difficulty": "Mesatar",
             "Exercise": "Shpaketo `fruit` në variablat `green` dhe `yellow` dhe printo `green`.",
+            "ExpectedOutput": "apple",
+            "Solution": "fruit = ('apple', 'banana')\n(green, yellow) = fruit\nprint(green)",
             "RequiredKeywords": [
                 "green",
                 "yellow",
@@ -49,6 +57,8 @@
             "Title": "Bashko tuples",
             "Difficulty": "Mesatar",
             "Exercise": "Bashko `tuple1 = (1, 2)` dhe `tuple2 = (3, 4)` në `tuple3` dhe printoje.",
+            "ExpectedOutput": "(1, 2, 3, 4)",
+            "Solution": "tuple1 = (1, 2)\ntuple2 = (3, 4)\ntuple3 = tuple1 + tuple2\nprint(tuple3)",
             "RequiredKeywords": [
                 "tuple3",
                 "tuple1 + tuple2",

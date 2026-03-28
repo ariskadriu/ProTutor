@@ -2,7 +2,7 @@
     "id": "py_dsa_sort_basic_en",
     "title": "DSA: Selection & Insertion Sort",
     "description": "Sorting algorithms arrange elements in a specific order. Selection sort repeatedly finds the minimum element and moves it to the front. Insertion sort builds the sorted array one item at a time by inserting elements into their correct position. Both have O(n²) complexity.",
-    "example": "// Selection Sort Implementation\ndef selectionSort(array):\n    for step in range(len(array)):\n        min_idx = step\n        for i in range(step + 1, len(array)):\n            if array[i] < array[min_idx]:\n                min_idx = i\n        (array[step], array[min_idx]) = (array[min_idx], array[step])\n\ndata = [64, 25, 12, 22, 11]\nselectionSort(data)\nprint(data)",
+    "example": "# Selection Sort Implementation\ndef selectionSort(array):\n    for step in range(len(array)):\n        min_idx = step\n        for i in range(step + 1, len(array)):\n            if array[i] < array[min_idx]:\n                min_idx = i\n        (array[step], array[min_idx]) = (array[min_idx], array[step])\n\ndata = [64, 25, 12, 22, 11]\nselectionSort(data)\nprint(data)",
     "challenges": [
         {
             "title": "Sort Big O",

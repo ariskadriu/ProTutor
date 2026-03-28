@@ -2,7 +2,7 @@
     "id": "py_ml_linear_regression_sq",
     "title": "Python ML: Regresioni Linear",
     "description": "Regresioni linear përdor marrëdhënien midis pikave të të dhënave për të vizatuar një vijë të drejtë përmes tyre. Kjo vijë mund të përdoret për të parashikuar vlerat e ardhshme. Në Python, zakonisht 'scipy.stats' përdoret për të gjetur marrëdhënien (koeficientin) dhe 'matplotlib' për të vizualizuar vijën e trendit.",
-    "example": "// Zbatimi i Regresionit Linear\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nx = [5,7,8,7,2,17,2,9,4,11,12,9,6]\ny = [99,86,87,88,111,86,103,87,94,78,77,85,86]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\n  return slope * x + intercept\n\nmymodel = list(map(myfunc, x))\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.show()",
+    "example": "# Zbatimi i Regresionit Linear\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nx = [5,7,8,7,2,17,2,9,4,11,12,9,6]\ny = [99,86,87,88,111,86,103,87,94,78,77,85,86]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\n  return slope * x + intercept\n\nmymodel = list(map(myfunc, x))\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.show()",
     "challenges": [
         {
             "title": "Parashikimi me Regresion",

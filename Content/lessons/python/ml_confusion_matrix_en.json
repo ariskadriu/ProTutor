@@ -2,7 +2,7 @@
     "id": "py_ml_confusion_matrix_en",
     "title": "Python ML: Confusion Matrix",
     "description": "A Confusion Matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known. It allows the visualization of the performance of an algorithm and identifies where the model is 'confused' by misclassifying samples.",
-    "example": "// Confusion Matrix Visualization\nimport matplotlib.pyplot as plt\nimport numpy\nfrom sklearn import metrics\n\nactual = numpy.random.binomial(1,.9,size = 1000)\npredicted = numpy.random.binomial(1,.9,size = 1000)\n\nconfusion_matrix = metrics.confusion_matrix(actual, predicted)\ncm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])\n\ncm_display.plot()\nplt.show()",
+    "example": "# Confusion Matrix Visualization\nimport matplotlib.pyplot as plt\nimport numpy\nfrom sklearn import metrics\n\nactual = numpy.random.binomial(1,.9,size = 1000)\npredicted = numpy.random.binomial(1,.9,size = 1000)\n\nconfusion_matrix = metrics.confusion_matrix(actual, predicted)\ncm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])\n\ncm_display.plot()\nplt.show()",
     "challenges": [
         {
             "title": "TP vs FP",

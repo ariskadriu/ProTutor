@@ -43,6 +43,8 @@ namespace ProgrammingTutor.UI
                     break;
                 }
             }
+
+            // AiKeyBox removed
         }
 
         private void UpdateLocalization()
@@ -142,6 +144,8 @@ namespace ProgrammingTutor.UI
             {
                 App.ApplyTheme(themeItem.Tag.ToString()!);
             }
+
+            // Gemini key save removed
 
             ReloadNeeded = true;
             this.Close();

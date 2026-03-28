@@ -2,7 +2,7 @@
     "id": "py_ml_hierarchical_en",
     "title": "Python ML: Hierarchical Clustering",
     "description": "Hierarchical clustering is another unsupervised learning algorithm that builds a hierarchy of clusters. Agglomerative clustering is the most common type, where each data point starts as its own cluster and pairs of clusters are merged as one moves up the hierarchy. Dendrograms are used to visualize the merging process.",
-    "example": "// Agglomerative Clustering with Dendrogram\nimport matplotlib.pyplot as plt\nfrom scipy.cluster.hierarchy import dendrogram, linkage\nfrom sklearn.cluster import AgglomerativeClustering\n\nx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\ndata = list(zip(x, y))\n\n# Visualization via Linkage\nlinkage_data = linkage(data, method='ward', metric='euclidean')\ndendrogram(linkage_data)\nplt.show()",
+    "example": "# Agglomerative Clustering with Dendrogram\nimport matplotlib.pyplot as plt\nfrom scipy.cluster.hierarchy import dendrogram, linkage\nfrom sklearn.cluster import AgglomerativeClustering\n\nx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\ndata = list(zip(x, y))\n\n# Visualization via Linkage\nlinkage_data = linkage(data, method='ward', metric='euclidean')\ndendrogram(linkage_data)\nplt.show()",
     "challenges": [
         {
             "title": "Dendrogram View",

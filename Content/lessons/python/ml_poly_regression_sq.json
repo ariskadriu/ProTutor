@@ -2,7 +2,7 @@
     "id": "py_ml_poly_regression_sq",
     "title": "Python ML: Regresioni Polinomial",
     "description": "Nëse pikat tuaja të të dhënave qartësisht nuk përshtaten me një regresion linear (një vijë të drejtë), ato mund të jenë ideale për regresion polinomial. Regresioni polinomial, si regresioni linear, përdor marrëdhënien midis variablave x dhe y për të gjetur mënyrën më të mirë për të vizatuar një vijë përmes pikave.",
-    "example": "// Zbatimi i Regresionit Polinomial\nimport numpy\nimport matplotlib.pyplot as plt\n\nx = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]\ny = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]\n\n# Krijimi i modelit Polinomial (shkalla 3)\nmymodel = numpy.poly1d(numpy.polyfit(x, y, 3))\n\n# Vizualizimi i rezultatit\nmyline = numpy.linspace(1, 22, 100)\nplt.scatter(x, y)\nplt.plot(myline, mymodel(myline))\nplt.show()",
+    "example": "# Zbatimi i Regresionit Polinomial\nimport numpy\nimport matplotlib.pyplot as plt\n\nx = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]\ny = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]\n\n# Krijimi i modelit Polinomial (shkalla 3)\nmymodel = numpy.poly1d(numpy.polyfit(x, y, 3))\n\n# Vizualizimi i rezultatit\nmyline = numpy.linspace(1, 22, 100)\nplt.scatter(x, y)\nplt.plot(myline, mymodel(myline))\nplt.show()",
     "challenges": [
         {
             "title": "Përshtatja e Kurbës",

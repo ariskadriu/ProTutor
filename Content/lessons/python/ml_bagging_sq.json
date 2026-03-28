@@ -2,7 +2,7 @@
     "id": "py_ml_bagging_sq",
     "title": "Python ML: Agregimi Bootstrap (Bagging)",
     "description": "Agregimi Bootstrap (Bagging) është një meta-algoritëm ansambël i krijuar për të përmirësuar stabilitetin dhe saktësinë e algoritmeve të machine learning. Ai përfshin marrjen e shumë mostrave të rastësishme të të dhënave dhe trajnimin e një modeli mbi secilën. Parashikimi përfundimtar është mesatarja e të gjitha parashikimeve individuale.",
-    "example": "// Bagging me Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.ensemble import BaggingClassifier\nfrom sklearn.tree import DecisionTreeClassifier\n\niris = datasets.load_iris()\nX, y = iris.data, iris.target\n\n# Krijimi i nje ansambli Bagging te Decision Trees\nbagging = BaggingClassifier(DecisionTreeClassifier(), n_estimators=10)\nbagging.fit(X, y)",
+    "example": "# Bagging me Scikit-learn\nfrom sklearn import datasets\nfrom sklearn.ensemble import BaggingClassifier\nfrom sklearn.tree import DecisionTreeClassifier\n\niris = datasets.load_iris()\nX, y = iris.data, iris.target\n\n# Krijimi i nje ansambli Bagging te Decision Trees\nbagging = BaggingClassifier(DecisionTreeClassifier(), n_estimators=10)\nbagging.fit(X, y)",
     "challenges": [
         {
             "title": "Koncepti Bagging",

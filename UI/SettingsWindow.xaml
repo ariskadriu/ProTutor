@@ -33,6 +33,14 @@
                     <ComboBoxItem Content="Amethyst Purple" Tag="#9B59B6"/>
                 </ComboBox>
 
+                <!-- AI Config Area (Online Pro) -->
+                <Border BorderBrush="{StaticResource PurpleBrush}" BorderThickness="2" Padding="15" Margin="0,5,0,15" CornerRadius="12" Background="#151020">
+                    <StackPanel>
+                        <TextBlock Text="ARIS AI ENGINE (PRO ONLINE)" Foreground="{StaticResource PurpleBrush}" FontSize="12" FontWeight="Black" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="AiLocalInfo" Text="Advanced Cloud AI Active. Providing smart hints via OpenRouter." Foreground="#A8A8FF" FontSize="10" Margin="0,0,0,5" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
                 <!-- Admin Area -->
                 <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1" Padding="10" Margin="0,5,0,15" CornerRadius="4">
                     <StackPanel>

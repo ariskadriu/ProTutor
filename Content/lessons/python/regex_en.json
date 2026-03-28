@@ -2,7 +2,7 @@
     "id": "py_regex_en",
     "title": "Python RegEx",
     "description": "A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern. RegEx can be used to check if a string contains the specified search pattern. Python has a built-in package called 're', which can be used to work with Regular Expressions.",
-    "example": "// Common RegEx Functions\nimport re\n\ntxt = \"The rain in Spain\"\nx = re.search(\"^The.*Spain$\", txt)\nif x: print(\"YES! Match!\")\n\n# Findall example\nx = re.findall(\"ai\", txt)\nprint(x) # ['ai', 'ai']",
+    "example": "# Common RegEx Functions\nimport re\n\ntxt = \"The rain in Spain\"\nx = re.search(\"^The.*Spain$\", txt)\nif x: print(\"YES! Match!\")\n\n# Findall example\nx = re.findall(\"ai\", txt)\nprint(x) # ['ai', 'ai']",
     "challenges": [
         {
             "title": "Search Pattern",

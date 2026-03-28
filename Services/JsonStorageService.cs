@@ -45,7 +45,8 @@ namespace ProgrammingTutor.Services
                 }
 
                 string json = await File.ReadAllTextAsync(filePath);
-                return JsonSerializer.Deserialize<T>(json);
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                return JsonSerializer.Deserialize<T>(json, options);
             }
             catch (Exception ex)
             {

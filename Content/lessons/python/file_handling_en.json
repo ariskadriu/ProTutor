@@ -2,7 +2,7 @@
     "id": "py_file_handling_en",
     "title": "Python File Handling",
     "description": "File handling is an important part of any web application. Python has several functions for creating, reading, updating, and deleting files. The key function for working with files in Python is the 'open()' function, which takes two parameters: filename and mode ('r' for read, 'a' for append, 'w' for write, 'x' for create).",
-    "example": "// Professional File Handling\nf = open(\"demofile.txt\", \"r\")\nprint(f.read())\nf.close()\n\n# Writing with Context Manager (Best Practice)\nwith open(\"demofile.txt\", \"a\") as f:\n  f.write(\"Now the file has more content!\")",
+    "example": "# Professional File Handling\nf = open(\"demofile.txt\", \"r\")\nprint(f.read())\nf.close()\n\n# Writing with Context Manager (Best Practice)\nwith open(\"demofile.txt\", \"a\") as f:\n  f.write(\"Now the file has more content!\")",
     "challenges": [
         {
             "title": "Read File",

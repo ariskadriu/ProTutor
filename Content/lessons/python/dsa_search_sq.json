@@ -2,7 +2,7 @@
     "id": "py_dsa_search_sq",
     "title": "DSA: Kërkimi Lineaer vs Binar",
     "description": "Kërkimi është një operacion themelor në llogaritje. Kërkimi linear kontrollon çdo element (O(n)), ndërsa kërkimi binar (Binary Search) është dukshëm më i shpejtë (O(log n)), por kërkon që të dhënat të jenë të rradhitura. Kërkimi binar funksionon duke ndarë vazhdimisht intervalin e kërkimit në gjysmë.",
-    "example": "// Algoritmi i Kerkimit Binar\ndef binarySearch(array, x, low, high):\n    while low <= high:\n        mid = low + (high - low) // 2\n        if array[mid] == x: return mid\n        elif array[mid] < x: low = mid + 1\n        else: high = mid - 1\n    return -1\n\n# Kerkim i optimizuar\narr = [2, 3, 4, 10, 40]\nprint(binarySearch(arr, 10, 0, len(arr)-1))",
+    "example": "# Algoritmi i Kerkimit Binar\ndef binarySearch(array, x, low, high):\n    while low <= high:\n        mid = low + (high - low) # 2\n        if array[mid] == x: return mid\n        elif array[mid] < x: low = mid + 1\n        else: high = mid - 1\n    return -1\n\n# Kerkim i optimizuar\narr = [2, 3, 4, 10, 40]\nprint(binarySearch(arr, 10, 0, len(arr)-1))",
     "challenges": [
         {
             "title": "Efikasiteti i Kerkimit",

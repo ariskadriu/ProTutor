@@ -2,7 +2,7 @@
     "id": "py_dsa_sort_basic_sq",
     "title": "DSA: Selection dhe Insertion Sort",
     "description": "Algoritmet e rradhitjes (sorting) rregullojnë elementet në një rrjedhë specifike. Selection sort gjen vazhdimisht elementin minimal dhe e lëviz atë në fillim. Insertion sort ndërton vargun e rradhitur një element nga një duke i futur ato në pozicionin e saktë. Të dyja kanë kompleksitet O(n²).",
-    "example": "// Zbatimi i Selection Sort\ndef selectionSort(array):\n    for step in range(len(array)):\n        min_idx = step\n        for i in range(step + 1, len(array)):\n            if array[i] < array[min_idx]:\n                min_idx = i\n        (array[step], array[min_idx]) = (array[min_idx], array[step])\n\ndata = [64, 25, 12, 22, 11]\nselectionSort(data)\nprint(data)",
+    "example": "# Zbatimi i Selection Sort\ndef selectionSort(array):\n    for step in range(len(array)):\n        min_idx = step\n        for i in range(step + 1, len(array)):\n            if array[i] < array[min_idx]:\n                min_idx = i\n        (array[step], array[min_idx]) = (array[min_idx], array[step])\n\ndata = [64, 25, 12, 22, 11]\nselectionSort(data)\nprint(data)",
     "challenges": [
         {
             "title": "Big O i Rradhitjes",
